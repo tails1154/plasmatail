@@ -129,4 +129,5 @@ sddm
 plasma
 chromium
 firefox
-
+xorg-server
+xorg-xinit

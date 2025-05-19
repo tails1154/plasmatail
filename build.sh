@@ -1,1 +1,2 @@
-sudo mkarchiso -v .
+sudo mkarchiso -v -w work -o out --clean .
+

@@ -4,4 +4,4 @@ archiso os ig
 
 ## Building
 
-idk lol
+make sure you have archiso installed and run build.sh

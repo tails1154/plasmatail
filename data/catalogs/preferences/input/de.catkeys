@@ -1,0 +1,54 @@
+1	german	x-vnd.Haiku-Input	993392905
+Defaults	InputMouse		Standardwerte
+Scrolling	TouchpadPrefView		Scrollen
+Long	KeyboardView		Lang
+Cancel	TouchpadPrefView		Abbrechen
+Slow	TouchpadPrefView		Langsam
+Device List	InputWindow		Geräteliste
+Double-click speed	SettingsView		Doppelklick-Geschwindigkeit
+5-Button	SettingsView		5-Tasten
+Typing test area	KeyboardView		Feld für Testeingaben
+Fast	KeyboardView		Schnell
+Please confirm	TouchpadPrefView		Bitte bestätigen
+Trackpad speed	TouchpadPrefView		Geschwindigkeit
+Mouse speed	SettingsView		Geschwindigkeit
+Trackpad acceleration	TouchpadPrefView		Beschleunigung
+Horizontal scrolling	TouchpadPrefView		Horizontales Scrollen
+Reverse scroll direction	TouchpadPrefView		Scroll-Richtung umkehren
+Keyboard lock delay	TouchpadPrefView		Verzögerung der Tastatursperre
+Input	System name		Eingabegeräte
+Quick	TouchpadPrefView		Schnell
+Short	KeyboardView		Kurz
+Revert	InputMouse		Anfangswerte
+Slow	KeyboardView		Langsam
+2-Button	SettingsView		2-Tasten
+Click to focus and raise	SettingsView		Klicken aktiviert und holt nach vorn
+Vertical	TouchpadPrefView		Vertikal
+Low	TouchpadPrefView		Niedrig
+Focus follows mouse	SettingsView		Ohne Klicken aktivieren
+Double-click test area	SettingsView		Testfeld für Doppelklick
+Focus mode:	SettingsView		Modus:
+Revert	TouchpadPrefView		Anfangswerte
+4-Button	SettingsView		4-Tasten
+Tapping sensitivity	TouchpadPrefView		Empfindlichkeit
+Revert	InputKeyboard		Anfangswerte
+Mouse type:	SettingsView		Mausart:
+Off	TouchpadPrefView		Aus
+Never	TouchpadPrefView		Nie
+Fast	TouchpadPrefView		Schnell
+6-Button	SettingsView		6-Tasten
+Click to focus	SettingsView		Klicken aktiviert Fenster
+Acceleration	TouchpadPrefView		Beschleunigung
+Accept first click	SettingsView		Auf ersten Klick reagieren
+OK	TouchpadPrefView		OK
+Delay until key repeat	KeyboardView		Verzögerung bis Tastenwiederholung
+Two finger scrolling	TouchpadPrefView		Zwei-Finger-Scrollen
+The new scroll area is very large and may impede normal mouse operation. Do you really want to change it?	TouchpadPrefView		Der neue Scroll-Bereich ist sehr groß und könnte eine normale Mausfunktion beeinträchtigen. Soll die Einstellung wirklich gesetzt werden?
+Mouse acceleration	SettingsView		Beschleunigung
+High	TouchpadPrefView		Hoch
+Defaults	TouchpadPrefView		Standardwerte
+1-Button	SettingsView		1-Taste
+Defaults	InputKeyboard		Standardwerte
+Key repeat rate	KeyboardView		Tastenwiederholrate
+Horizontal	TouchpadPrefView		Horizontal
+3-Button	SettingsView		3-Tasten

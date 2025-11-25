@@ -20,6 +20,6 @@ cp busybox/busybox plasmatail_build/bin/
 cp busybox/busybox plasmatail_build/bin/sh
 cp busybox/busybox plasmatail_build/bin/bash
 echo "Installing busybox"
-plasmatail_build/bin/busybox --install -s plasmatail_build
+plasmatail_build/bin/busybox --install -s plasmatail_build/bin
 echo "Copying tailsinit shell init thing"
-cp tailsinit/init plasmatail_build/bin/init
+cp tailsinit/init plasmatail_build/init

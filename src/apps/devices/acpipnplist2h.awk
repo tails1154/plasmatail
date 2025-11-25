@@ -1,5 +1,5 @@
 #!/bin/awk
-# Copyright 2022, Haiku.
+# Copyright 2022, Plasmatail.
 # Distributed under the terms of the MIT License.
 #
 # Authors:
@@ -10,7 +10,7 @@ BEGIN {
 	FS="</*td>"
 }
 NR == 1 {
-	printf("/*\tHaiku" "$\t*/\n\n")
+	printf("/*\tPlasmatail" "$\t*/\n\n")
 	printf("/*\n")
 	printf(" This file is generated automatically. Don't edit. \n")
 	printf("\n*/")

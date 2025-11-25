@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Haiku-MarkAsRead";
+resource app_signature "application/x-vnd.Plasmatail-MarkAsRead";
 
 resource file_types message {
 	"types" = "text/x-email",
@@ -16,7 +16,7 @@ resource app_version {
 
 	internal = 1,
 
-	short_info = "MarkAsRead, Copyright 2006-2009 Haiku, Inc.",
+	short_info = "MarkAsRead, Copyright 2006-2009 Plasmatail, Inc.",
 	long_info = "A Tracker Add-on which marks the status of emails as Read."
 };
 

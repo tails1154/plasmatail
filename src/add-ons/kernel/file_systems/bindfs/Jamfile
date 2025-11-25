@@ -19,4 +19,4 @@ KernelAddon bindfs
 ;
 
 
-#HaikuSubInclude userland ;
+#PlasmatailSubInclude userland ;

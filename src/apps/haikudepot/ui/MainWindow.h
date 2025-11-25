@@ -12,7 +12,7 @@
 
 #include <queue>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "Model.h"
 #include "ProcessCoordinator.h"
 #include "PackageInfoListener.h"

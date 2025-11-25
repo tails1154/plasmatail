@@ -1,5 +1,5 @@
 /*
- * Playlist.cpp - Media Player for the Haiku Operating System
+ * Playlist.cpp - Media Player for the Plasmatail Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright (C) 2007-2009 Stephan Aßmus <superstippi@gmx.de> (MIT ok)

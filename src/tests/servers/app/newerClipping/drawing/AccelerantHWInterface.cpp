@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2005, Haiku.
+ * Copyright 2001-2005, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -146,7 +146,7 @@ AccelerantHWInterface::_OpenGraphicsDevice(int deviceNumber)
 	if (!directory)
 		return -1;
 
-	// ToDo: the former R5 "stub" driver is called "vesa" under Haiku; however,
+	// ToDo: the former R5 "stub" driver is called "vesa" under Plasmatail; however,
 	//	we do not need to avoid this driver this way when is has been ported
 	//	to the new driver architecture - the special case here can then be
 	//	removed.

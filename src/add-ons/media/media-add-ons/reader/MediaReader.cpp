@@ -730,7 +730,7 @@ void MediaReader::GetFlavor(flavor_info * outInfo, int32 id)
 	AbstractFileInterfaceNode::GetFlavor(outInfo,id);
 	outInfo->name = strdup("Media Reader");
 	outInfo->info = strdup(
-		"The Haiku Media Reader reads a file and produces a multistream.");
+		"The Plasmatail Media Reader reads a file and produces a multistream.");
 	outInfo->kinds |= B_BUFFER_PRODUCER;
 	outInfo->out_format_count = 1; // 1 output
 	media_format * formats = new media_format[outInfo->out_format_count];

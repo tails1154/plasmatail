@@ -1,6 +1,6 @@
 /*
  * Copyright 2006, Axel Dörfler, axeld@pinc-software.de. All rights reserved.
- * Copyright 2023, Haiku, Inc.
+ * Copyright 2023, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef SUPPORTING_APPS_MENU_H

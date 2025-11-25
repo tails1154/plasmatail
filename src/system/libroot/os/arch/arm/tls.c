@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2022, Haiku, Inc. All Rights Reserved.
+ * Copyright 2019-2022, Plasmatail, Inc. All Rights Reserved.
  * Copyright 2003, Axel Dörfler, axeld@pinc-software.de. All rights reserved.
  * Distributed under the terms of the MIT License.
  */

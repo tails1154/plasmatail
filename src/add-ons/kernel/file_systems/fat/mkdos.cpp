@@ -1,7 +1,7 @@
 /*
  * Copyright 2015, François Revol <revol@free.fr>
- * Copyright (c) 2002 Marcus Overhagen <marcus@overhagen.de>, Haiku project
- * Copyright 2024, Haiku, Inc. All rights reserved.
+ * Copyright (c) 2002 Marcus Overhagen <marcus@overhagen.de>, Plasmatail project
+ * Copyright 2024, Plasmatail, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  */
@@ -412,7 +412,7 @@ _dosfs_initialize(int fd, partition_id partitionID, const char* name, const char
 		bootsector32 *bs = (bootsector32 *)bootsector;
 		uint16 temp16;
 		uint32 temp32;
-		memcpy(bs->BS_OEMName,"Haiku   ",8);
+		memcpy(bs->BS_OEMName,"Plasmatail   ",8);
 		bs->BPB_BytsPerSec = B_HOST_TO_LENDIAN_INT16(sectorSize);
 		bs->BPB_SecPerClus = sectorPerCluster;
 		bs->BPB_RsvdSecCnt = B_HOST_TO_LENDIAN_INT16(reservedSectorCount);
@@ -448,7 +448,7 @@ _dosfs_initialize(int fd, partition_id partitionID, const char* name, const char
 		bootsector1216 *bs = (bootsector1216 *)bootsector;
 		uint16 temp16;
 		uint32 temp32;
-		memcpy(bs->BS_OEMName, "Haiku   ", 8);
+		memcpy(bs->BS_OEMName, "Plasmatail   ", 8);
 		bs->BPB_BytsPerSec = B_HOST_TO_LENDIAN_INT16(sectorSize);
 		bs->BPB_SecPerClus = sectorPerCluster;
 		bs->BPB_RsvdSecCnt = B_HOST_TO_LENDIAN_INT16(reservedSectorCount);

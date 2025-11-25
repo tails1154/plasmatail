@@ -50,7 +50,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #ifndef FS_SHELL
 #include <fs_volume.h>

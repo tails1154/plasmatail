@@ -1,6 +1,6 @@
 /*
  * Copyright 2006-2010, Stephan Aßmus <superstippi@gmx.de>.
- * Copyright 2006-2009, 2023, Haiku.
+ * Copyright 2006-2009, 2023, Plasmatail.
  * All rights reserved. Distributed under the terms of the MIT License.
  *
  * Authors:

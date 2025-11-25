@@ -3,7 +3,7 @@
 //
 // Unit test for the game kit.
 //
-// Copyright (c) 2001 Haiku Project
+// Copyright (c) 2001 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

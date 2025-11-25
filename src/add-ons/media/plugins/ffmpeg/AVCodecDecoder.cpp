@@ -10,7 +10,7 @@
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 
-//! libavcodec based decoder for Haiku
+//! libavcodec based decoder for Plasmatail
 
 
 #include "AVCodecDecoder.h"

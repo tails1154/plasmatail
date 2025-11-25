@@ -378,7 +378,7 @@ uint64_t	ifmedia_baudrate(int);
 #ifndef __HAIKU__
 #define	IFM_ACTIVE	0x00000002	/* Interface attached to working net */
 #else
-#define IFM_ACTIVE	0x00800000	/* same as Haiku's */
+#define IFM_ACTIVE	0x00800000	/* same as Plasmatail's */
 #endif
 
 /* Mask of "status valid" bits, for ifconfig(8). */

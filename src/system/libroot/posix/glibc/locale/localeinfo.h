@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Haiku, Inc. All Rights Reserved.
+ * Copyright 2025, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _LOCALEINFO_H

@@ -355,7 +355,7 @@ TMailApp::MessageReceived(BMessage *msg)
 		}
 
 		case M_ACCOUNTS:
-			be_roster->Launch("application/x-vnd.Haiku-Mail");
+			be_roster->Launch("application/x-vnd.Plasmatail-Mail");
 			break;
 
 		case M_EDIT_SIGNATURE:

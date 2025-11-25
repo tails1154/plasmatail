@@ -487,7 +487,7 @@ determine_x86_abi(int fd, const Elf32_Ehdr& elfHeader, bool& _isGcc2)
 #if B_HOST_IS_LENDIAN
 
 	// Since we don't want to load the complete image, we can't use the
-	// functions that normally determine the Haiku version and ABI. Instead
+	// functions that normally determine the Plasmatail version and ABI. Instead
 	// we'll load the symbol and string tables and resolve the ABI symbol
 	// manually.
 
@@ -623,7 +623,7 @@ determine_x86_abi(int fd, const Elf32_Ehdr& elfHeader, bool& _isGcc2)
 	}
 
 	// ABI symbol not found. That means the object pre-dates its introduction
-	// in Haiku. So this is most likely gcc 2. We don't fall back to reading
+	// in Plasmatail. So this is most likely gcc 2. We don't fall back to reading
 	// the comment sections to verify.
 	_isGcc2 = true;
 	return true;

@@ -1,6 +1,6 @@
 /*
  * Copyright 2016, Dmytro Shynkevych, dm.shynk@gmail.com
- * Copyright 2023, Haiku, Inc. All rights reserved.
+ * Copyright 2023, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  */
 

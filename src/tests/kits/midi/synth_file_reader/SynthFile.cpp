@@ -2,7 +2,7 @@
 
 SynthFile.cpp
 
-Copyright (c) 2002 Haiku.
+Copyright (c) 2002 Plasmatail.
 
 Author:
 	Michael Pfeiffer

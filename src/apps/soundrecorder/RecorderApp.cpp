@@ -33,7 +33,7 @@ RecorderApp::InitCheck()
 int
 main()
 {
-	RecorderApp app("application/x-vnd.Haiku-SoundRecorder");
+	RecorderApp app("application/x-vnd.Plasmatail-SoundRecorder");
 	if (app.InitCheck() == B_OK)
 		app.Run();
 	return 0;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Haiku, Inc.
+ * Copyright 2009, Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -32,8 +32,8 @@ static const translation_format sInputFormats[] = {
 		B_TRANSLATOR_BITMAP,
 		HVIF_TRANSLATION_QUALITY,
 		HVIF_TRANSLATION_CAPABILITY,
-		"application/x-vnd.Haiku-icon",
-		"Native Haiku vector icon"
+		"application/x-vnd.Plasmatail-icon",
+		"Native Plasmatail vector icon"
 	}
 };
 
@@ -71,7 +71,7 @@ make_nth_translator(int32 n, image_id image, uint32 flags, ...)
 
 HVIFTranslator::HVIFTranslator()
 	: BaseTranslator(B_TRANSLATE("HVIF icons"), 
-		B_TRANSLATE("Haiku vector icon translator"),
+		B_TRANSLATE("Plasmatail vector icon translator"),
 		HVIF_TRANSLATOR_VERSION,
 		sInputFormats, kNumInputFormats,
 		sOutputFormats, kNumOutputFormats,

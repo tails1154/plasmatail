@@ -1,13 +1,13 @@
 /*****************************************************************************/
 // TGAView
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // TGAView.h
 //
 // This BView based object displays information about the TGATranslator.
 //
 //
-// Copyright (c) 2002 Haiku Project
+// Copyright (c) 2002 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

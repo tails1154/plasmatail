@@ -22,7 +22,7 @@
 #include <StringView.h>
 
 #include "AppUtils.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "LanguageMenuUtils.h"
 #include "Logger.h"
 #include "MarkupParser.h"
@@ -332,7 +332,7 @@ RatePackageWindow::MessageReceived(BMessage* message)
 		{
 			BAlert* alert = new(std::nothrow) BAlert(B_TRANSLATE("User rating"),
 				B_TRANSLATE("Your rating was uploaded successfully. You can update or remove it at "
-							"the HaikuDepot Server website."),
+							"the PlasmatailDepot Server website."),
 				B_TRANSLATE("Close"), NULL, NULL, B_WIDTH_AS_USUAL, B_WARNING_ALERT);
 			alert->Go();
 			_RefreshPackageData();

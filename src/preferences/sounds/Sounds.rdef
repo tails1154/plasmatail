@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Sounds";
+resource app_signature "application/x-vnd.Plasmatail-Sounds";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Sounds:System name:Sounds";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Sounds:System name:Sounds";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Sounds",
-	long_info  = "Sounds ©2003-2009 Haiku"
+	long_info  = "Sounds ©2003-2009 Plasmatail"
 };
 
 resource vector_icon {

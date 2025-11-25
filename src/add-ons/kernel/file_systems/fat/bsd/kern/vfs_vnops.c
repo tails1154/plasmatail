@@ -41,7 +41,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include "sys/param.h"
 #include "sys/systm.h"
@@ -81,7 +81,7 @@ vn_vget_ino_gen(struct vnode* vp, vn_get_ino_t alloc, void* alloc_arg, int lkfla
 
 /*! The driver uses this to free up memory if a low resource condition occurs after extending a
 	regular file. In FreeBSD, it does this by flushing dirty struct bufs associated with vp.
-	In the Haiku port, we remove all pages from this file's file cache.
+	In the Plasmatail port, we remove all pages from this file's file cache.
 */
 int
 vn_fsync_buf(struct vnode* vp, int waitfor)

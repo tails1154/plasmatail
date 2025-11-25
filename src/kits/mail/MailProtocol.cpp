@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2016, Haiku, Inc. All rights reserved.
+ * Copyright 2011-2016, Plasmatail, Inc. All rights reserved.
  * Copyright 2001-2003 Dr. Zoidberg Enterprises. All rights reserved.
  */
 
@@ -33,7 +33,7 @@
 #include <MailPrivate.h>
 #include <NodeMessage.h>
 
-#include "HaikuMailFormatFilter.h"
+#include "PlasmatailMailFormatFilter.h"
 
 
 using namespace BPrivate;
@@ -46,7 +46,7 @@ BMailProtocol::BMailProtocol(const char* name,
 	fAccountSettings(settings),
 	fMailNotifier(NULL)
 {
-	AddFilter(new HaikuMailFormatFilter(*this, settings));
+	AddFilter(new PlasmatailMailFormatFilter(*this, settings));
 }
 
 

@@ -50,7 +50,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver
+// Modified to support the Plasmatail FAT driver
 
 #include <sys/param.h>
 #include <sys/systm.h>
@@ -88,7 +88,7 @@ msdosfs_lookup_checker(struct msdosfsmount *pmp, struct vnode *dvp,
 	return (0);
 }
 
-// Haiku port:  unused FreeBSD hook function
+// Plasmatail port:  unused FreeBSD hook function
 #if 0
 int
 msdosfs_lookup(struct vop_cachedlookup_args *ap)
@@ -153,7 +153,7 @@ msdosfs_lookup_ino(struct vnode *vdp, struct vnode **vpp, struct componentname
 	int blsize;
 	int isadir;		/* ~0 if found direntry is a directory	 */
 	u_long scn;		/* starting cluster number		 */
-		// Haiku port:  type changed to avoid compiler warning
+		// Plasmatail port:  type changed to avoid compiler warning
 	struct vnode *pdp;
 	struct denode *dp;
 	struct denode *tdp;
@@ -223,7 +223,7 @@ msdosfs_lookup_ino(struct vnode *vdp, struct vnode **vpp, struct componentname
 		olddos = 1;
 	}
 	unlen = winLenFixup((u_char *)cnp->cn_nameptr, cnp->cn_namelen);
-		// Haiku port:  cast added to avoid compiler warning
+		// Plasmatail port:  cast added to avoid compiler warning
 
 	/*
 	 * Suppress search for slots unless creating
@@ -268,7 +268,7 @@ msdosfs_lookup_ino(struct vnode *vdp, struct vnode **vpp, struct componentname
 		for (blkoff = 0; blkoff < (u_long)blsize;
 		     blkoff += sizeof(struct direntry),
 		     diroff += sizeof(struct direntry)) {
-			 // Haiku port:  cast added to avoid compiler warning
+			 // Plasmatail port:  cast added to avoid compiler warning
 			dep = (struct direntry *)(bp->b_data + blkoff);
 			/*
 			 * If the slot is empty and we are still looking
@@ -588,7 +588,7 @@ foundroot:
 		 * looked up before pdp lock was dropped.
 		 */
 		error = msdosfs_lookup_ino(pdp, NULL, cnp, (daddr_t *)&scn, &blkoff);
-			// Haiku port:  cast added to avoid compiler warning
+			// Plasmatail port:  cast added to avoid compiler warning
 		if (error) {
 			vput(*vpp);
 			*vpp = NULL;
@@ -844,7 +844,7 @@ int
 doscheckpath(struct denode *source, struct denode *target, daddr_t *wait_scn)
 {
 	u_long scn;
-		// Haiku port:  type changed to avoid compiler warning
+		// Plasmatail port:  type changed to avoid compiler warning
 	struct msdosfsmount *pmp;
 	struct direntry *ep;
 	struct denode *dep;

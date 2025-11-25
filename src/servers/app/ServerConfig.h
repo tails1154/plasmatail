@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2008, Haiku.
+ * Copyright 2001-2008, Plasmatail.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _APPSERVER_CONFIG_H

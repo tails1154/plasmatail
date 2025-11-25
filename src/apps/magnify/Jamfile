@@ -11,12 +11,12 @@ Application Magnify :
 ;
 
 DoCatalogs Magnify :
-	x-vnd.Haiku-Magnify
+	x-vnd.Plasmatail-Magnify
 	:
 	Magnify.cpp
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Magnify
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Magnify
 		: tests!apps ;
 }

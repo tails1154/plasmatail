@@ -16,7 +16,7 @@
 #include <NetworkRoster.h>
 
 #include "Logger.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "ServerSettings.h"
 #include "WebAppInterface.h"
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2018, Haiku Inc. All Rights Reserved.
+ * Copyright 2004-2018, Plasmatail Inc. All Rights Reserved.
  * Copyright 2001 Dr. Zoidberg Enterprises. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
@@ -237,7 +237,7 @@ DeskbarView::MessageReceived(BMessage* message)
 			break;
 		}
 		case MD_OPEN_PREFS:
-			be_roster->Launch("application/x-vnd.Haiku-Mail");
+			be_roster->Launch("application/x-vnd.Plasmatail-Mail");
 			break;
 
 		case MD_REFRESH_QUERY:

@@ -12,7 +12,7 @@
 #include <sys/_types.h>
 
 
-// TODO Should be incorporated into Haikus socket.h with a number below AF_MAX
+// TODO Should be incorporated into Plasmatails socket.h with a number below AF_MAX
 #define AF_IEEE80211 	(AF_MAX + 1) 	/* IEEE 802.11 protocol */
 
 #endif /* _FBSD_COMPAT_SYS_SOCKET_H_ */

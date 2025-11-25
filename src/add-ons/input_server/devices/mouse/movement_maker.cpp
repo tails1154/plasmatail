@@ -1,6 +1,6 @@
 /*
  * Copyright 2008-2011, Clemens Zeidler <haiku@clemens-zeidler.de>
- * Copyright 2022, Haiku, Inc. All rights reserved.
+ * Copyright 2022, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #include "movement_maker.h"

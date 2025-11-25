@@ -17,7 +17,7 @@ Application CursorBitmapTest :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CursorTest
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CursorTest
 		: tests!apps ;
 }
 

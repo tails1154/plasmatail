@@ -653,7 +653,7 @@ NodeMonitorService::NotifyEntryCreatedOrRemoved(int32 opcode, dev_t device,
 	message.AddInt32("device", device);
 	message.AddInt64("directory", directory);
 	message.AddInt64("node", node);
-	message.AddString("name", name);			// for "removed" Haiku only
+	message.AddString("name", name);			// for "removed" Plasmatail only
 
 	return _SendNotificationMessage(message, interestedListeners,
 		interestedListenerCount);
@@ -704,9 +704,9 @@ NodeMonitorService::NotifyEntryMoved(dev_t device, ino_t fromDirectory,
 	message.AddInt32("device", device);
 	message.AddInt64("from directory", fromDirectory);
 	message.AddInt64("to directory", toDirectory);
-	message.AddInt32("node device", nodeDevice);	// Haiku only
+	message.AddInt32("node device", nodeDevice);	// Plasmatail only
 	message.AddInt64("node", node);
-	message.AddString("from name", fromName);		// Haiku only
+	message.AddString("from name", fromName);		// Plasmatail only
 	message.AddString("name", toName);
 
 	return _SendNotificationMessage(message, interestedListeners,
@@ -757,7 +757,7 @@ NodeMonitorService::NotifyStatChanged(dev_t device, ino_t directory, ino_t node,
 	message.AddInt32("opcode", B_STAT_CHANGED);
 	message.AddInt32("device", device);
 	message.AddInt64("node", node);
-	message.AddInt32("fields", statFields);		// Haiku only
+	message.AddInt32("fields", statFields);		// Plasmatail only
 
 	return _SendNotificationMessage(message, interestedListeners,
 		interestedListenerCount);
@@ -819,7 +819,7 @@ NodeMonitorService::NotifyAttributeChanged(dev_t device, ino_t directory,
 		message.AddInt64("directory", directory);
 	message.AddInt64("node", node);
 	message.AddString("attr", attribute);
-	message.AddInt32("cause", cause);		// Haiku only
+	message.AddInt32("cause", cause);		// Plasmatail only
 
 	return _SendNotificationMessage(message, interestedListeners,
 		interestedListenerCount);
@@ -1113,7 +1113,7 @@ notify_query_entry_moved(int32 opcode, port_id port, int32 token,
 	message.AddInt64("from directory", fromDirectory);
 	message.AddInt64("to directory", toDirectory);
 	message.AddInt64("node", node);
-	message.AddString("from name", fromName);		// Haiku only
+	message.AddString("from name", fromName);		// Plasmatail only
 	message.AddString("name", toName);
 
 	// send the message

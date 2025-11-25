@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Haiku Inc. All rights reserved.
+ * Copyright 2022 Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -516,7 +516,7 @@ HttpIntegrationTest::HostAndNetworkFailTest()
 
 
 static const BHttpFields kExpectedGetFields = {
-	{"Server"sv, "Test HTTP Server for Haiku"sv},
+	{"Server"sv, "Test HTTP Server for Plasmatail"sv},
 	{"Date"sv, "Sun, 09 Feb 2020 19:32:42 GMT"sv},
 	{"Content-Type"sv, "text/plain"sv},
 	{"Content-Length"sv, "107"sv},
@@ -602,7 +602,7 @@ HttpIntegrationTest::HeadTest()
 
 
 static const BHttpFields kExpectedNoContentFields = {
-	{"Server"sv, "Test HTTP Server for Haiku"sv},
+	{"Server"sv, "Test HTTP Server for Plasmatail"sv},
 	{"Date"sv, "Sun, 09 Feb 2020 19:32:42 GMT"sv},
 };
 

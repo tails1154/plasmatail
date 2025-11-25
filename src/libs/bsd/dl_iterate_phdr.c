@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Haiku, Inc. All rights reserved.
+ * Copyright 2022, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -23,7 +23,7 @@
 // the ELF header, it does return the first page of the image's
 // text segment (defined by runtime_loader as the first loaded page
 // with read-only protection). For most images produced by
-// normal compilers, including Haiku ELF files, the file header
+// normal compilers, including Plasmatail ELF files, the file header
 // is always loaded at the beginning of the text segment.
 //
 // We can therefore take advantage of this fact and populate

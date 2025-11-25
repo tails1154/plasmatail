@@ -20,7 +20,7 @@
     },
     "isNativeDesktop": {
       "type": "boolean",
-      "description": "True if the package supplies a Haiku native desktop application."
+      "description": "True if the package supplies a Plasmatail native desktop application."
     },
     "prominenceOrdering": {
       "type": "integer"

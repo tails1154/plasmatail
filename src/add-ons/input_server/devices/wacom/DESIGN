@@ -1,6 +1,6 @@
 Overview:
 
-The actual input_server addon is the MasterServerDevice. It watches for device entries (dis)appearing in /dev/input/wacom/. For each appearing entry, it then asks the PointingDeviceFactory to obtain a PointingDevice. The factory constructs a DeviceReader, which interfaces with the usb driver/device. The MasterServerDevice puts the PointingDevice obtained into a list and manages it from there. All PointingDevices in the list are Start()ed and Stop()ped according to the input_server requests. A PointingDevice has access to its parent MasterServerDevice and can use global functionality like the acceleration table and other useful information. The baseclass PointingDevice doesn't do anything useful. In another version of the driver code, there are two types of devices supported in subclasses, USB Mice and Wacom tablets. For USB Mice, there is a subclass MouseDevice, which has child objects for interpreting data from Generic Mice, Logitec Optical Mice and IBM Optical Scrollpoint Mice. This (Haiku) version of the driver however only supports Wacom tablets.
+The actual input_server addon is the MasterServerDevice. It watches for device entries (dis)appearing in /dev/input/wacom/. For each appearing entry, it then asks the PointingDeviceFactory to obtain a PointingDevice. The factory constructs a DeviceReader, which interfaces with the usb driver/device. The MasterServerDevice puts the PointingDevice obtained into a list and manages it from there. All PointingDevices in the list are Start()ed and Stop()ped according to the input_server requests. A PointingDevice has access to its parent MasterServerDevice and can use global functionality like the acceleration table and other useful information. The baseclass PointingDevice doesn't do anything useful. In another version of the driver code, there are two types of devices supported in subclasses, USB Mice and Wacom tablets. For USB Mice, there is a subclass MouseDevice, which has child objects for interpreting data from Generic Mice, Logitec Optical Mice and IBM Optical Scrollpoint Mice. This (Plasmatail) version of the driver however only supports Wacom tablets.
 
 
 -------------------------
@@ -20,7 +20,7 @@ This class encapsulates the creation of PointingDevice objects, in that it const
 
 --------
 
-MouseDevice: (not present in Haiku version of the driver)
+MouseDevice: (not present in Plasmatail version of the driver)
 
 This class implements a Mouse by subclassing from PointingDevice. It owns a DeviceReader and Mouse object, which knows how to interprete data read from the DeviceReader. Different mouse products are implemented in subclasses of Mouse, most importantly there is a GenericMouse class. MouseDevice implements Start() and Stop() to run a thread which constantly reads from the DeviceReader and enqueues input event messages using the reference to the MasterServerDevice.
 

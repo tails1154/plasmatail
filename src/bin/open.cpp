@@ -2,7 +2,7 @@
  * Copyright 2003-2007, Axel Dörfler, axeld@pinc-software.de.
  * Copyright 2005-2007, François Revol, revol@free.fr.
  * Copyright 2009, Jonas Sundström, jonas@kirilla.com.
- * Copyright 2014 Haiku, Inc. All rights reserved.
+ * Copyright 2014 Plasmatail, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  *

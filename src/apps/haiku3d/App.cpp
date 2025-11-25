@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Haiku Inc. All rights reserved.
+ * Copyright 2009, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -14,7 +14,7 @@
 
 App::App()
 	:
-	BApplication("application/x-vnd.Haiku-Haiku3d"),
+	BApplication("application/x-vnd.Plasmatail-Plasmatail3d"),
 	fMainWindow(NULL)
 {
 }
@@ -29,7 +29,7 @@ void
 App::ReadyToRun()
 {
 	BRect frame(50, 50, 640 + 50, 480 + 50);
-	const char* title = "Haiku3d";
+	const char* title = "Plasmatail3d";
 	fMainWindow = new MainWindow(frame, title);
 	fMainWindow->Show();
 }

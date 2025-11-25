@@ -4,7 +4,7 @@ mkdos shell tool
 
 Initialize FAT16 or FAT32 partitions, FAT12 floppy disks not supported
 
-Copyright (c) 2002 Marcus Overhagen <marcus@overhagen.de>, Haiku project
+Copyright (c) 2002 Marcus Overhagen <marcus@overhagen.de>, Plasmatail project
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -24,7 +24,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Copyright 2024, Haiku, Inc. All rights reserved.
+Copyright 2024, Plasmatail, Inc. All rights reserved.
 
 */
 #ifndef MKDOS_H

@@ -575,7 +575,7 @@ main(int argc, const char *const *argv)
 				get_partition_offset(baseFD, 0, deviceSize, 512,
 						partitionIndex, baseDeviceName, partitionOffset);
 			#else
-			// partitions are block devices under Haiku, but not under BeOS
+			// partitions are block devices under Plasmatail, but not under BeOS
 			#ifdef HAIKU_TARGET_PLATFORM_HAIKU
 				fprintf(stderr, "Error: Block devices not supported on this "
 					"platform!\n");

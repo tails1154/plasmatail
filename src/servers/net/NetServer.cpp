@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2019, Haiku, Inc. All Rights Reserved.
+ * Copyright 2006-2019, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -698,7 +698,7 @@ NetServer::_ConfigureDevice(const char* device)
 
 	\param suggestedInterface Contains the configuration of an interface that
 		does not have any hardware left. It is used to configure the first
-		unconfigured device. This allows to move a Haiku configuration around
+		unconfigured device. This allows to move a Plasmatail configuration around
 		without losing the network configuration.
 */
 void

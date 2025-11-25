@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2006 François Revol (revol@free.fr)
  * 
- * Based on Multi Audio addon for Haiku,
+ * Based on Multi Audio addon for Plasmatail,
  * Copyright (c) 2002, 2003 Jerome Duval (jerome.duval@free.fr)
  *
  * All rights reserved.

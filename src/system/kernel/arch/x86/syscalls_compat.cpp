@@ -1,7 +1,7 @@
 /*
  * Copyright 2018, Jérôme Duval, jerome.duval@gmail.com.
  * Copyright 2008, Ingo Weinhold, ingo_weinhold@gmx.de.
- * Copyright 2004-2010, Haiku Inc. All rights reserved.
+ * Copyright 2004-2010, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

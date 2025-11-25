@@ -9,7 +9,7 @@
 #include <AutoLocker.h>
 #include <StopWatch.h>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "Logger.h"
 #include "ServerHelper.h"
 #include "ServerSettings.h"

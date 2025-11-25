@@ -241,7 +241,7 @@ def write_models_for_schema(schema: dict[str, any], output_directory: str) -> No
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert JSON schema to Haiku C++ Models')
+        description='Convert JSON schema to Plasmatail C++ Models')
     parser.add_argument(
         '-i', '--inputfile',
         required=True,

@@ -9,5 +9,5 @@ KernelAddon ipv6_datagram :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
 	: ipv6_datagram ;

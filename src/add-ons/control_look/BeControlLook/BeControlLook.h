@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2020 Haiku, Inc. All rights reserved.
+ * Copyright 2003-2020 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef BE_CONTROL_LOOK_H

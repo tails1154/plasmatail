@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2010, Haiku, Inc. All Rights Reserved.
+ * Copyright 2003-2010, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -27,7 +27,7 @@
 #include "ToolBarIcons.h"
 
 
-const char* kApplicationSignature = "application/x-vnd.Haiku-ShowImage";
+const char* kApplicationSignature = "application/x-vnd.Plasmatail-ShowImage";
 const int32 kWindowsToIgnore = 1;
 	// ignore the always open file panel
 

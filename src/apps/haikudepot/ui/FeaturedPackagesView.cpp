@@ -23,7 +23,7 @@
 
 #include "BitmapView.h"
 #include "Cursor.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "InterfaceDefs.h"
 #include "LocaleUtils.h"
 #include "Logger.h"

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2014 Haiku, Inc. All rights reserved.
+ * Copyright 2013-2014 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -89,7 +89,7 @@ int
 main()
 {
 	// BScreen usage requires BApplication for AppServerLink
-	BApplication app("application/x-vnd.Haiku-screen_info");
+	BApplication app("application/x-vnd.Plasmatail-screen_info");
 
 	BScreen screen(B_MAIN_SCREEN_ID);
 

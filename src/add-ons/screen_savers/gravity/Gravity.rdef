@@ -1,6 +1,6 @@
-resource app_signature "application/x-vnd.Haiku-GravityScreenSaver";
+resource app_signature "application/x-vnd.Plasmatail-GravityScreenSaver";
 
-resource app_name_catalog_entry "x-vnd.Haiku-GravityScreenSaver:System name:Gravity";
+resource app_name_catalog_entry "x-vnd.Plasmatail-GravityScreenSaver:System name:Gravity";
 
 resource app_version 
 {
@@ -10,5 +10,5 @@ resource app_version
     variety = 0,
     internal = 0,
     short_info = "1.0",
-    long_info = "The screensaver simulates a gravity hole effect with particles, utilizing the OpenGL interface for Haiku."
+    long_info = "The screensaver simulates a gravity hole effect with particles, utilizing the OpenGL interface for Plasmatail."
 };

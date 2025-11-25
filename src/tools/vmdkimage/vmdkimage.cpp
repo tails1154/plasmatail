@@ -318,7 +318,7 @@ main(int argc, char *argv[])
 	uint64_t uuid1 = 0, uuid2 = 0, uuid3 = 0, uuid4 = 0, uuid5 = 0;
 	if (uuid == NULL) {
 		char fullPath[PATH_MAX + 6];
-		strcpy(fullPath, "Haiku");
+		strcpy(fullPath, "Plasmatail");
 
 		if (realpath(file, fullPath + 5) == NULL)
 			strncpy(fullPath + 5, file, sizeof(fullPath) - 5);

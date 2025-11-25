@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-PoorMan";
+resource app_signature "application/x-vnd.Plasmatail-PoorMan";
 
-resource app_name_catalog_entry "x-vnd.Haiku-PoorMan:System name:PoorMan";
+resource app_name_catalog_entry "x-vnd.Plasmatail-PoorMan:System name:PoorMan";
 
 resource app_version
 {
@@ -11,7 +11,7 @@ resource app_version
 	variety    = B_APPV_DEVELOPMENT,
 	internal   = 0,
 	short_info = "PoorMan Web Server",
-	long_info  = "PoorMan Web Server © 2004-2009 Haiku, Inc."
+	long_info  = "PoorMan Web Server © 2004-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_EXCLUSIVE_LAUNCH;

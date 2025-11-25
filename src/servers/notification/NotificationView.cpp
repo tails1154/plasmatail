@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2017, Haiku, Inc. All Rights Reserved.
+ * Copyright 2010-2017, Plasmatail, Inc. All Rights Reserved.
  * Copyright 2008-2009, Pier Luigi Fiorini. All Rights Reserved.
  * Copyright 2004-2008, Michael Davidson. All Rights Reserved.
  * Copyright 2004-2007, Mikael Eiman. All Rights Reserved.
@@ -401,7 +401,7 @@ NotificationView::ResolveSpecifier(BMessage* msg, int32 index, BMessage* spec,
 status_t
 NotificationView::GetSupportedSuites(BMessage* msg)
 {
-	msg->AddString("suites", "suite/x-vnd.Haiku-notification_server");
+	msg->AddString("suites", "suite/x-vnd.Plasmatail-notification_server");
 	BPropertyInfo prop_info(message_prop_list);
 	msg->AddFlat("messages", &prop_info);
 	return BView::GetSupportedSuites(msg);

@@ -114,7 +114,7 @@ TFilteredQuery::GetNextRef(entry_ref *ref)
 status_t
 TFilteredQuery::GetNextEntry(BEntry *entry, bool traverse)
 {
-	// This code is almost a full copy/paste from Haiku's
+	// This code is almost a full copy/paste from Plasmatail's
 	// BQuery::GetNextEntry(BEntry *entry, bool traverse)
 
 	entry_ref ref;

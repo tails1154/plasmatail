@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Switcher";
+resource app_signature "application/x-vnd.Plasmatail-Switcher";
 
-//resource app_name_catalog_entry "x-vnd.Haiku-Switcher:System name:Switcher";
+//resource app_name_catalog_entry "x-vnd.Plasmatail-Switcher:System name:Switcher";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Switcher",
-	long_info = "Switcher ©2011 Haiku, Inc."
+	long_info = "Switcher ©2011 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH | B_BACKGROUND_APP;

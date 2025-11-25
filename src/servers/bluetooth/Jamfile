@@ -18,7 +18,7 @@ Application bluetooth_server
 ;
 
 DoCatalogs bluetooth_server :
-	x-vnd.Haiku-bluetooth_server
+	x-vnd.Plasmatail-bluetooth_server
 	:
 	DeskbarReplicant.cpp
 ;

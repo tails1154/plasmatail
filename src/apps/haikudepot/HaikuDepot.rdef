@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-HaikuDepot";
+resource app_signature "application/x-vnd.Plasmatail-PlasmatailDepot";
 
-resource app_name_catalog_entry "x-vnd.Haiku-HaikuDepot:System name:HaikuDepot";
+resource app_name_catalog_entry "x-vnd.Plasmatail-PlasmatailDepot:System name:PlasmatailDepot";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -13,8 +13,8 @@ resource app_version {
 	variety = B_APPV_ALPHA,
 	internal = 1,
 
-	short_info = "HaikuDepot",
-	long_info = "HaikuDepot ©2013-2024 Haiku"
+	short_info = "PlasmatailDepot",
+	long_info = "PlasmatailDepot ©2013-2024 Plasmatail"
 };
 
 resource file_types message {

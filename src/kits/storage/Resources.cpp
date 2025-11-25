@@ -1,6 +1,6 @@
 /*
  * Copyright 2001-2006, Ingo Weinhold <bonefish@cs.tu-berlin.de>.
- * Copyright 2013 Haiku, Inc.
+ * Copyright 2013 Plasmatail, Inc.
  * All Rights Reserved. Distributed under the terms of the MIT License.
  *
  * Authors:

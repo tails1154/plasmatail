@@ -29,7 +29,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-/* Note to Haiku Developers:
+/* Note to Plasmatail Developers:
    -------------------------
    This file contains the thread-safe versions of res functions, taken from
    NetBSD's libpthread directory. Do *not* replace it with the legacy

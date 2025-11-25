@@ -1,12 +1,12 @@
 /* renice.c - unixish renice command for BeOs
- * (c) 2001, 2002, François Revol (mmu_man) for Haiku
+ * (c) 2001, 2002, François Revol (mmu_man) for Plasmatail
  * released under the MIT licence.
  *
  * How did I live without it before ??? ;)
  * ChangeLog:
  * 04-25-2002 v1.2
- *  Cleanup for inclusion in Haiku,
- *  Used the code to rewrite the 'prio' BeOS command for Haiku.
+ *  Cleanup for inclusion in Plasmatail,
+ *  Used the code to rewrite the 'prio' BeOS command for Plasmatail.
  * 04-14-2002 v1.1
  *  Added -f upon suggestion from Idéfix on BeShare
  * 2001 v1.0

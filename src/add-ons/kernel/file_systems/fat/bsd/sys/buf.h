@@ -37,7 +37,7 @@
 #define FAT_BUF_H
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include <sys/queue.h>
 
@@ -75,12 +75,12 @@ struct buf {
 	daddr_t b_blkno; /* Underlying physical block number. */
 	uint32_t b_flags; /* B_* flags. */
 	long b_bufsize; /* Allocated buffer size. */
-		// In the Haiku port, if b_data is a pointer to a block cache block,
+		// In the Plasmatail port, if b_data is a pointer to a block cache block,
 		// this is still populated even though b_data is not owned by the driver.
 	daddr_t b_lblkno; /* Logical block number. */
 	struct vnode* b_vp; /* Device vnode. */
 
-	// Members added for Haiku port
+	// Members added for Plasmatail port
 	bool b_owned;
 		// false if b_data is a pointer to a block cache block
 	struct vnode* b_vreg;
@@ -92,13 +92,13 @@ struct buf {
 		// for the list members of struct bufobj
 };
 
-// In the Haiku port, these FreeBSD flags are referenced but do not have any effect
+// In the Plasmatail port, these FreeBSD flags are referenced but do not have any effect
 #define B_DELWRI 0x00000080 /* Delay I/O until buffer reused. */
 #define B_CLUSTEROK 0x00020000 /* Pagein op, so swap() can count it. */
 #define B_INVALONERR 0x00040000 /* Invalidate on write error. */
 
 // In FreeBSD, struct vn_clusterw stores the state of an optimized routine for writing multiple
-// bufs. In the Haiku port, it is not used for anything meaningful.
+// bufs. In the Plasmatail port, it is not used for anything meaningful.
 struct vn_clusterw {
 	daddr_t v_cstart; /* v start block of cluster */
 	daddr_t v_lasta; /* v last allocation  */

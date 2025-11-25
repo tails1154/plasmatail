@@ -5,10 +5,10 @@ summary			"Userland filesystem support"
 description 	"A set of tools to mount and use filesystems that run in
 userland. FUSE compatibiity is also provided."
 
-packager		"The Haiku build system"
-vendor			"Haiku Project"
+packager		"The Plasmatail build system"
+vendor			"Plasmatail Project"
 
-copyrights		"2007-2020 Haiku, Inc."
+copyrights		"2007-2020 Plasmatail, Inc."
 licenses		MIT
 
 provides {

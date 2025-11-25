@@ -17,7 +17,7 @@ Addon SpamFilter :
 
 DoCatalogs SpamFilter
 	:
-	x-vnd.Haiku-SpamFilter
+	x-vnd.Plasmatail-SpamFilter
 	:
 	SpamFilter.cpp
 	SpamFilterConfig.cpp

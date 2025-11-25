@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Haiku-BootLoader";
+resource app_signature "application/x-vnd.Plasmatail-BootLoader";
 
 resource app_version {
 	major  = 1,
@@ -9,5 +9,5 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Boot Loader",
-	long_info = "Boot Loader ©2002-2010 Haiku Inc."
+	long_info = "Boot Loader ©2002-2010 Plasmatail Inc."
 };

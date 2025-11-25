@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Haiku, Inc.
+ * Copyright 2021 Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef NUMBER_FORMAT_TEST_H

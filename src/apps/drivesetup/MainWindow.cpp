@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2013 Haiku, Inc. All rights reserved.
+ * Copyright 2002-2013 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -403,7 +403,7 @@ MainWindow::MessageReceived(BMessage* message)
 				fListView->CurrentSelection());
 			const char* args[] = { row->DevicePath(), NULL };
 
-			be_roster->Launch("application/x-vnd.Haiku-DiskProbe", 1,
+			be_roster->Launch("application/x-vnd.Plasmatail-DiskProbe", 1,
 				(char**)args);
 
 			break;

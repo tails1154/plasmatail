@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2010, Haiku, Inc. All Rights Reserved.
+ * Copyright 2002-2010, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -25,7 +25,7 @@ UnitTesterShell::PrintDescription(int argc, char *argv[])
 {
 	printf("This program is the central testing framework for the purpose\n"
 		"of testing and verifying the various kits, classes, functions,\n"
-		"and the like that comprise Haiku.\n");
+		"and the like that comprise Plasmatail.\n");
 }
 
 
@@ -33,7 +33,7 @@ void
 UnitTesterShell::PrintValidArguments()
 {
 	BTestShell::PrintValidArguments();
-	printf("  -haiku       Runs tests linked against our Haiku "
+	printf("  -haiku       Runs tests linked against our Plasmatail "
 			"libraries (*default*)\n"
 		"  -r5          Runs tests linked against Be Inc.'s R5 "
 			"libraries (instead\n"
@@ -59,7 +59,7 @@ UnitTesterShell::LoadDynamicSuites()
 int
 main(int argc, char *argv[])
 {
-	UnitTesterShell shell("Haiku Unit Testing Framework",
+	UnitTesterShell shell("Plasmatail Unit Testing Framework",
 		new SemaphoreSyncObject);
 
 	// ##### Add test suites for statically linked tests here #####

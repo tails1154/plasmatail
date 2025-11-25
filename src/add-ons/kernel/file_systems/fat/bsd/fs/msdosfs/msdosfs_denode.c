@@ -50,21 +50,21 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include <sys/param.h>
 #include <sys/systm.h>
 #include <sys/buf.h>
 #include <sys/clock.h>
 // #include <sys/kernel.h>
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 #include <sys/malloc.h>
 #include <sys/mount.h>
 #include <sys/vmmeter.h>
 #include <sys/vnode.h>
 
 // #include <vm/vm.h>
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 #include <vm/vm_extern.h>
 
 #include <fs/msdosfs/bpb.h>
@@ -74,7 +74,7 @@
 #include <fs/msdosfs/msdosfsmount.h>
 
 // static MALLOC_DEFINE(M_MSDOSFSNODE, "msdosfs_node", "MSDOSFS vnode private part");
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 
 static int
 de_vncmpf(struct vnode *vp, void *arg)
@@ -478,7 +478,7 @@ detrunc(struct denode *dep, u_long length, int flags, struct ucred *cred)
 	 * now.
 	 */
 	if (eofentry != (u_long)~0) {
-		// Haiku port:  cast added to avoid compiler warning
+		// Plasmatail port:  cast added to avoid compiler warning
 		error = fatentry(FAT_GET_AND_SET, pmp, eofentry,
 				 &chaintofree, CLUST_EOFE);
 		if (error) {
@@ -584,7 +584,7 @@ rewind:
  * Move a denode to its correct hash queue after the file it represents has
  * been moved to a new directory.
  */
-// Haiku port:  not applicable.  In Haiku, the inode number of a node must remain constant
+// Plasmatail port:  not applicable.  In Plasmatail, the inode number of a node must remain constant
 // while the volume is mounted.
 #if 0
 void
@@ -614,7 +614,7 @@ reinsert(struct denode *dep)
 }
 #endif // 0
 
-// Haiku port:  unused FreeBSD hook function
+// Plasmatail port:  unused FreeBSD hook function
 #if 0
 int
 msdosfs_reclaim(struct vop_reclaim_args *ap)
@@ -648,7 +648,7 @@ msdosfs_reclaim(struct vop_reclaim_args *ap)
 }
 #endif // 0
 
-// Haiku port:  unused FreeBSD hook function
+// Plasmatail port:  unused FreeBSD hook function
 #if 0
 int
 msdosfs_inactive(struct vop_inactive_args *ap)

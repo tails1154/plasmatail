@@ -27,7 +27,7 @@
 
 
 static const char*
-getHaikuFirmwareName(const char* fbsdFirmwareName,
+getPlasmatailFirmwareName(const char* fbsdFirmwareName,
 	const char* unknownFirmwareName)
 {
 	int i;
@@ -66,7 +66,7 @@ firmware_get_flags(const char* fbsdFirmwareName, int flags)
 							= sizeof(checkDirs) / sizeof(checkDirs[0]);
 	size_t				i = 0;
 
-	haikuFirmwareName = getHaikuFirmwareName(fbsdFirmwareName,
+	haikuFirmwareName = getPlasmatailFirmwareName(fbsdFirmwareName,
 		fbsdFirmwareName);
 
 	firmwarePath = (char*)malloc(B_PATH_NAME_LENGTH);

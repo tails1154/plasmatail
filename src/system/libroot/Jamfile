@@ -115,10 +115,10 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 				= $(librootDebug:G=$(revisionedLibroot:G)) ;
 
 			MakeLocate $(revisionedLibroot) : $(targetDir) ;
-			CopySetHaikuRevision $(revisionedLibroot) : $(libroot) ;
+			CopySetPlasmatailRevision $(revisionedLibroot) : $(libroot) ;
 
 			MakeLocate $(revisionedLibrootDebug) : $(targetDir) ;
-			CopySetHaikuRevision $(revisionedLibrootDebug) : $(librootDebug) ;
+			CopySetPlasmatailRevision $(revisionedLibrootDebug) : $(librootDebug) ;
 		}
 	}
 }

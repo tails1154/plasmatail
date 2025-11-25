@@ -2,7 +2,7 @@
  * Copyright 2014, Ithamar R. Adema <ithamar@upgrade-android.com>
  * All rights reserved. Distributed under the terms of the MIT License.
  *
- * Copyright 2015-2022, Haiku, Inc. All rights reserved.
+ * Copyright 2015-2022, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

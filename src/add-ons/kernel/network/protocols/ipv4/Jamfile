@@ -10,6 +10,6 @@ KernelAddon ipv4 :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/network/protocols
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/network/protocols
 	: ipv4 ;
 

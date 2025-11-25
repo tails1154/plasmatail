@@ -1,4 +1,4 @@
-/* Copyright 2014 Haiku, Inc.
+/* Copyright 2014 Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  */
 
@@ -294,7 +294,7 @@ MainWindow::MessageReceived(BMessage* message)
 
 int main(int argc, char** argv)
 {
-	BApplication app("application/x-vnd.Haiku-MixerToy");
+	BApplication app("application/x-vnd.Plasmatail-MixerToy");
 	(new MainWindow())->Show();
 	app.Run();
 }

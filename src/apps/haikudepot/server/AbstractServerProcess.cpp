@@ -21,7 +21,7 @@
 #include <support/ZlibCompressionAlgorithm.h>
 
 #include "DataIOUtils.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "Logger.h"
 #include "ServerHelper.h"
 #include "ServerSettings.h"

@@ -12,7 +12,7 @@
 #include "Logger.h"
 
 
-static const char* kHaikuDepotKeyring = "HaikuDepot";
+static const char* kPlasmatailDepotKeyring = "PlasmatailDepot";
 
 static const char* kKeyIdentifierPrefix = "hds.password.";
 	// this prefix is added before the nickname in the keystore
@@ -69,14 +69,14 @@ IdentityAndAccessUtils::StoreCredentials(const UserCredentials& credentials)
 	BKeyStore keyStore;
 
 	if (result == B_OK) {
-		result = keyStore.AddKeyring(kHaikuDepotKeyring);
+		result = keyStore.AddKeyring(kPlasmatailDepotKeyring);
 
 		switch (result) {
 			case B_OK:
-				HDINFO("did create keyring [%s]", kHaikuDepotKeyring);
+				HDINFO("did create keyring [%s]", kPlasmatailDepotKeyring);
 				break;
 			case B_NAME_IN_USE:
-				HDTRACE("keyring [%s] already exists", kHaikuDepotKeyring);
+				HDTRACE("keyring [%s] already exists", kPlasmatailDepotKeyring);
 				result = B_OK;
 				break;
 			default:
@@ -85,27 +85,27 @@ IdentityAndAccessUtils::StoreCredentials(const UserCredentials& credentials)
 	}
 
 	if (result == B_OK) {
-		result = keyStore.AddKey(kHaikuDepotKeyring, key);
+		result = keyStore.AddKey(kPlasmatailDepotKeyring, key);
 
 		switch (result) {
 			case B_OK:
 				HDINFO("did store the key [%s] in keyring [%s]", identifier.String(),
-					kHaikuDepotKeyring);
+					kPlasmatailDepotKeyring);
 				break;
 			case B_BAD_VALUE:
-				HDERROR("keyring [%s] does not exist", kHaikuDepotKeyring);
+				HDERROR("keyring [%s] does not exist", kPlasmatailDepotKeyring);
 				break;
 			case B_NAME_IN_USE:
 				HDERROR("the key [%s] is already in use in keyring [%s]", identifier.String(),
-					kHaikuDepotKeyring);
+					kPlasmatailDepotKeyring);
 				break;
 			case B_NOT_ALLOWED:
 				HDERROR("it was disallowed to store the key [%s] in keyring [%s]",
-					identifier.String(), kHaikuDepotKeyring);
+					identifier.String(), kPlasmatailDepotKeyring);
 				break;
 			default:
 				HDERROR("an unknown error occurred storing the key [%s] in keyring [%s]",
-					identifier.String(), kHaikuDepotKeyring);
+					identifier.String(), kPlasmatailDepotKeyring);
 				break;
 		}
 	}
@@ -128,7 +128,7 @@ IdentityAndAccessUtils::RetrieveCredentials(const BString& nickname, UserCredent
 	BString identifier = _ToIdentifier(nickname);
 	status_t result;
 
-	result = keyStore.GetKey(kHaikuDepotKeyring, B_KEY_TYPE_PASSWORD, identifier, key);
+	result = keyStore.GetKey(kPlasmatailDepotKeyring, B_KEY_TYPE_PASSWORD, identifier, key);
 
 	if (result == B_OK) {
 		BString passwordClear = key.Password();
@@ -153,7 +153,7 @@ IdentityAndAccessUtils::_CollectStoredIdentifiers(std::set<BString>& identifiers
 
 	while (true) {
 		BPasswordKey password;
-		status_t result = keyStore.GetNextKey(kHaikuDepotKeyring, B_KEY_TYPE_PASSWORD,
+		status_t result = keyStore.GetNextKey(kPlasmatailDepotKeyring, B_KEY_TYPE_PASSWORD,
 			B_KEY_PURPOSE_ANY, cookie, password);
 
 		switch (result) {
@@ -180,11 +180,11 @@ IdentityAndAccessUtils::_RemoveKeyForIdentifier(const BString& identifier)
 {
 	BKeyStore keyStore;
 	BPasswordKey key;
-	status_t result = keyStore.GetKey(kHaikuDepotKeyring, B_KEY_TYPE_PASSWORD, identifier, key);
+	status_t result = keyStore.GetKey(kPlasmatailDepotKeyring, B_KEY_TYPE_PASSWORD, identifier, key);
 
 	switch (result) {
 		case B_OK:
-			result = keyStore.RemoveKey(kHaikuDepotKeyring, key);
+			result = keyStore.RemoveKey(kPlasmatailDepotKeyring, key);
 			if (result != B_OK) {
 				HDERROR("error occurred when removing password for [%s] : %s", identifier.String(),
 					strerror(result));

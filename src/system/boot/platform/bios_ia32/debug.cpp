@@ -24,7 +24,7 @@
 	// Define to print a TSC timestamp before each line of output.
 
 
-static const char* const kDebugSyslogSignature = "Haiku syslog";
+static const char* const kDebugSyslogSignature = "Plasmatail syslog";
 
 static char sBuffer[16384];
 static uint32 sBufferPosition;

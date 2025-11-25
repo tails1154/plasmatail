@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2018 Haiku, Inc. All Rights Reserved.
+ * Copyright 2001-2018 Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -31,7 +31,7 @@
 //	a way around that (that doesn't work too well, BTW)
 
 // The API in this file should be considered as part of OpenTracker - but
-// should work with all versions of Tracker available for Haiku.
+// should work with all versions of Tracker available for Plasmatail.
 
 
 status_t

@@ -11,7 +11,7 @@
 // BPositionIO, optimizations for buffered reading.
 //
 //
-// Copyright (c) 2003 Haiku Project
+// Copyright (c) 2003 Plasmatail Project
 // Portions Copyright 1997-1998 Michael Sweet (mike@easysw.com)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -182,7 +182,7 @@ SGIImage::SetTo(BPositionIO* stream,
 
 	char name[80];	// Name of file in image header
 	memset(name, 0, sizeof(name));
-	sprintf(name, "Haiku SGITranslator");
+	sprintf(name, "Plasmatail SGITranslator");
 	fStream->Write(name, sizeof(name));
 
 	// fill the rest of the image header with zeros

@@ -3,7 +3,7 @@
  * Distributed under the terms of the MIT License.
  */
 
-#include "HaikuKernelFileSystem.h"
+#include "PlasmatailKernelFileSystem.h"
 
 #include <string.h>
 
@@ -17,47 +17,47 @@
 #include <condition_variable.h>
 #include <file_cache.h>
 
-#include "HaikuKernelIORequest.h"
-#include "HaikuKernelVolume.h"
+#include "PlasmatailKernelIORequest.h"
+#include "PlasmatailKernelVolume.h"
 
 
 // IORequestHashDefinition
-struct HaikuKernelFileSystem::IORequestHashDefinition {
+struct PlasmatailKernelFileSystem::IORequestHashDefinition {
 	typedef int32					KeyType;
-	typedef	HaikuKernelIORequest	ValueType;
+	typedef	PlasmatailKernelIORequest	ValueType;
 
 	size_t HashKey(int32 key) const
 		{ return key; }
-	size_t Hash(const HaikuKernelIORequest* value) const
+	size_t Hash(const PlasmatailKernelIORequest* value) const
 		{ return value->id; }
-	bool Compare(int32 key, const HaikuKernelIORequest* value) const
+	bool Compare(int32 key, const PlasmatailKernelIORequest* value) const
 		{ return value->id == key; }
-	HaikuKernelIORequest*& GetLink(HaikuKernelIORequest* value) const
+	PlasmatailKernelIORequest*& GetLink(PlasmatailKernelIORequest* value) const
 			{ return value->hashLink; }
 };
 
 
 // IORequestTable
-struct HaikuKernelFileSystem::IORequestTable
+struct PlasmatailKernelFileSystem::IORequestTable
 	: public BOpenHashTable<IORequestHashDefinition> {
 	typedef int32					KeyType;
-	typedef	HaikuKernelIORequest	ValueType;
+	typedef	PlasmatailKernelIORequest	ValueType;
 
 	size_t HashKey(int32 key) const
 		{ return key; }
-	size_t Hash(const HaikuKernelIORequest* value) const
+	size_t Hash(const PlasmatailKernelIORequest* value) const
 		{ return value->id; }
-	bool Compare(int32 key, const HaikuKernelIORequest* value) const
+	bool Compare(int32 key, const PlasmatailKernelIORequest* value) const
 		{ return value->id == key; }
-	HaikuKernelIORequest*& GetLink(HaikuKernelIORequest* value) const
+	PlasmatailKernelIORequest*& GetLink(PlasmatailKernelIORequest* value) const
 			{ return value->hashLink; }
 };
 
 
 // NodeCapabilitiesHashDefinition
-struct HaikuKernelFileSystem::NodeCapabilitiesHashDefinition {
+struct PlasmatailKernelFileSystem::NodeCapabilitiesHashDefinition {
 	typedef fs_vnode_ops*					KeyType;
-	typedef	HaikuKernelNode::Capabilities	ValueType;
+	typedef	PlasmatailKernelNode::Capabilities	ValueType;
 
 	size_t HashKey(fs_vnode_ops* key) const
 		{ return (size_t)(addr_t)key; }
@@ -71,27 +71,27 @@ struct HaikuKernelFileSystem::NodeCapabilitiesHashDefinition {
 
 
 // NodeCapabilitiesTable
-struct HaikuKernelFileSystem::NodeCapabilitiesTable
+struct PlasmatailKernelFileSystem::NodeCapabilitiesTable
 	: public BOpenHashTable<NodeCapabilitiesHashDefinition> {
 };
 
 
 // constructor
-HaikuKernelFileSystem::HaikuKernelFileSystem(const char* fsName,
+PlasmatailKernelFileSystem::PlasmatailKernelFileSystem(const char* fsName,
 	file_system_module_info* fsModule)
 	:
 	FileSystem(fsName),
 	fFSModule(fsModule),
 	fIORequests(NULL),
 	fNodeCapabilities(NULL),
-	fLock("HaikuKernelFileSystem")
+	fLock("PlasmatailKernelFileSystem")
 {
 	_InitCapabilities();
 }
 
 
 // destructor
-HaikuKernelFileSystem::~HaikuKernelFileSystem()
+PlasmatailKernelFileSystem::~PlasmatailKernelFileSystem()
 {
 	// call the kernel module uninitialization
 	if (fFSModule->info.std_ops)
@@ -106,7 +106,7 @@ HaikuKernelFileSystem::~HaikuKernelFileSystem()
 
 // Init
 status_t
-HaikuKernelFileSystem::Init()
+PlasmatailKernelFileSystem::Init()
 {
 	status_t error = fLock.InitCheck();
 	if (error != B_OK)
@@ -158,15 +158,15 @@ HaikuKernelFileSystem::Init()
 
 // CreateVolume
 status_t
-HaikuKernelFileSystem::CreateVolume(Volume** _volume, dev_t id)
+PlasmatailKernelFileSystem::CreateVolume(Volume** _volume, dev_t id)
 {
 	// check initialization and parameters
 	if (!fFSModule || !_volume)
 		return B_BAD_VALUE;
 
 	// create and init the volume
-	HaikuKernelVolume* volume
-		= new(std::nothrow) HaikuKernelVolume(this, id, fFSModule);
+	PlasmatailKernelVolume* volume
+		= new(std::nothrow) PlasmatailKernelVolume(this, id, fFSModule);
 	if (!volume)
 		return B_NO_MEMORY;
 
@@ -183,9 +183,9 @@ HaikuKernelFileSystem::CreateVolume(Volume** _volume, dev_t id)
 
 // DeleteVolume
 status_t
-HaikuKernelFileSystem::DeleteVolume(Volume* volume)
+PlasmatailKernelFileSystem::DeleteVolume(Volume* volume)
 {
-	if (!volume || !dynamic_cast<HaikuKernelVolume*>(volume))
+	if (!volume || !dynamic_cast<PlasmatailKernelVolume*>(volume))
 		return B_BAD_VALUE;
 	delete volume;
 	return B_OK;
@@ -194,7 +194,7 @@ HaikuKernelFileSystem::DeleteVolume(Volume* volume)
 
 // AddIORequest
 status_t
-HaikuKernelFileSystem::AddIORequest(HaikuKernelIORequest* request)
+PlasmatailKernelFileSystem::AddIORequest(PlasmatailKernelIORequest* request)
 {
 	AutoLocker<Locker> _(fLock);
 
@@ -208,12 +208,12 @@ HaikuKernelFileSystem::AddIORequest(HaikuKernelIORequest* request)
 
 
 // GetIORequest
-HaikuKernelIORequest*
-HaikuKernelFileSystem::GetIORequest(int32 requestID)
+PlasmatailKernelIORequest*
+PlasmatailKernelFileSystem::GetIORequest(int32 requestID)
 {
 	AutoLocker<Locker> _(fLock);
 
-	HaikuKernelIORequest* request = fIORequests->Lookup(requestID);
+	PlasmatailKernelIORequest* request = fIORequests->Lookup(requestID);
 	if (request != NULL)
 		request->refCount++;
 
@@ -223,7 +223,7 @@ HaikuKernelFileSystem::GetIORequest(int32 requestID)
 
 // PutIORequest
 void
-HaikuKernelFileSystem::PutIORequest(HaikuKernelIORequest* request,
+PlasmatailKernelFileSystem::PutIORequest(PlasmatailKernelIORequest* request,
 	int32 refCount)
 {
 	AutoLocker<Locker> locker(fLock);
@@ -237,13 +237,13 @@ HaikuKernelFileSystem::PutIORequest(HaikuKernelIORequest* request,
 
 
 // GetVNodeCapabilities
-HaikuKernelNode::Capabilities*
-HaikuKernelFileSystem::GetNodeCapabilities(fs_vnode_ops* ops)
+PlasmatailKernelNode::Capabilities*
+PlasmatailKernelFileSystem::GetNodeCapabilities(fs_vnode_ops* ops)
 {
 	AutoLocker<Locker> locker(fLock);
 
 	// check whether the ops are already known
-	HaikuKernelNode::Capabilities* capabilities
+	PlasmatailKernelNode::Capabilities* capabilities
 		= fNodeCapabilities->Lookup(ops);
 	if (capabilities != NULL) {
 		capabilities->refCount++;
@@ -255,7 +255,7 @@ HaikuKernelFileSystem::GetNodeCapabilities(fs_vnode_ops* ops)
 	_InitNodeCapabilities(ops, nodeCapabilities);
 
 	// create a new object
-	capabilities = new(std::nothrow) HaikuKernelNode::Capabilities(ops,
+	capabilities = new(std::nothrow) PlasmatailKernelNode::Capabilities(ops,
 		nodeCapabilities);
 	if (capabilities == NULL)
 		return NULL;
@@ -268,8 +268,8 @@ HaikuKernelFileSystem::GetNodeCapabilities(fs_vnode_ops* ops)
 
 // PutVNodeCapabilities
 void
-HaikuKernelFileSystem::PutNodeCapabilities(
-	HaikuKernelNode::Capabilities* capabilities)
+PlasmatailKernelFileSystem::PutNodeCapabilities(
+	PlasmatailKernelNode::Capabilities* capabilities)
 {
 	AutoLocker<Locker> locker(fLock);
 
@@ -282,7 +282,7 @@ HaikuKernelFileSystem::PutNodeCapabilities(
 
 // _InitCapabilities
 void
-HaikuKernelFileSystem::_InitCapabilities()
+PlasmatailKernelFileSystem::_InitCapabilities()
 {
 	fCapabilities.ClearAll();
 
@@ -295,7 +295,7 @@ HaikuKernelFileSystem::_InitCapabilities()
 
 
 /*static*/ void
-HaikuKernelFileSystem::_InitNodeCapabilities(fs_vnode_ops* ops,
+PlasmatailKernelFileSystem::_InitNodeCapabilities(fs_vnode_ops* ops,
 	FSVNodeCapabilities& capabilities)
 {
 	capabilities.ClearAll();
@@ -408,8 +408,8 @@ userlandfs_create_file_system(const char* fsName, image_id image,
 		RETURN_ERROR(B_ERROR);
 
 	// create the file system
-	HaikuKernelFileSystem* fileSystem
-		= new(std::nothrow) HaikuKernelFileSystem(fsName, module);
+	PlasmatailKernelFileSystem* fileSystem
+		= new(std::nothrow) PlasmatailKernelFileSystem(fsName, module);
 	if (!fileSystem)
 		RETURN_ERROR(B_NO_MEMORY);
 

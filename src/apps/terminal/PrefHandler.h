@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2003-2013, Haiku, Inc. All Rights Reserved.
+ * Copyright (c) 2003-2013, Plasmatail, Inc. All Rights Reserved.
  * Copyright (c) 2004 Daniel Furrer <assimil8or@users.sourceforge.net>
  * Copyright (c) 2003-4 Kian Duffy <myob@users.sourceforge.net>
  * Copyright (c) 1998,99 Kazuho Okui and Takashi Murai.

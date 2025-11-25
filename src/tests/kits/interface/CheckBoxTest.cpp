@@ -111,10 +111,10 @@ Window::Window()
 	checkBox->ResizeToPreferred();
 	view->AddChild(checkBox);
 
-	// Haiku's BCheckBox
+	// Plasmatail's BCheckBox
 
 	rect.Set(240, 10, 400, 30);
-	stringView = new BStringView(rect, NULL, "Haiku's BCheckBox");
+	stringView = new BStringView(rect, NULL, "Plasmatail's BCheckBox");
 	stringView->SetFont(be_bold_font);
 	AddChild(stringView);
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2014, Haiku, Inc.
+ * Copyright 2014, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Copyright 2002-2004 Maxim Shemanarev (http://www.antigrain.com)

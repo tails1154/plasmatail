@@ -1,6 +1,6 @@
-resource app_signature "application/x-vnd.Haiku-PackageInstaller";
+resource app_signature "application/x-vnd.Plasmatail-PackageInstaller";
 
-resource app_name_catalog_entry "x-vnd.Haiku-PackageInstaller:System name:LegacyPackageInstaller";
+resource app_name_catalog_entry "x-vnd.Plasmatail-PackageInstaller:System name:LegacyPackageInstaller";
 
 resource file_types message {
 	"types" = "application/x-scode-UPkg"
@@ -16,7 +16,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Legacy Package Installer",
-	long_info = "Legacy Package Installer ©2007-2009 Haiku, Inc."
+	long_info = "Legacy Package Installer ©2007-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

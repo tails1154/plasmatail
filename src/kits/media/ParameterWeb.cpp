@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2012, Haiku. All Rights Reserved.
+ * Copyright 2002-2012, Plasmatail. All Rights Reserved.
  * This file may be used under the terms of the MIT License.
  *
  * Author: Zousar Shaker

@@ -11,7 +11,7 @@ Application FindView :
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FindView
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FindView
 		: tests!apps ;
 }
 

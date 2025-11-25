@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Haiku, Inc.  All rights reserved.
+ * Copyright 2012 Plasmatail, Inc.  All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -7,7 +7,7 @@
  */
 
 /*!
-	Haiku Intel-810 video driver was adapted from the X.org intel driver which
+	Plasmatail Intel-810 video driver was adapted from the X.org intel driver which
 	has the following copyright.
 
 	Copyright 1998-1999 Precision Insight, Inc., Cedar Park, Texas.

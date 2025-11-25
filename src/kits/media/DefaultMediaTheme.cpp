@@ -1,6 +1,6 @@
 /*
  * Copyright 2003-2009, Axel Dörfler, axeld@pinc-software.de.
- * Copyright 2019, Haiku, Inc. All rights reserved.
+ * Copyright 2019, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -809,7 +809,7 @@ TextMessageFilter::Filter(BMessage *message, BHandler **target)
 
 
 DefaultMediaTheme::DefaultMediaTheme()
-	: BMediaTheme("Haiku theme", "Haiku built-in theme version 0.1")
+	: BMediaTheme("Plasmatail theme", "Plasmatail built-in theme version 0.1")
 {
 	CALLED();
 }

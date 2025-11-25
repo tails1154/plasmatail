@@ -31,8 +31,8 @@
 	"    ]\n" \
 	"  },\n" \
 	"  \"code\": \"haikuports\",\n" \
-	"  \"name\": \"HaikuPorts\",\n" \
-	"  \"description\": \"HaikuPorts is a centralized collection...\",\n" \
+	"  \"name\": \"PlasmatailPorts\",\n" \
+	"  \"description\": \"PlasmatailPorts is a centralized collection...\",\n" \
 	"  \"informationUrl\": \"https://example.com\",\n" \
 	"  \"repositorySources\": [\n" \
 	"    {\n" \
@@ -101,8 +101,8 @@
    "    },\n" \
    "    {\n" \
    "      \"code\": \"haikuports\",\n" \
-   "      \"name\": \"HaikuPorts\",\n" \
-   "      \"description\": \"HaikuPorts is a centralized collection ...\",\n" \
+   "      \"name\": \"PlasmatailPorts\",\n" \
+   "      \"description\": \"PlasmatailPorts is a centralized collection ...\",\n" \
    "      \"informationUrl\": \"https://github.com/haikuports/haikuports\",\n" \
    "      \"repositorySources\": [\n" \
    "        {\n" \
@@ -208,9 +208,9 @@ DumpExportRepositoryJsonListenerTest::TestSingle()
 	CPPUNIT_ASSERT_EQUAL(
 		BString("haikuports"), *(repository->Code()));
 	CPPUNIT_ASSERT_EQUAL(
-		BString("HaikuPorts"), *(repository->Name()));
+		BString("PlasmatailPorts"), *(repository->Name()));
 	CPPUNIT_ASSERT_EQUAL(
-		BString("HaikuPorts is a centralized collection..."),
+		BString("PlasmatailPorts is a centralized collection..."),
 		*(repository->Description()));
 	CPPUNIT_ASSERT_EQUAL(
 		BString("https://example.com"),

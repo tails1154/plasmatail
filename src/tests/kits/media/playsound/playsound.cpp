@@ -1,5 +1,5 @@
 /*
- * playsound - command line sound file player for Haiku
+ * playsound - command line sound file player for Plasmatail
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  *
  * This program is free software; you can redistribute it and/or
@@ -38,7 +38,7 @@ keyb_int(int)
 static void
 usage()
 {
-	fprintf(stderr, "playsound - command line sound file player for Haiku\n");
+	fprintf(stderr, "playsound - command line sound file player for Plasmatail\n");
 	fprintf(stderr, "Usage:\n");
 	fprintf(stderr, "  playsound [--loop] [--gain <value>] [--pan <value>] <filename>\n");
 	fprintf(stderr, "  gain value in percent, can be 0 (silence) to 100 (normal) or higher\n");

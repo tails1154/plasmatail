@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Haiku, Inc.
+ * Copyright 2009, Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -17,7 +17,7 @@
 int
 main(int argc, char *argv[])
 {
-	BApplication application("application/x-vnd.Haiku.HVIFTranslator");
+	BApplication application("application/x-vnd.Plasmatail.HVIFTranslator");
 	if (LaunchTranslatorWindow(new HVIFTranslator, 
 		B_TRANSLATE("HVIF Settings"), BRect(0, 0, 250, 150)) != B_OK)
 		return 1;

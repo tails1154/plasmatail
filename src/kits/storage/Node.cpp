@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2011 Haiku, Inc. All rights reserved.
+ * Copyright 2002-2011 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -698,7 +698,7 @@ BNode::_GetStat(struct stat_beos* stat) const
 	B_DEFINE_SYMBOL_VERSION("_GetStat__C5BNodeP9stat_beos",
 		"GetStat__C5BNodeP4stat@LIBBE_BASE");
 
-	// Haiku GetStat()
+	// Plasmatail GetStat()
 	B_DEFINE_SYMBOL_VERSION("_GetStat__C5BNodeP4stat",
 		"GetStat__C5BNodeP4stat@@LIBBE_1_ALPHA1");
 
@@ -708,7 +708,7 @@ BNode::_GetStat(struct stat_beos* stat) const
 	B_DEFINE_SYMBOL_VERSION("_ZNK5BNode8_GetStatEP9stat_beos",
 		"_ZNK5BNode7GetStatEP4stat@LIBBE_BASE");
 
-	// Haiku GetStat()
+	// Plasmatail GetStat()
 	B_DEFINE_SYMBOL_VERSION("_ZNK5BNode8_GetStatEP4stat",
 		"_ZNK5BNode7GetStatEP4stat@@LIBBE_1_ALPHA1");
 

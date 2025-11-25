@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2020, Haiku, Inc. All Rights Reserved.
+ * Copyright 2002-2020, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -15,7 +15,7 @@
 #include <SupportDefs.h>
 
 
-#define APP_SIGNATURE  "application/x-vnd.Haiku-StyledEdit"
+#define APP_SIGNATURE  "application/x-vnd.Plasmatail-StyledEdit"
 
 const float TEXT_INSET = 3.0;
 

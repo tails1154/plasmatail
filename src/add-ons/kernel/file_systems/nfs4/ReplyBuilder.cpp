@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Haiku, Inc. All rights reserved.
+ * Copyright 2012 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -49,7 +49,7 @@ ReplyBuilder::Reply()
 	if (fReply == NULL)
 		return NULL;
 
-	fReply->Stream().InsertUInt(fStatusPosition, _HaikuErrorToNFS4(fStatus));
+	fReply->Stream().InsertUInt(fStatusPosition, _PlasmatailErrorToNFS4(fStatus));
 	fReply->Stream().InsertUInt(fOpCountPosition, fOpCount);
 
 	if (fReply->Stream().Error() == B_OK)
@@ -66,7 +66,7 @@ ReplyBuilder::GetAttr(status_t status, int mask, uint64 size, uint64 change)
 		return B_ERROR;
 
 	fReply->Stream().AddUInt(OpCallbackGetAttr);
-	fReply->Stream().AddUInt(_HaikuErrorToNFS4(fStatus));
+	fReply->Stream().AddUInt(_PlasmatailErrorToNFS4(fStatus));
 	fStatus = status;
 
 	if (status == B_OK) {
@@ -100,7 +100,7 @@ ReplyBuilder::Recall(status_t status)
 		return B_ERROR;
 
 	fReply->Stream().AddUInt(OpCallbackRecall);
-	fReply->Stream().AddUInt(_HaikuErrorToNFS4(fStatus));
+	fReply->Stream().AddUInt(_PlasmatailErrorToNFS4(fStatus));
 	fStatus = status;
 
 	fOpCount++;
@@ -110,7 +110,7 @@ ReplyBuilder::Recall(status_t status)
 
 
 uint32
-ReplyBuilder::_HaikuErrorToNFS4(status_t error)
+ReplyBuilder::_PlasmatailErrorToNFS4(status_t error)
 {
 	switch (error) {
 		case B_OK:				return NFS4_OK;

@@ -8,7 +8,7 @@
 #include <image_defs.h>
 
 
-// Haiku API and ABI versions -- we compile those into shared objects so that
+// Plasmatail API and ABI versions -- we compile those into shared objects so that
 // the runtime loader can discriminate the versions and enable compatibility
 // work-arounds, if necessary.
 

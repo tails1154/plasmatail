@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2018, Haiku, Inc. All rights reserved.
+ * Copyright 2007-2018, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _FBSD_COMPAT_SYS_KERNEL_H_
@@ -18,7 +18,7 @@
  * For FreeBSD 8 this is typically 1000 times per second (100 for ARM).
  * This value is defined in a file called subr_param.c
  *
- * While Haiku can have a much higher granularity, it is not a good idea to have
+ * While Plasmatail can have a much higher granularity, it is not a good idea to have
  * this since FreeBSD tries to do certain tasks based on ticks, for instance
  * autonegotiation and wlan scanning.
  * Suffixing LL prevents integer overflows during calculations.

@@ -1,10 +1,10 @@
 /*
-	Haiku ATI video driver adapted from the X.org ATI driver which has the
+	Plasmatail ATI video driver adapted from the X.org ATI driver which has the
 	following copyright:
 
 	Copyright 2003 through 2004 by Marc Aurele La France, tsi@xfree86.org
 
-	Copyright 2011 Haiku, Inc.  All rights reserved.
+	Copyright 2011 Plasmatail, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:

@@ -27,7 +27,7 @@ usage(FILE* output)
 		"  -c, --check-only\t- do not make any changes to the file system\n"
 		"\n"
 		"Examples:\n"
-		"  %s -c /Haiku\n"
+		"  %s -c /Plasmatail\n"
 		"  %s /dev/disk/ata/0/master/raw\n",
 		kProgramName, kProgramName, kProgramName);
 }

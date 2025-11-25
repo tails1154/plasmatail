@@ -1,8 +1,8 @@
-## Haiku Generic Makefile v2.6 ##
+## Plasmatail Generic Makefile v2.6 ##
 
 ## Fill in this file to specify the project being created, and the referenced
 ## Makefile-Engine will do all of the hard work for you. This handles any
-## architecture of Haiku.
+## architecture of Plasmatail.
 ##
 ## For more information, see:
 ## file:///system/develop/documentation/makefile-engine.html

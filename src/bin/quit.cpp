@@ -1,6 +1,6 @@
 /*
  * quit.cpp
- * (c) 2002, Carlos Hasan, for Haiku.
+ * (c) 2002, Carlos Hasan, for Plasmatail.
  */
 
 #include <stdio.h>

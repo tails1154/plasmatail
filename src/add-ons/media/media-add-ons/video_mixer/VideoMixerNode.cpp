@@ -305,7 +305,7 @@ void VideoMixerNode::GetFlavor(flavor_info *outInfo, int32 id)
 
 	if (outInfo != NULL) {
 		outInfo->internal_id = id;
-		strcpy(outInfo->name, "Haiku VideoMixer");
+		strcpy(outInfo->name, "Plasmatail VideoMixer");
 		strcpy(outInfo->info, "A VideoMixerNode node mixes multiple video"
 			" streams into a single stream.");
 		outInfo->kinds = B_BUFFER_CONSUMER | B_BUFFER_PRODUCER;

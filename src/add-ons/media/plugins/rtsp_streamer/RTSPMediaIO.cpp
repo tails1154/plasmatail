@@ -55,7 +55,7 @@ RTSPMediaIO::SetSize(off_t size)
 status_t
 RTSPMediaIO::Open()
 {
-	fClient = new HaikuRTSPClient(*fEnv, fUrl.UrlString(),
+	fClient = new PlasmatailRTSPClient(*fEnv, fUrl.UrlString(),
 		0, this);
 	if (fClient == NULL)
 		return B_ERROR;
@@ -95,10 +95,10 @@ RTSPMediaIO::ShutdownLoop()
 }
 
 
-HaikuRTSPClient::HaikuRTSPClient(UsageEnvironment& env, char const* rtspURL,
+PlasmatailRTSPClient::PlasmatailRTSPClient(UsageEnvironment& env, char const* rtspURL,
 		portNumBits tunnelOverHTTPPortNum, RTSPMediaIO* interface)
 	:
-	RTSPClient(env, rtspURL, LIVE555_VERBOSITY, "Haiku RTSP Streamer",
+	RTSPClient(env, rtspURL, LIVE555_VERBOSITY, "Plasmatail RTSP Streamer",
 		tunnelOverHTTPPortNum, -1),
 	iter(NULL),
 	session(NULL),
@@ -112,13 +112,13 @@ HaikuRTSPClient::HaikuRTSPClient(UsageEnvironment& env, char const* rtspURL,
 }
 
 
-HaikuRTSPClient::~HaikuRTSPClient()
+PlasmatailRTSPClient::~PlasmatailRTSPClient()
 {
 }
 
 
 void
-HaikuRTSPClient::Close()
+PlasmatailRTSPClient::Close()
 {
 	delete iter;
 	if (session != NULL) {
@@ -130,7 +130,7 @@ HaikuRTSPClient::Close()
 
 
 status_t
-HaikuRTSPClient::WaitForInit(bigtime_t timeout)
+PlasmatailRTSPClient::WaitForInit(bigtime_t timeout)
 {
 	status_t status = B_ERROR;
 	if (read_port_etc(fInitPort, NULL, &status,
@@ -146,7 +146,7 @@ HaikuRTSPClient::WaitForInit(bigtime_t timeout)
 
 
 void
-HaikuRTSPClient::NotifyError()
+PlasmatailRTSPClient::NotifyError()
 {
 	fInterface->ShutdownLoop();
 	status_t status = B_ERROR;
@@ -155,7 +155,7 @@ HaikuRTSPClient::NotifyError()
 
 
 void
-HaikuRTSPClient::NotifySucces()
+PlasmatailRTSPClient::NotifySucces()
 {
 	status_t status = B_OK;
 	write_port(fInitPort, NULL, &status, sizeof(status));
@@ -163,7 +163,7 @@ HaikuRTSPClient::NotifySucces()
 
 
 BInputAdapter*
-HaikuRTSPClient::GetInputAdapter() const
+PlasmatailRTSPClient::GetInputAdapter() const
 {
 	return fInterface->BuildInputAdapter();
 }

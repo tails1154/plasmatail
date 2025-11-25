@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2002, Haiku.
+ * Copyright 2001-2002, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Author:	Christopher ML Zumwalt May (zummy@users.sf.net)

@@ -1,6 +1,6 @@
 /*
  * Copyright 2014, Henry Harrington, henry.harrington@gmail.com.
- * Copyright 2019-2022, Haiku, Inc. All rights reserved.
+ * Copyright 2019-2022, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef MMU_H

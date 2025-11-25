@@ -211,7 +211,7 @@ KernelStaticLibrary libacpi_ca.a :
 	;
 
 KernelAddon acpi :
-	ACPICAHaiku.cpp
+	ACPICAPlasmatail.cpp
 	BusManager.cpp
 	Module.cpp
 	Device.cpp

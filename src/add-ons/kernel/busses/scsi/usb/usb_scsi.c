@@ -2,7 +2,7 @@
  *
  * TODO: description
  *
- * This file is a part of USB SCSI CAM for Haiku.
+ * This file is a part of USB SCSI CAM for Plasmatail.
  * May be used under terms of the MIT License
  *
  * Author(s):
@@ -56,7 +56,7 @@ static long sim_init();
 static long path_id		= -1;
 static int32 load_count	= 0;
 
-static char sim_vendor_name[]	= "Haiku";		/* who wrote this driver */
+static char sim_vendor_name[]	= "Plasmatail";		/* who wrote this driver */
 static char hba_vendor_name[]	= "USB";		/* who made the hardware */
 static char controller_family[]	= "USB SCSI";	/* what family of products */
 

@@ -14,7 +14,7 @@ Application Media :
 	;
 
 DoCatalogs Media
-	: x-vnd.Haiku-Media
+	: x-vnd.Plasmatail-Media
 	: MediaViews.cpp
 	  MediaWindow.cpp
 	  MidiSettingsView.cpp

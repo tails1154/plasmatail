@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2015, Haiku, Inc.
+ * Copyright 2001-2015, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -41,7 +41,7 @@
 #include <DecorInfo.h>
 #include <DefaultColors.h>
 #include <DesktopLink.h>
-#include <HaikuControlLook.h>
+#include <PlasmatailControlLook.h>
 #include <InputServerTypes.h>
 #include <input_globals.h>
 #include <InterfacePrivate.h>
@@ -1105,7 +1105,7 @@ void
 run_be_about()
 {
 	if (be_roster != NULL)
-		be_roster->Launch("application/x-vnd.Haiku-About");
+		be_roster->Launch("application/x-vnd.Plasmatail-About");
 }
 
 
@@ -1501,7 +1501,7 @@ _init_interface_kit_()
 		}
 	}
 	if (be_control_look == NULL)
-		be_control_look = new HaikuControlLook();
+		be_control_look = new PlasmatailControlLook();
 
 	_init_global_fonts_();
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2006, Haiku, Inc. All rights reserved.
+ * Copyright 2003-2006, Plasmatail, Inc. All rights reserved.
  * Copyright 2004-2005 yellowTAB GmbH. All Rights Reserved.
  * Copyright 2006 Bernd Korz. All Rights Reserved
  * Distributed under the terms of the MIT License.

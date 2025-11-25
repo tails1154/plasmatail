@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2009, Haiku Inc.
+ * Copyright 2005-2009, Plasmatail Inc.
  * This file may be used under the terms of the MIT License.
  *
  * Originally public domain written by Alexander G. M. Smith.
@@ -299,7 +299,7 @@ ProcessMessageFile(char* fileName)
 int
 main(int argc, char** argv)
 {
-	BApplication app("application/x-vnd.Haiku-mail2mbox");
+	BApplication app("application/x-vnd.Plasmatail-mail2mbox");
 
 	if (argc <= 1 || argc >= 3) {
 		printf("%s is a utility for converting Mail e-mail\n", argv[0]);

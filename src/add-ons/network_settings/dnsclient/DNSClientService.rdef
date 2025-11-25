@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Haiku-DNSClientService";
+resource app_signature "application/x-vnd.Plasmatail-DNSClientService";
 
 resource app_version {
 	major  = 1,
@@ -7,6 +7,6 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Haiku DNS Client settings"
+	long_info = "Plasmatail DNS Client settings"
 };
 

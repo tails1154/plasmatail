@@ -1,6 +1,6 @@
 /*
  * Copyright 2007-2008 Oliver Ruiz Dorantes, oliver.ruiz.dorantes_at_gmail.com
- * Copyright 2021, Haiku, Inc.
+ * Copyright 2021, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

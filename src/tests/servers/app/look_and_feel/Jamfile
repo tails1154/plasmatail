@@ -12,7 +12,7 @@ Application LookAndFeel :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : LookAndFeel
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : LookAndFeel
 		: tests!apps ;
 }
 

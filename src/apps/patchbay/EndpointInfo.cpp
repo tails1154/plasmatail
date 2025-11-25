@@ -2,7 +2,7 @@
  * ----------------
  * Implements the EndpointInfo object.
  *
- * Copyright 2013, Haiku, Inc. All rights reserved.
+ * Copyright 2013, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Revisions by Pete Goodeve
@@ -102,7 +102,7 @@ CreateIcon(const BMessage* msg, icon_size which)
 	ssize_t size;
 	BBitmap* bitmap = NULL;
 
-	// See if a Haiku Vector Icon available
+	// See if a Plasmatail Vector Icon available
 	if (msg->FindData(VECTOR_ICON_NAME, VECTOR_ICON_TYPE, &data,
 		&size) == B_OK)  {
 		BRect r(0, 0, LARGE_ICON_SIZE - 1, LARGE_ICON_SIZE - 1);

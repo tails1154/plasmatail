@@ -1,5 +1,5 @@
 /*
- * Copyright 2007 Haiku.
+ * Copyright 2007 Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -22,7 +22,7 @@
 
 int main(void)
 {
-	Joysticks application("application/x-vnd.Haiku-Joysticks");
+	Joysticks application("application/x-vnd.Plasmatail-Joysticks");
 	application.Run();
 	return 0;
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2016, Haiku Inc. All rights reserved.
+ * Copyright 2003-2016, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -17,7 +17,7 @@
 #include <E-mail.h>
 #include <String.h>
 
-#define APP_SIG "application/x-vnd.Haiku-mail_utils-mail"
+#define APP_SIG "application/x-vnd.Plasmatail-mail_utils-mail"
 
 
 int main(int argc, char* argv[])

@@ -2,7 +2,7 @@
  * RTFTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-RTFTranslator";
+resource app_signature "application/x-vnd.Plasmatail-RTFTranslator";
 
 resource app_version {
 	major  = 0,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "0.7.0",
-	long_info = "Haiku RTFTranslator Add-Ons."
+	long_info = "Plasmatail RTFTranslator Add-Ons."
 };

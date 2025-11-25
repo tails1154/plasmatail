@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Gradients";
+resource app_signature "application/x-vnd.Plasmatail-Gradients";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Gradients:System name:Gradients";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Gradients:System name:Gradients";
 
 resource app_version {
 	major  = 1,
@@ -13,7 +13,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Gradients",
-	long_info = "Gradients ©2008-2009 Haiku, Inc."
+	long_info = "Gradients ©2008-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

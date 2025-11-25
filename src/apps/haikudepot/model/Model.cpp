@@ -24,7 +24,7 @@
 #include <Message.h>
 #include <Path.h>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "LocaleUtils.h"
 #include "Logger.h"
 #include "PackageUtils.h"

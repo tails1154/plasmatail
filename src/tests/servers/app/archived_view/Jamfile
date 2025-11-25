@@ -12,6 +12,6 @@ SimpleTest ArchivedView :
 	;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ArchivedView
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ArchivedView
 		: tests!apps ;
 }

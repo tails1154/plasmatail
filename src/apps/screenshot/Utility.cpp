@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2014, Haiku Inc. All rights reserved.
+ * Copyright 2010-2014, Plasmatail Inc. All rights reserved.
  * Copyright 2010 Wim van der Meer <WPJvanderMeer@gmail.com>
  * Copyright Karsten Heimrich, host.haiku@gmx.de. All rights reserved.
  * Distributed under the terms of the MIT License.

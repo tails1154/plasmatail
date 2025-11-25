@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2018, Haiku, Inc. All rights reserved.
+ * Copyright 2007-2018, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -1003,16 +1003,16 @@ AutoMounter::_SuggestMountFlags(const BPartition* partition, uint32* _flags)
 	}
 
 	if (askReadOnly) {
-		// Suggest to the user to mount read-only until Haiku is more mature.
+		// Suggest to the user to mount read-only until Plasmatail is more mature.
 		BString string;
 		string.SetToFormat(B_TRANSLATE("Mounting volume '%s'\n\n"),
 			partition->ContentName().String());
 
-		// TODO: Use distro name instead of "Haiku"...
+		// TODO: Use distro name instead of "Plasmatail"...
 		string << B_TRANSLATE("The file system on this volume is not the "
 			"Be file system. It is recommended to mount it in read-only "
 			"mode, to prevent unintentional data loss because of bugs "
-			"in Haiku.");
+			"in Plasmatail.");
 
 		BAlert* alert = new BAlert(B_TRANSLATE("Mount warning"),
 			string.String(), B_TRANSLATE("Mount read/write"),

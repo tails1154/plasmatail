@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2012, Haiku Inc.
+ * Copyright 2002-2012, Plasmatail Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -836,7 +836,7 @@ operator<(const entry_ref& a, const entry_ref& b)
 
 #	else	// gcc 4
 
-	// Haiku GetStat()
+	// Plasmatail GetStat()
 	B_DEFINE_SYMBOL_VERSION("_ZNK6BEntry8_GetStatEP4stat",
 		"_ZNK6BEntry7GetStatEP4stat@@LIBBE_TEST");
 
@@ -848,7 +848,7 @@ operator<(const entry_ref& a, const entry_ref& b)
 	B_DEFINE_SYMBOL_VERSION("_GetStat__C6BEntryP9stat_beos",
 		"GetStat__C6BEntryP4stat@LIBBE_BASE");
 
-	// Haiku GetStat()
+	// Plasmatail GetStat()
 	B_DEFINE_SYMBOL_VERSION("_GetStat__C6BEntryP4stat",
 		"GetStat__C6BEntryP4stat@@LIBBE_1_ALPHA1");
 
@@ -858,7 +858,7 @@ operator<(const entry_ref& a, const entry_ref& b)
 	B_DEFINE_SYMBOL_VERSION("_ZNK6BEntry8_GetStatEP9stat_beos",
 		"_ZNK6BEntry7GetStatEP4stat@LIBBE_BASE");
 
-	// Haiku GetStat()
+	// Plasmatail GetStat()
 	B_DEFINE_SYMBOL_VERSION("_ZNK6BEntry8_GetStatEP4stat",
 		"_ZNK6BEntry7GetStatEP4stat@@LIBBE_1_ALPHA1");
 

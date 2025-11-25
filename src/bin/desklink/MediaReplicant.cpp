@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2018, Haiku. All rights reserved.
+ * Copyright 2003-2018, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -55,7 +55,7 @@ static const uint32 kMsgVolumeWhich = 'svwh';
 static const char* kReplicantName = "MediaReplicant";
 	// R5 name needed, Media prefs manel removes by name
 
-static const char* kSettingsFile = "x-vnd.Haiku-desklink";
+static const char* kSettingsFile = "x-vnd.Plasmatail-desklink";
 
 
 class VolumeToolTip : public BTextToolTip {
@@ -320,17 +320,17 @@ MediaReplicant::MessageReceived(BMessage* message)
 {
 	switch (message->what) {
 		case kMsgOpenMediaPlayer:
-			_Launch("MediaPlayer", "application/x-vnd.Haiku-MediaPlayer",
+			_Launch("MediaPlayer", "application/x-vnd.Plasmatail-MediaPlayer",
 				B_SYSTEM_APPS_DIRECTORY, "MediaPlayer");
 			break;
 
 		case kMsgOpenMediaSettings:
-			_Launch("Media Preferences", "application/x-vnd.Haiku-Media",
+			_Launch("Media Preferences", "application/x-vnd.Plasmatail-Media",
 				B_SYSTEM_PREFERENCES_DIRECTORY, "Media");
 			break;
 
 		case kMsgOpenSoundSettings:
-			_Launch("Sounds Preferences", "application/x-vnd.Haiku-Sounds",
+			_Launch("Sounds Preferences", "application/x-vnd.Plasmatail-Sounds",
 				B_SYSTEM_PREFERENCES_DIRECTORY, "Sounds");
 			break;
 

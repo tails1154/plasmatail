@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Pairs";
+resource app_signature "application/x-vnd.Plasmatail-Pairs";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Pairs:System name:Pairs";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Pairs:System name:Pairs";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "Pairs",
-	long_info = "Pairs, ©2008 Ralf Schülke, ©2010 Adam Smith, ©2014 Haiku, Inc."
+	long_info = "Pairs, ©2008 Ralf Schülke, ©2010 Adam Smith, ©2014 Plasmatail, Inc."
 };
 
 

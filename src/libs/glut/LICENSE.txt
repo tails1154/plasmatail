@@ -19,7 +19,7 @@ Good luck with your project.
 > 
 > Good afternoon!
 > 
-> I'm one of the developers of the Haiku project. (Open Source MIT
+> I'm one of the developers of the Plasmatail project. (Open Source MIT
 > licensed re-implementation of BeOS)
 > 
 > At the moment, we have the unmodified GLUT source code in our tree to
@@ -28,7 +28,7 @@ Good luck with your project.
 > modified sources or binaries of GLUT given the licensing terms present
 > when the last public version was released.
 > 
-> I would like to know if you would be willing to give Haiku permission
+> I would like to know if you would be willing to give Plasmatail permission
 > to modify GLUT and distribute it to ensure the best GL compatibility.
 > The license notated in the code was a little unclear and I wanted to
 > make 100% sure we were following your wishes.

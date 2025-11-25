@@ -8,5 +8,5 @@ KernelAddon loopback_frame :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
 	: loopback_frame ;

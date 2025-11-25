@@ -97,20 +97,20 @@ static const display_mode mode_list[] = {
 
 
 // transform official mode to internal, multi-screen mode enhanced mode
-static void Haiku_DetectTranslateMultiMode(display_mode *mode)
+static void Plasmatail_DetectTranslateMultiMode(display_mode *mode)
 {
 	mode->flags &= ~DUALHEAD_BITS;
 
 	if( mode->virtual_width == 2 * mode->timing.h_display ) {
-		LOG(4, ("Haiku: horizontal combine mode\n"));
-		if (si->Haiku_switch_head)
+		LOG(4, ("Plasmatail: horizontal combine mode\n"));
+		if (si->Plasmatail_switch_head)
 			mode->flags |= DUALHEAD_SWITCH;
 		else
 			mode->flags |= DUALHEAD_ON;
 	} else if( mode->virtual_height == 2 * mode->timing.v_display ) {
-		LOG(4, ("Haiku: vertical combine mode not supported\n"));
+		LOG(4, ("Plasmatail: vertical combine mode not supported\n"));
 	} else {
-		/* unfortunately Haiku's screenprefs panel does not support single head output explicitly, so we'd better
+		/* unfortunately Plasmatail's screenprefs panel does not support single head output explicitly, so we'd better
 		   activate both heads always to (probably) mimic Radeon driver behaviour (for which this app was adapted) */
 		/* note please:
 		   - this will have a big downside on hardware for which both heads have different resolution cababilities (i.e. Matrox);
@@ -121,7 +121,7 @@ static void Haiku_DetectTranslateMultiMode(display_mode *mode)
 
 
 // check and execute tunnel settings command
-static status_t Haiku_CheckMultiMonTunnel(display_mode *mode, const display_mode *low, const display_mode *high, bool *isTunneled )
+static status_t Plasmatail_CheckMultiMonTunnel(display_mode *mode, const display_mode *low, const display_mode *high, bool *isTunneled )
 {
 	if( (mode->timing.flags & RADEON_MODE_MULTIMON_REQUEST) != 0 &&
 		(mode->timing.flags & RADEON_MODE_MULTIMON_REPLY) == 0 )
@@ -149,13 +149,13 @@ static status_t Haiku_CheckMultiMonTunnel(display_mode *mode, const display_mode
 
 	*isTunneled = true;
 
-	/* enable Haiku special handling */
+	/* enable Plasmatail special handling */
 	if (!si->haiku_prefs_used)
-		LOG(4, ("PROPOSEMODE: Haiku screenprefs tunnel detected.\n"));
+		LOG(4, ("PROPOSEMODE: Plasmatail screenprefs tunnel detected.\n"));
 	si->haiku_prefs_used = true;
 
 	/* note please:
-	   Haiku ScreenPrefs does not issue a SetMode command after changing these settings (per se), but relies on
+	   Plasmatail ScreenPrefs does not issue a SetMode command after changing these settings (per se), but relies on
 	   driver switching outputs directly. These settings are not dependant on workspace there, and are not part of 
 	   the mode in the Radeon driver. In the Matrox and nVidia drivers they are though. So we need SetMode
 	   to be issued. (yes: sometimes I switch monitors when I switch workspace.. ;-)
@@ -167,37 +167,37 @@ static status_t Haiku_CheckMultiMonTunnel(display_mode *mode, const display_mode
 	case ms_swap:
 		switch( mode->v_display_start ) {
 		case 0:
-			if (si->Haiku_switch_head)
+			if (si->Plasmatail_switch_head)
 				mode->timing.flags = 1;
 			else
 				mode->timing.flags = 0;
-			LOG(4, ("Haiku: tunnel access target=swap, command=get, value=%u\n", mode->timing.flags));
+			LOG(4, ("Plasmatail: tunnel access target=swap, command=get, value=%u\n", mode->timing.flags));
 			return B_OK;
 		case 1:
-			si->Haiku_switch_head = mode->timing.flags != 0;
-			LOG(4, ("Haiku: tunnel access target=swap, command=set, value=%u\n", mode->timing.flags));
-			/* Haiku's screenprefs panel expects us to directly set the mode.. (but it should do that itself) */
+			si->Plasmatail_switch_head = mode->timing.flags != 0;
+			LOG(4, ("Plasmatail: tunnel access target=swap, command=set, value=%u\n", mode->timing.flags));
+			/* Plasmatail's screenprefs panel expects us to directly set the mode.. (but it should do that itself) */
 			SET_DISPLAY_MODE(&si->dm);
 			return B_OK;
 		}
 		break;
 
 	case ms_use_laptop_panel:
-		LOG(4, ("Haiku: tunnel access target=usepanel, command=%s, value=%u\n",
+		LOG(4, ("Plasmatail: tunnel access target=usepanel, command=%s, value=%u\n",
 			(mode->v_display_start == 1) ? "set" : "get", mode->timing.flags));
 		// we refuse this setting (makes no sense for us: laptop panel is treated as normal screen)
 		return B_ERROR;
 		break;
 
 	case ms_tv_standard:
-		LOG(4, ("Haiku: tunnel access target=tvstandard, command=%s, value=%u\n",
+		LOG(4, ("Plasmatail: tunnel access target=tvstandard, command=%s, value=%u\n",
 			(mode->v_display_start == 1) ? "set" : "get", mode->timing.flags));
 		// let's forget about this for now..
 		return B_ERROR;
 		break;
 	}
 
-	LOG(4, ("Haiku: unhandled tunnel access target=$%x, command=%u, value=%u\n",
+	LOG(4, ("Plasmatail: unhandled tunnel access target=$%x, command=%u, value=%u\n",
 		mode->h_display_start, mode->v_display_start, mode->timing.flags));
 
 	return B_ERROR;
@@ -238,22 +238,22 @@ PROPOSE_DISPLAY_MODE(display_mode *target, const display_mode *low, const displa
 	bool want_same_height = target->timing.v_display == target->virtual_height;
 	bool isTunneled = false;
 	// check whether we got a tunneled settings command
-	result = Haiku_CheckMultiMonTunnel(target, low, high, &isTunneled);
+	result = Plasmatail_CheckMultiMonTunnel(target, low, high, &isTunneled);
 	if (isTunneled)
 		return result;
 
-	/* since we (might be) called by the Haiku ScreenPrefs panel, check for special modes and translate
+	/* since we (might be) called by the Plasmatail ScreenPrefs panel, check for special modes and translate
 	   them from (for us) non-native modes to native modes (as used in DualheadSetup by Mark Watson).
 	   These 'native modes' survive system reboots by the way, at least when set using DualheadSetup. */
 
-	/* note please: apparantly Haiku Screenprefs does not save the modes as set by the driver, but as originally requested
+	/* note please: apparantly Plasmatail Screenprefs does not save the modes as set by the driver, but as originally requested
 	   by the ScreenPrefs panel. Modifications done by the driver are therefore not saved.
-	   It would be nice if the screenprefs panel in Haiku would save the modified modeflags (after proposemode or setmode),
+	   It would be nice if the screenprefs panel in Plasmatail would save the modified modeflags (after proposemode or setmode),
 	   that would also make the driver remember switched heads (now it's a temporary setting). */
 
 	if (si->haiku_prefs_used) {
 		// check how many heads are needed by target mode
-		Haiku_DetectTranslateMultiMode(target);
+		Plasmatail_DetectTranslateMultiMode(target);
 	}
 
 	LOG(1, ("PROPOSEMODE: (ENTER) requested virtual_width %d, virtual_height %d\n",
@@ -642,7 +642,7 @@ create_mode_list(void)
 	si->mode_count = 0;
 	for (i = 0; i < MODE_COUNT; i++) {
 		// standard mode
-		/* unfortunately Haiku's screenprefs panel does not support single head output explicitly, so we'd better
+		/* unfortunately Plasmatail's screenprefs panel does not support single head output explicitly, so we'd better
 		   activate both heads always to (probably) mimic Radeon driver behaviour (for which this app was adapted) */
 		/* note please:
 		   - this will have a big downside on hardware for which both heads have different resolution cababilities (i.e. Matrox);
@@ -650,7 +650,7 @@ create_mode_list(void)
 		custom_mode = *src;
 		custom_mode.flags |= DUALHEAD_CLONE;
 		checkAndAddMode(&custom_mode, dst);
-		// double width mode for Haiku ScreenPrefs panel
+		// double width mode for Plasmatail ScreenPrefs panel
 		/* note please: These modes should not be added. Instead the mode.flags should be used during setting screen as these will
 		   automatically generate the needed other properties of the mode. Besides, virtual size is meant to be used for
 		   pan&scan modes (viewports), i.e. for certain games.

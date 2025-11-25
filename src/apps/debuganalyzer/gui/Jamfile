@@ -21,8 +21,8 @@ MergeObject DebugAnalyzer_gui.o
 ;
 
 
-HaikuSubInclude chart ;
-HaikuSubInclude main_window ;
-#HaikuSubInclude model ;
-HaikuSubInclude table ;
-HaikuSubInclude thread_window ;
+PlasmatailSubInclude chart ;
+PlasmatailSubInclude main_window ;
+#PlasmatailSubInclude model ;
+PlasmatailSubInclude table ;
+PlasmatailSubInclude thread_window ;

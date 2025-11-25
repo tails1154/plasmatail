@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# A quick standard test of Haiku booting under qemu in various configurations
+# A quick standard test of Plasmatail booting under qemu in various configurations
 #
 # Example usages:
 #   x86_64 bios
@@ -24,7 +24,7 @@ EXTRAS="-parallel none"
 function check_logs {
 	echo "=============================================="
 	FILE=$1
-	echo -n "    Haiku kernel loaded: "
+	echo -n "    Plasmatail kernel loaded: "
 	# First output from kernel on boot
 	if grep -q "Welcome to kernel debugger output" $FILE; then
 		echo "YES"

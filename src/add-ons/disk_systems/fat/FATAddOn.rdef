@@ -2,7 +2,7 @@
  * FATAddOn.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-FATAddOn";
+resource app_signature "application/x-vnd.Plasmatail-FATAddOn";
 
 resource app_version {
 	major  = 0,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "0.0.1",
-	long_info = "Haiku FAT disk add-on."
+	long_info = "Plasmatail FAT disk add-on."
 };

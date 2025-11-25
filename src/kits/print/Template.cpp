@@ -2,7 +2,7 @@
 
 Template
 
-Copyright (c) 2002 Haiku.
+Copyright (c) 2002 Plasmatail.
 
 Author: 
 	<YOUR NAME>

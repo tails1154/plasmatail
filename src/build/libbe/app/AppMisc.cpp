@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2019 Haiku, Inc. All rights reserved.
+ * Copyright 2001-2019 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -38,20 +38,20 @@ return B_ERROR;
 }
 
 // is_running_on_haiku
-/*!	Returns whether we're running under Haiku natively.
+/*!	Returns whether we're running under Plasmatail natively.
 
 	This is a runtime check for components compiled only once for both
-	BeOS and Haiku and nevertheless need to behave differently on the two
+	BeOS and Plasmatail and nevertheless need to behave differently on the two
 	systems, like the registrar, which uses another MIME database directory
 	under BeOS.
 
-	\return \c true, if we're running under Haiku, \c false otherwise.
+	\return \c true, if we're running under Plasmatail, \c false otherwise.
 */
 bool
 is_running_on_haiku()
 {
 	struct utsname info;
-	return (uname(&info) == 0 && strcmp(info.sysname, "Haiku") == 0);
+	return (uname(&info) == 0 && strcmp(info.sysname, "Plasmatail") == 0);
 }
 
 } // namespace BPrivate

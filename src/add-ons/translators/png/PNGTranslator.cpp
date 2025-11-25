@@ -1,6 +1,6 @@
 /*****************************************************************************/
 // PNGTranslator
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // PNGTranslator.cpp
 //
@@ -8,8 +8,8 @@
 // PNG images.
 //
 //
-// Copyright (c) 2003, Haiku Project
-// Copyright (c) 2009, Haiku, Inc. All rights reserved.
+// Copyright (c) 2003, Plasmatail Project
+// Copyright (c) 2009, Plasmatail, Inc. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

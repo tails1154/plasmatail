@@ -11,6 +11,6 @@ SimpleTest ClipToPicture :
 	;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ClipToPicture
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ClipToPicture
 		: tests!apps ;
 }

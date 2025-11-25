@@ -22,7 +22,7 @@
  * Use at your own risk!
  * ==========================================================
  *
- * Modified for use with Haiku by David Powell & Stephan Aßmus.
+ * Modified for use with Plasmatail by David Powell & Stephan Aßmus.
  */
 #include "ColorQuantizer.h"
 

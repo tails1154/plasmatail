@@ -59,7 +59,7 @@ private:
 
 
 SampleGLApp::SampleGLApp()
-   : BApplication("application/x-vnd.Haiku-GLDirectMode")
+   : BApplication("application/x-vnd.Plasmatail-GLDirectMode")
 {
    BRect windowRect;
    uint32 type = BGL_RGB|BGL_DOUBLE|BGL_DEPTH;

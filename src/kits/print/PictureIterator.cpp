@@ -2,7 +2,7 @@
 
 PictureIterator
 
-Copyright (c) 2001, 2002 Haiku.
+Copyright (c) 2001, 2002 Plasmatail.
 
 Authors: 
 	Philippe Houdoin

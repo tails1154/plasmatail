@@ -1,6 +1,6 @@
 /*
  * Copyright 2003-2004, Waldemar Kornewald <wkornew@gmx.net>
- * Copyright 2006-2017, Haiku, Inc. All rights Reserved.
+ * Copyright 2006-2017, Plasmatail, Inc. All rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -23,7 +23,7 @@ static
 status_t
 print_help()
 {
-	fprintf(stderr, "Haiku Network Team: pppconfig: sVersion %s\n", sVersion);
+	fprintf(stderr, "Plasmatail Network Team: pppconfig: sVersion %s\n", sVersion);
 	fprintf(stderr, "With pppconfig you can create and manage PPP connections.\n");
 	fprintf(stderr, "Usage:\n");
 	fprintf(stderr, "pppconfig show | -a\n");

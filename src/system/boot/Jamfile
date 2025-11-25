@@ -390,7 +390,7 @@ for platform in [ MultiBootSubDirSetup ] {
 		;
 
 		MakeLocate <revisioned>boot_loader_$(TARGET_BOOT_PLATFORM) : [ FDirName $(TARGET_DEBUG_$(DEBUG)_LOCATE_TARGET) revisioned ] ;
-		CopySetHaikuRevision <revisioned>boot_loader_$(TARGET_BOOT_PLATFORM) : boot_loader_$(TARGET_BOOT_PLATFORM) ;
+		CopySetPlasmatailRevision <revisioned>boot_loader_$(TARGET_BOOT_PLATFORM) : boot_loader_$(TARGET_BOOT_PLATFORM) ;
 
 		switch $(TARGET_BOOT_PLATFORM) {
 			case efi :
@@ -429,10 +429,10 @@ for platform in [ MultiBootSubDirSetup ] {
 					:
 					-A $(TARGET_ARCH) -O linux -T kernel -C none
 					-a $(HAIKU_BOOT_LOADER_BASE) -e $(loader_entry)
-					-n 'Haiku $(TARGET_KERNEL_ARCH) loader' ;
+					-n 'Plasmatail $(TARGET_KERNEL_ARCH) loader' ;
 				BuildUImage haiku-floppyboot.tgz.$(TARGET_BOOT_PLATFORM) : haiku-floppyboot.tgz :
 					-A $(TARGET_ARCH) -O linux -T ramdisk -C none
-					-n 'Haiku $(TARGET_KERNEL_ARCH) floppyboot' ;
+					-n 'Plasmatail $(TARGET_KERNEL_ARCH) floppyboot' ;
 				BuildUImageScript boot.scr
 					: [ FDirName $(HAIKU_TOP) data boot u-boot boot-$(TARGET_ARCH).scr.txt ] ;
 

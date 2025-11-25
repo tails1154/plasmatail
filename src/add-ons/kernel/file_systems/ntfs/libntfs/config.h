@@ -1,4 +1,4 @@
-/* Haiku-specific stuff */
+/* Plasmatail-specific stuff */
 #ifdef __HAIKU__
 #define	major(x) ((int)(0x00ff & ((x) >> 8)))
 #define	minor(x) ((int)(0xffff00ff & (x)))

@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2023, Haiku, Inc. All rights reserved.
+ * Copyright 2001-2023, Plasmatail, Inc. All rights reserved.
  * Copyright (c) 2003-4 Kian Duffy <myob@users.sourceforge.net>
  * Copyright (C) 1998,99 Kazuho Okui and Takashi Murai.
  *
@@ -14,7 +14,7 @@
 #define TERMCONST_H_INCLUDED
 
 // Application signature (Must same in Terminal.rdef)
-#define TERM_SIGNATURE "application/x-vnd.Haiku-Terminal"
+#define TERM_SIGNATURE "application/x-vnd.Plasmatail-Terminal"
 #define PREFFILE_MIMETYPE "text/x-terminal-pref"
 #define THEMEFILE_MIMETYPE "text/x-terminal-theme"
 

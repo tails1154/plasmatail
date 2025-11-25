@@ -57,8 +57,8 @@ main(stage2_args *args)
 	if (vfs_init(args) < B_OK)
 		panic("Could not initialize VFS!\n");
 
-	dprintf("Welcome to the Haiku boot loader!\n");
-	dprintf("Haiku revision: %s\n", get_haiku_revision());
+	dprintf("Welcome to the Plasmatail boot loader!\n");
+	dprintf("Plasmatail revision: %s\n", get_haiku_revision());
 
 	bool mountedAllVolumes = false;
 

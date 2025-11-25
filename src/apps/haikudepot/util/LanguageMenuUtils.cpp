@@ -14,7 +14,7 @@
 #include <Messenger.h>
 
 #include "AppUtils.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "LocaleUtils.h"
 #include "Logger.h"
 

@@ -91,7 +91,7 @@ posix_fadvise(int fd, off_t offset, off_t len, int advice)
 	if (S_ISFIFO(stat.st_mode))
 		return ESPIPE;
 
-	// Haiku does not use this information.
+	// Plasmatail does not use this information.
 	return 0;
 }
 

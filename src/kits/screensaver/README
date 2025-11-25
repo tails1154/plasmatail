@@ -1,4 +1,4 @@
-Haiku ScreenSaver Kit Replacement v1.0.0
+Plasmatail ScreenSaver Kit Replacement v1.0.0
 
 ABOUT:
 
@@ -27,7 +27,7 @@ BeOS. The package contains the following files:
    This is the new library. It will be installed in 
     /boot/home/config/lib/
 
-  Haiku
+  Plasmatail
    This is a ScreenSaver addon we wrote for fun. It will be installed in
     /boot/home/config/add-ons/Screen Savers/
 

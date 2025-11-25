@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2011, Haiku, Inc. All rights reserved.
+ * Copyright 2008-2011, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -107,7 +107,7 @@ private:
 static const uint32 kBlockSize = 512;
 static const uint32 kNumberOfBootLoaderBlocks = 4;
 	// The number of blocks required to store the
-	// MBR including the Haiku boot loader.
+	// MBR including the Plasmatail boot loader.
 
 static const uint32 kMBRSignature = 0xAA55;
 

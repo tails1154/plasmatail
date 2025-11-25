@@ -5,10 +5,10 @@ summary			"NetFS"
 
 description		"The package contains the NetFS add-on and servers."
 
-packager		"The Haiku build system"
-vendor			"Haiku Project"
+packager		"The Plasmatail build system"
+vendor			"Plasmatail Project"
 
-copyrights		"2001-2020 Haiku, Inc. et al"
+copyrights		"2001-2020 Plasmatail, Inc. et al"
 licenses		"MIT"
 
 provides {

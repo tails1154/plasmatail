@@ -1,12 +1,12 @@
 /*****************************************************************************/
 // TGATranslator
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 // Version: 1.0.0 Beta
 //
 // This translator opens and writes TGA files.
 //
 //
-// Copyright (c) 2002 Haiku Project
+// Copyright (c) 2002 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),
@@ -52,7 +52,7 @@
 int
 main()
 {
-	BApplication app("application/x-vnd.Haiku-TGATranslator");
+	BApplication app("application/x-vnd.Plasmatail-TGATranslator");
 	status_t result;
 	result = LaunchTranslatorWindow(new TGATranslator, 
 		B_TRANSLATE("TGA Settings"));

@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2025, Haiku, Inc. All rights reserved.
+ * Copyright 2017-2025, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -69,7 +69,7 @@ main(int argc, char *argv[])
 
 	if (user == NULL)
 		user = "user";
-		// aka 'root' on Haiku
+		// aka 'root' on Plasmatail
 
 	// login
 

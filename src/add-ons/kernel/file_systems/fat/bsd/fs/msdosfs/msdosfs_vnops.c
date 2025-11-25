@@ -51,7 +51,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include "sys/param.h"
 #include "sys/systm.h"

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015-2025 Haiku, Inc. All rights reserved.
+ * Copyright 2015-2025 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -201,7 +201,7 @@ BDecimalSpinner::Archive(BMessage* data, bool deep) const
 status_t
 BDecimalSpinner::GetSupportedSuites(BMessage* message)
 {
-	message->AddString("suites", "suite/vnd.Haiku-decimal-spinner");
+	message->AddString("suites", "suite/vnd.Plasmatail-decimal-spinner");
 
 	BPropertyInfo prop_info(sProperties);
 	message->AddFlat("messages", &prop_info);

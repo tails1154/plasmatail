@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2009, Haiku, Inc. All rights reserved.
+ * Copyright 2007-2009, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -60,7 +60,7 @@ get_description(void* cookie, multi_description* data)
 	description.interface_minimum = B_CURRENT_INTERFACE_VERSION;
 
 	strcpy(description.friendly_name,"Virtual audio (null_audio)");
-	strcpy(description.vendor_info,"Host/Haiku");
+	strcpy(description.vendor_info,"Host/Plasmatail");
 
 	description.output_channel_count = 2;
 	description.input_channel_count = 2;
@@ -201,7 +201,7 @@ get_buffers(device_t* device, multi_buffer_list* data)
 
 	dprintf("null_audio: %s\n", __func__ );
 
-	// Workaround for Haiku multi_audio API, since it prefers
+	// Workaround for Plasmatail multi_audio API, since it prefers
 	// to let the driver pick values, while the BeOS multi_audio
 	// actually gives the user's defaults.
 	if (data->request_playback_buffers > STRMAXBUF || data->request_playback_buffers < STRMINBUF)

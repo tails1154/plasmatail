@@ -19,7 +19,7 @@ Application DiskUsage :
 ;
 
 DoCatalogs DiskUsage :
-	x-vnd.Haiku-DiskUsage
+	x-vnd.Plasmatail-DiskUsage
 	:
 	MainWindow.cpp
 	InfoWindow.cpp

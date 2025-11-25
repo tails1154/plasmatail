@@ -1,6 +1,6 @@
 /*
  * Copyright 2007-2010, Axel Dörfler. All rights reserved.
- * Copyright 2009-2022, Haiku, Inc. All rights reserved.
+ * Copyright 2009-2022, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -147,7 +147,7 @@ report_probed_device(int bus, void* compat_device, driver_t* driver,
 }
 
 
-//	#pragma mark - Haiku Driver API
+//	#pragma mark - Plasmatail Driver API
 
 
 status_t

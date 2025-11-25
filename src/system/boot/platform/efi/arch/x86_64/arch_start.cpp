@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2022 Haiku, Inc. All rights reserved.
+ * Copyright 2014-2022 Plasmatail, Inc. All rights reserved.
  * Copyright 2013-2014, Fredrik Holmqvist, fredrik.holmqvist@gmail.com.
  * Copyright 2014, Henry Harrington, henry.harrington@gmail.com.
  * All rights reserved.

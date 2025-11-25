@@ -5,7 +5,7 @@
  * Copyright (C) 2010 Stephan Aßmus <superstippi@gmx.de>
  * Copyright (C) 2010 Michael Lotz <mmlr@mlotz.ch>
  * Copyright (C) 2010 Rene Gollent <rene@gollent.com>
- * Copyright 2013-2015 Haiku, Inc. All rights reserved.
+ * Copyright 2013-2015 Plasmatail, Inc. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -2512,7 +2512,7 @@ BrowserWindow::_ShowInterface(bool show)
 		fStatusGroup->SetVisible(false);
 	}
 	// TODO: Setting the group visible seems to unhide the status bar.
-	// Fix in Haiku?
+	// Fix in Plasmatail?
 	while (!fLoadingProgressBar->IsHidden())
 		fLoadingProgressBar->Hide();
 }

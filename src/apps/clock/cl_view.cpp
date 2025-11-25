@@ -353,7 +353,7 @@ TOnscreenView::MessageReceived(BMessage *msg)
 		{
 			BAlert *alert = new BAlert(B_TRANSLATE("About Clock"), B_TRANSLATE(
 				"Clock (The Replicant version)\n\nCopyright 2002-2020 "
-				"Haiku, Inc.\n\nOriginally coded by the folks "
+				"Plasmatail, Inc.\n\nOriginally coded by the folks "
 				"at Be.\n  Copyright 1991-1998, Be Inc."), B_TRANSLATE("OK"));
 			alert->SetFlags(alert->Flags() | B_CLOSE_ON_ESCAPE);
 			alert->Go();

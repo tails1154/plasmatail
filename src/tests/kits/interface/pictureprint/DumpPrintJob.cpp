@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2007, Haiku.
+ * Copyright 2002-2007, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -20,7 +20,7 @@ void printArguments(const char* application) {
 }
 
 int main(int argc, char* argv[]) {
-	BApplication app("application/x-vnd.Haiku.dump-print-job");
+	BApplication app("application/x-vnd.Plasmatail.dump-print-job");
 	
 	bool printPicture = false;
 	bool hasFiles = false;

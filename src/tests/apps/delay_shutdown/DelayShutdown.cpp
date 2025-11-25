@@ -14,7 +14,7 @@ class DelayShutdownApp : public BApplication {
 public:
 	DelayShutdownApp()
 		:
-		BApplication("application/x-vnd.Haiku-DelayShutdown"),
+		BApplication("application/x-vnd.Plasmatail-DelayShutdown"),
 		fDelay(5LL),
 		fQuit(false)
 	{

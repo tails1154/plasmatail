@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Haiku, Inc. All rights reserved.
+ * Copyright 2015 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -10,7 +10,7 @@
 // This command line program was created in order to be able to render
 // HVIF files and then save the resultant bitmap into a PNG image file.
 // The tool can be compiled for linux and was initially created for
-// use with the Haiku Depot Server application server so that it was
+// use with the Plasmatail Depot Server application server so that it was
 // able to render HVIFs in the web page.
 
 #include <stdio.h>

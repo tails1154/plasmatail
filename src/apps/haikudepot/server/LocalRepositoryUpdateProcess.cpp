@@ -21,7 +21,7 @@
 #include "DecisionProvider.h"
 #include "JobStateListener.h"
 #include "Logger.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 
 
 #undef B_TRANSLATION_CONTEXT

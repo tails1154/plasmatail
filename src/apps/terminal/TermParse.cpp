@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2024, Haiku, Inc. All rights reserved.
+ * Copyright 2001-2024, Plasmatail, Inc. All rights reserved.
  * Copyright (c) 2003-4 Kian Duffy <myob@users.sourceforge.net>
  * Parts Copyright (C) 1998,99 Kazuho Okui and Takashi Murai.
  * Distributed under the terms of the MIT license.

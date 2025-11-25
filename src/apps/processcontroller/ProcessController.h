@@ -1,6 +1,6 @@
 /*
  * Copyright 2000, Georges-Edouard Berenger. All rights reserved.
- * Copyright 2006-2018, Haiku, Inc. All rights reserved.
+ * Copyright 2006-2018, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _PCVIEW_H_

@@ -23,7 +23,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 
 DoCatalogs mixer.media_addon
 	:
-	x-vnd.Haiku-mixer.media_addon
+	x-vnd.Plasmatail-mixer.media_addon
 	:
 	AudioMixer.cpp
 	;

@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-DeskbarPreferences";
+resource app_signature "application/x-vnd.Plasmatail-DeskbarPreferences";
 
-resource app_name_catalog_entry "x-vnd.Haiku-DeskbarPreferences:System name:Deskbar";
+resource app_name_catalog_entry "x-vnd.Plasmatail-DeskbarPreferences:System name:Deskbar";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Deskbar preferences",
-	long_info  = "Deskbar preferences ©2009 Haiku Inc."
+	long_info  = "Deskbar preferences ©2009 Plasmatail Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH | B_BACKGROUND_APP;

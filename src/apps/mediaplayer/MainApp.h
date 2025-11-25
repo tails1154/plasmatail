@@ -1,5 +1,5 @@
 /*
- * MainApp.h - Media Player for the Haiku Operating System
+ * MainApp.h - Media Player for the Plasmatail Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright (C) 2008 Stephan Aßmus <superstippi@gmx.de>

@@ -2,7 +2,7 @@
  * --------------------
  * A simple MIDI consumer that counts incoming MIDI events.
  *
- * Copyright 2013, Haiku, Inc. All rights reserved.
+ * Copyright 2013, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Revisions by Pete Goodeve

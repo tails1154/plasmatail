@@ -25,7 +25,7 @@ class PkgDataLoadState;
 
 /*!	This process will take the data from the locally stored repositories (HPKR)
 	and will extract the packages.  The packages are then loaded into the
-	HaikuDepot 'Model'.
+	PlasmatailDepot 'Model'.
 */
 
 class PopulatePkgChangelogFromServerProcess : public AbstractProcess

@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-ProcessController";
+resource app_signature "application/x-vnd.Plasmatail-ProcessController";
 
-resource app_name_catalog_entry "x-vnd.Haiku-ProcessController:System name:ProcessController";
+resource app_name_catalog_entry "x-vnd.Plasmatail-ProcessController:System name:ProcessController";
 
 resource app_version {
 	major  = 3,
@@ -13,7 +13,7 @@ resource app_version {
 
 	short_info = "ProcessController",
 	long_info = "ProcessController ©1997-2001 G.E. Berenger,\n"
-		"©2006-2009 Haiku, Inc."
+		"©2006-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

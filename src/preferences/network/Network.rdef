@@ -1,7 +1,7 @@
 
-resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Haiku-Network";
+resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Plasmatail-Network";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Network:System name:Network";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Network:System name:Network";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -14,7 +14,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Network Preferences",
-	long_info = "Network Preferences ©2007-2014 Haiku"
+	long_info = "Network Preferences ©2007-2014 Plasmatail"
 };
 
 resource vector_icon {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2009, Haiku. All rights reserved.
+ * Copyright 2004-2009, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -131,7 +131,7 @@ MethodReplicant::MessageReceived(BMessage* message)
 			BAlert* alert = new BAlert("About Method Replicant",
 				"Method Replicant (Replicant)\n"
 				"  Brought to you by Jérôme DUVAL.\n\n"
-				"Haiku, 2004-2009", "OK");
+				"Plasmatail, 2004-2009", "OK");
 			alert->SetFlags(alert->Flags() | B_CLOSE_ON_ESCAPE);
 			alert->Go();
 			break;

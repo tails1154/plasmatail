@@ -4,7 +4,7 @@ os=$(uname)
 case $os in
 	FreeBSD)	libdl=;;
 	Linux)		libdl=-ldl;;
-	Haiku)		libdl=;;
+	Plasmatail)		libdl=;;
 	*)			echo "Unsupported OS: $os"; exit 1;;
 esac
 
@@ -24,7 +24,7 @@ test_run_ok()
 
 	case $os in
 		FreeBSD|Linux)	export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH;;
-		Haiku)		export LIBRARY_PATH=.:$LIBRARY_PATH;;
+		Plasmatail)		export LIBRARY_PATH=.:$LIBRARY_PATH;;
 		*)			echo "Unsupported OS: $os"; exit 1;;
 	esac
 

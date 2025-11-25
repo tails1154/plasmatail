@@ -2,7 +2,7 @@
  * --------------------
  * The icons to be used in case a device doesn't supply its icons.
  *
- * Copyright 2013, Haiku, Inc. All rights reserved.
+ * Copyright 2013, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Revisions by Pete Goodeve
@@ -16,7 +16,7 @@
 
 namespace UnknownDevice {
 
-// For Haiku we only need the Vector Icon
+// For Plasmatail we only need the Vector Icon
 const unsigned char kVectorIcon[] = {
 	0x6e, 0x63, 0x69, 0x66, 0x0c, 0x05, 0x01, 0x02, 0x00, 0x16, 0x05, 0xbf,
 	0x2f, 0x31, 0xbf, 0x38, 0xed, 0x3e, 0xd8, 0x5c, 0xbe, 0xcf, 0xc4, 0x49,

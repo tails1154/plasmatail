@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2020 Haiku, Inc. All rights reserved.
+ * Copyright 2009-2020 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -12,7 +12,7 @@
 
 #include <ControlLook.h>
 
-#include "HaikuControlLook.h"
+#include "PlasmatailControlLook.h"
 
 
 class BBitmap;
@@ -22,9 +22,9 @@ class BView;
 
 namespace BPrivate {
 
-using BPrivate::HaikuControlLook;
+using BPrivate::PlasmatailControlLook;
 
-class FlatControlLook : public HaikuControlLook {
+class FlatControlLook : public PlasmatailControlLook {
 public:
 								FlatControlLook();
 	virtual						~FlatControlLook();

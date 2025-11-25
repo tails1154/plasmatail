@@ -38,7 +38,7 @@ ConfigView::ConfigView()
 	BStringView* versionView = new BStringView("version", version);
 
 	BStringView *copyrightView = new BStringView("copyright",
-		B_UTF8_COPYRIGHT "2005-2006 Haiku Inc.");
+		B_UTF8_COPYRIGHT "2005-2006 Plasmatail Inc.");
 
 	BCheckBox *colorCheckBox = new BCheckBox("color",
 		B_TRANSLATE("Write 32 bit images on true color input"), NULL);

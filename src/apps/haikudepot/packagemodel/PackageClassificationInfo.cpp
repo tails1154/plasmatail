@@ -8,7 +8,7 @@
 
 #include <algorithm>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 
 
 PackageClassificationInfo::PackageClassificationInfo()

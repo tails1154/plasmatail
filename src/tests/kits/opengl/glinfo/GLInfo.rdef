@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-GLInfo";
+resource app_signature "application/x-vnd.Plasmatail-GLInfo";
 
-resource app_name_catalog_entry "x-vnd.Haiku-GLInfo:System name:GL Info";
+resource app_name_catalog_entry "x-vnd.Plasmatail-GLInfo:System name:GL Info";
 
 resource(1, "gears_64.png") #'PNG ' import "gears_64.png";
 
@@ -16,7 +16,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "GL Info",
-	long_info = "GL Info ©2009-2012 Haiku, Inc."
+	long_info = "GL Info ©2009-2012 Plasmatail, Inc."
 };
 
 resource vector_icon {

@@ -657,7 +657,7 @@ URLInputGroup::URLInputGroup(BMessage* goMessage)
 
 	AddChild(new BSeparatorView(B_VERTICAL, B_PLAIN_BORDER));
 
-// TODO: Fix in Haiku, no in-built support for archived BBitmaps from
+// TODO: Fix in Plasmatail, no in-built support for archived BBitmaps from
 // resources?
 //	fGoButton = new BitmapButton("kActionGo", NULL);
 	fGoButton = new BBitmapButton(kGoBitmapBits, kGoBitmapWidth,

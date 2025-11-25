@@ -1,7 +1,7 @@
 /*
  * Copyright 2004 DarkWyrm <darkwyrm@earthlink.net>
  * Copyright 2013 FeemanLou
- * Copyright 2014-2015 Haiku, Inc. All rights reserved.
+ * Copyright 2014-2015 Plasmatail, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT license.
  *
@@ -984,7 +984,7 @@ BAbstractSpinner::Archive(BMessage* data, bool deep) const
 status_t
 BAbstractSpinner::GetSupportedSuites(BMessage* message)
 {
-	message->AddString("suites", "suite/vnd.Haiku-spinner");
+	message->AddString("suites", "suite/vnd.Plasmatail-spinner");
 
 	BPropertyInfo prop_info(sProperties);
 	message->AddFlat("messages", &prop_info);

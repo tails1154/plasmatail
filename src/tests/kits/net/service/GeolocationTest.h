@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Haiku, inc.
+ * Copyright 2014 Plasmatail, inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef GEOLOCATION_TEST_H

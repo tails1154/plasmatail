@@ -8,5 +8,5 @@ KernelAddon <module>arp :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/datalink_protocols
 	: <module>arp ;

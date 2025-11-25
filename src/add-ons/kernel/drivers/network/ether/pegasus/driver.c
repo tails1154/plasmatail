@@ -1,7 +1,7 @@
 /*
  * Pegasus BeOS Driver
  *
- * Copyright 2006, Haiku, Inc. All Rights Reserved.
+ * Copyright 2006, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -487,7 +487,7 @@ pegasus_device_read(driver_cookie *cookie, off_t position, void *buffer, size_t 
 #ifndef __HAIKU__
 		*_length = 0;
 			// net_server work-around; it obviously doesn't care about error conditions
-			// For Haiku, this can be removed
+			// For Plasmatail, this can be removed
 #endif
 		return B_BAD_VALUE;
 	}

@@ -12,7 +12,7 @@
 #include "rtsp.h"
 
 
-class HaikuRTSPClient;
+class PlasmatailRTSPClient;
 
 
 class RTSPMediaIO : public BAdapterIO
@@ -36,7 +36,7 @@ private:
 
 			BUrl						fUrl;
 
-			HaikuRTSPClient*			fClient;
+			PlasmatailRTSPClient*			fClient;
 			UsageEnvironment*			fEnv;
 			TaskScheduler*				fScheduler;
 
@@ -45,10 +45,10 @@ private:
 };
 
 
-class HaikuRTSPClient : public RTSPClient
+class PlasmatailRTSPClient : public RTSPClient
 {
 public:
-										HaikuRTSPClient(UsageEnvironment& env,
+										PlasmatailRTSPClient(UsageEnvironment& env,
 											char const* rtspURL,
 											portNumBits tunnelOverHTTPPortNum,
 											RTSPMediaIO* fInputAdapter);
@@ -64,7 +64,7 @@ public:
 
 protected:
 
-	virtual 							~HaikuRTSPClient();
+	virtual 							~PlasmatailRTSPClient();
 public:
 			MediaSubsessionIterator* 	iter;
 			MediaSession*				session;

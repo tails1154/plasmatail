@@ -27,7 +27,7 @@ public:
 			void				TestObjectC();
 			void				TestUnterminatedObject();
 			void				TestUnterminatedArray();
-			void				TestHaikuDepotFetchBatch();
+			void				TestPlasmatailDepotFetchBatch();
 
 	static	void				AddTests(BTestSuite& suite);
 private:

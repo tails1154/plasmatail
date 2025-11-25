@@ -2,7 +2,7 @@
  * debug_server.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-debug_server";
+resource app_signature "application/x-vnd.Plasmatail-debug_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "debug_server",
-	long_info = "debug_server ©2005-2019 Haiku"
+	long_info = "debug_server ©2005-2019 Plasmatail"
 };
 
 resource vector_icon array {

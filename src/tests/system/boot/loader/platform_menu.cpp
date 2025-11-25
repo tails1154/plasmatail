@@ -70,7 +70,7 @@ draw_menu(Menu *menu)
 	if (menu->Title())
 		printf("%s", menu->Title());
 	else
-		printf("Welcome To The Haiku Bootloader");
+		printf("Welcome To The Plasmatail Bootloader");
 	printf(" ---%s\n\n", kNormalColor);
 
 	MenuItemIterator iterator = menu->ItemIterator();

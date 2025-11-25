@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Gutenprint add-on",
-	long_info = "Gutenprint add-on for Haiku\nCopyright 1999 Y.Takagi\nCopyright 2010 Michael Pfeiffer\nAll Rights Reserved."
+	long_info = "Gutenprint add-on for Plasmatail\nCopyright 1999 Y.Takagi\nCopyright 2010 Michael Pfeiffer\nAll Rights Reserved."
 };
 
 resource vector_icon {

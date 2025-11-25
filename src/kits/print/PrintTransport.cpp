@@ -2,7 +2,7 @@
 
 PrintTransport
 
-Copyright (c) 2004 Haiku.
+Copyright (c) 2004 Plasmatail.
 
 Authors:
 	Philippe Houdoin

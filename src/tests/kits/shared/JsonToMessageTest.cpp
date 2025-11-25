@@ -213,7 +213,7 @@ JsonToMessageTest::TestUnterminatedArray()
 }
 
 
-void JsonToMessageTest::TestHaikuDepotFetchBatch()
+void JsonToMessageTest::TestPlasmatailDepotFetchBatch()
 {
 	const unsigned char input[] = JSON_SAMPLE_HDS_FETCH_BATCH_PKGS;
 	BMessage message;
@@ -281,8 +281,8 @@ JsonToMessageTest::AddTests(BTestSuite& parent)
 		&JsonToMessageTest::TestUnterminatedArray));
 
 	suite.addTest(new CppUnit::TestCaller<JsonToMessageTest>(
-		"JsonToMessageTest::TestHaikuDepotFetchBatch",
-		&JsonToMessageTest::TestHaikuDepotFetchBatch));
+		"JsonToMessageTest::TestPlasmatailDepotFetchBatch",
+		&JsonToMessageTest::TestPlasmatailDepotFetchBatch));
 
 //	suite.addTest(new CppUnit::TestCaller<JsonToMessageTest>(
 //		"JsonToMessageTest::TestObjectAForPerformance",

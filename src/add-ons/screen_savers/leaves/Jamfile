@@ -8,7 +8,7 @@ ScreenSaver Leaves :
 ;
 
 DoCatalogs Leaves :
-	x-vnd.Haiku-LeavesScreensaver
+	x-vnd.Plasmatail-LeavesScreensaver
 	:
 	Leaves.cpp
 ;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2012, Haiku Inc. All Rights Reserved.
+ * Copyright 2012, Plasmatail Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -327,7 +327,7 @@ print_usage(const char* name)
 int
 main(int argc, char* argv[])
 {
-	BApplication app("application/x-vnd.Haiku-keystore-cli");
+	BApplication app("application/x-vnd.Plasmatail-keystore-cli");
 
 	if (argc < 2)
 		return print_usage(argv[0]);

@@ -10,11 +10,11 @@ KernelAddon etherpci :
 
 # Installation
 
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/drivers/bin :
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/drivers/bin :
  	etherpci
 ;
 
-HaikuInstallRelSymLink install-networking : /boot/home/config/add-ons/kernel/drivers/dev/net :
+PlasmatailInstallRelSymLink install-networking : /boot/home/config/add-ons/kernel/drivers/dev/net :
 	<installed>etherpci :
 	installed-symlink
 ;

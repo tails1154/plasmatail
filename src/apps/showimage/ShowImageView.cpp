@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2011, Haiku, Inc. All Rights Reserved.
+ * Copyright 2003-2011, Plasmatail, Inc. All Rights Reserved.
  * Copyright 2004-2005 yellowTAB GmbH. All Rights Reserverd.
  * Copyright 2006 Bernd Korz. All Rights Reserved
  * Distributed under the terms of the MIT License.
@@ -765,7 +765,7 @@ ShowImageView::_CopySelection(uchar alpha, bool imageSize)
 	if (bitmap->Lock()) {
 		bitmap->AddChild(&view);
 #ifdef __HAIKU__
-		// On Haiku, B_OP_SUBSTRACT does not affect alpha like it did on BeOS.
+		// On Plasmatail, B_OP_SUBSTRACT does not affect alpha like it did on BeOS.
 		// Don't know if it's better to fix it or not (stippi).
 		if (hasAlpha) {
 			view.SetHighColor(0, 0, 0, 0);

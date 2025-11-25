@@ -756,9 +756,9 @@ struct ieee80211req {
 
 #ifdef __HAIKU__
 /*
-	These are here to allow overcoming a difference between Haiku and
+	These are here to allow overcoming a difference between Plasmatail and
 	FreeBSD drivers. In FreeBSD a device can be set into the down state
-	but is still fully configurable using the ioctl interface. The Haiku
+	but is still fully configurable using the ioctl interface. The Plasmatail
 	network stack on the other hand opens and closes the driver on the
 	transition form up to down and vice versa. This difference can become
 	problematic with ported software that depends on the original behaviour.
@@ -770,7 +770,7 @@ struct ieee80211req {
 #define IEEE80211_IOC_HAIKU_COMPAT_WLAN_DOWN	0x6001
 
 /*
-	Haiku extension: initiate join of network, potentially encrypted.
+	Plasmatail extension: initiate join of network, potentially encrypted.
 */
 #define IEEE80211_IOC_HAIKU_JOIN				0x6002
 struct ieee80211_haiku_join_req {

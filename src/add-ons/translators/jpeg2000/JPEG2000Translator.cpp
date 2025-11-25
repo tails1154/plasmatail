@@ -57,7 +57,7 @@ static int32 sTranslatorVersion = B_TRANSLATION_MAKE_VERSION(1, 0, 0);
 
 static const char* sTranslatorName = B_TRANSLATE("JPEG2000 images");
 static const char* sTranslatorInfo = B_TRANSLATE("©2002-2003, Shard\n"
-	"©2005-2006, Haiku\n"
+	"©2005-2006, Plasmatail\n"
 	"\n"
 	"Based on JasPer library:\n"
 	"© 1999-2000, Image Power, Inc. and\n"
@@ -1305,7 +1305,7 @@ make_nth_translator(int32 n, image_id you, uint32 flags, ...)
 int
 main()
 {
-	BApplication app("application/x-vnd.Haiku-JPEG2000Translator");
+	BApplication app("application/x-vnd.Plasmatail-JPEG2000Translator");
 	JP2Translator* translator = new JP2Translator();
 	if (LaunchTranslatorWindow(translator, sTranslatorName) == B_OK)
 		app.Run();

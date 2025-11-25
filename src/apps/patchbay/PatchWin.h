@@ -2,7 +2,7 @@
  * ----------
  * The main PatchBay window class.
  *
- * Copyright 2013, Haiku, Inc. All rights reserved.
+ * Copyright 2013, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Revisions by Pete Goodeve

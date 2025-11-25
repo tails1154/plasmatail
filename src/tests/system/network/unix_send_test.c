@@ -33,7 +33,7 @@ int main() {
 	while(true) {
 		printf("send %i\n", ok);
 		ret = send(fds[0], &buf[0], bufLen, MSG_DONTWAIT);
-		// eventually: EAGAIN (on Linux and Haiku), ENOBUFS (on macOS)
+		// eventually: EAGAIN (on Linux and Plasmatail), ENOBUFS (on macOS)
 		if(ret < 0) {
 			perror("send");
 			break;

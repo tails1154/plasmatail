@@ -1,6 +1,6 @@
 SubDir HAIKU_TOP src tools fat_shell ;
 
-# prevent inclusion of HaikuBuildCompatibility.h
+# prevent inclusion of PlasmatailBuildCompatibility.h
 DEFINES += HAIKU_BUILD_COMPATIBILITY_H ;
 
 # set some additional defines

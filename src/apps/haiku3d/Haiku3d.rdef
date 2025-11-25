@@ -1,14 +1,14 @@
 /*
- * Copyright 2009, Haiku Inc. All rights reserved.
+ * Copyright 2009, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
  * 		Alexandre Deckner alex@zappotek.com
  */
 
-resource app_signature "application/x-vnd.Haiku-Haiku3d";
+resource app_signature "application/x-vnd.Plasmatail-Plasmatail3d";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Haiku3d:System name:Haiku3d";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Plasmatail3d:System name:Plasmatail3d";
 
 resource app_version {
 	major  = 1,
@@ -18,8 +18,8 @@ resource app_version {
 	variety = B_APPV_BETA,
 	internal = 0,
 
-	short_info = "Haiku3d",
-	long_info = "Haiku3d ©2009 Haiku, Inc."
+	short_info = "Plasmatail3d",
+	long_info = "Plasmatail3d ©2009 Plasmatail, Inc."
 };
 
 resource app_flags B_MULTIPLE_LAUNCH;

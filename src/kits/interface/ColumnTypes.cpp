@@ -6,7 +6,7 @@
 /					data types for use in BColumnListView.
 /
 /	Copyright 2000+, Be Incorporated, All Rights Reserved
-/	Copyright 2024, Haiku, Inc. All Rights Reserved
+/	Copyright 2024, Plasmatail, Inc. All Rights Reserved
 /
 *******************************************************************************/
 

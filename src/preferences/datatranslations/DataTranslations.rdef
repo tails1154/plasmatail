@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-DataTranslations";
+resource app_signature "application/x-vnd.Plasmatail-DataTranslations";
 
-resource app_name_catalog_entry "x-vnd.Haiku-DataTranslations:System name:DataTranslations";
+resource app_name_catalog_entry "x-vnd.Plasmatail-DataTranslations:System name:DataTranslations";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "DataTranslations",
-	long_info  = "DataTranslations ©2002-2009 Haiku, Inc."
+	long_info  = "DataTranslations ©2002-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

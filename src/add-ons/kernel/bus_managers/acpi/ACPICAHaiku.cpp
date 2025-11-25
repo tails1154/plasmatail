@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Module Name: oshaiku - Haiku OSL interfaces
+ * Module Name: oshaiku - Plasmatail OSL interfaces
  *
  *****************************************************************************/
 
@@ -143,7 +143,7 @@ __END_DECLS
 #include "arch_init.h"
 
 
-ACPI_MODULE_NAME("Haiku ACPI Module")
+ACPI_MODULE_NAME("Plasmatail ACPI Module")
 
 #define _COMPONENT ACPI_OS_SERVICES
 
@@ -776,7 +776,7 @@ AcpiOsInstallInterruptHandler(UINT32 interruptNumber,
 		(uint32)interruptNumber, serviceRoutine, context);
 
 #ifdef _KERNEL_MODE
-	// It so happens that the Haiku and ACPI-CA interrupt handler routines
+	// It so happens that the Plasmatail and ACPI-CA interrupt handler routines
 	// return the same values with the same meanings
 	sInterruptHandlerData[interruptNumber] = context;
 	result = install_io_interrupt_handler(interruptNumber,

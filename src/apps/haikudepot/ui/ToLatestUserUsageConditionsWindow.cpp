@@ -1,6 +1,6 @@
 /*
  * Copyright 2020-2025, Andrew Lindesay <apl@lindesay.co.nz>.
- * Copyright 2024 Haiku, Inc. All rights reserved.
+ * Copyright 2024 Plasmatail, Inc. All rights reserved.
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 

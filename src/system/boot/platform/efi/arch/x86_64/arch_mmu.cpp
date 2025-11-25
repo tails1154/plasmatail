@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2016 Haiku, Inc. All rights reserved.
+ * Copyright 2014-2016 Plasmatail, Inc. All rights reserved.
  * Copyright 2013-2014, Fredrik Holmqvist, fredrik.holmqvist@gmail.com.
  * Copyright 2014, Henry Harrington, henry.harrington@gmail.com.
  * All rights reserved.
@@ -249,7 +249,7 @@ arch_mmu_generate_post_efi_page_tables(size_t memory_map_size,
 	maxAddress = ROUNDUP(maxAddress, 0x40000000);
 
 	// Currently only use 1 PDPT (512GB). This will need to change if someone
-	// wants to use Haiku on a box with more than 512GB of RAM but that's
+	// wants to use Plasmatail on a box with more than 512GB of RAM but that's
 	// probably not going to happen any time soon.
 	if (maxAddress / 0x40000000 > 512)
 		panic("Can't currently support more than 512GB of RAM!");

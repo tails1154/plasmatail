@@ -1,5 +1,5 @@
 /* This file contains the prototypes for various functions copied from "lowntfs-3g.c"
- * and then modified for use in Haiku's filesystem driver. (The implementations are GPL.) */
+ * and then modified for use in Plasmatail's filesystem driver. (The implementations are GPL.) */
 
 #ifndef LOWNTFS_H
 #define LOWNTFS_H
@@ -55,7 +55,7 @@ enum RM_TYPES {
 	RM_ANY,
 
 	RM_NO_CHECK_OPEN = 1 << 8
-		// Haiku addition, so that ntfs_fuse_rm skips doing vnode lookups.
+		// Plasmatail addition, so that ntfs_fuse_rm skips doing vnode lookups.
 };
 
 int ntfs_fuse_rm(struct lowntfs_context *ctx, ino_t parent, const char *name,

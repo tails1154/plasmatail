@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Time";
+resource app_signature "application/x-vnd.Plasmatail-Time";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Time:System name:Time";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Time:System name:Time";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Time",
-	long_info  = "Time ©2002-2010 Haiku"
+	long_info  = "Time ©2002-2010 Plasmatail"
 };
 
 resource vector_icon {

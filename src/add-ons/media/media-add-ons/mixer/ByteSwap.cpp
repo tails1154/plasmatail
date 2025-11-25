@@ -1,6 +1,6 @@
 /*
  * Copyright 2003-2007 Marcus Overhagen
- * Copyright 2007 Haiku Inc. All rights reserved.
+ * Copyright 2007 Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

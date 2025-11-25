@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2005 Haiku, Inc.
+ * Copyright 2004-2005 Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * PS/2 interface definitions

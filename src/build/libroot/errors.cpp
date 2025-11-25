@@ -11,7 +11,7 @@
 
 using namespace std;
 
-static map<int, int> sToHaikuErrorMap;
+static map<int, int> sToPlasmatailErrorMap;
 static map<int, int> sToHostErrorMap;
 static bool sErrorMapsInitialized = false;
 
@@ -23,7 +23,7 @@ init_error_map()
 		return;
 
 	#define ADD_ERROR(error) \
-		sToHaikuErrorMap[error] = HAIKU_##error; \
+		sToPlasmatailErrorMap[error] = HAIKU_##error; \
 		sToHostErrorMap[HAIKU_##error] = error;
 
 	ADD_ERROR(E2BIG);
@@ -169,8 +169,8 @@ to_haiku_error(int error)
 {
 	init_error_map();
 
-	map<int, int>::iterator it = sToHaikuErrorMap.find(error);
-	if (it != sToHaikuErrorMap.end())
+	map<int, int>::iterator it = sToPlasmatailErrorMap.find(error);
+	if (it != sToPlasmatailErrorMap.end())
 		return it->second;
 
 	return (error > 0 ? -error : error);

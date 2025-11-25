@@ -61,7 +61,7 @@
 #undef B_TRANSLATION_CONTEXT
 #define B_TRANSLATION_CONTEXT "WebPositive"
 
-const char* kApplicationSignature = "application/x-vnd.Haiku-WebPositive";
+const char* kApplicationSignature = "application/x-vnd.Plasmatail-WebPositive";
 const char* kApplicationName = B_TRANSLATE_SYSTEM_NAME("WebPositive");
 static const uint32 PRELOAD_BROWSING_HISTORY = 'plbh';
 
@@ -154,10 +154,10 @@ BrowserApp::AboutRequested()
 	};
 
 	BString aboutText("");
-	aboutText << "HaikuWebKit " << WebKitInfo::HaikuWebKitVersion();
+	aboutText << "PlasmatailWebKit " << WebKitInfo::PlasmatailWebKitVersion();
 	aboutText << "\nWebKit " << WebKitInfo::WebKitVersion();
 
-	window->AddCopyright(2007, "Haiku, Inc.");
+	window->AddCopyright(2007, "Plasmatail, Inc.");
 	window->AddAuthors(authors);
 	window->AddExtraInfo(aboutText.String());
 

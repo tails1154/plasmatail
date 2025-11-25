@@ -11,7 +11,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "package_daemon",
-	long_info = "package_daemon ©2013 Haiku, Inc."
+	long_info = "package_daemon ©2013 Plasmatail, Inc."
 };
 
 resource vector_icon array {

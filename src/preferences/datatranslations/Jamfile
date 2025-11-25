@@ -13,7 +13,7 @@ Application DataTranslations :
 	;
 
 DoCatalogs DataTranslations :
-	x-vnd.Haiku-DataTranslations
+	x-vnd.Plasmatail-DataTranslations
 	:
 	DataTranslations.cpp
 	DataTranslationsWindow.cpp

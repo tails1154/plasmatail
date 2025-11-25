@@ -2,10 +2,10 @@
 <head>
 	<meta http-equiv="Content-Type"	content="text/html; charset=iso-8859-1">
 	<meta name="GENERATOR" content="The DarkSite">
-	<title>Readme for Haiku Unified Nvidia graphics driver</title>
+	<title>Readme for Plasmatail Unified Nvidia graphics driver</title>
 </head>
 <body>
-<h2 align="center">Unified Nvidia graphics driver for Haiku</h2></align><br><br>
+<h2 align="center">Unified Nvidia graphics driver for Plasmatail</h2></align><br><br>
 <hr>
 <h3><strong>NOTE PLEASE:</strong><br>
 You use this software at your own risk! Although I don't expect it to damage your PC, videocard or Monitor, I cannot guarantee this!</h3>
@@ -39,10 +39,10 @@ Geforce 8xxx and later series cards (NV50, G80, also known as GPGPU, general pur
 	<li>Full BWindowScreen support (used for hardware pageflipping, scrolling/panning and acceleration in applications/games);
 	<li>DPMS support for both DVI and most laptop panels, and for analog connected screens (on both heads on dualhead cards), <strong>but not (yet?)</strong> for external DVI panels on laptops;
 	<li>B_YCbCr422 hardware overlay support on both TNT and GeForce series cards, <strong>except</strong> for GeForce 6xxx and 7xxx series (GeForce 6800 works though). Overlay output 'follows head' in dualhead stretch/switch modes;
-	<li>Dualhead support on GeForce dualhead cards (use 'Dualhead Setup' or Haiku native ScreenPrefs panel (with limitations));
+	<li>Dualhead support on GeForce dualhead cards (use 'Dualhead Setup' or Plasmatail native ScreenPrefs panel (with limitations));
 	<li>DVI and laptop panel support;
 	<li>Widescreen mode support (<strong>all</strong> screens must be widescreen type;
-	<li>Basic AGP mode support on AGP cards, using the new (seperate) Haiku AGP busmanager;
+	<li>Basic AGP mode support on AGP cards, using the new (seperate) Plasmatail AGP busmanager;
 	<li>Basic ('legacy') PCIe support;
 	<li>Coldstart support for analog connected screens on most cards except TNT1, GeForce 6xxx and 7xxx series;
 	<li>TVout support on cards with Brooktree BT868/BT869 and Conexant CX25870/CX25871 encoders (use 'Dualhead Setup' <strong>0.05</strong> for now);
@@ -59,13 +59,13 @@ Geforce 8xxx and later series cards (NV50, G80, also known as GPGPU, general pur
 <br>
 <hr>
 <h2>Installation:</h2>
-If you encounter bugs, please see if a matching bug report already exists at <a href="http://dev.haiku-os.org">the Haiku website</a>. If not, or if you are unsure, file a new one. Make sure you are as precise as possible because that will make things easier to trackdown and fix...<br>
+If you encounter bugs, please see if a matching bug report already exists at <a href="http://dev.haiku-os.org">the Plasmatail website</a>. If not, or if you are unsure, file a new one. Make sure you are as precise as possible because that will make things easier to trackdown and fix...<br>
 <br>
 <br>
 OK, now that's all said let's get to it ;-)<br>
 <br>
-You don't need to de-install official drivers for this driver to work correctly. This driver will install in the user part of Haiku, so not in the system part where the official drivers are.<br>
-Haiku first checks (during boot) if there are 'user-addons' that should be loaded for a device. If not, it loads it's own drivers (if any). You can select which driver should be loaded by hitting the spacebar just before the Haiku 'icons' splash screen appears. If you select <strong>disable user addons</strong> the system will load it's own drivers. If you don't do anything, the system will load the Haiku Nvidia TNT/GeForce graphics driver.<br>
+You don't need to de-install official drivers for this driver to work correctly. This driver will install in the user part of Plasmatail, so not in the system part where the official drivers are.<br>
+Plasmatail first checks (during boot) if there are 'user-addons' that should be loaded for a device. If not, it loads it's own drivers (if any). You can select which driver should be loaded by hitting the spacebar just before the Plasmatail 'icons' splash screen appears. If you select <strong>disable user addons</strong> the system will load it's own drivers. If you don't do anything, the system will load the Plasmatail Nvidia TNT/GeForce graphics driver.<br>
 <br>
 <strong>Note:</strong> This might turn out to be handy if you run into trouble upon testing the driver, or if you are 'tweaking' the nvidia.settings file...<br>
 <br><br>
@@ -93,7 +93,7 @@ You have to reboot in order to apply the original configuration.<br>
 <br>
 <hr>
 <a name="settings"></a><h2>Settings:</h2><br>
-Please read this information carefully *before* installing and using the Haiku Nvidia TNT/GeForce graphics driver. It might spare you some trouble afterwards..<br>
+Please read this information carefully *before* installing and using the Plasmatail Nvidia TNT/GeForce graphics driver. It might spare you some trouble afterwards..<br>
 <p>The driver uses a file named <strong>nvidia.settings</strong> to determine how to use your card. After installation this file will be located at <strong>home/config/settings/kernel/drivers/</strong>. How you should setup this file depends on what you want to do with the driver. While it has a 'failsave' default configuration, you might be able to do better than that... Anyway, read the nifty details below.<br>
 <br>
 <strong>Note:</strong> The driver only reads this file during it's initialisation. This means that you have to reboot in order to let changes take effect.<br>
@@ -252,7 +252,7 @@ The acceleration engine is disabled.
 </ul>
 <strong>Note please:</strong>
 <ul>
-<li>On Haiku the acceleration engine is not used at all.<br>
+<li>On Plasmatail the acceleration engine is not used at all.<br>
 </ul>
 <li><strong>check_edid:</strong><br>
 This option lets you disable adherence to your monitor's reported capabilities via EDID. It happens very rarely that especially older monitors report their capabilities in a non-correct way, making the driver believe it has less capabilities than it actually has.

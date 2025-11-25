@@ -1635,7 +1635,7 @@ Painter::_IterateShapeData(const int32& opCount, const uint32* opList,
 	const int32& ptCount, const BPoint* points,
 	const BPoint& viewToScreenOffset, float viewScale) const
 {
-	// TODO: if shapes are ever used more heavily in Haiku,
+	// TODO: if shapes are ever used more heavily in Plasmatail,
 	// it would be nice to use BShape data directly (write
 	// an AGG "VertexSource" adaptor)
 	fPath.remove_all();

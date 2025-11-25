@@ -14,15 +14,15 @@
 
 namespace UserlandFS {
 
-class HaikuKernelVolume;
+class PlasmatailKernelVolume;
 
-struct HaikuKernelIORequest : IORequestInfo {
+struct PlasmatailKernelIORequest : IORequestInfo {
 
-	HaikuKernelVolume*		volume;
+	PlasmatailKernelVolume*		volume;
 	int32					refCount;
-	HaikuKernelIORequest*	hashLink;
+	PlasmatailKernelIORequest*	hashLink;
 
-	HaikuKernelIORequest(HaikuKernelVolume* volume, const IORequestInfo& info)
+	PlasmatailKernelIORequest(PlasmatailKernelVolume* volume, const IORequestInfo& info)
 		:
 		IORequestInfo(info),
 		volume(volume),
@@ -31,14 +31,14 @@ struct HaikuKernelIORequest : IORequestInfo {
 	}
 };
 
-struct HaikuKernelIterativeFDIOCookie {
+struct PlasmatailKernelIterativeFDIOCookie {
 	int						fd;
-	HaikuKernelIORequest*	request;
+	PlasmatailKernelIORequest*	request;
 	iterative_io_get_vecs	getVecs;
 	iterative_io_finished	finished;
 	void*					cookie;
 
-	HaikuKernelIterativeFDIOCookie(int fd, HaikuKernelIORequest* request,
+	PlasmatailKernelIterativeFDIOCookie(int fd, PlasmatailKernelIORequest* request,
 		iterative_io_get_vecs getVecs, iterative_io_finished finished,
 		void* cookie)
 		:
@@ -54,8 +54,8 @@ struct HaikuKernelIterativeFDIOCookie {
 }	// namespace UserlandFS
 
 
-using UserlandFS::HaikuKernelIORequest;
-using UserlandFS::HaikuKernelIterativeFDIOCookie;
+using UserlandFS::PlasmatailKernelIORequest;
+using UserlandFS::PlasmatailKernelIterativeFDIOCookie;
 
 
 #endif	// USERLAND_FS_HAIKU_KERNEL_IO_REQUEST_H

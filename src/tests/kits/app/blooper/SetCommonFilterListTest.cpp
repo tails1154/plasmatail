@@ -77,7 +77,7 @@ void TSetCommonFilterListTest::SetCommonFilterListTest3()
 					destroyed (it goes last because it was constructed first)
 					because it tries to clean up the filter list which has
 					already been cleaned up by the other looper.  Now fixed in
-					Haiku.
+					Plasmatail.
  */
 void TSetCommonFilterListTest::SetCommonFilterListTest4()
 {

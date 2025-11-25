@@ -10,7 +10,7 @@
 // where noted, are licensed under the MIT License, and have been written 
 // and are:
 //
-// Copyright (c) 2002 Haiku Project
+// Copyright (c) 2002 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),
@@ -57,7 +57,7 @@
 int
 main()
 {
-	BApplication app("application/x-vnd.Haiku-BMPTranslator");
+	BApplication app("application/x-vnd.Plasmatail-BMPTranslator");
 	status_t result;
 
 	result = LaunchTranslatorWindow(new BMPTranslator,

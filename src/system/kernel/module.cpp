@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2022, Haiku Inc. All rights reserved.
+ * Copyright 2002-2022, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Copyright 2001, Thomas Kurschel. All rights reserved.

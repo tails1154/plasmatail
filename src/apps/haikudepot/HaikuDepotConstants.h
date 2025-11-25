@@ -87,7 +87,7 @@ enum BitmapSize {
 	// unfortunately historical difference in casing.
 
 
-// These constants reference resources in 'HaikuDepot.ref'
+// These constants reference resources in 'PlasmatailDepot.ref'
 enum {
 	RSRC_STAR_BLUE							= 510,
 	RSRC_STAR_GREY							= 520,
@@ -113,9 +113,9 @@ enum UserUsageConditionsSelectionMode {
 #define STR_MDASH "\xE2\x80\x94"
 
 #define ALERT_MSG_LOGS_USER_GUIDE "\nInformation about how to view the logs " \
-	"is available in the HaikuDepot section of the Haiku User Guide."
+	"is available in the PlasmatailDepot section of the Plasmatail User Guide."
 
-#define CACHE_DIRECTORY_APP "HaikuDepot"
+#define CACHE_DIRECTORY_APP "PlasmatailDepot"
 
 #define PROMINANCE_ORDERING_PROMINENT_MAX	200
 	// any prominence ordering value greater than this is not prominent.

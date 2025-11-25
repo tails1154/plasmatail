@@ -20,7 +20,7 @@ Application SoundRecorder :
 ;
 
 DoCatalogs SoundRecorder :
-	x-vnd.Haiku-SoundRecorder
+	x-vnd.Plasmatail-SoundRecorder
 	:
 	RecorderWindow.cpp
 	SoundListView.cpp

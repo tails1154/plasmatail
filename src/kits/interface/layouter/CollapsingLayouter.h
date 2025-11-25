@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Haiku, Inc.
+ * Copyright 2011, Plasmatail, Inc.
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 #ifndef COLLAPSING_LAYOUTER_H	

@@ -1,7 +1,7 @@
 
-resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Haiku-DebugAnalyzer";
+resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Plasmatail-DebugAnalyzer";
 
-resource app_name_catalog_entry "x-vnd.Haiku-DebugAnalyzer:System name:DebugAnalyzer";
+resource app_name_catalog_entry "x-vnd.Plasmatail-DebugAnalyzer:System name:DebugAnalyzer";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "DebugAnalyzer",
-	long_info = "DebugAnalyzer ©2009 Haiku, Inc."
+	long_info = "DebugAnalyzer ©2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

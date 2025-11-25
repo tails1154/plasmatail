@@ -20,7 +20,7 @@
 int
 main(int /*argc*/, char **/*argv*/)
 {
-	BApplication app("application/x-vnd.Haiku-PCXTranslator");
+	BApplication app("application/x-vnd.Plasmatail-PCXTranslator");
 
 	status_t result;
 	result = LaunchTranslatorWindow(new PCXTranslator, 

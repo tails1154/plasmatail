@@ -1,5 +1,5 @@
 /*
- * Copyright 2014, Haiku, Inc. All Rights Reserved.
+ * Copyright 2014, Plasmatail, Inc. All Rights Reserved.
  * Copyright 2019, Adrien Destugues, pulkomandy@pulkomandy.tk
  * Distributed under the terms of the MIT License.
  */

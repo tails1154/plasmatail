@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Devices";
+resource app_signature "application/x-vnd.Plasmatail-Devices";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Devices:System name:Devices";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Devices:System name:Devices";
 
 resource app_version
 {
@@ -16,7 +16,7 @@ resource app_version
 	internal = 0,
 
 	short_info = "Devices",
-	long_info  = "Devices ©2009-2022 Haiku Inc."
+	long_info  = "Devices ©2009-2022 Plasmatail Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

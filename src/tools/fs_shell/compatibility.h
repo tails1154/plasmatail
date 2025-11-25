@@ -7,7 +7,7 @@
 
 #if (defined(__BEOS__) || defined(__HAIKU__))
 #	ifndef HAIKU_HOST_PLATFORM_HAIKU
-#		include <HaikuBuildCompatibility.h>
+#		include <PlasmatailBuildCompatibility.h>
 #	endif
 #else
 #	include <BeOSBuildCompatibility.h>

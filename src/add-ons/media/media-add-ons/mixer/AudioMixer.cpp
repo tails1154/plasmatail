@@ -1,7 +1,7 @@
 /*
  * Copyright 2002 David Shipman,
  * Copyright 2003-2007 Marcus Overhagen
- * Copyright 2007-2011 Haiku Inc. All rights reserved.
+ * Copyright 2007-2011 Plasmatail Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  */

@@ -737,7 +737,7 @@ public:
 
 	virtual void Entered()
 	{
-		// Get the system directory, but only if this is a packaged Haiku.
+		// Get the system directory, but only if this is a packaged Plasmatail.
 		// Otherwise blocklisting isn't supported.
 		if (sBootVolume != NULL && sBootVolume->IsValid()
 			&& sBootVolume->IsPackaged()) {
@@ -1285,7 +1285,7 @@ add_boot_volume_menu()
 	menu->AddSeparatorItem();
 
 	menu->AddItem(item = new(nothrow) MenuItem("Rescan volumes"));
-	item->SetHelpText("Please insert a Haiku CD-ROM or attach a USB disk - "
+	item->SetHelpText("Please insert a Plasmatail CD-ROM or attach a USB disk - "
 		"depending on your system, you can then boot from there.");
 	item->SetType(MENU_ITEM_NO_CHOICE);
 	if (count == 0)
@@ -1492,7 +1492,7 @@ add_debug_menu()
 		item->SetType(MENU_ITEM_MARKABLE);
 		item->SetMarked(gKernelArgs.previous_debug_size);
 		item->SetTarget(&debug_menu_toggle_previous_debug_syslog);
-		item->SetHelpText("Saves the syslog from the previous Haiku session to "
+		item->SetHelpText("Saves the syslog from the previous Plasmatail session to "
 			"/var/log/previous_syslog when booting.");
 	}
 
@@ -1516,11 +1516,11 @@ add_debug_menu()
 		item->SetTarget(&debug_menu_display_previous_syslog);
 		item->SetType(MENU_ITEM_NO_CHOICE);
 		item->SetHelpText(
-			"Displays the syslog from the previous Haiku session.");
+			"Displays the syslog from the previous Plasmatail session.");
 
 		menu->AddItem(item = new(nothrow) MenuItem(
 			"Save syslog from previous session", add_save_debug_syslog_menu()));
-		item->SetHelpText("Saves the syslog from the previous Haiku session to "
+		item->SetHelpText("Saves the syslog from the previous Plasmatail session to "
 			"disk. Currently only FAT32 volumes are supported.");
 	}
 

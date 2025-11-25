@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007-2009, Haiku, Inc. All rights reserved.
+ * Copyright (c) 2007-2009, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Author:
@@ -33,7 +33,7 @@ bool gVerbose = false;
 
 PackageInstaller::PackageInstaller()
 	:
-	BApplication("application/x-vnd.Haiku-PackageInstaller"),
+	BApplication("application/x-vnd.Plasmatail-PackageInstaller"),
 	fWindowCount(0)
 {
 }

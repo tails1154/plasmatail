@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2006, Haiku. All rights reserved.
+ * Copyright 2002-2006, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -13,7 +13,7 @@
 #include <Locale.h>
 
 AppearanceApplication::AppearanceApplication(void)
- :	BApplication("application/x-vnd.Haiku-Appearance")
+ :	BApplication("application/x-vnd.Plasmatail-Appearance")
 {
 	fWindow = new AppearanceWindow(BRect(100, 100, 550, 420));
 	fWindow->Show();

@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2011, Haiku.
+ * Copyright 2005-2011, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -22,7 +22,7 @@
 
 
 /* Note, this headers defines a *private* interface to the Radeon accelerant.
- * It's a solution that works with the current BeOS interface that Haiku
+ * It's a solution that works with the current BeOS interface that Plasmatail
  * adopted.
  * However, it's not a nice and clean solution. Don't use this header in any
  * application if you can avoid it. No other driver is using this, or should

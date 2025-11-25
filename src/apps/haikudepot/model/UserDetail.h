@@ -41,7 +41,7 @@ private:
 };
 
 
-/*! This objects represents a user in the HaikuDepotServer system.
+/*! This objects represents a user in the PlasmatailDepotServer system.
  */
 
 class UserDetail : public BArchivable {

@@ -1,5 +1,5 @@
 /*
- * [un]trash command for Haiku
+ * [un]trash command for Plasmatail
  * Copyright (c) 2004, Francois Revol - revol@free.fr
  * provided under the MIT licence
  */

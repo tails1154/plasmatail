@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2010, Haiku Inc. All rights reserved.
+ * Copyright 2008-2010, Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -67,9 +67,9 @@ resource vector_icon {
 	$"AA40FA7D0117810004"
 };
 
-resource app_signature "application/x-vnd.Haiku-BootManager";
+resource app_signature "application/x-vnd.Plasmatail-BootManager";
 
-resource app_name_catalog_entry "x-vnd.Haiku-BootManager:System name:BootManager";
+resource app_name_catalog_entry "x-vnd.Plasmatail-BootManager:System name:BootManager";
 
 resource(1, "BEOS:FILE_TYPES") message { };
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2014 Haiku, Inc. All rights reserved.
+ * Copyright 2003-2014 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -33,7 +33,7 @@ private:
 
 ScreenSaverApp::ScreenSaverApp()
 	:
-	BApplication("application/x-vnd.Haiku-ScreenSaver")
+	BApplication("application/x-vnd.Plasmatail-ScreenSaver")
 {
 	fScreenSaverWindow = new ScreenSaverWindow();
 	fScreenSaverWindow->Show();

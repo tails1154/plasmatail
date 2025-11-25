@@ -22,7 +22,7 @@
 BTestSuite*
 getTestSuite()
 {
-	BTestSuite* suite = new BTestSuite("HaikuDepot");
+	BTestSuite* suite = new BTestSuite("PlasmatailDepot");
 
 	StandardMetaDataJsonEventListenerTest::AddTests(*suite);
 	DataIOUtilsTest::AddTests(*suite);

@@ -1,5 +1,5 @@
 /*
- * MainWin.h - Media Player for the Haiku Operating System
+ * MainWin.h - Media Player for the Plasmatail Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  *

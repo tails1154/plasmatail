@@ -57,12 +57,12 @@
 #include <sys/types.h>
 #ifndef MAKEFS
 //#include <sys/lock.h>
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 #include <sys/lockmgr.h>
 #include <sys/_task.h>
 #endif
 //#include <sys/tree.h>
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 
 #ifdef MALLOC_DECLARE
 MALLOC_DECLARE(M_MSDOSFSMNT);
@@ -129,7 +129,7 @@ struct msdosfsmount {
  */
 struct msdosfs_fileno {
 	//RB_ENTRY(msdosfs_fileno)	mf_tree;
-		// Haiku port:  not needed
+		// Plasmatail port:  not needed
 	uint32_t			mf_fileno32;
 	uint64_t			mf_fileno64;
 };
@@ -250,7 +250,7 @@ struct msdosfs_fileno {
 
 #endif /* _KERNEL || MAKEFS */
 
-// Haiku port:  not needed
+// Plasmatail port:  not needed
 #if 0
 /*
  *  Arguments to mount MSDOS filesystems.

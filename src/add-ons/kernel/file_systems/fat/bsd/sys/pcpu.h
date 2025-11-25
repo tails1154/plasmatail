@@ -33,14 +33,14 @@
 #define FAT_PCPU_H
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #ifndef FS_SHELL
 #include <OS.h>
 #endif
 
 
-// Modified to return a Haiku thread_id instead of a FreeBSD struct thread*
+// Modified to return a Plasmatail thread_id instead of a FreeBSD struct thread*
 #define curthread find_thread(NULL)
 
 

@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-LaunchBox";
+resource app_signature "application/x-vnd.Plasmatail-LaunchBox";
 
-resource app_name_catalog_entry "x-vnd.Haiku-LaunchBox:System name:LaunchBox";
+resource app_name_catalog_entry "x-vnd.Plasmatail-LaunchBox:System name:LaunchBox";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -14,7 +14,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "LaunchBox",
-	long_info = "LaunchBox ©2006-2009 Haiku"
+	long_info = "LaunchBox ©2006-2009 Plasmatail"
 };
 
 resource vector_icon {

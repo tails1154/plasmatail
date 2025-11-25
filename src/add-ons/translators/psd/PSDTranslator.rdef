@@ -2,7 +2,7 @@
  * PSDTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-PSDTranslator";
+resource app_signature "application/x-vnd.Plasmatail-PSDTranslator";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.3.0",
-	long_info = "Haiku PSDTranslator Add-Ons."
+	long_info = "Plasmatail PSDTranslator Add-Ons."
 };

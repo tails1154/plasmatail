@@ -25,11 +25,11 @@
 //
 // Notation system          | Real-time | High Prio | Default | Low Prio |
 // -------------------------|----------:|----------:|--------:|---------:|
-// BeOS/Haiku               |      120* |        99 |      10 |      1** |
+// BeOS/Plasmatail               |      120* |        99 |      10 |      1** |
 // UNIX [gs]etpriority()*** |      N.A. |       -20 |       0 |       19 |
 // UNIX internal            |      N.A. |         0 |      20 |       39 |
 //
-// * 	Note that BeOS/Haiku does not have an absolute highest priority value
+// * 	Note that BeOS/Plasmatail does not have an absolute highest priority value
 //   	(else than the maximum of int32), and (B_REAL_TIME_PRIORITY - 1) is
 //   	the highest non-real-time priority and usually used as the priority
 //   	limit. On UNIX systems there is no such concept as "real-time."

@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2010, Haiku, Inc. All rights reserved.
+ * Copyright 2008-2010, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -18,7 +18,7 @@
 #define B_TRANSLATION_CONTEXT "BootManager"
 
 
-static const char* kSignature = "application/x-vnd.Haiku-BootManager";
+static const char* kSignature = "application/x-vnd.Plasmatail-BootManager";
 
 
 class BootManager : public BApplication {

@@ -48,6 +48,6 @@ Application userlandfs_server
 	userlandfs_server.rdef
 ;
 
-HaikuSubInclude beos ;
-HaikuSubInclude fuse ;
-HaikuSubInclude haiku ;
+PlasmatailSubInclude beos ;
+PlasmatailSubInclude fuse ;
+PlasmatailSubInclude haiku ;

@@ -1,5 +1,5 @@
 #
-# Copyright 2020 Haiku, Inc. All rights reserved.
+# Copyright 2020 Plasmatail, Inc. All rights reserved.
 # Distributed under the terms of the MIT License.
 #
 # Authors:
@@ -117,7 +117,7 @@ class RequestHandler(http.server.BaseHTTPRequestHandler):
     def send_response(self, code, message=None):
         self.log_request(code)
         self.send_response_only(code, message)
-        self.send_header('Server', 'Test HTTP Server for Haiku')
+        self.send_header('Server', 'Test HTTP Server for Plasmatail')
         self.send_header('Date', 'Sun, 09 Feb 2020 19:32:42 GMT')
 
     def _build_response_body(self):

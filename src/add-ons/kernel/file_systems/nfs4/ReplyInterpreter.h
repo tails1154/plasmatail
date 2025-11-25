@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Haiku, Inc. All rights reserved.
+ * Copyright 2012 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -116,7 +116,7 @@ private:
 							uint32* count);
 			status_t	_OperationError(Opcode op);
 
-	static	status_t	_NFS4ErrorToHaiku(uint32 x);
+	static	status_t	_NFS4ErrorToPlasmatail(uint32 x);
 
 			uint32		fNFS4Error;
 			bool		fDecodeError;

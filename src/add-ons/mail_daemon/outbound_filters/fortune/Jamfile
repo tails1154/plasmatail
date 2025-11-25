@@ -15,7 +15,7 @@ Addon Fortune :
 ;
 
 DoCatalogs Fortune :
-	x-vnd.Haiku-Fortune
+	x-vnd.Plasmatail-Fortune
 	:
 	ConfigView.cpp
 	FortuneFilter.cpp

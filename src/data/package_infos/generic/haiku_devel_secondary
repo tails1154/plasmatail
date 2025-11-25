@@ -1,16 +1,16 @@
 name			haiku_%HAIKU_SECONDARY_PACKAGING_ARCH%_devel
 version			%HAIKU_VERSION%
 architecture	HAIKU_PACKAGING_ARCH
-summary			"The Haiku base system %HAIKU_SECONDARY_PACKAGING_ARCH% secondary architecture development files"
+summary			"The Plasmatail base system %HAIKU_SECONDARY_PACKAGING_ARCH% secondary architecture development files"
 
 description		"The package contains all files associated with the base system
 needed for development for the secondary architecture %HAIKU_SECONDARY_PACKAGING_ARCH%,
 like static libraries, glue code, library symlinks, header files, etc."
 
-packager		"The Haiku build system"
-vendor			"Haiku Project"
+packager		"The Plasmatail build system"
+vendor			"Plasmatail Project"
 
-copyrights		"2001-2020 Haiku, Inc. et al"
+copyrights		"2001-2020 Plasmatail, Inc. et al"
 licenses		"MIT"
 
 provides {

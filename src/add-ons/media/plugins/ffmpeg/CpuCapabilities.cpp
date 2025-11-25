@@ -3,7 +3,7 @@
  *
  * includes code from sysinfo.c which is
  * Copyright 2004-2008, Axel Dörfler, axeld@pinc-software.de.
- * Copyright (c) 2002, Carlos Hasan, for Haiku.
+ * Copyright (c) 2002, Carlos Hasan, for Plasmatail.
  *
  * All rights reserved. Distributed under the terms of the MIT License.
  */

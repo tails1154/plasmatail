@@ -6,7 +6,7 @@
 # =====================================
 
 # This simple tool will read a JSON schema and will then generate a
-# listener for use the 'BJson' class in the Haiku system.  This
+# listener for use the 'BJson' class in the Plasmatail system.  This
 # allows data conforming to the schema to be able to be parsed.
 
 import string
@@ -923,7 +923,7 @@ def write_files(schema : dict[str, any], output_directory: str) -> None:
 
 def main():
 
-    parser = argparse.ArgumentParser(description='Convert JSON schema to Haiku C++ Parsers')
+    parser = argparse.ArgumentParser(description='Convert JSON schema to Plasmatail C++ Parsers')
     parser.add_argument('-i', '--inputfile', required=True, help='The input filename containing the JSON schema')
     parser.add_argument('--outputdirectory', help='The output directory where the C++ files should be written')
 

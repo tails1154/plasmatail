@@ -3,13 +3,13 @@ resource(0, "BEOS:TYPE") #'MIMS' "application/x-vnd.Be-meta-mime";
 
 resource(1, "META:TYPE") "application/x-vnd.haiku-package";
 
-resource(2, "META:S:DESC") #'MSDC' "Haiku package";
+resource(2, "META:S:DESC") #'MSDC' "Plasmatail package";
 
-resource(3, "META:L:DESC") #'MLDC' "Haiku software package file";
+resource(3, "META:L:DESC") #'MLDC' "Plasmatail software package file";
 
 resource(4, "META:SNIFF_RULE") "0.60 (\"hpkg\")";
 
-resource(5, "META:PREF_APP") #'MSIG' "application/x-vnd.Haiku-HaikuDepot";
+resource(5, "META:PREF_APP") #'MSIG' "application/x-vnd.Plasmatail-PlasmatailDepot";
 
 resource(6, "META:EXTENS") message(234) {
 	"extensions" = "hpkg",

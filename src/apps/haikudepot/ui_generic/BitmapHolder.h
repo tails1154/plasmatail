@@ -9,7 +9,7 @@
 #include <Bitmap.h>
 #include <Referenceable.h>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 
 
 /*!	This class only serves as a holder for a bitmap that is referencable.

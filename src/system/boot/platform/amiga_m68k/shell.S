@@ -1,7 +1,7 @@
 /*
  * Copyright 2004-2005, Axel Dörfler, axeld@pinc-software.de. All rights reserved.
  * Copyright 2005, Ingo Weinhold, bonefish@users.sf.net.
- * Copyright 2007, Haiku, Inc. All Rights Reserved.
+ * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  *
  * Author:
@@ -262,7 +262,7 @@ failure_string:
 //	.string	"."
 
 str:
-	.string "Haiku!"
+	.string "Plasmatail!"
 msg_j1:
 	.string "Jumping to haiku_loader."
 
@@ -290,7 +290,7 @@ intname_boot:
 alert_data:
 	.word	10
 	.byte	12
-	.ascii	"Error loading Haiku: "
+	.ascii	"Error loading Plasmatail: "
 alert_extra:
 	.ascii	"XXXXXXXX\0"
 	.byte	0

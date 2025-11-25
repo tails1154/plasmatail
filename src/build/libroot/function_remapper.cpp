@@ -272,7 +272,7 @@ renameat(int fromFD, const char* from, int toFD, const char* to)
 
 
 #if defined(HAIKU_HOST_USE_XATTR) && defined(HAIKU_HOST_PLATFORM_HAIKU)
-// fs_attr_* functions only need to be remapped on Haiku
+// fs_attr_* functions only need to be remapped on Plasmatail
 
 
 extern "C" addr_t HIDDEN_FUNCTION_ATTRIBUTE

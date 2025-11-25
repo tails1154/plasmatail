@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Haiku, Inc.
+ * Copyright 2009, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -414,8 +414,8 @@ RemoteHWInterface::GetDeviceInfo(accelerant_device_info* info)
 	info->version = fProtocolVersion;
 	info->dac_speed = fConnectionSpeed;
 	info->memory = 33554432; // 32MB
-	strlcpy(info->name, "Haiku, Inc. RemoteHWInterface", sizeof(info->name));
-	strlcpy(info->chipset, "Haiku, Inc. Chipset", sizeof(info->chipset));
+	strlcpy(info->name, "Plasmatail, Inc. RemoteHWInterface", sizeof(info->name));
+	strlcpy(info->chipset, "Plasmatail, Inc. Chipset", sizeof(info->chipset));
 	strlcpy(info->serial_no, fTarget, sizeof(info->serial_no));
 
 	ReadUnlock();

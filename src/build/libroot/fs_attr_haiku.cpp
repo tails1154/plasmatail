@@ -1,9 +1,9 @@
 /*
- * Copyright 2017, Haiku, Inc. All rights reserved.
+ * Copyright 2017, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
-/*!	Shim over the host Haiku fs_attr API */
+/*!	Shim over the host Plasmatail fs_attr API */
 
 
 #ifdef BUILDING_FS_SHELL

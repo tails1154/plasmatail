@@ -250,7 +250,7 @@ PCL6Driver::_JobStart()
 	PCL6Writer::ProtocolClass pc =
 		(PCL6Writer::ProtocolClass)GetProtocolClass();
 	fWriter->PJLHeader(pc, GetJobData()->GetXres(),
-		"Copyright (c) 2003 - 2010 Haiku");
+		"Copyright (c) 2003 - 2010 Plasmatail");
 	fWriter->BeginSession(GetJobData()->GetXres(), GetJobData()->GetYres(),
 		PCL6Writer::kInch, PCL6Writer::kBackChAndErrPage);
 	fWriter->OpenDataSource();

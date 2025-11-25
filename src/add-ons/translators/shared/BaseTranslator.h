@@ -1,6 +1,6 @@
 /*****************************************************************************/
 // BaseTranslator
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // BaseTranslator.h
 //
@@ -9,7 +9,7 @@
 // over in each Translator.
 //
 //
-// Copyright (c) 2004  Haiku, Inc.
+// Copyright (c) 2004  Plasmatail, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

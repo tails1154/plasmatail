@@ -1419,7 +1419,7 @@ syslog_init_post_vm(struct kernel_args* args)
 
 	char revisionBuffer[64];
 	length = snprintf(revisionBuffer, sizeof(revisionBuffer),
-		"Welcome to syslog debug output!\nHaiku revision: %s\n",
+		"Welcome to syslog debug output!\nPlasmatail revision: %s\n",
 		get_haiku_revision());
 	syslog_write(revisionBuffer,
 		std::min(length, (int32)sizeof(revisionBuffer) - 1), false);

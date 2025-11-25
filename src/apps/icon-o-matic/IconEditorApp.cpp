@@ -1,6 +1,6 @@
 /*
  * Copyright 2006, 2011, Stephan Aßmus <superstippi@gmx.de>.
- * Copyright 2023 Haiku, Inc. All rights reserved.
+ * Copyright 2023 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -436,11 +436,11 @@ IconEditorApp::_InstallDocumentMimeType()
 			strerror(ret));
 
 	// set descriptions
-	ret = mime.SetShortDescription("Haiku Icon");
+	ret = mime.SetShortDescription("Plasmatail Icon");
 	if (ret < B_OK)
 		fprintf(stderr, "Could not set short description of mime type: %s\n",
 			strerror(ret));
-	ret = mime.SetLongDescription("Native Haiku vector icon");
+	ret = mime.SetLongDescription("Native Plasmatail vector icon");
 	if (ret < B_OK)
 		fprintf(stderr, "Could not set long description of mime type: %s\n",
 			strerror(ret));

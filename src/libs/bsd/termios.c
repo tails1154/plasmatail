@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Haiku, inc.
+ * Copyright 2023, Plasmatail, inc.
  *
  * Distributed under the terms of the MIT License.
  */

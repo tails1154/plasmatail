@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2021 Haiku, Inc.
+ * Copyright 2014-2021 Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef LANGUAGE_TEST_H

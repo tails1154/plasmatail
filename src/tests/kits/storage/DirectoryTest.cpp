@@ -642,7 +642,7 @@ DirectoryTest::FindEntryTest()
 	const char *cyclicLink1 = cyclicLinkname1;
 
 	// These are for verification after finding an entry from a BDirectory.
-	// On BeOS and Haiku, calling BEntry::GetPath() returns the normalized
+	// On BeOS and Plasmatail, calling BEntry::GetPath() returns the normalized
 	// path, but the paths we are using to initialize the BDirectory are not
 	// normalized. So we use these for comparison.
 	BPath normalizedExistingPath(existing, NULL, true);
@@ -942,7 +942,7 @@ DirectoryTest::ContainsTest()
 	dir.Unset();
 	// existing entry, uninitialized BDirectory
 	// R5: unlike the other version, this one returns false
-	// Haiku: both versions return false
+	// Plasmatail: both versions return false
 	NextSubTest();
 	CPPUNIT_ASSERT( dir.InitCheck() == B_NO_INIT );
 	CPPUNIT_ASSERT( entry.SetTo(existing) == B_OK );
@@ -958,7 +958,7 @@ DirectoryTest::ContainsTest()
 	entry.Unset();
 	// existing entry, badly initialized BDirectory
 	// R5: unlike the other version, this one returns false
-	// Haiku: both versions return false
+	// Plasmatail: both versions return false
 	NextSubTest();
 	CPPUNIT_ASSERT( dir.SetTo(nonExisting) == B_ENTRY_NOT_FOUND );
 	CPPUNIT_ASSERT( dir.InitCheck() == B_ENTRY_NOT_FOUND );
@@ -998,7 +998,7 @@ DirectoryTest::ContainsTest()
 	entry.Unset();
 	// initialized BDirectory, self containing
 	// R5: behavior is different from Contains(const char*)
-	// Haiku: both versions return true
+	// Plasmatail: both versions return true
 	NextSubTest();
 	CPPUNIT_ASSERT( dir.SetTo(existing) == B_OK );
 	CPPUNIT_ASSERT( dir.InitCheck() == B_OK );

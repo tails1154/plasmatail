@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2017, Haiku, Inc. All Rights Reserved.
+ * Copyright 2010-2017, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -78,7 +78,7 @@ NotificationServer::MessageReceived(BMessage* message)
 status_t
 NotificationServer::GetSupportedSuites(BMessage* msg)
 {
-	msg->AddString("suites", "suite/x-vnd.Haiku-notification_server");
+	msg->AddString("suites", "suite/x-vnd.Plasmatail-notification_server");
 
 	BPropertyInfo info(main_prop_list);
 	msg->AddFlat("messages", &info);

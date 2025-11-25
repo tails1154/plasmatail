@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2023, Haiku, Inc. All rights reserved.
+ * Copyright 2005-2023, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -237,7 +237,7 @@ TPeopleApp::MessageReceived(BMessage* message)
 		{
 			const char* arguments[] = { "-type", B_PERSON_MIMETYPE, 0 };
 			status_t ret = be_roster->Launch(
-				"application/x-vnd.Haiku-FileTypes",
+				"application/x-vnd.Plasmatail-FileTypes",
 				sizeof(arguments) / sizeof(const char*) - 1,
 				const_cast<char**>(arguments));
 			if (ret != B_OK && ret != B_ALREADY_RUNNING) {

@@ -730,7 +730,7 @@ status_t
 ArchitectureX86::GetReturnAddressLocation(StackFrame* frame,
 	target_size_t valueSize, ValueLocation*& _location)
 {
-	// for the calling conventions currently in use on Haiku,
+	// for the calling conventions currently in use on Plasmatail,
 	// the x86 rules for how values are returned are as follows:
 	//
 	// - 32 bits or smaller values are returned directly in EAX.

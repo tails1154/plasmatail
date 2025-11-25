@@ -71,7 +71,7 @@ sendToSyslog(const char *message, int length)
 	const int facility = 0; // kernel
 	int severity = 7; // debug
 	int offset = snprintf(buffer, sizeof(buffer),
-		"<%d>1 - - Haiku - - - \xEF\xBB\xBF",
+		"<%d>1 - - Plasmatail - - - \xEF\xBB\xBF",
 		facility * 8 + severity);
 	length = std::min(length, (int)sizeof(buffer) - offset);
 	memcpy(buffer + offset, message, length);

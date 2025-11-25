@@ -15,12 +15,12 @@ Application Playground :
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Playground
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Playground
 		: tests!apps ;
 }
 
 DoCatalogs Playground :
-    x-vnd.Haiku-Playground
+    x-vnd.Plasmatail-Playground
     :
     main.cpp
     ObjectView.cpp

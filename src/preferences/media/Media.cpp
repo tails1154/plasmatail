@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2006, Haiku. All rights reserved.
+ * Copyright 2003-2006, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors in chronological order:
@@ -20,7 +20,7 @@
 
 Media::Media() 
 	:
-	BApplication("application/x-vnd.Haiku-Media"),
+	BApplication("application/x-vnd.Plasmatail-Media"),
 	fIcons(),
 	fWindow(NULL)
 {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2015 Haiku, Inc. All rights reserved.
+ * Copyright 2004-2015 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -773,7 +773,7 @@ KeymapWindow::_UpdateSwitchShortcutButton()
 		label = B_TRANSLATE("Switch shortcut keys to Windows/Linux mode");
 	} else if (fCurrentMap.KeyForModifier(B_LEFT_COMMAND_KEY) == 0x5c
 		&& fCurrentMap.KeyForModifier(B_LEFT_CONTROL_KEY) == 0x5d) {
-		label = B_TRANSLATE("Switch shortcut keys to Haiku mode");
+		label = B_TRANSLATE("Switch shortcut keys to Plasmatail mode");
 	}
 
 	fSwitchShortcutsButton->SetLabel(label);

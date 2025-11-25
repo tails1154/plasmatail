@@ -1,6 +1,6 @@
 /*
  * iroster.cpp
- * (c) 2002, Carlos Hasan, for Haiku.
+ * (c) 2002, Carlos Hasan, for Plasmatail.
  * Compile: gcc -Wall -Wno-multichar -O2 -o iroster iroster.cpp -lbe
  */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, 2017, Haiku, Inc.
+ * Copyright 2009, 2017, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

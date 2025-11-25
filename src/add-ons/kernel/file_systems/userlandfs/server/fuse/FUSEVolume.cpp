@@ -885,7 +885,7 @@ FUSEVolume::Sync()
 status_t
 FUSEVolume::ReadFSInfo(fs_info* info)
 {
-	if (_FileSystem()->HasHaikuFuseExtensions() && fFS->ops.ioctl != NULL) {
+	if (_FileSystem()->HasPlasmatailFuseExtensions() && fFS->ops.ioctl != NULL) {
 		int fuseError = fuse_fs_ioctl(fFS, "/", FUSE_HAIKU_GET_DRIVE_INFO, info, NULL,
 			sizeof(fs_info), NULL);
 		if (fuseError != 0)
@@ -893,7 +893,7 @@ FUSEVolume::ReadFSInfo(fs_info* info)
 		return B_OK;
 	}
 
-	// No Haiku FUSE extensions, so our knowledge is limited: use some values
+	// No Plasmatail FUSE extensions, so our knowledge is limited: use some values
 	// from statfs and make reasonable guesses for the rest of them.
 	struct statvfs st;
 	int fuseError;
@@ -1223,7 +1223,7 @@ FUSEVolume::ReadSymlink(void* _node, char* buffer, size_t bufferSize,
 		}
 
 		// fuse_fs_readlink() is supposed to return a NULL-terminated string, which
-		// the Haiku interface doesn't require. We have to return the string length,
+		// the Plasmatail interface doesn't require. We have to return the string length,
 		// though.
 		*_bytesRead = strnlen(buffer, bufferSize);
 	}

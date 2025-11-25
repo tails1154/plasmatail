@@ -1040,7 +1040,7 @@ _kern_read_link(int fd, const char *path, char *buffer, size_t *_bufferSize)
 	if (bytesRead < 0)
 		return errno;
 
-	// On Haiku _kern_read_link will return the length of the link, *not*
+	// On Plasmatail _kern_read_link will return the length of the link, *not*
 	// the number of bytes written to the buffer parameter. To emulate that
 	// here, we use readlink() to read the links contents, and then if it is
 	// possible that the link contents didn't fit in buffer, we'll fall back

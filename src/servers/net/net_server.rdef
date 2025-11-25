@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Haiku-net_server";
+resource app_signature "application/x-vnd.Plasmatail-net_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "net_server",
-	long_info = "net_server ©2006 Haiku Inc."
+	long_info = "net_server ©2006 Plasmatail Inc."
 };
 
 

@@ -35,7 +35,7 @@
 #define FAT_CDEFS_H
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include_next <sys/cdefs.h>
 

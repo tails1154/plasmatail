@@ -32,7 +32,7 @@ DropTargetListView::Draw(BRect updateRect)
 		SetHighColor(0, 0, 0);
 		SetPenSize(2);
 		BRect rect = Bounds();
-// TODO: this is an incompatibility between R5 and Haiku and should be fixed!
+// TODO: this is an incompatibility between R5 and Plasmatail and should be fixed!
 #ifdef HAIKU_TARGET_PLATFORM_HAIKU
 		rect.left++;
 		rect.top++;

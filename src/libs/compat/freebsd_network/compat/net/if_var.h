@@ -286,7 +286,7 @@ struct ifnet {
 	u_int	if_hw_tsomaxsegcount;	/* TSO maximum segment count */
 	u_int	if_hw_tsomaxsegsize;	/* TSO maximum segment size in bytes */
 
-	/* Haiku additions */
+	/* Plasmatail additions */
 	struct sockaddr_dl	if_lladdr;
 	char				device_name[128];
 	struct device		*root_device;
@@ -738,7 +738,7 @@ int	ifioctl(struct socket *, u_long, caddr_t, struct thread *);
 int	ifpromisc(struct ifnet *, int);
 struct	ifnet *ifunit(const char *);
 
-/* Haiku extension for OpenBSD compat */
+/* Plasmatail extension for OpenBSD compat */
 int if_alloc_inplace(struct ifnet *ifp, u_char type);
 void if_free_inplace(struct ifnet *ifp);
 

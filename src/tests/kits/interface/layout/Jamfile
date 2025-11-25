@@ -9,9 +9,9 @@ SimpleTest LayoutTest1 :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR)
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR)
 		: LayoutTest1
 		: tests!apps ;
 }
 
-HaikuSubInclude widget_layout_test ;
+PlasmatailSubInclude widget_layout_test ;

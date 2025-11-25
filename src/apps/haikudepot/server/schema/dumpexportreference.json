@@ -38,7 +38,7 @@
           },
           "hasLocalizationMessages": {
             "type": "boolean",
-            "description": "True if there are localizations for the HaikuDepotServer application present for this language."
+            "description": "True if there are localizations for the PlasmatailDepotServer application present for this language."
           }
         }
       }

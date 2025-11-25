@@ -14,5 +14,5 @@ Application fragmenter :
 	fragmenter.cpp
 ;
 
-HaikuSubInclude consistency_check ;
-HaikuSubInclude queries ;
+PlasmatailSubInclude consistency_check ;
+PlasmatailSubInclude queries ;

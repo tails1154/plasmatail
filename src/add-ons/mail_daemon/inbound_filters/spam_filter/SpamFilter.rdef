@@ -2,7 +2,7 @@
  * SpamFilter.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-SpamFilter";
+resource app_signature "application/x-vnd.Plasmatail-SpamFilter";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Haiku SpamFilter mail_daemon add-on."
+	long_info = "Plasmatail SpamFilter mail_daemon add-on."
 };

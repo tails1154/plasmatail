@@ -1,6 +1,6 @@
 /*****************************************************************************/
 // pnginfo
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // Version:
 //
@@ -11,7 +11,7 @@
 // where noted, are licensed under the MIT License, and have been written 
 // and are:
 //
-// Copyright (c) 2004 Haiku Project
+// Copyright (c) 2004 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

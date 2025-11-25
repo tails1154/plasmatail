@@ -1,15 +1,15 @@
 name 			haiku
 version			%HAIKU_VERSION%
 architecture	%HAIKU_PACKAGING_ARCH%
-summary			"The Haiku base system"
+summary			"The Plasmatail base system"
 
-description		"The Haiku base system includes all system core software, like
+description		"The Plasmatail base system includes all system core software, like
 boot loader, kernel, the system libraries, servers, and applications."
 
-packager		"The Haiku build system"
-vendor			"Haiku Project"
+packager		"The Plasmatail build system"
+vendor			"Plasmatail Project"
 
-copyrights		"2001-2022 Haiku, Inc. et al"
+copyrights		"2001-2022 Plasmatail, Inc. et al"
 licenses {
 	MIT
 	"GNU LGPL v2.1"

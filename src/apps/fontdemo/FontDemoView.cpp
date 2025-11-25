@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2009, Haiku, Inc. All Rights Reserved.
+ * Copyright 2006-2009, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -40,7 +40,7 @@ FontDemoView::FontDemoView(BRect rect)
 	SetViewUIColor(B_DOCUMENT_BACKGROUND_COLOR);
 	SetHighUIColor(B_DOCUMENT_TEXT_COLOR);
 
-	BString setStr = B_TRANSLATE("Haiku, Inc.");
+	BString setStr = B_TRANSLATE("Plasmatail, Inc.");
 	SetString(setStr);
 	SetFontSize(fFontSize);
 	SetAntialiasing(true);

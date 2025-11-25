@@ -1,14 +1,14 @@
 name			webpositive%HAIKU_SECONDARY_PACKAGING_ARCH_SUFFIX%
 version			%HAIKU_VERSION%
 architecture	HAIKU_PACKAGING_ARCH
-summary			"A WebKit based web browser for Haiku"
+summary			"A WebKit based web browser for Plasmatail"
 
-description		"A WebKit based web browser for Haiku."
+description		"A WebKit based web browser for Plasmatail."
 
-packager		"The Haiku build system"
-vendor			"Haiku Project"
+packager		"The Plasmatail build system"
+vendor			"Plasmatail Project"
 
-copyrights		"2001-2020 Haiku, Inc. et al"
+copyrights		"2001-2020 Plasmatail, Inc. et al"
 licenses		"MIT"
 
 provides {

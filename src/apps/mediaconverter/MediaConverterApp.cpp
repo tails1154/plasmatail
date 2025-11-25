@@ -31,7 +31,7 @@
 #define B_TRANSLATION_CONTEXT "MediaConverter"
 
 
-const char APP_SIGNATURE[] = "application/x-vnd.Haiku-MediaConverter";
+const char APP_SIGNATURE[] = "application/x-vnd.Plasmatail-MediaConverter";
 
 
 MediaConverterApp::MediaConverterApp()

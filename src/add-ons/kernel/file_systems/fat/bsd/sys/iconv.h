@@ -29,7 +29,7 @@
 #define FAT_ICONV_H
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #ifndef FS_SHELL
 #include <ctype.h>
@@ -42,7 +42,7 @@
 #endif
 
 
-// In Haiku, the function names iconv_open and iconv_close are already taken.
+// In Plasmatail, the function names iconv_open and iconv_close are already taken.
 int fat_iconv_open(const char* to, const char* from, void** handle);
 int fat_iconv_close(void* handle);
 int iconv_conv(void* handle, const char** inbuf, size_t* inbytesleft, char** outbuf,

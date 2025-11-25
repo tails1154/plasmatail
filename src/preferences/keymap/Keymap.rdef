@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Keymap";
+resource app_signature "application/x-vnd.Plasmatail-Keymap";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Keymap:System name:Keymap";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Keymap:System name:Keymap";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Keymap",
-	long_info  = "Keymap ©2004-2009 Haiku"
+	long_info  = "Keymap ©2004-2009 Plasmatail"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

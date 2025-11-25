@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2015, Haiku.
+ * Copyright 2005-2015, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -63,7 +63,7 @@ DesktopSettingsPrivate::_SetDefaults()
 	fScrollBarInfo.double_arrows = false;
 	fScrollBarInfo.knob = 0;
 		// look of the knob (R5: (0, 1, 2), 1 = default)
-		// change default = 0 (no knob) in Haiku
+		// change default = 0 (no knob) in Plasmatail
 	fScrollBarInfo.min_knob_size = 15;
 
 	// init menu info

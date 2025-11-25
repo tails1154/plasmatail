@@ -27,7 +27,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #ifdef FS_SHELL
 #include "sys/types.h"
@@ -106,7 +106,7 @@ vfs_hash_get(struct mount* mp, uint64 hash, int flags, thread_id td, struct vnod
 }
 
 
-/*! In FreeBSD, this adds vp to a VFS-level list of nodes. In Haiku, the same thing is
+/*! In FreeBSD, this adds vp to a VFS-level list of nodes. In Plasmatail, the same thing is
 	taken care of automatically by get_vnode.
 */
 int
@@ -126,7 +126,7 @@ vfs_hash_insert(struct vnode* vp, uint64 hash, int flags, thread_id td, struct v
 
 
 /*! In FreeBSD, this provides the VFS with an updated node hash value based on the new directory
-	entry offset when a file is renamed. Not applicable in Haiku.
+	entry offset when a file is renamed. Not applicable in Plasmatail.
 */
 void
 vfs_hash_rehash(struct vnode* vp, uint64 hash)

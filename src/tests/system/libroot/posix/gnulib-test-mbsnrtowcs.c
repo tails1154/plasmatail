@@ -166,7 +166,7 @@ main(int argc, char *argv[])
 					input[1] = '\0';
 
 // Copying mbstate_t doesn't really copy the ICU-converter's state, so this
-// doesn't work on Haiku.
+// doesn't work on Plasmatail.
 #ifndef __HAIKU__
 					src = input + 2;
 					temp_state = state;
@@ -231,7 +231,7 @@ main(int argc, char *argv[])
 					input[3] = '\0';
 
 // Copying mbstate_t doesn't really copy the ICU-converter's state, so this
-// doesn't work on Haiku.
+// doesn't work on Plasmatail.
 #ifndef __HAIKU__
 					src = input + 4;
 					temp_state = state;
@@ -287,7 +287,7 @@ main(int argc, char *argv[])
 					input[1] = '\0';
 
 // Copying mbstate_t doesn't really copy the ICU-converter's state, so this
-// doesn't work on Haiku.
+// doesn't work on Plasmatail.
 #ifndef __HAIKU__
 					src = input + 2;
 					temp_state = state;

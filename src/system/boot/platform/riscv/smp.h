@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Haiku, Inc.
+ * Copyright 2021, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _SMP_H_

@@ -33,7 +33,7 @@
 #	define _IMPEXP_KERNEL
 #endif
 
-// a Haiku definition
+// a Plasmatail definition
 #ifndef B_BUFFER_OVERFLOW
 #	define B_BUFFER_OVERFLOW	EOVERFLOW
 #endif

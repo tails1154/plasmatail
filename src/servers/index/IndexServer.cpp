@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2013 Haiku, Inc. All rights reserved.
+ * Copyright 2010-2013 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -75,7 +75,7 @@ AnalyserMonitorHandler::AddOnDisabled(const add_on_entry_info* entryInfo)
 
 IndexServer::IndexServer()
 	:
-	BApplication("application/x-vnd.Haiku-index_server"),
+	BApplication("application/x-vnd.Plasmatail-index_server"),
 	fVolumeObserverHandler(this),
 	fAddOnMonitorHandler(this),
 	fPulseRunner(NULL)

@@ -1,6 +1,6 @@
 /* 
  * Copyright 2019, Adrien Destugues, pulkomandy@pulkomandy.tk
- * Distributed under the terms of the Haiku License.
+ * Distributed under the terms of the Plasmatail License.
  */
 
 

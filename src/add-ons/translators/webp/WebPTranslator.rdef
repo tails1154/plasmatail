@@ -2,7 +2,7 @@
  * WebPTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-WebPTranslator";
+resource app_signature "application/x-vnd.Plasmatail-WebPTranslator";
 
 resource app_version {
 	major  = 0,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "0.1.0",
-	long_info = "Haiku WebPTranslator Add-Ons."
+	long_info = "Plasmatail WebPTranslator Add-Ons."
 };

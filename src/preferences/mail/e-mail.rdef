@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Mail";
+resource app_signature "application/x-vnd.Plasmatail-Mail";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Mail:System name:E-mail";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Mail:System name:E-mail";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 3,
 
 	short_info = "E-mail",
-	long_info = "E-mail ©2005-2009 Haiku"
+	long_info = "E-mail ©2005-2009 Plasmatail"
 };
 
 resource vector_icon {

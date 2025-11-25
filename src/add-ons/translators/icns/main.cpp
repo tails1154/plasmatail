@@ -12,7 +12,7 @@
 int
 main(int /*argc*/, char ** /*argv*/)
 {
-	BApplication app("application/x-vnd.Haiku-ICNSTranslator");
+	BApplication app("application/x-vnd.Plasmatail-ICNSTranslator");
 
 	status_t result;
 	result = LaunchTranslatorWindow(new ICNSTranslator, 

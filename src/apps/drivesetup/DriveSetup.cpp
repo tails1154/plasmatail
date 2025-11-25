@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2013 Haiku Inc. All rights reserved.
+ * Copyright 2002-2013 Plasmatail Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -21,7 +21,7 @@
 
 
 DriveSetup::DriveSetup()
-	: BApplication("application/x-vnd.Haiku-DriveSetup"),
+	: BApplication("application/x-vnd.Plasmatail-DriveSetup"),
 	fWindow(NULL),
 	fSettings((uint32)0)
 {

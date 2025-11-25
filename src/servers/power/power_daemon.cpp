@@ -43,7 +43,7 @@ main(void)
 
 PowerManagementDaemon::PowerManagementDaemon()
 	:
-	BServer("application/x-vnd.Haiku-powermanagement", false, NULL),
+	BServer("application/x-vnd.Plasmatail-powermanagement", false, NULL),
 	fMonitorCount(0),
 	fQuitRequested(false)
 {

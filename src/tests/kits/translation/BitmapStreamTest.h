@@ -1,5 +1,5 @@
 /*****************************************************************************/
-// Haiku Translation Kit Test
+// Plasmatail Translation Kit Test
 //
 // Version: 0.1.0
 // Author: Brian Matzon <brian@matzon.dk>
@@ -10,7 +10,7 @@
 // where noted, are licensed under the MIT License, and have been written 
 // and are:
 //
-// Copyright (c) 2002 Haiku Project
+// Copyright (c) 2002 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

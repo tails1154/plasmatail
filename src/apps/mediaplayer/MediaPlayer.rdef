@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-MediaPlayer";
+resource app_signature "application/x-vnd.Plasmatail-MediaPlayer";
 
-resource app_name_catalog_entry "x-vnd.Haiku-MediaPlayer:System name:MediaPlayer";
+resource app_name_catalog_entry "x-vnd.Plasmatail-MediaPlayer:System name:MediaPlayer";
 
 resource app_version {
 	major      = 1,
@@ -10,7 +10,7 @@ resource app_version {
 	variety    = B_APPV_BETA,
 	internal   = 0,
 	short_info = "MediaPlayer",
-	long_info  = "MediaPlayer ©2006-2010 Haiku, Inc."
+	long_info  = "MediaPlayer ©2006-2010 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

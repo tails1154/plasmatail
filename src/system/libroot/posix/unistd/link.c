@@ -87,7 +87,7 @@ linkat(int toFD, const char *toPath, int linkFD, const char *linkPath, int flag)
 	int status = _kern_create_link(linkFD, linkPath, toFD, toPath,
 		(flag & AT_SYMLINK_FOLLOW) != 0);
 
-	// Haiku -> POSIX error mapping
+	// Plasmatail -> POSIX error mapping
 	if (status == B_UNSUPPORTED)
 		status = EPERM;
 

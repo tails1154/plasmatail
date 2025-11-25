@@ -15,7 +15,7 @@ Application PowerStatus :
 	: PowerStatus.rdef
 ;
 DoCatalogs PowerStatus :
-	x-vnd.Haiku-PowerStatus
+	x-vnd.Plasmatail-PowerStatus
 	:
 	ACPIDriverInterface.cpp
 	ExtendedInfoWindow.cpp

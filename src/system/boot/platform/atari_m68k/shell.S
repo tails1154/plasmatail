@@ -2,7 +2,7 @@
  * Copyright 2008-2011, François Revol, revol@free.fr. All rights reserved.
  * Copyright 2004-2005, Axel Dörfler, axeld@pinc-software.de. All rights reserved.
  * Copyright 2005, Ingo Weinhold, bonefish@users.sf.net.
- * Copyright 2007, Haiku, Inc. All Rights Reserved.
+ * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  */
 
@@ -68,7 +68,7 @@ _bs_entry:
 // MS-DOS values :
 // http://support.microsoft.com/kb/75131/en
 // http://alumnus.caltech.edu/~pje/dosfiles.html
-	.ascii	"Haiku "
+	.ascii	"Plasmatail "
 	.byte	0xbe, 0x50, 0x38 // id
 	//LITTLE ENDIAN!
 	.byte	0x00, 0x02	//BPS
@@ -324,7 +324,7 @@ getc:
 	rts
 
 str:
-	.string "Haiku!"
+	.string "Plasmatail!"
 //label_prg:
 //	.string "P" //"RG boot"
 //label_floppy:

@@ -1,7 +1,7 @@
 
-resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Haiku-PowerStatus";
+resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Plasmatail-PowerStatus";
 
-resource app_name_catalog_entry "x-vnd.Haiku-PowerStatus:System name:PowerStatus";
+resource app_name_catalog_entry "x-vnd.Plasmatail-PowerStatus:System name:PowerStatus";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -14,7 +14,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "PowerStatus",
-	long_info = "PowerStatus ©2006-2009 Haiku"
+	long_info = "PowerStatus ©2006-2009 Plasmatail"
 };
 
 resource vector_icon {

@@ -11,32 +11,32 @@
 
 namespace UserlandFS {
 
-class HaikuKernelFileSystem;
-class HaikuKernelNode;
+class PlasmatailKernelFileSystem;
+class PlasmatailKernelNode;
 
 
-class HaikuKernelVolume : public Volume {
+class PlasmatailKernelVolume : public Volume {
 public:
-								HaikuKernelVolume(FileSystem* fileSystem,
+								PlasmatailKernelVolume(FileSystem* fileSystem,
 									dev_t id,
 									file_system_module_info* fsModule);
-	virtual						~HaikuKernelVolume();
+	virtual						~PlasmatailKernelVolume();
 
-	static	HaikuKernelVolume*	GetVolume(const fs_volume* volume);
+	static	PlasmatailKernelVolume*	GetVolume(const fs_volume* volume);
 
 	inline	fs_volume*			GetFSVolume()	{ return &fVolume; }
 
 			status_t			Init();
 
 			status_t			NewVNode(ino_t vnodeID, void* privateNode,
-									fs_vnode_ops* ops, HaikuKernelNode** node);
+									fs_vnode_ops* ops, PlasmatailKernelNode** node);
 			status_t			PublishVNode(ino_t vnodeID, void* privateNode,
 									fs_vnode_ops* ops, int type, uint32 flags,
-									HaikuKernelNode** node);
-			void				UndoNewVNode(HaikuKernelNode* node);
-			void				UndoPublishVNode(HaikuKernelNode* node);
+									PlasmatailKernelNode** node);
+			void				UndoNewVNode(PlasmatailKernelNode* node);
+			void				UndoPublishVNode(PlasmatailKernelNode* node);
 
-			HaikuKernelNode*	NodeWithID(ino_t vnodeID) const;
+			PlasmatailKernelNode*	NodeWithID(ino_t vnodeID) const;
 
 	// FS
 	virtual	status_t			Mount(const char* device, uint32 flags,
@@ -191,14 +191,14 @@ public:
 
 private:
 	struct FSVolume : fs_volume {
-		HaikuKernelVolume*	haikuVolume;
+		PlasmatailKernelVolume*	haikuVolume;
 	};
 
 	class NodeMap;
 
 private:
 			void				_InitCapabilities();
-	inline	HaikuKernelFileSystem* _FileSystem() const;
+	inline	PlasmatailKernelFileSystem* _FileSystem() const;
 
 private:
 			file_system_module_info* fFSModule;
@@ -207,8 +207,8 @@ private:
 };
 
 
-/*static*/ inline HaikuKernelVolume*
-HaikuKernelVolume::GetVolume(const fs_volume* volume)
+/*static*/ inline PlasmatailKernelVolume*
+PlasmatailKernelVolume::GetVolume(const fs_volume* volume)
 {
 	return static_cast<const FSVolume*>(volume)->haikuVolume;
 }
@@ -216,6 +216,6 @@ HaikuKernelVolume::GetVolume(const fs_volume* volume)
 
 }	// namespace UserlandFS
 
-using UserlandFS::HaikuKernelVolume;
+using UserlandFS::PlasmatailKernelVolume;
 
 #endif	// USERLAND_FS_HAIKU_KERNEL_VOLUME_H

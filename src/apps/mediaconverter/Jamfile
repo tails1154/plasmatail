@@ -15,7 +15,7 @@ Application MediaConverter :
 ;
 
 DoCatalogs MediaConverter :
-	x-vnd.Haiku-MediaConverter
+	x-vnd.Plasmatail-MediaConverter
 	:
 	MediaFileInfoView.cpp
 	MediaFileInfo.cpp

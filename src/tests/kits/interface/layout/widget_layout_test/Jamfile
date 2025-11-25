@@ -37,7 +37,7 @@ SimpleTest WidgetLayoutTest :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR)
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR)
 		: WidgetLayoutTest
 		: tests!apps ;
 }

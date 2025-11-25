@@ -1,5 +1,5 @@
 /* Test-file for coding style checker
- * Copyright 2010, Haiku, Inc.
+ * Copyright 2010, Plasmatail, Inc.
  * Distributed under the terms of the MIT Licence
  */
 

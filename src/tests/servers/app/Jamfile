@@ -228,15 +228,15 @@ Application test_app_server :
 ;
 
 # install in the test dir
-HaikuInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR)
+PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR)
 	: libtestappserver.so libbe_test.so
 	libhwinterface.so libhwinterfaceimpl.so libtextencoding.so
 	: tests!apps ;
 
-HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : test_app_server
+PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : test_app_server
 	: tests!apps ;
 
-HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : run.sh
+PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : run.sh
 	: tests!apps ;
 
 } # if $(TARGET_PLATFORM) = libbe_test

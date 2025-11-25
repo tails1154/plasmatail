@@ -40,7 +40,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs RAWTranslator :
-	x-vnd.Haiku-RAWTranslator
+	x-vnd.Plasmatail-RAWTranslator
 	:
 	RAWTranslator.cpp
 	ConfigView.cpp

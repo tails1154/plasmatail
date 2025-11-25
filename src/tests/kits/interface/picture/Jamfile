@@ -31,6 +31,6 @@ SimpleTest PictureTest :
 	;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : PictureTest
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : PictureTest
 		: tests!apps ;
 }

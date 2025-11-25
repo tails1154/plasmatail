@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2013, Haiku, Inc. All rights reserved.
+ * Copyright 2006-2013, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -490,7 +490,7 @@ NetworkStatusView::_AboutRequested()
 		NULL
 	};
 
-	window->AddCopyright(2007, "Haiku, Inc.");
+	window->AddCopyright(2007, "Plasmatail, Inc.");
 	window->AddAuthors(authors);
 
 	window->Show();
@@ -572,7 +572,7 @@ NetworkStatusView::_Update(bool force)
 void
 NetworkStatusView::_OpenNetworksPreferences()
 {
-	status_t status = be_roster->Launch("application/x-vnd.Haiku-Network");
+	status_t status = be_roster->Launch("application/x-vnd.Plasmatail-Network");
 	if (status != B_OK && status != B_ALREADY_RUNNING) {
 		BString errorMessage(B_TRANSLATE("Launching the network preflet "
 			"failed.\n\nError: "));

@@ -11,12 +11,12 @@
 #include <Referenceable.h>
 
 
-/*! This class represents a language that is supported by the Haiku
+/*! This class represents a language that is supported by the Plasmatail
     Depot Server system.  This may differ from the set of languages
     that are supported in the platform itself.
 
     No builder is provided for this class because it sub-classes from
-    a Haiku type. Instead always create new instances with the constructor
+    a Plasmatail type. Instead always create new instances with the constructor
     and do not use any mutating functions offered by the superclass.
 */
 

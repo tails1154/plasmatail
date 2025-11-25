@@ -61,7 +61,7 @@ const static struct type_map {
 	{{0xC12A7328, 0xF81F, 0x11D2, 0xBA4B00A0C93EC93BLL}, "EFI system data"},
 	{{0x21686148, 0x6449, 0x6E6F, 0x744E656564454649LL}, "BIOS boot data"},
 	{{0x024DEE41, 0x33E7, 0x11D3, 0x9D690008C781F39FLL}, "MBR partition nest"},
-	// Haiku partition
+	// Plasmatail partition
 	{{0x42465331, 0x3BA3, 0x10F1, 0x802A4861696B7521LL}, BFS_NAME},
 	// Linux partitions
 	{{0x0FC63DAF, 0x8483, 0x4772, 0x8E793D69D8477DE4LL}, "Linux data"},

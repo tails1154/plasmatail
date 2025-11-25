@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-FontDemo";
+resource app_signature "application/x-vnd.Plasmatail-FontDemo";
 
-resource app_name_catalog_entry "x-vnd.Haiku-FontDemo:System name:FontDemo";
+resource app_name_catalog_entry "x-vnd.Plasmatail-FontDemo:System name:FontDemo";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "FontDemo",
-	long_info = "FontDemo ©2006-2009 Haiku, Inc."
+	long_info = "FontDemo ©2006-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

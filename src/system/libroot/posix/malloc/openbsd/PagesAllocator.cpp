@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Haiku, Inc. All rights reserved.
+ * Copyright 2025, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -27,7 +27,7 @@ static const size_t kPageSize = B_PAGE_SIZE;
 static const size_t kLargestUsefulChunk = 512 * kPageSize;
 
 /*! Amount of virtual address space to reserve when creating new areas. */
-/* (The Haiku kernel will ignore reservations if there's no other address
+/* (The Plasmatail kernel will ignore reservations if there's no other address
  * space left, so using a large value here should not hurt.) */
 static const size_t kReserveAddressSpace = 1 * 1024 * 1024 * 1024;
 

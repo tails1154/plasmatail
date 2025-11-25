@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "media_addon_server",
-	long_info = "media_addon_server ©2002-2009 Haiku"
+	long_info = "media_addon_server ©2002-2009 Plasmatail"
 };
 
 resource vector_icon array {

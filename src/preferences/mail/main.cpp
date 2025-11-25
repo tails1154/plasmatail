@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Haiku, Inc. All rights reserved.
+ * Copyright 2011, Plasmatail, Inc. All rights reserved.
  * Copyright 2011, Clemens Zeidler <haiku@clemens-zeidler.de>
  * Distributed under the terms of the MIT License.
  */
@@ -13,7 +13,7 @@
 int
 main(int argc, char** argv)
 {
-	BApplication app("application/x-vnd.Haiku-Mail");
+	BApplication app("application/x-vnd.Plasmatail-Mail");
 
 	BWindow* window = new ConfigWindow;
 	window->Show();

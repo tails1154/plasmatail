@@ -1,6 +1,6 @@
 /*
  * Copyright 2008 Ralf Schülke, ralf.schuelke@googlemail.com.
- * Copyright 2014 Haiku, Inc. All rights reserved.
+ * Copyright 2014 Plasmatail, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  *

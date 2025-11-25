@@ -212,9 +212,9 @@ status_t INIT_ACCELERANT(int the_fd)
 	/* every 3D add-on will reset this bit-flag when it's done. */
 	si->engine.threeD.newmode = 0xffffffff;
 
-	/* we did not detect the Haiku ScreenPrefs app yet */
+	/* we did not detect the Plasmatail ScreenPrefs app yet */
 	si->haiku_prefs_used = false;
-	si->Haiku_switch_head = false;
+	si->Plasmatail_switch_head = false;
 
 	/* a winner! */
 	result = B_OK;

@@ -2,7 +2,7 @@ SubDir HAIKU_TOP src system libroot posix glibc ;
 
 local arch ;
 for arch in $(TARGET_ARCHS) {
-	HaikuSubInclude arch $(arch) ;
+	PlasmatailSubInclude arch $(arch) ;
 }
 
 SubInclude HAIKU_TOP src system libroot posix glibc extensions ;

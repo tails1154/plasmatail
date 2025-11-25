@@ -61,7 +61,7 @@ dev_t gBootDevice = -1;
 bool gReadOnlyBootDevice = false;
 
 
-/*!	No image was chosen - prefer disks with names like "Haiku", or "System"
+/*!	No image was chosen - prefer disks with names like "Plasmatail", or "System"
  */
 int
 compare_image_boot(const void* _a, const void* _b)
@@ -81,9 +81,9 @@ compare_image_boot(const void* _a, const void* _b)
 	if (!compare)
 		return 0;
 
-	if (!strcasecmp(a->ContentName(), "Haiku"))
+	if (!strcasecmp(a->ContentName(), "Plasmatail"))
 		return 1;
-	if (!strcasecmp(b->ContentName(), "Haiku"))
+	if (!strcasecmp(b->ContentName(), "Plasmatail"))
 		return -1;
 	if (!strncmp(a->ContentName(), "System", 6))
 		return 1;

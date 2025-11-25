@@ -2,7 +2,7 @@
 
 PCL6 Disassembler
 
-Copyright (c) 2003 Haiku.
+Copyright (c) 2003 Plasmatail.
 
 Author: 
 	Michael Pfeiffer

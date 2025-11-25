@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2019, Haiku, Inc. All Rights Reserved.
+ * Copyright 2013-2019, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -110,7 +110,7 @@ UpdateManager::CheckRepositories()
 			int32 result;
 			reply.FindInt32(kKeyAlertResult, &result);
 			if (result == 1)
-				be_roster->Launch("application/x-vnd.Haiku-Repositories");
+				be_roster->Launch("application/x-vnd.Plasmatail-Repositories");
 		}
 		be_app->PostMessage(kMsgFinalQuit);
 		throw BException(B_TRANSLATE_COMMENT(

@@ -1,7 +1,7 @@
 // Copyright 1999, Be Incorporated. All Rights Reserved.
 // Copyright 2000-2004, Jun Suzuki. All Rights Reserved.
 // Copyright 2007, 2010 Stephan Aßmus. All Rights Reserved.
-// Copyright 2010-2013, Haiku, Inc. All Rights Reserved.
+// Copyright 2010-2013, Plasmatail, Inc. All Rights Reserved.
 // This file may be used under the terms of the Be Sample Code License.
 
 
@@ -456,7 +456,7 @@ MediaConverterWindow::MessageReceived(BMessage* message)
 
 			if (status == B_OK) {
 				argv[0] = "-pos";
-					// NOTE: -pos argument is currently not supported by Haiku
+					// NOTE: -pos argument is currently not supported by Plasmatail
 					// MediaPlayer.
 				startPosString << fStartDurationTC->Text();
 				startPosString << "000";
@@ -473,7 +473,7 @@ MediaConverterWindow::MessageReceived(BMessage* message)
 
 			if (status == B_OK) {
 				status = be_roster->Launch(
-					"application/x-vnd.Haiku-MediaPlayer",
+					"application/x-vnd.Plasmatail-MediaPlayer",
 					3, (char**)argv, NULL);
 			}
 

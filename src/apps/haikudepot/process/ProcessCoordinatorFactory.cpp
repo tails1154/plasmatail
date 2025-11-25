@@ -13,7 +13,7 @@
 #include "AbstractServerProcess.h"
 #include "CacheScreenshotProcess.h"
 #include "DeskbarLink.h"
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "IncrementViewCounterProcess.h"
 #include "InstallPackageProcess.h"
 #include "LocalPkgDataLoadProcess.h"

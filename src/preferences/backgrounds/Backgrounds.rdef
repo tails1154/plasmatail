@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Backgrounds";
+resource app_signature "application/x-vnd.Plasmatail-Backgrounds";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Backgrounds:System name:Backgrounds";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Backgrounds:System name:Backgrounds";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Backgrounds",
-	long_info  = "Backgrounds ©2002-2009 Haiku"
+	long_info  = "Backgrounds ©2002-2009 Plasmatail"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

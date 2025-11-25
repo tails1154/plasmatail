@@ -6,7 +6,7 @@
 // SlideShowSaver.cpp
 //
 //
-// Copyright (C) Haiku
+// Copyright (C) Plasmatail
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),
@@ -334,7 +334,7 @@ SlideShowSaver::SetImage(const entry_ref *pref)
 	return B_OK;
 }
 
-// Function originally from Haiku ShowImage
+// Function originally from Plasmatail ShowImage
 bool
 SlideShowSaver::ShowNextImage(bool next, bool rewind)
 {
@@ -360,7 +360,7 @@ SlideShowSaver::ShowNextImage(bool next, bool rewind)
 	return false;
 }
 
-// Function taken from Haiku ShowImage,
+// Function taken from Plasmatail ShowImage,
 // function originally written by Michael Pfeiffer
 bool
 SlideShowSaver::IsImage(const entry_ref *pref)
@@ -393,7 +393,7 @@ SlideShowSaver::IsImage(const entry_ref *pref)
 	return true;
 }
 
-// Function taken from Haiku ShowImage,
+// Function taken from Plasmatail ShowImage,
 // function originally written by Michael Pfeiffer
 bool
 SlideShowSaver::FindNextImage(entry_ref *in_current, entry_ref *out_image, bool next, bool rewind)
@@ -453,7 +453,7 @@ SlideShowSaver::FindNextImage(entry_ref *in_current, entry_ref *out_image, bool 
 	return found;
 }
 
-// Function taken from Haiku ShowImage,
+// Function taken from Plasmatail ShowImage,
 // function originally written by Michael Pfeiffer
 void
 SlideShowSaver::FreeEntries(BList *entries)

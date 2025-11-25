@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Haiku, Inc. All rights reserved.
+ * Copyright 2023, Plasmatail, Inc. All rights reserved.
  * Copyright 2018, Jérôme Duval, jerome.duval@gmail.com.
  * Copyright 2015, Hamish Morrison, hamishm53@gmail.com.
  * Copyright 2010, Ingo Weinhold, ingo_weinhold@gmx.de.

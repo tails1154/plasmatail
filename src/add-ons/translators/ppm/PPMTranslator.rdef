@@ -2,7 +2,7 @@
  * PPMTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Haiku-PPMTranslator";
+resource app_signature "application/x-vnd.Plasmatail-PPMTranslator";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Haiku PPMTranslator Add-Ons."
+	long_info = "Plasmatail PPMTranslator Add-Ons."
 };

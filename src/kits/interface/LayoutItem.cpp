@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2012, Haiku, Inc.
+ * Copyright 2010-2012, Plasmatail, Inc.
  * Copyright 2006, Ingo Weinhold <bonefish@cs.tu-berlin.de>.
  * All rights reserved. Distributed under the terms of the MIT License.
  */

@@ -1,4 +1,4 @@
-//	df - for Haiku
+//	df - for Plasmatail
 //
 //	authors, in order of contribution:
 //	jonas.sundstrom@kirilla.com

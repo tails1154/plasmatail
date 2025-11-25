@@ -16,7 +16,7 @@ Application CodyCam :
 ;
 
 DoCatalogs CodyCam :
-	x-vnd.Haiku-CodyCam
+	x-vnd.Plasmatail-CodyCam
 	:
 	CodyCam.cpp
 	FtpClient.cpp

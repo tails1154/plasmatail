@@ -89,8 +89,8 @@
 #define JSON_SAMPLE_BROKEN_NUMBER "-123e123E456e"
 
 /*! This is a larger example and comes from the request-response
-    cycle of a JSON-RPC request from the HaikuDepot desktop application
-    into the HaikuDepotServer system.
+    cycle of a JSON-RPC request from the PlasmatailDepot desktop application
+    into the PlasmatailDepotServer system.
 */
 
 #define JSON_SAMPLE_HDS_FETCH_BATCH_PKGS { \

@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Haiku-Gradients";
+resource app_signature "application/x-vnd.Plasmatail-Gradients";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -12,6 +12,6 @@ resource app_version {
 	internal = 1,
 
 	short_info = "Gradients",
-	long_info = "Gradients ©2014 Haiku"
+	long_info = "Gradients ©2014 Plasmatail"
 };
 

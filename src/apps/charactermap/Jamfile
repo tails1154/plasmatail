@@ -16,7 +16,7 @@ Application CharacterMap :
 	;
 
 DoCatalogs CharacterMap :
-	x-vnd.Haiku-CharacterMap
+	x-vnd.Plasmatail-CharacterMap
 	:
 	CharacterMap.cpp
 	CharacterView.cpp
@@ -25,6 +25,6 @@ DoCatalogs CharacterMap :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CharacterMap
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CharacterMap
 		: tests!apps ;
 }

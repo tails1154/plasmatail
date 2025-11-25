@@ -8,5 +8,5 @@ KernelAddon loopback :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/devices
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/devices
 	: loopback ;

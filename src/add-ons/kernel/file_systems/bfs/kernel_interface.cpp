@@ -4,7 +4,7 @@
  */
 
 
-//!	file system interface to Haiku's vnode layer
+//!	file system interface to Plasmatail's vnode layer
 
 
 #include "Attribute.h"

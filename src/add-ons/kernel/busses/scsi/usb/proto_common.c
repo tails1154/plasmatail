@@ -2,7 +2,7 @@
  *
  * TODO: description
  *
- * This file is a part of USB SCSI CAM for Haiku.
+ * This file is a part of USB SCSI CAM for Plasmatail.
  * May be used under terms of the MIT License
  *
  * Author(s):

@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2007, Haiku Inc.
+ * Copyright 2004-2007, Plasmatail Inc.
  * Distributed under the terms of the MIT License.
  *
  * Thread definition and structures

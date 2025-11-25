@@ -166,7 +166,7 @@ PopulatePkgUserRatingsFromServerProcess::RunInternal()
 					// Add the rating to the PackageInfo
 					UserRatingRef userRating(
 						new UserRating(UserInfo(user), rating, comment, languageCode,
-							// note that language identifiers are "code" in HDS and "id" in Haiku
+							// note that language identifiers are "code" in HDS and "id" in Plasmatail
 							versionString, static_cast<uint64>(createTimestamp)),
 						true);
 					userRatingInfoBuilder.AddUserRating(userRating);

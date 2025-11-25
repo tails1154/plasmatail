@@ -1,5 +1,5 @@
 /*
- * Copyright 2010, Haiku. All rights reserved.
+ * Copyright 2010, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -21,7 +21,7 @@
 int
 main()
 {
-	BApplication app("application/x-vnd.Haiku-WebPTranslator");
+	BApplication app("application/x-vnd.Plasmatail-WebPTranslator");
 	if (LaunchTranslatorWindow(new WebPTranslator,
 		B_TRANSLATE("WebP Settings")) != B_OK)
 		return 1;

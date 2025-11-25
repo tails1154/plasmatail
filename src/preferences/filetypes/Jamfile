@@ -29,7 +29,7 @@ Application FileTypes :
 	;
 
 DoCatalogs FileTypes :
-	x-vnd.Haiku-FileTypes
+	x-vnd.Plasmatail-FileTypes
 	:
 	ApplicationTypeWindow.cpp
 	ApplicationTypesWindow.cpp
@@ -46,6 +46,6 @@ DoCatalogs FileTypes :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FileTypes
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FileTypes
 		: tests!apps ;
 }

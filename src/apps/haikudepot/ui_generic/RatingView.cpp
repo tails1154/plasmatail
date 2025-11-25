@@ -11,7 +11,7 @@
 
 #include <LayoutUtils.h>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "RatingUtils.h"
 #include "SharedIcons.h"
 

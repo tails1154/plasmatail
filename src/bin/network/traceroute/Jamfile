@@ -10,11 +10,11 @@ Application traceroute :
 	: $(TARGET_NETWORK_LIBS) $(TARGET_SELECT_UNAME_ETC_LIB) libbsd.so ;
 
 # Installation -- in the test directory for the time being
-HaikuInstall install-networking
+PlasmatailInstall install-networking
 	: [ FDirName $(HAIKU_TEST_DIR) kits net ]
 	: traceroute ;
 
-HaikuInstall install-userland-networking
+PlasmatailInstall install-userland-networking
 	: [ FDirName $(HAIKU_TEST_DIR) kits net userland ]
 	: traceroute
 	: installed-userland-networking

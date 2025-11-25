@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2019, Haiku, Inc.
+ * Copyright 2001-2019, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -158,7 +158,7 @@ init_team_after_fork()
 thread_id
 main_thread_for(team_id team)
 {
-	// Under Haiku the team ID is equal to it's main thread ID. We just get
+	// Under Plasmatail the team ID is equal to it's main thread ID. We just get
 	// a team info to verify the existence of the team.
 	team_info info;
 	status_t error = get_team_info(team, &info);
@@ -222,7 +222,7 @@ create_desktop_connection(ServerLink* link, const char* name, int32 capacity)
 	request.AddInt32("version", AS_PROTOCOL_VERSION);
 	request.AddString("target", getenv("TARGET_SCREEN"));
 
-	BMessenger server("application/x-vnd.Haiku-app_server");
+	BMessenger server("application/x-vnd.Plasmatail-app_server");
 	BMessage reply;
 	status_t status = server.SendMessage(&request, &reply);
 	if (status != B_OK)

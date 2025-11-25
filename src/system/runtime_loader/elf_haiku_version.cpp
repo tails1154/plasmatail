@@ -15,7 +15,7 @@
 #include "elf_symbol_lookup.h"
 
 
-// interim Haiku API versions
+// interim Plasmatail API versions
 #define HAIKU_VERSION_PRE_GLUE_CODE		0x00000010
 
 
@@ -97,7 +97,7 @@ analyze_object_gcc_version(int fd, image_t* image, elf_ehdr& eheader,
 	int gccMajor = 0;
 	int gccMiddle = 0;
 	int gccMinor = 0;
-	bool isHaiku = true;
+	bool isPlasmatail = true;
 
 	// Read up to 10 comments. The first three or four are usually from the
 	// glue code.
@@ -181,7 +181,7 @@ analyze_object_gcc_version(int fd, image_t* image, elf_ehdr& eheader,
 
 		if (gccMajor == 2 && gccPlatform != NULL
 			&& strcmp(gccPlatform, "haiku")) {
-			isHaiku = false;
+			isPlasmatail = false;
 		}
 	}
 
@@ -191,7 +191,7 @@ analyze_object_gcc_version(int fd, image_t* image, elf_ehdr& eheader,
 	if (gccMajor == 2) {
 		if (gccMiddle < 95)
 			image->abi = B_HAIKU_ABI_GCC_2_ANCIENT;
-		else if (isHaiku)
+		else if (isPlasmatail)
 			image->abi = B_HAIKU_ABI_GCC_2_HAIKU;
 		else
 			image->abi = B_HAIKU_ABI_GCC_2_BEOS;
@@ -213,7 +213,7 @@ void
 analyze_image_haiku_version_and_abi(int fd, image_t* image, elf_ehdr& eheader,
 	int32 sheaderSize, char* buffer, size_t bufferSize)
 {
-	// Haiku API version
+	// Plasmatail API version
 	elf_sym* symbol = find_symbol(image,
 		SymbolLookupInfo(B_SHARED_OBJECT_HAIKU_VERSION_VARIABLE_NAME,
 			B_SYMBOL_TYPE_DATA));
@@ -226,7 +226,7 @@ analyze_image_haiku_version_and_abi(int fd, image_t* image, elf_ehdr& eheader,
 	} else
 		image->api_version = 0;
 
-	// Haiku ABI
+	// Plasmatail ABI
 	symbol = find_symbol(image,
 		SymbolLookupInfo(B_SHARED_OBJECT_HAIKU_ABI_VARIABLE_NAME,
 			B_SYMBOL_TYPE_DATA));
@@ -240,7 +240,7 @@ analyze_image_haiku_version_and_abi(int fd, image_t* image, elf_ehdr& eheader,
 
 	if (image->abi == 0) {
 		// No ABI version in the shared object, i.e. it has been built before
-		// that was introduced in Haiku. We have to try and analyze the gcc
+		// that was introduced in Plasmatail. We have to try and analyze the gcc
 		// version.
 		if (!analyze_object_gcc_version(fd, image, eheader, sheaderSize,
 				buffer, bufferSize)) {

@@ -1,8 +1,8 @@
 #include "IconHandles.h"
 
-resource app_signature "application/x-vnd.Haiku-Media";
+resource app_signature "application/x-vnd.Plasmatail-Media";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Media:System name:Media";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Media:System name:Media";
 
 resource app_version {
 	major  = 1, 
@@ -16,7 +16,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Media", 
-	long_info  = "Media ©2003-2010 Haiku"
+	long_info  = "Media ©2003-2010 Plasmatail"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

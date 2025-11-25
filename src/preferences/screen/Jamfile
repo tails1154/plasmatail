@@ -22,12 +22,12 @@ Application Screen :
 	;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Screen
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Screen
 		: tests!apps ;
 }
 
 DoCatalogs Screen :
-	x-vnd.Haiku-Screen
+	x-vnd.Plasmatail-Screen
 	:
 	AlertWindow.cpp
 	RefreshSlider.cpp

@@ -1,7 +1,7 @@
 /*
  * Copyright 2008 Oliver Ruiz Dorantes, oliver.ruiz.dorantes_at_gmail.com
  * Copyright 2008 Mika Lindqvist
- * Copyright 2019-2020 Haiku, Inc.
+ * Copyright 2019-2020 Plasmatail, Inc.
  * All rights reserved. Distributed under the terms of the MIT License.
  *
  * Authors:

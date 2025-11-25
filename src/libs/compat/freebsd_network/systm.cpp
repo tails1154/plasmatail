@@ -1,6 +1,6 @@
 /*
  * Copyright 2012, Jérôme Duval, korli@users.berlios.de.
- * Copyright 2018, Haiku, Inc.
+ * Copyright 2018, Plasmatail, Inc.
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2016 Haiku, Inc. All rights reserved.
+ * Copyright 2014-2016 Plasmatail, Inc. All rights reserved.
  * Copyright 2013 Fredrik Holmqvist, fredrik.holmqvist@gmail.com. All rights
  * reserved.
  * Distributed under the terms of the MIT License.

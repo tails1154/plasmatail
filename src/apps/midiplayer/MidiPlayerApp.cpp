@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2004 Matthijs Hollemans
- * Copyright (c) 2008-2014 Haiku, Inc. All rights reserved.
+ * Copyright (c) 2008-2014 Plasmatail, Inc. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -62,7 +62,7 @@ MidiPlayerApp::AboutRequested()
 		MIDI_PLAYER_SIGNATURE);
 
 	const char* extraCopyrights[] = {
-		"2008-2014 Haiku, Inc.",
+		"2008-2014 Plasmatail, Inc.",
 		NULL
 	};
 	window->AddCopyright(2004, "Matthijs Hollemans", extraCopyrights);

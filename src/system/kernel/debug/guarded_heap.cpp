@@ -1,6 +1,6 @@
 /*
  * Copyright 2011-2020, Michael Lotz <mmlr@mlotz.ch>.
- * Copyright 2025, Haiku, Inc. All rights reserved.
+ * Copyright 2025, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

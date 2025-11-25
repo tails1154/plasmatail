@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-MusicCollection";
+resource app_signature "application/x-vnd.Plasmatail-MusicCollection";
 
-resource app_name_catalog_entry "x-vnd.Haiku-MusicCollection:System name:MusicCollection";
+resource app_name_catalog_entry "x-vnd.Plasmatail-MusicCollection:System name:MusicCollection";
 
 resource app_version {
 	major      = 1,
@@ -10,7 +10,7 @@ resource app_version {
 	variety    = B_APPV_BETA,
 	internal   = 0,
 	short_info = "MusicCollection",
-	long_info  = "MusicCollection ©2011 Haiku, Inc."
+	long_info  = "MusicCollection ©2011 Plasmatail, Inc."
 };
 
 resource vector_icon {

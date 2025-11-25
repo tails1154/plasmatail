@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2019, Haiku Inc. All rights reserved.
+ * Copyright 2006-2019, Plasmatail Inc. All rights reserved.
  * Copyright 2014, Dancsó Róbert <dancso.robert@d-rendszer.hu>
  * Distributed under the terms of the MIT license.
  *

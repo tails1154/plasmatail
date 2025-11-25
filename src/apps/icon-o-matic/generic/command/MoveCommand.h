@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2007, 2023, Haiku.
+ * Copyright 2006-2007, 2023, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

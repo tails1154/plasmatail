@@ -54,9 +54,9 @@ extern "C" ssize_t
 fs_write_attr(int fd, const char* attribute, uint32 type, off_t pos,
 	const void* buffer, size_t writeBytes)
 {
-	// TODO: move this documentation into the Haiku book!
+	// TODO: move this documentation into the Plasmatail book!
 
-	// NOTE: This call is deprecated in Haiku and has a number of problems:
+	// NOTE: This call is deprecated in Plasmatail and has a number of problems:
 	// On BeOS, it was documented that the "pos" argument is ignored, however,
 	// that did not actually happen if the attribute was backed up by a real
 	// file.
@@ -67,7 +67,7 @@ fs_write_attr(int fd, const char* attribute, uint32 type, off_t pos,
 	// BeOS in that it clobbers the existing attribute when you write at offset
 	// 0, but it also tries to support programs which continue to write more
 	// chunks.
-	// The new Haiku way is to use fs_open_attr() to get a regular file handle
+	// The new Plasmatail way is to use fs_open_attr() to get a regular file handle
 	// and use that for writing, then use fs_close_attr() when done.
 
 	ssize_t bytes = _kern_write_attr(fd, attribute, type, pos, buffer,

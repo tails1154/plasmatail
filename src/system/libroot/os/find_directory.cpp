@@ -81,7 +81,7 @@ enum {
 };
 
 
-/* Haiku system directories */
+/* Plasmatail system directories */
 
 static const char *kSystemDirectories[] = {
 	SYSTEM,										// B_SYSTEM_DIRECTORY
@@ -339,7 +339,7 @@ __find_directory(directory_which which, dev_t device, bool createIt,
 				templatePath = "RECYCLED/_BEOS_";
 			break;
 
-		/* Haiku system directories */
+		/* Plasmatail system directories */
 		case B_SYSTEM_DIRECTORY:
 		case B_BEOS_SYSTEM_DIRECTORY:
 		case B_SYSTEM_ADDONS_DIRECTORY:
@@ -547,7 +547,7 @@ __find_directory(directory_which which, dev_t device, bool createIt,
 	strlcat(buffer, "/boot", pathLength);
 
 	switch ((int)which) {
-		/* Haiku system directories */
+		/* Plasmatail system directories */
 		case B_SYSTEM_DIRECTORY:
 		case B_BEOS_SYSTEM_DIRECTORY:
 		case B_SYSTEM_ADDONS_DIRECTORY:

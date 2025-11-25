@@ -22,7 +22,7 @@
 class PkgDataLoadState;
 
 
-/*!	This process will invoke API calls onto the HaikuDepotServer system in order
+/*!	This process will invoke API calls onto the PlasmatailDepotServer system in order
 	to extract user rating data about the nominated package.
 */
 

@@ -1,6 +1,6 @@
 /*
  * Copyright 1998-1999 Be, Inc. All Rights Reserved.
- * Copyright 2003-2019 Haiku, Inc. All rights reserved.
+ * Copyright 2003-2019 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -79,7 +79,7 @@ UploadClientAt(int32 i)
 
 CodyCam::CodyCam()
 	:
-	BApplication("application/x-vnd.Haiku-CodyCam"),
+	BApplication("application/x-vnd.Plasmatail-CodyCam"),
 	fMediaRoster(NULL),
 	fVideoConsumer(NULL),
 	fWindow(NULL),

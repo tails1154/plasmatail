@@ -24,7 +24,7 @@ typedef enum server_process_options {
 } server_process_options;
 
 
-/*! This is the superclass of Processes that communicate with the Haiku Depot
+/*! This is the superclass of Processes that communicate with the Plasmatail Depot
     Server (HDS) system.
 */
 

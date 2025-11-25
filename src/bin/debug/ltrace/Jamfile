@@ -18,4 +18,4 @@ SharedLibrary libltrace_stub.so
 	arch_ltrace_stub.a
 ;
 
-HaikuSubInclude arch $(TARGET_ARCH) ;
+PlasmatailSubInclude arch $(TARGET_ARCH) ;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2010, Haiku Inc.
+ * Copyright 2006-2010, Plasmatail Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef	_VIEW_LAYOUT_ITEM_H

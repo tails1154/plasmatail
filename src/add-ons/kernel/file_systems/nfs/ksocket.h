@@ -32,7 +32,7 @@
 
 #elif defined(__HAIKU__)
 
-/* Haiku socket module */
+/* Plasmatail socket module */
 #include <os/drivers/socket_interface.h>
 
 extern struct socket_module_info *gSocket;

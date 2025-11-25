@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2015 Haiku, Inc. All Rights Reserved.
+ * Copyright 2006-2015 Plasmatail, Inc. All Rights Reserved.
  * Copyright 1997, 1998 R3 Software Ltd. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
@@ -33,7 +33,7 @@
 
 static const char* kSettingsFileName = "DeskCalc_settings";
 const char* kAppName = B_TRANSLATE_SYSTEM_NAME("DeskCalc");
-const char* kSignature = "application/x-vnd.Haiku-DeskCalc";
+const char* kSignature = "application/x-vnd.Plasmatail-DeskCalc";
 
 
 CalcApplication::CalcApplication()

@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2014, Haiku, Inc. All Rights Reserved.
+ * Copyright 2011-2014, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -221,7 +221,7 @@ status_t
 BPackageRoster::GetInstallationLocationInfo(
 	BPackageInstallationLocation location, BInstallationLocationInfo& _info)
 {
-// This method makes sense only on an installed Haiku, but not for the build
+// This method makes sense only on an installed Plasmatail, but not for the build
 // tools.
 #if defined(__HAIKU__) && !defined(HAIKU_HOST_PLATFORM_HAIKU)
 	return BPackageKit::BPrivate::BDaemonClient().GetInstallationLocationInfo(
@@ -236,7 +236,7 @@ status_t
 BPackageRoster::GetActivePackages(BPackageInstallationLocation location,
 	BPackageInfoSet& packageInfos)
 {
-// This method makes sense only on an installed Haiku, but not for the build
+// This method makes sense only on an installed Plasmatail, but not for the build
 // tools.
 #if defined(__HAIKU__) && !defined(HAIKU_HOST_PLATFORM_HAIKU)
 	BInstallationLocationInfo info;
@@ -256,7 +256,7 @@ status_t
 BPackageRoster::IsPackageActive(BPackageInstallationLocation location,
 	const BPackageInfo info, bool* active)
 {
-// This method makes sense only on an installed Haiku, but not for the build
+// This method makes sense only on an installed Plasmatail, but not for the build
 // tools.
 #if defined(__HAIKU__) && !defined(HAIKU_HOST_PLATFORM_HAIKU)
 	BPackageInfoSet packageInfos;
@@ -283,7 +283,7 @@ BPackageRoster::IsPackageActive(BPackageInstallationLocation location,
 status_t
 BPackageRoster::StartWatching(const BMessenger& target, uint32 eventMask)
 {
-// This method makes sense only on an installed Haiku, but not for the build
+// This method makes sense only on an installed Plasmatail, but not for the build
 // tools.
 #if defined(__HAIKU__) && !defined(HAIKU_HOST_PLATFORM_HAIKU)
 	// compose the registrar request
@@ -318,7 +318,7 @@ BPackageRoster::StartWatching(const BMessenger& target, uint32 eventMask)
 status_t
 BPackageRoster::StopWatching(const BMessenger& target)
 {
-// This method makes sense only on an installed Haiku, but not for the build
+// This method makes sense only on an installed Plasmatail, but not for the build
 // tools.
 #if defined(__HAIKU__) && !defined(HAIKU_HOST_PLATFORM_HAIKU)
 	// compose the registrar request

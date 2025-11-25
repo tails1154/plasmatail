@@ -735,7 +735,7 @@ NodeTest::AttrTest(BNode &node)
 	// too long attribute name
 	// R5: Read/RemoveAttr() do not return B_NAME_TOO_LONG, but B_ENTRY_NOT_FOUND
 	// R5: WriteAttr() does not return B_NAME_TOO_LONG, but B_BAD_VALUE
-	// R5: Haiku has a max attribute size of 256, while R5's was 255, exclusive
+	// R5: Plasmatail has a max attribute size of 256, while R5's was 255, exclusive
 	//     of the null terminator. See changeset 4069e1f30.
 	char tooLongAttrName[B_ATTR_NAME_LENGTH + 3];
 	memset(tooLongAttrName, 'a', B_ATTR_NAME_LENGTH + 1);

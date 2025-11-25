@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-//	Copyright (c) 2004, Haiku, Inc.
+//	Copyright (c) 2004, Plasmatail, Inc.
 //
 //	Permission is hereby granted, free of charge, to any person obtaining a
 //	copy of this software and associated documentation files (the "Software"),
@@ -24,7 +24,7 @@
 //	Description:	SerialMouse detects and manages serial mice, duh!.
 //  References:		- http://www.hut.fi/~then/mytexts/mouse.html
 //					- Be's (binary) serial_mouse addon.
-//					- Haiku's CVS.
+//					- Plasmatail's CVS.
 //------------------------------------------------------------------------------
 
 #include <string.h>

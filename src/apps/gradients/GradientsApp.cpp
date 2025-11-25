@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2009, Haiku, Inc.
+ * Copyright (c) 2008-2009, Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -14,7 +14,7 @@
 
 
 GradientsApp::GradientsApp(void)
-	: BApplication("application/x-vnd.Haiku-Gradients")
+	: BApplication("application/x-vnd.Plasmatail-Gradients")
 {
 	GradientsWindow* window = new GradientsWindow();
 	window->Show();

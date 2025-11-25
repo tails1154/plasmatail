@@ -22,6 +22,6 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR)
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR)
 		: libtranslation.so : tests!apps ;
 }

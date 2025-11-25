@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2022 Haiku, Inc. All rights reserved.
+ * Copyright 2005-2022 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -87,7 +87,7 @@
 #define B_TRANSLATION_CONTEXT "AboutWindow"
 
 
-static const char* kSignature = "application/x-vnd.Haiku-About";
+static const char* kSignature = "application/x-vnd.Plasmatail-About";
 
 static const float kWindowWidth = 500.0f;
 static const float kWindowHeight = 300.0f;
@@ -104,9 +104,9 @@ static int max_pages(system_info*);
 static int max_and_ignored_pages(system_info*);
 static int used_pages(system_info*);
 
-static const rgb_color kIdealHaikuGreen = { 42, 131, 36, 255 };
-static const rgb_color kIdealHaikuOrange = { 255, 69, 0, 255 };
-static const rgb_color kIdealHaikuYellow = { 255, 176, 0, 255 };
+static const rgb_color kIdealPlasmatailGreen = { 42, 131, 36, 255 };
+static const rgb_color kIdealPlasmatailOrange = { 255, 69, 0, 255 };
+static const rgb_color kIdealPlasmatailYellow = { 255, 176, 0, 255 };
 static const rgb_color kIdealBeOSBlue = { 0, 0, 200, 255 };
 static const rgb_color kIdealBeOSRed = { 200, 0, 0, 255 };
 static const rgb_color kBlack = { 0, 0, 0, 255 };
@@ -319,7 +319,7 @@ public:
 								const char* url);
 			void			AddCopyrightEntry(const char* name,
 								const char* text, const char* url = NULL);
-			void			PickRandomHaiku();
+			void			PickRandomPlasmatail();
 
 private:
 	typedef std::map<std::string, PackageCredit*> PackageCreditMap;
@@ -351,9 +351,9 @@ private:
 private:
 			rgb_color		fTextColor;
 			rgb_color		fLinkColor;
-			rgb_color		fHaikuOrangeColor;
-			rgb_color		fHaikuGreenColor;
-			rgb_color		fHaikuYellowColor;
+			rgb_color		fPlasmatailOrangeColor;
+			rgb_color		fPlasmatailGreenColor;
+			rgb_color		fPlasmatailYellowColor;
 			rgb_color		fBeOSRedColor;
 			rgb_color		fBeOSBlueColor;
 };
@@ -1187,9 +1187,9 @@ AboutView::AboutView()
 	// Assign the colors, sadly this does not respect live color updates
 	fTextColor = ui_color(B_DOCUMENT_TEXT_COLOR);
 	fLinkColor = ui_color(B_LINK_TEXT_COLOR);
-	fHaikuOrangeColor = mix_color(fTextColor, kIdealHaikuOrange, 191);
-	fHaikuGreenColor = mix_color(fTextColor, kIdealHaikuGreen, 191);
-	fHaikuYellowColor = mix_color(fTextColor, kIdealHaikuYellow, 191);
+	fPlasmatailOrangeColor = mix_color(fTextColor, kIdealPlasmatailOrange, 191);
+	fPlasmatailGreenColor = mix_color(fTextColor, kIdealPlasmatailGreen, 191);
+	fPlasmatailYellowColor = mix_color(fTextColor, kIdealPlasmatailYellow, 191);
 	fBeOSRedColor = mix_color(fTextColor, kIdealBeOSRed, 191);
 	fBeOSBlueColor = mix_color(fTextColor, kIdealBeOSBlue, 191);
 
@@ -1301,7 +1301,7 @@ AboutView::MessageReceived(BMessage* message)
 		case 'eegg':
 		{
 			printf("Easter egg\n");
-			PickRandomHaiku();
+			PickRandomPlasmatail();
 			break;
 		}
 
@@ -1329,7 +1329,7 @@ AboutView::AddCopyrightEntry(const char* name, const char* text,
 	//font.SetSize(be_bold_font->Size());
 	font.SetFace(B_BOLD_FACE | B_ITALIC_FACE);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuYellowColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailYellowColor);
 	fCreditsView->Insert(name);
 	fCreditsView->Insert("\n");
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
@@ -1401,13 +1401,13 @@ AboutView::AddCopyrightEntry(const char* name, const char* text,
 
 
 void
-AboutView::PickRandomHaiku()
+AboutView::PickRandomPlasmatail()
 {
 	BPath path;
 	if (find_directory(B_SYSTEM_DATA_DIRECTORY, &path) != B_OK)
 		path = "/system/data";
 	path.Append("fortunes");
-	path.Append("Haiku");
+	path.Append("Plasmatail");
 
 	BFile fortunes(path.Path(), B_READ_ONLY);
 	struct stat st;
@@ -1498,12 +1498,12 @@ AboutView::_CreateCreditsView()
 		fCreditsView, B_WILL_DRAW | B_FRAME_EVENTS, false, true,
 		B_PLAIN_BORDER);
 
-	// Haiku copyright
+	// Plasmatail copyright
 	BFont font(be_bold_font);
 	font.SetSize(font.Size() + 4);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuGreenColor);
-	fCreditsView->Insert("Haiku\n");
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailGreenColor);
+	fCreditsView->Insert("Plasmatail\n");
 
 	time_t time = ::time(NULL);
 	struct tm* tm = localtime(&time);
@@ -1512,22 +1512,22 @@ AboutView::_CreateCreditsView()
 		year = 2008;
 	BString text;
 	text.SetToFormat(
-		B_TRANSLATE(COPYRIGHT_STRING "2001-%" B_PRId32 " The Haiku project. "),
+		B_TRANSLATE(COPYRIGHT_STRING "2001-%" B_PRId32 " The Plasmatail project. "),
 		year);
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(text.String());
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
-	fCreditsView->Insert(B_TRANSLATE("The copyright to the Haiku code is "
-		"property of Haiku, Inc. or of the respective authors where expressly "
-		"noted in the source. Haiku" B_UTF8_REGISTERED
+	fCreditsView->Insert(B_TRANSLATE("The copyright to the Plasmatail code is "
+		"property of Plasmatail, Inc. or of the respective authors where expressly "
+		"noted in the source. Plasmatail" B_UTF8_REGISTERED
 		" and the HAIKU logo" B_UTF8_REGISTERED
-		" are registered trademarks of Haiku, Inc."
+		" are registered trademarks of Plasmatail, Inc."
 		"\n\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fLinkColor);
-	fCreditsView->InsertHyperText(B_TRANSLATE("Visit the Haiku website"),
+	fCreditsView->InsertHyperText(B_TRANSLATE("Visit the Plasmatail website"),
 		new URLAction("https://www.haiku-os.org"));
 	fCreditsView->Insert("\n");
 	fCreditsView->InsertHyperText(B_TRANSLATE("Make a donation"),
@@ -1537,37 +1537,37 @@ AboutView::_CreateCreditsView()
 	font.SetSize(be_bold_font->Size());
 	font.SetFace(B_BOLD_FACE | B_ITALIC_FACE);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Current maintainers:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(kCurrentMaintainers);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Past maintainers:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(kPastMaintainers);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Website & marketing:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(kWebsiteTeam);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Past website & marketing:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(kPastWebsiteTeam);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Testing and bug triaging:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
 	fCreditsView->Insert(kTestingTeam);
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Contributors:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
@@ -1577,7 +1577,7 @@ AboutView::_CreateCreditsView()
 			"and probably some more we forgot to mention (sorry!)"
 			"\n\n"));
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("Translations:\n"));
 
 	BLanguage* lang;
@@ -1605,7 +1605,7 @@ AboutView::_CreateCreditsView()
 			langName.Append(translation.languageCode);
 		}
 
-		fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuGreenColor);
+		fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailGreenColor);
 		fCreditsView->Insert("\n");
 		fCreditsView->Insert(langName);
 		fCreditsView->Insert("\n");
@@ -1613,7 +1613,7 @@ AboutView::_CreateCreditsView()
 		fCreditsView->Insert(translation.names);
 	}
 
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuOrangeColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailOrangeColor);
 	fCreditsView->Insert(B_TRANSLATE("\n\nSpecial thanks to:\n"));
 
 	fCreditsView->SetFontAndColor(be_plain_font, B_FONT_ALL, &fTextColor);
@@ -1636,9 +1636,9 @@ AboutView::_CreateCreditsView()
 	fCreditsView->Insert(
 		B_TRANSLATE("Michael Phipps (project founder)\n\n"));
 	fCreditsView->Insert(
-		B_TRANSLATE("The HaikuPorts team\n"));
+		B_TRANSLATE("The PlasmatailPorts team\n"));
 	fCreditsView->Insert(
-		B_TRANSLATE("The Haikuware team and their bounty program\n"));
+		B_TRANSLATE("The Plasmatailware team and their bounty program\n"));
 	fCreditsView->Insert(
 		B_TRANSLATE("The BeGeistert team\n"));
 	fCreditsView->Insert(
@@ -1658,12 +1658,12 @@ AboutView::_CreateCreditsView()
 
 	font.SetSize(be_bold_font->Size() + 4);
 	font.SetFace(B_BOLD_FACE);
-	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fHaikuGreenColor);
+	fCreditsView->SetFontAndColor(&font, B_FONT_ALL, &fPlasmatailGreenColor);
 	fCreditsView->Insert(B_TRANSLATE("\nCopyrights\n\n"));
 
-	// Haiku license
+	// Plasmatail license
 	BString haikuLicense = B_TRANSLATE_COMMENT("The code that is unique to "
-		"Haiku, especially the kernel and all code that applications may link "
+		"Plasmatail, especially the kernel and all code that applications may link "
 		"against, is distributed under the terms of the <MIT license>. "
 		"Some system libraries contain third party code distributed under the "
 		"<LGPL license>. You can find the copyrights to third party code below."

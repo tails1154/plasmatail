@@ -26,11 +26,11 @@ actions ignore Installwb840
 
 # Installation
 
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/drivers/bin :
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/drivers/bin :
  	wb840
 ;
 
-HaikuInstallRelSymLink install-networking : /boot/home/config/add-ons/kernel/drivers/dev/net :
+PlasmatailInstallRelSymLink install-networking : /boot/home/config/add-ons/kernel/drivers/dev/net :
 	<installed>wb840 :
 	installed-symlink
 ;

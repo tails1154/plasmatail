@@ -281,7 +281,7 @@ dumprom(void *rom, uint32 size, intel_info &info)
 }
 
 
-/*!	This is reimplementation, Haiku uses BIOS call and gets most current panel
+/*!	This is reimplementation, Plasmatail uses BIOS call and gets most current panel
 	info, we're, otherwise, digging in VBIOS memory and parsing VBT tables to
 	get native panel timings. This will allow to get non-updated,
 	PROM-programmed timings info when compensation mode is off on your machine.

@@ -452,7 +452,7 @@ TextDocumentView::Paste(BClipboard* clipboard)
 				if (_PastePossiblyDisallowedChars(static_cast<const char*>(plainTextData),
 					static_cast<int32>(plainTextDataSize)) != B_OK) {
 					fprintf(stderr, "unable to paste text owing to internal error");
-						// don't use HaikuDepot logging system as this is in the text engine
+						// don't use PlasmatailDepot logging system as this is in the text engine
 				}
 			}
 		}

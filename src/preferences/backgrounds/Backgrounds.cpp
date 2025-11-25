@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2009 Haiku, Inc. All rights reserved.
+ * Copyright 2002-2009 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -22,7 +22,7 @@
 #define B_TRANSLATION_CONTEXT "Main Window"
 
 
-static const char* kSignature = "application/x-vnd.Haiku-Backgrounds";
+static const char* kSignature = "application/x-vnd.Plasmatail-Backgrounds";
 
 
 class BackgroundsWindow : public BWindow {

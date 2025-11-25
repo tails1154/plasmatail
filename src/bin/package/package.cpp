@@ -22,7 +22,7 @@ const char* kCommandName = __progname;
 
 static const char* kUsage =
 	"Usage: %s <command> <command args>\n"
-	"Creates, inspects, or extracts a Haiku package.\n"
+	"Creates, inspects, or extracts a Plasmatail package.\n"
 	"\n"
 	"Commands:\n"
 	"    add [ <options> ] <package> <entries>...\n"

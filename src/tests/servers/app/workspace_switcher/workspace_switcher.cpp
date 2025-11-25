@@ -1,5 +1,5 @@
 /*
- * Copyright 2008, Haiku Inc.
+ * Copyright 2008, Plasmatail Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -15,7 +15,7 @@
 int
 main(int argc, char** argv)
 {
-	BApplication app("application/x-vnd.Haiku-test-wss");
+	BApplication app("application/x-vnd.Plasmatail-test-wss");
 
 	if (argc == 1) {
 		// switch forever

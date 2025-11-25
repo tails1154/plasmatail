@@ -1,6 +1,6 @@
-resource app_signature "application/x-vnd.Haiku-NebulaScreensaver";
+resource app_signature "application/x-vnd.Plasmatail-NebulaScreensaver";
 
-resource app_name_catalog_entry "x-vnd.Haiku-NebulaScreensaver:System name:Nebula";
+resource app_name_catalog_entry "x-vnd.Plasmatail-NebulaScreensaver:System name:Nebula";
 
 resource app_version {
 	major  = 1,

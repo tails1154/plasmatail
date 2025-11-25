@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Haiku, Inc. All rights reserved.
+ * Copyright 2020 Plasmatail, Inc. All rights reserved.
  * Copyright 2014, Jessica Hamilton, jessica.l.hamilton@gmail.com.
  * Copyright 2011, Rene Gollent, rene@gollent.com.
  * Copyright 2008, Dustin Howett, dustin.howett@gmail.com. All rights reserved.

@@ -11,7 +11,7 @@ resource app_version {
 	internal = 3,
 
 	short_info = "mail_daemon",
-	long_info = "mail_daemon ©2005-2006 Haiku"
+	long_info = "mail_daemon ©2005-2006 Plasmatail"
 };
 
 resource(0, "Read") #'BBMP' archive BBitmap {

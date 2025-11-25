@@ -1,5 +1,5 @@
 /*
- * Copyright 2006, Haiku. All rights reserved.
+ * Copyright 2006, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -20,7 +20,7 @@
 int
 main()
 {
-	BApplication app("application/x-vnd.Haiku-WonderBrushTranslator");
+	BApplication app("application/x-vnd.Plasmatail-WonderBrushTranslator");
 	status_t result;
 	result = LaunchTranslatorWindow(new WonderBrushTranslator,
 		B_TRANSLATE("WBI Settings"), BRect(0, 0, 225, 175));

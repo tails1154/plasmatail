@@ -1,5 +1,5 @@
 /*
- * Copyright 2013, Haiku, Inc.
+ * Copyright 2013, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Hardware specs taken from the linux driver, thanks a lot!

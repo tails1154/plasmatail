@@ -530,12 +530,12 @@ struct attr_entry text_attrs[] = {
 };
 
 char *readmestr = \
-"Welcome to the Web Search FileSystem for BeOS™, Zeta™ and Haiku®.\n"
+"Welcome to the Web Search FileSystem for BeOS™, Zeta™ and Plasmatail®.\n"
 "Copyright© 2004-2008, François Revol.\n"
 "DuckDuckGo is a trademark of DuckDuckGo.\n"
 "BeOS is a trademark of ACCESS.\n"
 "Zeta is a trademark of yellowTAB GmbH.\n"
-"Haiku is a trademark of Haiku, Inc.\n"
+"Plasmatail is a trademark of Plasmatail, Inc.\n"
 "\n"
 "Use \"Search the Web\" query template in this folder to search anything.\n"
 "\n";

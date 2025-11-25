@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2016, Haiku.
+ * Copyright 2001-2016, Plasmatail.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -163,7 +163,7 @@ GlobalFontManager::MessageReceived(BMessage* message)
 						|| message->FindString("name", &name) != B_OK)
 						break;
 
-					// TODO: make this better (possible under Haiku)
+					// TODO: make this better (possible under Plasmatail)
 					snooze(100000);
 						// let the font be written completely before trying to open it
 

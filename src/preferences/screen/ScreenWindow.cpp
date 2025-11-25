@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2015 Haiku, Inc. All rights reserved.
+ * Copyright 2001-2015 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -56,7 +56,7 @@
 #include "Utility.h"
 
 /* Note, this headers defines a *private* interface to the Radeon accelerant.
- * It's a solution that works with the current BeOS interface that Haiku
+ * It's a solution that works with the current BeOS interface that Plasmatail
  * adopted.
  * However, it's not a nice and clean solution. Don't use this header in any
  * application if you can avoid it. No other driver is using this, or should
@@ -71,7 +71,7 @@
 #define B_TRANSLATION_CONTEXT "Screen"
 
 
-const char* kBackgroundsSignature = "application/x-vnd.Haiku-Backgrounds";
+const char* kBackgroundsSignature = "application/x-vnd.Plasmatail-Backgrounds";
 
 // list of officially supported colour spaces
 static const struct {

@@ -214,9 +214,9 @@ TTimeView::MessageReceived(BMessage* message)
 		case kChangeTime:
 		{
 			// launch the time prefs app
-			be_roster->Launch("application/x-vnd.Haiku-Time");
+			be_roster->Launch("application/x-vnd.Plasmatail-Time");
 			// tell Time preflet to switch to the clock tab
-			BMessenger messenger("application/x-vnd.Haiku-Time");
+			BMessenger messenger("application/x-vnd.Plasmatail-Time");
 			BMessage switchToClock('SlCk');
 			messenger.SendMessage(&switchToClock);
 			break;

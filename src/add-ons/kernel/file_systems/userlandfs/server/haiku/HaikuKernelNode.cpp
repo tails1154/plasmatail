@@ -3,16 +3,16 @@
  * Distributed under the terms of the MIT License.
  */
 
-#include "HaikuKernelNode.h"
+#include "PlasmatailKernelNode.h"
 
-#include "HaikuKernelFileSystem.h"
+#include "PlasmatailKernelFileSystem.h"
 
 
-HaikuKernelNode::~HaikuKernelNode()
+PlasmatailKernelNode::~PlasmatailKernelNode()
 {
 	if (capabilities != NULL) {
-		HaikuKernelFileSystem* fileSystem
-			= static_cast<HaikuKernelFileSystem*>(FileSystem::GetInstance());
+		PlasmatailKernelFileSystem* fileSystem
+			= static_cast<PlasmatailKernelFileSystem*>(FileSystem::GetInstance());
 		fileSystem->PutNodeCapabilities(capabilities);
 	}
 }

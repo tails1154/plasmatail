@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2013, Haiku, Inc. All rights reserved.
+ * Copyright 2011-2013, Plasmatail, Inc. All rights reserved.
  * Copyright 2011, Clemens Zeidler <haiku@clemens-zeidler.de>
  * Copyright 2001-2003 Dr. Zoidberg Enterprises. All rights reserved.
  *
@@ -7,7 +7,7 @@
  */
 
 
-#include "HaikuMailFormatFilter.h"
+#include "PlasmatailMailFormatFilter.h"
 
 #include <ctype.h>
 
@@ -76,7 +76,7 @@ sanitize_white_space(BString& string)
 // #pragma mark -
 
 
-HaikuMailFormatFilter::HaikuMailFormatFilter(BMailProtocol& protocol,
+PlasmatailMailFormatFilter::PlasmatailMailFormatFilter(BMailProtocol& protocol,
 	const BMailAccountSettings& settings)
 	:
 	BMailFilter(protocol, NULL),
@@ -89,7 +89,7 @@ HaikuMailFormatFilter::HaikuMailFormatFilter(BMailProtocol& protocol,
 
 
 BString
-HaikuMailFormatFilter::DescriptiveName() const
+PlasmatailMailFormatFilter::DescriptiveName() const
 {
 	// This will not be called by the UI; no need to translate it
 	return "built-in";
@@ -97,7 +97,7 @@ HaikuMailFormatFilter::DescriptiveName() const
 
 
 BMailFilterAction
-HaikuMailFormatFilter::HeaderFetched(entry_ref& ref, BFile& file,
+PlasmatailMailFormatFilter::HeaderFetched(entry_ref& ref, BFile& file,
 	BMessage& attributes)
 {
 	file.Seek(0, SEEK_SET);
@@ -207,7 +207,7 @@ HaikuMailFormatFilter::HeaderFetched(entry_ref& ref, BFile& file,
 
 
 void
-HaikuMailFormatFilter::BodyFetched(const entry_ref& ref, BFile& file,
+PlasmatailMailFormatFilter::BodyFetched(const entry_ref& ref, BFile& file,
 	BMessage& attributes)
 {
 	_SetType(attributes, B_MAIL_TYPE);
@@ -215,7 +215,7 @@ HaikuMailFormatFilter::BodyFetched(const entry_ref& ref, BFile& file,
 
 
 void
-HaikuMailFormatFilter::MessageSent(const entry_ref& ref, BFile& file)
+PlasmatailMailFormatFilter::MessageSent(const entry_ref& ref, BFile& file)
 {
 	mail_flags flags = B_MAIL_SENT;
 	file.WriteAttr(B_MAIL_ATTR_FLAGS, B_INT32_TYPE, 0, &flags, sizeof(int32));
@@ -234,7 +234,7 @@ HaikuMailFormatFilter::MessageSent(const entry_ref& ref, BFile& file)
 
 
 void
-HaikuMailFormatFilter::_RemoveExtraWhitespace(BString& name)
+PlasmatailMailFormatFilter::_RemoveExtraWhitespace(BString& name)
 {
 	int spaces = 0;
 	for (int i = 0; i <= name.Length();) {
@@ -258,7 +258,7 @@ HaikuMailFormatFilter::_RemoveExtraWhitespace(BString& name)
 
 
 void
-HaikuMailFormatFilter::_RemoveLeadingDots(BString& name)
+PlasmatailMailFormatFilter::_RemoveLeadingDots(BString& name)
 {
 	int dots = 0;
 	while (dots < name.Length() && name.ByteAt(dots) == '.')
@@ -270,7 +270,7 @@ HaikuMailFormatFilter::_RemoveLeadingDots(BString& name)
 
 
 BString
-HaikuMailFormatFilter::_ExtractName(const BString& from)
+PlasmatailMailFormatFilter::_ExtractName(const BString& from)
 {
 	// extract name from something like "name" <email@domain.com>
 	// if name is empty return the mail address without "<>"
@@ -308,7 +308,7 @@ HaikuMailFormatFilter::_ExtractName(const BString& from)
 
 
 status_t
-HaikuMailFormatFilter::_SetType(BMessage& attributes, const char* mimeType)
+PlasmatailMailFormatFilter::_SetType(BMessage& attributes, const char* mimeType)
 {
 	return attributes.SetData("BEOS:TYPE", B_MIME_STRING_TYPE, mimeType,
 		strlen(mimeType) + 1, false);

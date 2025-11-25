@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2010, Haiku, Inc. All Rights Reserved.
+ * Copyright 2004-2010, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -152,7 +152,7 @@ main(int argc, char** argv)
 	if (argc > optind && input == NULL)
 		input = argv[optind];
 
-	BApplication app("application/x-vnd.Haiku-keymap-cli");
+	BApplication app("application/x-vnd.Plasmatail-keymap-cli");
 	Keymap keymap;
 
 	switch (mode) {

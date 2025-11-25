@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Haiku, Inc.
+ * Copyright 2011, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * The alps_model_info struct and all the hardware specs are taken from the

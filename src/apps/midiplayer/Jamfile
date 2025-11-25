@@ -12,7 +12,7 @@ Application MidiPlayer :
 ;
 
 DoCatalogs MidiPlayer :
-	x-vnd.Haiku-MidiPlayer
+	x-vnd.Plasmatail-MidiPlayer
 	:
 	MidiPlayerApp.cpp 
 	MidiPlayerWindow.cpp 

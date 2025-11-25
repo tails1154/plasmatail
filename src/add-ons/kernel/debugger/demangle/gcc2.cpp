@@ -173,7 +173,7 @@ argument_type(Input arg, size_t& length)
 			length = sizeof(double);
 			return B_DOUBLE_TYPE;
 		case 'r':
-			// TODO: is "long double" supported under Haiku at all?
+			// TODO: is "long double" supported under Plasmatail at all?
 			return 0;
 
 		case 't':

@@ -17,7 +17,7 @@
 #include "Volume.h"
 
 
-// Taken from the Haiku Storage Kit (storage_support.cpp)
+// Taken from the Plasmatail Storage Kit (storage_support.cpp)
 /*! The length of the first component is returned as well as the index at
 	which the next one starts. These values are only valid, if the function
 	returns \c B_OK.

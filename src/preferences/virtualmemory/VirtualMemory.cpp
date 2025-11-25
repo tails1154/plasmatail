@@ -17,7 +17,7 @@
 
 
 VirtualMemory::VirtualMemory()
-	: BApplication("application/x-vnd.Haiku-VirtualMemory")
+	: BApplication("application/x-vnd.Plasmatail-VirtualMemory")
 {
 }
 
@@ -40,7 +40,7 @@ VirtualMemory::AboutRequested()
 {
 	BAlert* alert = new BAlert("about", B_TRANSLATE("VirtualMemory\n"
 		"\twritten by Axel Dörfler\n"
-		"\tCopyright 2005, Haiku.\n"), B_TRANSLATE("OK"));
+		"\tCopyright 2005, Plasmatail.\n"), B_TRANSLATE("OK"));
 	BTextView* view = alert->TextView();
 	BFont font;
 

@@ -60,7 +60,7 @@
 
 #define	IFCAP_CANTCHANGE	(IFCAP_NETMAP)
 
-/* interface flags -- these extend the Haiku-native ones from posix/net/if.h */
+/* interface flags -- these extend the Plasmatail-native ones from posix/net/if.h */
 #define IFF_DRV_RUNNING		0x00010000
 #define IFF_DRV_OACTIVE		0x00020000
 #define IFF_LINK0			0x00040000		/* per link layer defined bit */

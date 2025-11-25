@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku.PatchBay";
+resource app_signature "application/x-vnd.Plasmatail.PatchBay";
 
-resource app_name_catalog_entry "application/x-vnd.Haiku.PatchBay:System name:PatchBay";
+resource app_name_catalog_entry "application/x-vnd.Plasmatail.PatchBay:System name:PatchBay";
 
 resource app_version {
 	major  = 1,
@@ -13,7 +13,7 @@ resource app_version {
 
 	short_info = "PatchBay",
 
-	long_info = "PatchBay MIDI Port interconnection ©2013 Haiku, Inc."
+	long_info = "PatchBay MIDI Port interconnection ©2013 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

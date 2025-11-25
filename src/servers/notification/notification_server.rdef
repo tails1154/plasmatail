@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Haiku-notification_server";
+resource app_signature "application/x-vnd.Plasmatail-notification_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "notification_server",
-	long_info = "notification_server ©2010 Haiku Inc."
+	long_info = "notification_server ©2010 Plasmatail Inc."
 };
 
 resource vector_icon {

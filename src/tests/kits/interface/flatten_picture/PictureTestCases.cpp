@@ -1,5 +1,5 @@
 /*
- * Copyright 2007, Haiku. All rights reserved.
+ * Copyright 2007, Plasmatail. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -54,7 +54,7 @@ static void testDrawString(BView *view, BRect frame)
 	view->StrokeLine(BPoint(frame.left, baseline - 1), BPoint(frame.right, baseline -1));
 
 	view->SetHighColor(kBlack);
-	view->DrawString("Haiku [ÖÜÄöüä]", BPoint(frame.left, baseline));
+	view->DrawString("Plasmatail [ÖÜÄöüä]", BPoint(frame.left, baseline));
 }
 
 static void testDrawStringWithLength(BView *view, BRect frame)
@@ -69,7 +69,7 @@ static void testDrawStringWithLength(BView *view, BRect frame)
 	view->StrokeLine(BPoint(frame.left, baseline - 1), BPoint(frame.right, baseline -1));
 
 	view->SetHighColor(kBlack);
-	view->DrawString("Haiku [ÖÜÄöüä]", 13, BPoint(frame.left, baseline));
+	view->DrawString("Plasmatail [ÖÜÄöüä]", 13, BPoint(frame.left, baseline));
 }
 
 
@@ -97,7 +97,7 @@ static void testDrawStringWithOffsets(BView* view, BRect frame)
 	for (size_t i = 1; i < (sizeof(pointArray) / sizeof(pointArray[0])); i++)
 		pointArray[i] = pointArray[i - 1] + BPoint(10, 0);
 
-	view->DrawString("Haiku", pointArray, sizeof(pointArray) / sizeof(pointArray[0]));
+	view->DrawString("Plasmatail", pointArray, sizeof(pointArray) / sizeof(pointArray[0]));
 }
 
 
@@ -972,13 +972,13 @@ static void testSetFontSize(BView *view, BRect frame)
 	frame.OffsetBy(0, size);
 	view->MovePenTo(BPoint(frame.left, frame.top));
 	view->SetFontSize(size);
-	view->DrawString("Haiku");
+	view->DrawString("Plasmatail");
 	
 	size *= 2;	
 	frame.OffsetBy(0, size);
 	view->MovePenTo(BPoint(frame.left, frame.top));
 	view->SetFontSize(size);
-	view->DrawString("Haiku");	
+	view->DrawString("Plasmatail");	
 }
 
 static void testSetFontFamilyAndStyle(BView *view, BRect frame)

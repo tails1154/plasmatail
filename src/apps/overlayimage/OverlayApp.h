@@ -18,7 +18,7 @@
 #include <Catalog.h>
 #include <Locale.h>
 
-const char* kAppSignature = "application/x-vnd.Haiku-OverlayImage";
+const char* kAppSignature = "application/x-vnd.Plasmatail-OverlayImage";
 
 
 class OverlayApp : public BApplication {

@@ -192,7 +192,7 @@ private:
 
 MainWindow::MainWindow(const BMessage& settings)
 	:
-	BWindow(BRect(50, 50, 650, 550), B_TRANSLATE_SYSTEM_NAME("HaikuDepot"), B_DOCUMENT_WINDOW_LOOK,
+	BWindow(BRect(50, 50, 650, 550), B_TRANSLATE_SYSTEM_NAME("PlasmatailDepot"), B_DOCUMENT_WINDOW_LOOK,
 		B_NORMAL_WINDOW_FEEL, B_ASYNCHRONOUS_CONTROLS | B_AUTO_UPDATE_SIZE_LIMITS),
 	fScreenshotWindow(NULL),
 	fShuttingDownWindow(NULL),
@@ -290,7 +290,7 @@ MainWindow::MainWindow(const BMessage& settings)
 
 MainWindow::MainWindow(const BMessage& settings, const PackageInfoRef package)
 	:
-	BWindow(BRect(50, 50, 650, 350), B_TRANSLATE_SYSTEM_NAME("HaikuDepot"), B_DOCUMENT_WINDOW_LOOK,
+	BWindow(BRect(50, 50, 650, 350), B_TRANSLATE_SYSTEM_NAME("PlasmatailDepot"), B_DOCUMENT_WINDOW_LOOK,
 		B_NORMAL_WINDOW_FEEL, B_ASYNCHRONOUS_CONTROLS | B_AUTO_UPDATE_SIZE_LIMITS),
 	fFeaturedPackagesView(NULL),
 	fPackageListView(NULL),
@@ -458,7 +458,7 @@ MainWindow::MessageReceived(BMessage* message)
 			break;
 
 		case MSG_MANAGE_REPOS:
-			be_roster->Launch("application/x-vnd.Haiku-Repositories");
+			be_roster->Launch("application/x-vnd.Plasmatail-Repositories");
 			break;
 
 		case MSG_SOFTWARE_UPDATER:
@@ -870,7 +870,7 @@ MainWindow::_HandlePackagesChanged(const PackageInfoEvents& events)
 void
 MainWindow::_BuildMenu(BMenuBar* menuBar)
 {
-	BMenu* menu = new BMenu(B_TRANSLATE_SYSTEM_NAME("HaikuDepot"));
+	BMenu* menu = new BMenu(B_TRANSLATE_SYSTEM_NAME("PlasmatailDepot"));
 	fRefreshRepositoriesItem
 		= new BMenuItem(B_TRANSLATE("Refresh repositories"), new BMessage(MSG_REFRESH_REPOS));
 	menu->AddItem(fRefreshRepositoriesItem);
@@ -1055,7 +1055,7 @@ MainWindow::_PromptCanShareAnonymousUserData()
 {
 	BAlert* alert = new(std::nothrow) BAlert(B_TRANSLATE("Sending anonymous usage data"),
 		B_TRANSLATE("Would it be acceptable to send anonymous usage data to the"
-					" HaikuDepotServer system from this computer? You can change your"
+					" PlasmatailDepotServer system from this computer? You can change your"
 					" preference in the \"Settings\" window later."),
 		B_TRANSLATE("No"), B_TRANSLATE("Yes"));
 
@@ -1223,7 +1223,7 @@ MainWindow::_IncrementViewCounter(const BString& packageName)
 	// The logic here checks to see that the user has approved that their viewing of the package
 	// can be anonymously recorded as a metric. We also check that within this session, the
 	// package has not already been incremented as we count a viewing of a package within a
-	// session of HaikuDepot desktop application as unique.
+	// session of PlasmatailDepot desktop application as unique.
 
 	if (canShareAnonymousUsageData && !PackageUtils::Viewed(package)) {
 		if (ServerHelper::IsNetworkAvailable()) {
@@ -1642,7 +1642,7 @@ MainWindow::_RatePackage()
 {
 	if (!_SelectedPackageHasWebAppRepositoryCode()) {
 		BAlert* alert = new(std::nothrow) BAlert(B_TRANSLATE("Rating not possible"),
-			B_TRANSLATE("This package doesn't seem to be on the HaikuDepot Server, so it's not "
+			B_TRANSLATE("This package doesn't seem to be on the PlasmatailDepot Server, so it's not "
 						"possible to create a new rating or edit an existing rating."),
 			B_TRANSLATE("OK"));
 		alert->Go();
@@ -1954,7 +1954,7 @@ MainWindow::_WindowTitleForPackage(const PackageInfoRef& pkg)
 	if (version.IsSet())
 		versionString = version->ToString();
 
-	BString title = B_TRANSLATE("HaikuDepot - %PackageName% %PackageVersion%");
+	BString title = B_TRANSLATE("PlasmatailDepot - %PackageName% %PackageVersion%");
 	title.ReplaceAll("%PackageName%", pkg->Name());
 	title.ReplaceAll("%PackageVersion%", versionString);
 

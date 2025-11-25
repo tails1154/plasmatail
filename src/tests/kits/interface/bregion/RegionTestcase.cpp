@@ -1,7 +1,7 @@
 /*
 	$Id: RegionTestcase.cpp 7533 2004-05-12 06:37:18Z jackburton $
 	
-	This file implements a base class for all tests of the Haiku
+	This file implements a base class for all tests of the Plasmatail
 	BRegion code.
 	
 	*/

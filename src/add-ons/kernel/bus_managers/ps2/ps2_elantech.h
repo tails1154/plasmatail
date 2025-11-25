@@ -1,5 +1,5 @@
 /*
- * Copyright 2013, Haiku, Inc.
+ * Copyright 2013, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * The elantech_model_info struct and all the hardware specs are taken from the

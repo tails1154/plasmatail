@@ -8,7 +8,7 @@
 #include <Window.h>
 
 
-static const char* kAppSignature = "application/x.vnd-Haiku.ShapeTest";
+static const char* kAppSignature = "application/x.vnd-Plasmatail.ShapeTest";
 
 
 class TestView : public BView {

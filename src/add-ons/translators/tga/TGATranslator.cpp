@@ -1,13 +1,13 @@
 /*****************************************************************************/
 // TGATranslator
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // TGATranslator.cpp
 //
 // This BTranslator based object is for opening and writing TGA files.
 //
 //
-// Copyright (c) 2002-2009, Haiku, Inc. All rights reserved.
+// Copyright (c) 2002-2009, Plasmatail, Inc. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

@@ -1,6 +1,6 @@
 /*
  * Copyright 2008-2009, Oliver Ruiz Dorantes, <oliver.ruiz.dorantes@gmail.com>
- * Copyright 2021, Haiku, Inc.
+ * Copyright 2021, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -281,7 +281,7 @@ InquiryPanel::MessageReceived(BMessage* message)
 
 					} else {
 						// Really erally expensive operation should be done in a separate thread
-						// once Haiku gets a BarberPole in API replacing the progress bar
+						// once Plasmatail gets a BarberPole in API replacing the progress bar
 						((DeviceListItem*)fRemoteList->ItemAt(retrievalIndex))
 							->SetDevice((BluetoothDevice*) fDiscoveryAgent
 							->RetrieveDevices(0).ItemAt(retrievalIndex));

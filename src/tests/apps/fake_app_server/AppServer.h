@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001-2005, Haiku, Inc.
+ * Copyright (c) 2001-2005, Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Author: DarkWyrm <bpmagic@columbus.rr.com>

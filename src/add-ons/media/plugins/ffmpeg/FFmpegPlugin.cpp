@@ -8,7 +8,7 @@
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 
-//! libavcodec/libavformat based Decoder and Reader plugin for Haiku
+//! libavcodec/libavformat based Decoder and Reader plugin for Plasmatail
 
 #include "FFmpegPlugin.h"
 

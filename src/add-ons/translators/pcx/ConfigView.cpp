@@ -37,7 +37,7 @@ ConfigView::ConfigView(const BRect &frame, uint32 resize, uint32 flags)
 		int(B_TRANSLATION_REVISION_VERSION(PCX_TRANSLATOR_VERSION)),
 		__DATE__);
 	BStringView *versionView = new BStringView("version", version);
-	BStringView *copyrightView = new BStringView("copyright", B_UTF8_COPYRIGHT "2008 Haiku Inc.");
+	BStringView *copyrightView = new BStringView("copyright", B_UTF8_COPYRIGHT "2008 Plasmatail Inc.");
 
 	BLayoutBuilder::Group<>(this, B_VERTICAL, 0)
 		.SetInsets(B_USE_DEFAULT_SPACING)

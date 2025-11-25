@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-GLTeapot";
+resource app_signature "application/x-vnd.Plasmatail-GLTeapot";
 
-resource app_name_catalog_entry "x-vnd.Haiku-GLTeapot:System name:GLTeapot";
+resource app_name_catalog_entry "x-vnd.Plasmatail-GLTeapot:System name:GLTeapot";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "GLTeapot",
-	long_info  = "GLTeapot ©2006-2009 Haiku, Inc."
+	long_info  = "GLTeapot ©2006-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_MULTIPLE_LAUNCH;

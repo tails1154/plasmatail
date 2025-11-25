@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2009, Haiku, Inc.
+ * Copyright 2007-2009, Plasmatail, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Author:
@@ -821,7 +821,7 @@ PackageDirectory::DoInstall(const char* path, ItemState* state)
 	if (ret != B_OK)
 		return ret;
 
-	// Since Haiku is single-user right now, we give the newly
+	// Since Plasmatail is single-user right now, we give the newly
 	// created directory default permissions
 	ret = create_directory(destination.Path(), kDefaultMode);
 	parser_debug("Create dir ret: %ld %s\n", ret, strerror(ret));

@@ -6,7 +6,7 @@
 // SlideShowSaver.h
 //
 //
-// Copyright (C) Haiku
+// Copyright (C) Plasmatail
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),
@@ -60,22 +60,22 @@ protected:
 	// reload directory setting and apply it
 	status_t UpdateDirectory();
 	
-	// Function taken from Haiku ShowImage,
+	// Function taken from Plasmatail ShowImage,
 	// function originally written by Michael Pfeiffer
 	status_t SetImage(const entry_ref *pref);
 
-	// Function originally from Haiku ShowImage
+	// Function originally from Plasmatail ShowImage
 	bool ShowNextImage(bool next, bool rewind);
 
-	// Function taken from Haiku ShowImage,
+	// Function taken from Plasmatail ShowImage,
 	// function originally written by Michael Pfeiffer
 	bool IsImage(const entry_ref *pref);
 
-	// Function taken from Haiku ShowImage,
+	// Function taken from Plasmatail ShowImage,
 	// function originally written by Michael Pfeiffer
 	bool FindNextImage(entry_ref *in_current, entry_ref *out_image, bool next, bool rewind);
 
-	// Function taken from Haiku ShowImage,
+	// Function taken from Plasmatail ShowImage,
 	// function originally written by Michael Pfeiffer
 	void FreeEntries(BList *entries);
 	

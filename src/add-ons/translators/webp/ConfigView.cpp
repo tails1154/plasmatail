@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2017, Haiku, Inc. All rights reserved.
+ * Copyright 2010-2017, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -74,7 +74,7 @@ ConfigView::ConfigView(TranslatorSettings* settings)
 
 	BString copyrightsText;
 	BStringView *copyrightView = new BStringView("Copyright",
-		B_TRANSLATE(B_UTF8_COPYRIGHT "2010-2017 Haiku Inc."));
+		B_TRANSLATE(B_UTF8_COPYRIGHT "2010-2017 Plasmatail Inc."));
 
 	BString libwebpInfo = B_TRANSLATE(
 		"Based on libwebp %version%");

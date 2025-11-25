@@ -12,13 +12,13 @@ Application Chart :
 	;
 
 DoCatalogs Chart :
-    x-vnd.Haiku-ChartDemo
+    x-vnd.Plasmatail-ChartDemo
     :
 	Chart.cpp
 	ChartWindow.cpp
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Chart
+	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Chart
 		: tests!apps ;
 }

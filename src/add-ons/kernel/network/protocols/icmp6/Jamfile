@@ -10,5 +10,5 @@ KernelAddon icmp6 :
 ;
 
 # Installation
-HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/protocols
+PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/protocols
 	: icmp6 ;

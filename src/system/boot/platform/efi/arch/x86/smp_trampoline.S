@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2022 Haiku, Inc. All rights reserved.
+ * Copyright 2021-2022 Plasmatail, Inc. All rights reserved.
  * Released under the terms of the MIT License.
  *
  * Copyright 2001, Travis Geiselbrecht. All rights reserved.

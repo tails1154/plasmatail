@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2017 Haiku, Inc. All rights reserved.
+ * Copyright 2002-2017 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -751,7 +751,7 @@ BackgroundsView::_NotifyServer()
 void
 BackgroundsView::_NotifyScreenPreflet()
 {
-	BMessenger messenger("application/x-vnd.Haiku-Screen");
+	BMessenger messenger("application/x-vnd.Plasmatail-Screen");
 	if (messenger.IsValid())
 		messenger.SendMessage(UPDATE_DESKTOP_COLOR_MSG);
 }

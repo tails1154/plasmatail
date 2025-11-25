@@ -137,4 +137,4 @@ BuildPlatformSharedLibrary libpackage_build.so
 	libshared_build.a $(HOST_LIBBE) $(HOST_LIBSTDC++) $(HOST_LIBSUPC++)
 ;
 
-HaikuSubInclude solver ;
+PlasmatailSubInclude solver ;

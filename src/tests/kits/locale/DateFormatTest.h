@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Haiku, Inc.
+ * Copyright 2014 Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef DATE_FORMAT_TEST_H

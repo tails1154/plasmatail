@@ -361,7 +361,7 @@ CopyEngine::_Copy(BEntry &source, BEntry &destination,
 			if (destination.IsDirectory()) {
 				// Do not overwrite attributes on folders that exist.
 				// This should work better when the install target
-				// already contains a Haiku installation.
+				// already contains a Plasmatail installation.
 				copyAttributesToTarget = false;
 			} else {
 				ret = destination.Remove();

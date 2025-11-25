@@ -1,6 +1,6 @@
 /*****************************************************************************/
 // InfoWindow
-// Written by Michael Wilber, Haiku Translation Kit Team
+// Written by Michael Wilber, Plasmatail Translation Kit Team
 //
 // InfoWindow.cpp
 //
@@ -8,7 +8,7 @@
 // document
 //
 //
-// Copyright (c) 2003 Haiku Project
+// Copyright (c) 2003 Plasmatail Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

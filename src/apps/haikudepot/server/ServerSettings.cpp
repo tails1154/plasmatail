@@ -72,7 +72,7 @@ ServerSettings::GetUserAgent()
 void
 ServerSettings::_InitUserAgent()
 {
-	sUserAgent.SetTo("HaikuDepot/");
+	sUserAgent.SetTo("PlasmatailDepot/");
 	sUserAgent.Append(_GetUserAgentVersionString());
 }
 

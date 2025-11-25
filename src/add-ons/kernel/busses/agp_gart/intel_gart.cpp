@@ -1,6 +1,6 @@
 /*
  * Copyright 2008-2010, Axel Dörfler, axeld@pinc-software.de.
- * Copyright 2011-2016, Haiku, Inc. All Rights Reserved.
+ * Copyright 2011-2016, Plasmatail, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -724,7 +724,7 @@ intel_map(intel_info &info)
 			+ INTEL_PAGE_TABLE_CONTROL) & ~PAGE_TABLE_ENABLED;
 		if (info.gtt_physical_base == 0) {
 			// TODO: not sure how this is supposed to work under Linux/FreeBSD,
-			// but on my i865, this code is needed for Haiku.
+			// but on my i865, this code is needed for Plasmatail.
 			ERROR("Use GTT address fallback.\n");
 			info.gtt_physical_base = info.display.u.h0.base_registers[mmioIndex]
 				+ i830_GTT_BASE;

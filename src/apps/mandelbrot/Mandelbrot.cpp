@@ -1,5 +1,5 @@
 /*
- * Copyright 2016, Haiku, Inc. All rights reserved.
+ * Copyright 2016, Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -702,14 +702,14 @@ MandelbrotWindow::MessageReceived(BMessage* msg)
 
 	case B_ABOUT_REQUESTED: {
 		BAboutWindow* wind = new BAboutWindow("Mandelbrot",
-			"application/x-vnd.Haiku-Mandelbrot");
+			"application/x-vnd.Plasmatail-Mandelbrot");
 
 		const char* authors[] = {
 			"Augustin Cavalier <waddlesplash>",
 			"kerwizzy",
 			NULL
 		};
-		wind->AddCopyright(2016, "Haiku, Inc.");
+		wind->AddCopyright(2016, "Plasmatail, Inc.");
 		wind->AddAuthors(authors);
 		wind->Show();
 		break;
@@ -752,7 +752,7 @@ class MandelbrotApp : public BApplication
 {
 public:
 				MandelbrotApp()
-					: BApplication("application/x-vnd.Haiku-Mandelbrot") {}
+					: BApplication("application/x-vnd.Plasmatail-Mandelbrot") {}
 
 		void	ReadyToRun();
 		bool	QuitRequested() { return true; }

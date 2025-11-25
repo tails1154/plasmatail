@@ -1115,7 +1115,7 @@ ActivityView::MessageReceived(BMessage* message)
 				NULL
 			};
 
-			window->AddCopyright(2008, "Haiku, Inc.");
+			window->AddCopyright(2008, "Plasmatail, Inc.");
 			window->AddAuthors(authors);
 
 			window->Show();

@@ -32,7 +32,7 @@
 #define FAT_MOUNT_H
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #include <sys/queue.h>
 
@@ -60,15 +60,15 @@ struct mount {
 	struct vfsconf* mnt_vfc; /* configuration info */
 	struct mtx mnt_mtx;
 	struct statfs mnt_stat; /* cache of filesystem stats */
-		// In the Haiku port, mnt_stat.f_mntonname is only initialized in the kernel addon
+		// In the Plasmatail port, mnt_stat.f_mntonname is only initialized in the kernel addon
 		// (not in fat_shell or fat_userland)
 	void* mnt_data; /* private data */
 	int mnt_iosize_max; /* max size for clusters, etc */
 
-	// Members added for Haiku port
+	// Members added for Plasmatail port
 	struct fs_volume* mnt_fsvolume;
 	void* mnt_cache;
-		// Haiku block cache
+		// Plasmatail block cache
 	int32 mnt_volentry;
 		// index of volume label entry in root directory, or -1 if no such entry was found
 	struct {
@@ -94,7 +94,7 @@ struct mount {
  */
 #define MNT_WAIT 1 /* synchronously wait for I/O to complete */
 
-// For the Haiku port, vfc_typenum will be arbitrarily set to 1.
+// For the Plasmatail port, vfc_typenum will be arbitrarily set to 1.
 struct vfsconf {
 	int vfc_typenum; /* historic filesystem type number */
 };

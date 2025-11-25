@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2020 Haiku, Inc. All rights reserved.
+ * Copyright 2012-2020 Plasmatail, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -897,7 +897,7 @@ ReplyInterpreter::_OperationError(Opcode op)
 		return B_BAD_VALUE;
 	}
 
-	status_t result = _NFS4ErrorToHaiku(fReply->Stream().GetUInt());
+	status_t result = _NFS4ErrorToPlasmatail(fReply->Stream().GetUInt());
 	if (result != B_OK) {
 #if DEBUG
 		ERROR("NFS Error: %s\n", strerror(result));
@@ -913,7 +913,7 @@ ReplyInterpreter::_OperationError(Opcode op)
 
 
 status_t
-ReplyInterpreter::_NFS4ErrorToHaiku(uint32 x)
+ReplyInterpreter::_NFS4ErrorToPlasmatail(uint32 x)
 {
 	switch (x) {
 		case NFS4_OK:			return B_OK;

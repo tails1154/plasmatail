@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2017, Haiku, Inc.
+ * Copyright 2009-2017, Plasmatail, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -187,7 +187,7 @@ main(int argc, char *argv[])
 		}
 	}
 
-	BApplication app("application/x-vnd.Haiku-RemoteDesktop");
+	BApplication app("application/x-vnd.Plasmatail-RemoteDesktop");
 	BRect windowFrame = BRect(0, 0, width - 1, height - 1);
 	if (!windowFrame.IsValid()) {
 		BScreen screen;

@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-Magnify";
+resource app_signature "application/x-vnd.Plasmatail-Magnify";
 
-resource app_name_catalog_entry "x-vnd.Haiku-Magnify:System name:Magnify";
+resource app_name_catalog_entry "x-vnd.Plasmatail-Magnify:System name:Magnify";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Magnify",
-	long_info  = "Magnify ©2006-2009 Haiku, Inc."
+	long_info  = "Magnify ©2006-2009 Plasmatail, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

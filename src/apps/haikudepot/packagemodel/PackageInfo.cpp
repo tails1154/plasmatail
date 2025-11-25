@@ -13,7 +13,7 @@
 #include <package/PackageDefs.h>
 #include <package/PackageFlags.h>
 
-#include "HaikuDepotConstants.h"
+#include "PlasmatailDepotConstants.h"
 #include "Logger.h"
 #include "PackageInfoListener.h"
 

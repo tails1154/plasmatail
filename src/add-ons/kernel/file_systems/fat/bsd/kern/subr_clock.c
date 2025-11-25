@@ -35,7 +35,7 @@
  */
 
 
-// Modified to support the Haiku FAT driver.
+// Modified to support the Plasmatail FAT driver.
 
 #ifdef FS_SHELL
 #include "sys/types.h"

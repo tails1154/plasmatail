@@ -1,11 +1,11 @@
 /*
-	Haiku ATI video driver adapted from the X.org ATI driver.
+	Plasmatail ATI video driver adapted from the X.org ATI driver.
 
 	Copyright 1999, 2000 ATI Technologies Inc., Markham, Ontario,
 						 Precision Insight, Inc., Cedar Park, Texas, and
 						 VA Linux Systems Inc., Fremont, California.
 
-	Copyright 2009 Haiku, Inc.  All rights reserved.
+	Copyright 2009 Plasmatail, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:

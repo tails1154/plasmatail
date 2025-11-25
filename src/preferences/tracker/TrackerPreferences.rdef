@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Haiku-TrackerPreferences";
+resource app_signature "application/x-vnd.Plasmatail-TrackerPreferences";
 
-resource app_name_catalog_entry "x-vnd.Haiku-TrackerPreferences:System name:Tracker";
+resource app_name_catalog_entry "x-vnd.Plasmatail-TrackerPreferences:System name:Tracker";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Tracker Preferences Launcher",
-	long_info  = "Tracker Preferences Launcher ©2009 Haiku"
+	long_info  = "Tracker Preferences Launcher ©2009 Plasmatail"
 };
 
 resource app_flags B_SINGLE_LAUNCH | B_BACKGROUND_APP;

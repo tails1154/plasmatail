@@ -27,12 +27,12 @@
  */
 
 
-// Modified to support the Haiku FAT driver
+// Modified to support the Plasmatail FAT driver
 
 #include <sys/param.h>
 #include <sys/iconv.h>
 // #include <sys/kernel.h>
-	// Haiku port:  not needed
+	// Plasmatail port:  not needed
 // #include <sys/module.h>
 	// Haik port:  not needed
 #include <sys/mount.h>

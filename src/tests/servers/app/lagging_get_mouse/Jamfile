@@ -10,7 +10,7 @@ SimpleTest LaggingGetMouse :
 	: be [ TargetLibstdc++ ] [ TargetLibsupc++ ] ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : LaggingGetMouse
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : LaggingGetMouse
 		: tests!apps ;
 }
 

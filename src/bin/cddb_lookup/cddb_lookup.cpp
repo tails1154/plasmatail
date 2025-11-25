@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2016, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2008-2016, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -73,7 +73,7 @@ static const int kMaxTocSize = 1024;
 
 CDDBLookup::CDDBLookup()
 	:
-	BApplication("application/x-vnd.Plasmatail-cddb_lookup")
+	BApplication("application/x-vnd.Haiku-cddb_lookup")
 {
 }
 

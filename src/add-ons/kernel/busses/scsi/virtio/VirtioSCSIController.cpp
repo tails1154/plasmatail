@@ -156,7 +156,7 @@ VirtioSCSIController::PathInquiry(scsi_path_inquiry *info)
 	info->hba_queue_size = fConfig.cmd_per_lun != 0 ? fConfig.cmd_per_lun : 1;
 	memset(info->vuhba_flags, 0, sizeof(info->vuhba_flags));
 
-	strlcpy(info->sim_vid, "Plasmatail", SCSI_SIM_ID);
+	strlcpy(info->sim_vid, "Haiku", SCSI_SIM_ID);
 	strlcpy(info->hba_vid, "VirtIO", SCSI_HBA_ID);
 
 	strlcpy(info->sim_version, "1.0", SCSI_VERS);

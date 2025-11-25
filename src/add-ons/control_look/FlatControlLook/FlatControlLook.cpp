@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2025 Plasmatail, Inc. All rights reserved.
+ * Copyright 2021-2025 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -9,7 +9,7 @@
  */
 
 
-/*! FlatControlLook flat Plasmatail */
+/*! FlatControlLook flat Haiku */
 
 
 #include "FlatControlLook.h"
@@ -37,7 +37,7 @@ static const float kButtonPopUpIndicatorWidth = 11;
 
 
 FlatControlLook::FlatControlLook()
-	: PlasmatailControlLook()
+	: HaikuControlLook()
 {
 }
 

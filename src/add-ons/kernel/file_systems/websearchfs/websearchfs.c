@@ -1006,14 +1006,14 @@ static status_t websearchfs_read_attrdir(fs_volume *_volume, fs_vnode *_node, vo
 	return B_OK;
 }
 
-/* Plasmatail and BeOs differ in the way the handle attributes at the vfs layer.
+/* Haiku and BeOs differ in the way the handle attributes at the vfs layer.
    BeOS uses atomic calls on the vnode,
-   Plasmatail retains the open/close/read/write semantics for attributes (loosing atomicity).
+   Haiku retains the open/close/read/write semantics for attributes (loosing atomicity).
    Here we don't care much though, open is used for both to factorize attribute lookup. <- TODO
-   _h suffixed funcs are for Plasmatail API, _b are for BeOS.
+   _h suffixed funcs are for Haiku API, _b are for BeOS.
  */
 
-/* for Plasmatail, but also used by BeOS calls to factorize code */
+/* for Haiku, but also used by BeOS calls to factorize code */
 static status_t websearchfs_open_attr_h(fs_volume *_volume, fs_vnode *_node, const char *name, int omode, void **cookie)
 {
 	fs_nspace *ns = (fs_nspace *)_volume->private_volume;

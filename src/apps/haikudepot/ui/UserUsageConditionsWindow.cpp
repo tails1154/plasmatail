@@ -1,6 +1,6 @@
 /*
  * Copyright 2019-2025, Andrew Lindesay <apl@lindesay.co.nz>.
- * Copyright 2024 Plasmatail, Inc. All rights reserved.
+ * Copyright 2024 Haiku, Inc. All rights reserved.
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 
@@ -16,7 +16,7 @@
 
 #include "AppUtils.h"
 #include "BarberPole.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "LocaleUtils.h"
 #include "Logger.h"
 #include "MarkupTextView.h"
@@ -33,15 +33,15 @@
 #define PLACEHOLDER_TEXT "..."
 
 #define INTRODUCTION_TEXT_LATEST \
-	"PlasmatailDepot communicates with a " \
-	"server component called PlasmatailDepotServer. These are the latest " \
-	"usage conditions for use of the PlasmatailDepotServer service."
+	"HaikuDepot communicates with a " \
+	"server component called HaikuDepotServer. These are the latest " \
+	"usage conditions for use of the HaikuDepotServer service."
 
 #define INTRODUCTION_TEXT_USER \
-	"PlasmatailDepot communicates with a " \
-	"server component called PlasmatailDepotServer. These are the usage " \
+	"HaikuDepot communicates with a " \
+	"server component called HaikuDepotServer. These are the usage " \
 	"conditions that the user '%Nickname%' agreed to at %AgreedToTimestamp% "\
-	"in relation to the use of the PlasmatailDepotServer service."
+	"in relation to the use of the HaikuDepotServer service."
 
 #define KEY_USER_USAGE_CONDITIONS	"userUsageConditions"
 #define KEY_USER_DETAIL				"userDetail"

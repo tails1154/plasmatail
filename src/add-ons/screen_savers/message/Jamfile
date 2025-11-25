@@ -12,7 +12,7 @@ ScreenSaver Message :
 	be libscreensaver.so localestub [ TargetLibsupc++ ] ;
 
 DoCatalogs Message :
-	x-vnd.Plasmatail-MessageScreensaver
+	x-vnd.Haiku-MessageScreensaver
 	:
 	Message.cpp	
 ;

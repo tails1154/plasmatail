@@ -1,5 +1,5 @@
 /*
- * Copyright 2006, Plasmatail.
+ * Copyright 2006, Haiku.
  * 
  * Copyright (c) 2002-2003 Matthijs Hollemans
  * Copyright (c) 2002 Michael Pfeiffer

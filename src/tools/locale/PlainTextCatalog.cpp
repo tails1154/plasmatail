@@ -37,7 +37,7 @@ using std::pair;
 
 
 /*
- *	This file implements the plain text catalog-type for the Plasmatail
+ *	This file implements the plain text catalog-type for the Haiku
  *	locale kit. It is not meant to be used in applications like other add ons,
  *	but only as a way to get an easy to translate file for developers.
  */

@@ -23,7 +23,7 @@ Addon <disk_system>btrfs :
 ;
 
 DoCatalogs <disk_system>btrfs :
-	x-vnd.Plasmatail-BTRFSDiskAddOn
+	x-vnd.Haiku-BTRFSDiskAddOn
 	:
 	InitializeParameterEditor.cpp
 ;

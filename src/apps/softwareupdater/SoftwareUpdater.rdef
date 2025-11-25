@@ -11,7 +11,7 @@ resource app_version {
 	variety = B_APPV_BETA,
 	internal = 0,
 	short_info = "SoftwareUpdater",
-	long_info  = "Software Updater ©2008-2019 Plasmatail"
+	long_info  = "Software Updater ©2008-2019 Haiku"
 };
 
 resource vector_icon {

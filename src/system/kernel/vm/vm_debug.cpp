@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * Copyright 2010-2011, Ingo Weinhold, ingo_weinhold@gmx.de.
  * Copyright 2002-2010, Axel Dörfler, axeld@pinc-software.de.
  * Distributed under the terms of the MIT License.

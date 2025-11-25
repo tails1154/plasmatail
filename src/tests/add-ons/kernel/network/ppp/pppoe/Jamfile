@@ -17,7 +17,7 @@ Addon <userland>pppoe :
 ;
 
 # Installation -- in the test directory for the time being
-PlasmatailInstall install-userland-networking 
+HaikuInstall install-userland-networking 
 	: [ FDirName $(HAIKU_TEST_DIR) kits net userland add-ons obos_network ppp ]
 	: <userland>pppoe
 	: installed-userland-networking

@@ -31,7 +31,7 @@ get_description(sb16_dev_t* dev, multi_description* data)
 	data->interface_minimum = B_CURRENT_INTERFACE_VERSION;
 
 	strcpy(data->friendly_name,"SoundBlaster 16");
-	strcpy(data->vendor_info,"Plasmatail");
+	strcpy(data->vendor_info,"Haiku");
 
 	data->output_channel_count = 2;
 	data->input_channel_count = 2;
@@ -159,7 +159,7 @@ get_buffers(sb16_dev_t* dev, multi_buffer_list* data)
 		__func__, data->request_record_buffers, data->request_record_channels,
 		data->request_record_buffer_size);
 
-	/* Workaround for Plasmatail multi_audio API, since it prefers to let the driver pick
+	/* Workaround for Haiku multi_audio API, since it prefers to let the driver pick
 		values, while the BeOS multi_audio actually gives the user's defaults. */
 	if (data->request_playback_buffers > STRMAXBUF ||
 		data->request_playback_buffers < STRMINBUF) {

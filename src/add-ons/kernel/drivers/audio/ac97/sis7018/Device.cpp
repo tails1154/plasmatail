@@ -341,7 +341,7 @@ Device::_MultiGetDescription(multi_description *multiDescription)
 	strlcpy(Description.friendly_name, fInfo.Name(),
 									sizeof(Description.friendly_name));
 
-	strlcpy(Description.vendor_info, "Plasmatail.Inc.",
+	strlcpy(Description.vendor_info, "Haiku.Inc.",
 									sizeof(Description.vendor_info));
 
 	Description.output_channel_count		= 2;

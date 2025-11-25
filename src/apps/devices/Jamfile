@@ -105,7 +105,7 @@ Application Devices :
 ;
 
 DoCatalogs Devices :
-	x-vnd.Plasmatail-Devices
+	x-vnd.Haiku-Devices
 	:
 	DevicesApplication.cpp
 	DevicesView.cpp

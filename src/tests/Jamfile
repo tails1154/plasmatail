@@ -18,7 +18,7 @@ UnitTest UnitTester
 # Install libbe and other libraries for target platform libbe_test.
 if $(TARGET_PLATFORM) = libbe_test {
 	local libs = libbe_haiku.so libbeadapter.so libtranslation.so ;
-	PlasmatailInstall install-unittest-libs : $(TARGET_UNIT_TEST_LIB_DIR)
+	HaikuInstall install-unittest-libs : $(TARGET_UNIT_TEST_LIB_DIR)
 		: $(libs)
 		: tests!unittests ;
 }

@@ -24,16 +24,16 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 
 local arch ;
 for arch in $(TARGET_ARCHS) {
-	PlasmatailSubInclude math $(arch) ;
+	HaikuSubInclude math $(arch) ;
 }
 
-PlasmatailSubInclude crypt ;
-PlasmatailSubInclude complex ;
-PlasmatailSubInclude dirent ;
-PlasmatailSubInclude misc ;
-PlasmatailSubInclude prng ;
-PlasmatailSubInclude regex ;
-PlasmatailSubInclude search ;
-PlasmatailSubInclude stdlib ;
-PlasmatailSubInclude string ;
-PlasmatailSubInclude time ;
+HaikuSubInclude crypt ;
+HaikuSubInclude complex ;
+HaikuSubInclude dirent ;
+HaikuSubInclude misc ;
+HaikuSubInclude prng ;
+HaikuSubInclude regex ;
+HaikuSubInclude search ;
+HaikuSubInclude stdlib ;
+HaikuSubInclude string ;
+HaikuSubInclude time ;

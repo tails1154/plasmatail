@@ -9,7 +9,7 @@ public:
 		BTextView *textview = new BTextView(Bounds(), "textview", Bounds(),
 											B_FOLLOW_ALL, B_WILL_DRAW);
 		AddChild(textview);
-		textview->SetText("Type into the Plasmatail BTextView!");
+		textview->SetText("Type into the Haiku BTextView!");
 		textview->MakeFocus();
 	}
 	

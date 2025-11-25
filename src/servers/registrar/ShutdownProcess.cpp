@@ -1176,7 +1176,7 @@ ShutdownProcess::_NegativeQuitRequestReply(thread_id thread)
 {
 	BAutolock _(fWorkerLock);
 
-	// Note: team ID == team main thread ID under Plasmatail. When testing under R5
+	// Note: team ID == team main thread ID under Haiku. When testing under R5
 	// using the team ID in case of an ABORT_EVENT won't work correctly. But
 	// this is done only for system apps.
 	_PushEvent(ABORT_EVENT, thread, fCurrentPhase);
@@ -1724,7 +1724,7 @@ ShutdownProcess::_QuitNonApps()
 		if (!fVitalSystemApps.Contains(teamInfo.team)) {
 			PRINT("  sending team %" B_PRId32 " TERM signal\n", teamInfo.team);
 
-			// Note: team ID == team main thread ID under Plasmatail
+			// Note: team ID == team main thread ID under Haiku
 			send_signal(teamInfo.team, SIGTERM);
 		}
 	}

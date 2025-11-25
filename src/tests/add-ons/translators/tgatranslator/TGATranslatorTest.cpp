@@ -1,13 +1,13 @@
 /*****************************************************************************/
 // TGATranslatorTest
-// Written by Michael Wilber, Plasmatail Translation Kit Team
+// Written by Michael Wilber, Haiku Translation Kit Team
 //
 // TGATranslatorTest.cpp
 //
-// Unit testing code to test the Plasmatail TGATranslator
+// Unit testing code to test the Haiku TGATranslator
 //
 //
-// Copyright (c) 2003 Plasmatail Project
+// Copyright (c) 2003 Haiku Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

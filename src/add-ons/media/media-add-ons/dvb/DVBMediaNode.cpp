@@ -984,7 +984,7 @@ DVBMediaNode::InitDefaultFormats()
 	fDefaultFormatRawAudio.type = B_MEDIA_RAW_AUDIO;
 	fDefaultFormatRawAudio.u.raw_audio.frame_rate = 48000;
 	fDefaultFormatRawAudio.u.raw_audio.channel_count = 2;
-//  XXX broken in Plasmatail...
+//  XXX broken in Haiku...
 //	fDefaultFormatRawAudio.u.raw_audio.format = 0; // wildcard
 	fDefaultFormatRawAudio.u.raw_audio.format
 		= media_raw_audio_format::B_AUDIO_SHORT;

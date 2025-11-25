@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -164,7 +164,7 @@ enum FileType {
 	NF4NAMEDATTR	= 9		/* Named Attribute */
 };
 
-static const mode_t sNFSFileTypeToPlasmatail[] = {
+static const mode_t sNFSFileTypeToHaiku[] = {
 	S_IFREG, S_IFREG, S_IFDIR, S_IFBLK, S_IFCHR, S_IFLNK, S_IFSOCK, S_IFIFO,
 	S_IFDIR, S_IFREG
 };
@@ -275,7 +275,7 @@ sGetLockType(short type, bool wait) {
 
 
 static inline short 
-sLockTypeToPlasmatail(LockType type) {
+sLockTypeToHaiku(LockType type) {
 	switch (type) {
 		case READ_LT:
 		case READW_LT:

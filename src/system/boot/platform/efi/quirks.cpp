@@ -1,6 +1,6 @@
 /*
  * Copyright 2015, Bruno Bierbaumer. All rights reserved.
- * Copyright 2019-2020, Plasmatail, Inc. All rights reserved.
+ * Copyright 2019-2020, Haiku, Inc. All rights reserved.
  * Released under the terms of the MIT License
  */
 

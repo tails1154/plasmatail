@@ -1,6 +1,6 @@
 /*
  * Copyright 2010 Stephan Aßmus <superstippi@gmx.de>
- * Copyright 2019, Plasmatail, Inc.
+ * Copyright 2019, Haiku, Inc.
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 #include "SettingsWindow.h"

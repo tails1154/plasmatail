@@ -354,7 +354,7 @@ SharedLibrary libdebugger.so :
 	be package libbsd.so libdebug.so
 ;
 
-PlasmatailSubInclude arch x86 disasm ;
-PlasmatailSubInclude arch x86_64 disasm ;
-PlasmatailSubInclude demangler ;
-PlasmatailSubInclude dwarf ;
+HaikuSubInclude arch x86 disasm ;
+HaikuSubInclude arch x86_64 disasm ;
+HaikuSubInclude demangler ;
+HaikuSubInclude dwarf ;

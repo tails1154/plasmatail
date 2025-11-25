@@ -32,7 +32,7 @@
 #define FAT_VM_EXTERN_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 static inline void
 vnode_pager_setsize(struct vnode* vp, vm_ooffset_t nsize)

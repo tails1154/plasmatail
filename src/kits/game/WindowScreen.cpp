@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2009, Plasmatail. All Rights Reserved.
+ * Copyright 2002-2009, Haiku. All Rights Reserved.
  * Copyright 2002-2005,
  *		Marcus Overhagen,
  *		Stefano Ceccherini (stefano.ceccherini@gmail.com),

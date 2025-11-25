@@ -1,6 +1,6 @@
-name Plasmatail
-vendor "Plasmatail Project"
-summary "The Plasmatail repository (for Plasmatail %HAIKU_VERSION_NO_REVISION%)"
+name Haiku
+vendor "Haiku Project"
+summary "The Haiku repository (for Haiku %HAIKU_VERSION_NO_REVISION%)"
 priority 1
 baseurl https://eu.hpkg.haiku-os.org/haiku/master/%HAIKU_PACKAGING_ARCH%/current
 identifier tag:haiku-os.org,2001:repositories/haiku/master/%HAIKU_PACKAGING_ARCH%

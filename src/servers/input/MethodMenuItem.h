@@ -1,9 +1,9 @@
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 //
-//	Copyright (c) 2004, Plasmatail
+//	Copyright (c) 2004, Haiku
 //
-//  This software is part of the Plasmatail distribution and is covered
-//  by the Plasmatail license.
+//  This software is part of the Haiku distribution and is covered
+//  by the Haiku license.
 //
 //
 //  File:			MethodMenuItem.h

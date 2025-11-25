@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Plasmatail, Inc. All rights reserved.
+ * Copyright 2011, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -106,7 +106,7 @@ public:
 
 			BMessage refs(B_REFS_RECEIVED);
 			_RecursiveAddRefs(refs, item);
-			be_roster->Launch("application/x-vnd.Plasmatail-MediaPlayer", &refs);
+			be_roster->Launch("application/x-vnd.Haiku-MediaPlayer", &refs);
 		}
 	};
 

@@ -10,7 +10,7 @@
 #include <Window.h>
 
 #include "BarberPole.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "UserDetail.h"
 #include "UserUsageConditions.h"
 

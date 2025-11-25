@@ -33,7 +33,7 @@ Application DebugAnalyzer
 	DebugAnalyzer.rdef
 ;
 
-PlasmatailSubInclude gui ;
-PlasmatailSubInclude model ;
-PlasmatailSubInclude model_loader ;
-PlasmatailSubInclude util ;
+HaikuSubInclude gui ;
+HaikuSubInclude model ;
+HaikuSubInclude model_loader ;
+HaikuSubInclude util ;

@@ -37,7 +37,7 @@
 #define FAT_PARAM_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #ifndef FS_SHELL
 #	include <errno.h>

@@ -13,7 +13,7 @@ UsePrivateHeaders fs_shell shared file_systems ;
 
 DEFINES += FS_SHELL=1 ;
 
-# prevent inclusion of PlasmatailBuildCompatibility.h and _BSD_SOURCE headers
+# prevent inclusion of HaikuBuildCompatibility.h and _BSD_SOURCE headers
 DEFINES += HAIKU_BUILD_COMPATIBILITY_H __STRICT_ANSI__ ;
 
 # platform specific sources/libraries
@@ -21,11 +21,11 @@ local fsShellCommandSources ;
 local externalCommandsSources ;
 local fsShellCommandLibs ;
 if $(HOST_PLATFORM_HAIKU_COMPATIBLE) && $(HOST_PLATFORM) != haiku_host {
-	# BeOS compatible, but not Plasmatail -- use BeOS ports for communication
+	# BeOS compatible, but not Haiku -- use BeOS ports for communication
 	fsShellCommandSources = fs_shell_command_beos.cpp ;
 	externalCommandsSources = external_commands_beos.cpp ;
 } else {
-	# Unix or Plasmatail -- use FIFOs for communication
+	# Unix or Haiku -- use FIFOs for communication
 	fsShellCommandSources = fs_shell_command_unix.cpp ;
 	externalCommandsSources = external_commands_unix.cpp ;
 }

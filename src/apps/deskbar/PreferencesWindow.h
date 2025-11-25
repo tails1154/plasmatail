@@ -1,5 +1,5 @@
 /*
- * Copyright 2009 Plasmatail, Inc.
+ * Copyright 2009 Haiku, Inc.
  * All Rights Reserved. Distributed under the terms of the MIT License.
  */
 #ifndef _PREFERENCES_WINDOW_H

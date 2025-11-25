@@ -10,7 +10,7 @@
 #include <Referenceable.h>
 #include <String.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 
 
 /*!	The tar icon repository is able to find the icons for each package by

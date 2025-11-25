@@ -816,7 +816,7 @@ status_t
 ArchitectureX8664::GetReturnAddressLocation(StackFrame* frame,
 	target_size_t valueSize, ValueLocation*& _location)
 {
-	// for the calling conventions currently in use on Plasmatail,
+	// for the calling conventions currently in use on Haiku,
 	// the x86-64 rules for how values are returned are as follows:
 	//
 	// - 64 bit or smaller values are returned in RAX.

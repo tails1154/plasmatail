@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 }
 
 AlertManualTestApp::AlertManualTestApp()
-	: BApplication("application/x-vnd.Plasmatail-AlertManualTest")
+	: BApplication("application/x-vnd.Haiku-AlertManualTest")
 {
 	BRect rect(150, 150, 600, 300);
 	fMainWindow = new AlertTestWindow(rect);

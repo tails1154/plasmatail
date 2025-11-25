@@ -20,7 +20,7 @@
 #include <Window.h>
 
 
-static const char* kAppSignature = "application/x.vnd-Plasmatail.ClipToPicture";
+static const char* kAppSignature = "application/x.vnd-Haiku.ClipToPicture";
 
 
 class TestRenderer {

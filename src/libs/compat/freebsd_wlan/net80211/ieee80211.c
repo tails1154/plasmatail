@@ -303,7 +303,7 @@ sysctl_ieee80211coms(SYSCTL_HANDLER_ARGS)
 	if (error)
 		return (error);
 #ifndef __HAIKU__
-	// sysctl not used in Plasmatail, no need to fill the reply
+	// sysctl not used in Haiku, no need to fill the reply
 	sbuf_new_for_sysctl(&sb, NULL, 8, req);
 	sbuf_clear_flags(&sb, SBUF_INCLUDENUL);
 	sp = "";

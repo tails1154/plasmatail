@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Name: achaiku.h - OS specific defines, etc. for Plasmatail (www.haiku-os.org)
+ * Name: achaiku.h - OS specific defines, etc. for Haiku (www.haiku-os.org)
  *
  *****************************************************************************/
 

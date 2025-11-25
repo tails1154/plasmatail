@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Plasmatail Inc. All rights reserved.
+ * Copyright 2017 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -16,7 +16,7 @@
 #undef B_TRANSLATION_CONTEXT
 #define B_TRANSLATION_CONTEXT "RepositoriesApplication"
 
-const char* kAppSignature = "application/x-vnd.Plasmatail-Repositories";
+const char* kAppSignature = "application/x-vnd.Haiku-Repositories";
 
 
 RepositoriesApplication::RepositoriesApplication()

@@ -1,6 +1,6 @@
 /*
  * Copyright 2010, Ingo Weinhold, ingo_weinhold@gmx.de.
- * Copyright 2019, Plasmatail, Inc. All rights reserved.
+ * Copyright 2019, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

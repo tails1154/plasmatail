@@ -1,5 +1,5 @@
 SubDir HAIKU_TOP src system libroot posix malloc ;
 
-PlasmatailSubInclude debug ;
-#PlasmatailSubInclude hoard2 ;
-PlasmatailSubInclude openbsd ;
+HaikuSubInclude debug ;
+#HaikuSubInclude hoard2 ;
+HaikuSubInclude openbsd ;

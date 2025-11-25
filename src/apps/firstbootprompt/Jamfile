@@ -19,7 +19,7 @@ Application FirstBootPrompt :
 ;
 
 DoCatalogs FirstBootPrompt :
-	x-vnd.Plasmatail-FirstBootPrompt
+	x-vnd.Haiku-FirstBootPrompt
 	:
 	BootPrompt.cpp
 	BootPromptWindow.cpp

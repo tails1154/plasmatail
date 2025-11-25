@@ -29,7 +29,7 @@
 #define _FAT_TASK_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 struct task {
 	int (*ta_func)(void*);

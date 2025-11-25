@@ -9,7 +9,7 @@
 #include <Messenger.h>
 #include <Window.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "PackageInfo.h"
 #include "UserDetail.h"
 #include "UserUsageConditions.h"

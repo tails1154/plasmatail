@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2015, Plasmatail. All rights reserved.
+ * Copyright 2003-2015, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -23,7 +23,7 @@
 
 HApp::HApp()
 	:
-	BApplication("application/x-vnd.Plasmatail-Sounds")
+	BApplication("application/x-vnd.Haiku-Sounds")
 {
 	HWindow* window = new HWindow(BRect(-1, -1, 390, 420),
 		B_TRANSLATE_SYSTEM_NAME("Sounds"));
@@ -45,7 +45,7 @@ HApp::AboutRequested()
 			"\tOliver Ruiz Dorantes\n"
 			"\tJérôme DUVAL.\n"
 			"  Original work from Atsushi Takamatsu.\n"
-			"Copyright ©2003-2006 Plasmatail"),
+			"Copyright ©2003-2006 Haiku"),
 		B_TRANSLATE("OK"));
 	alert->SetFlags(alert->Flags() | B_CLOSE_ON_ESCAPE);
 	alert->Go();

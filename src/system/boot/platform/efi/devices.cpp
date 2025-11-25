@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2020 Plasmatail, Inc. All rights reserved.
+ * Copyright 2016-2020 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -196,7 +196,7 @@ platform_add_boot_device(struct stage2_args *args, NodeList *devicesList)
 	// All block devices has one for the disk and one per partition
 	// There is a special case for a device with one fixed partition
 	// But we probably do not care about booting on that kind of device
-	// So find all disk block devices and let Plasmatail do partition scan
+	// So find all disk block devices and let Haiku do partition scan
 	for (uint32 n = 0; n < noOfHandles; n++) {
 		if (kBootServices->HandleProtocol(handles[n], &BlockIoGUID,
 				(void**)&blockIo) != EFI_SUCCESS)

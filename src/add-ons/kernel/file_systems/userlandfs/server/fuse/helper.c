@@ -179,7 +179,7 @@ err:
 
 int fuse_daemonize(int foreground)
 {
-	// On Plasmatail, always run "foreground", the userlandfs_server already takes care of running
+	// On Haiku, always run "foreground", the userlandfs_server already takes care of running
 	// as a server if needed.
 	return 0;
 }

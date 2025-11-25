@@ -1,4 +1,4 @@
 SubDir HAIKU_TOP src add-ons kernel file_systems userlandfs ;
 
-PlasmatailSubInclude kernel_add_on ;
-PlasmatailSubInclude server ;
+HaikuSubInclude kernel_add_on ;
+HaikuSubInclude server ;

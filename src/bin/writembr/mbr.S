@@ -48,21 +48,21 @@
  * purpose.
  *
  *
- * "Hybridisation" and modifications for booting Plasmatail by Andre' Braga
+ * "Hybridisation" and modifications for booting Haiku by Andre' Braga
  * (me@andrebraga.com), with valuable input from Jean-Loïc Charroud
  * (jcharroud@free.fr). The modifications contained herein are released into
  * the Public Domain.
  *
  *
  * 		A 432 bytes MBR IPL (Initial Program Loader) that looks for the UUID of
- * a Plasmatail Boot GUID partition and boots it, falling back to MBR partitions if
+ * a Haiku Boot GUID partition and boots it, falling back to MBR partitions if
  * said UUID isn't found or if the (primary) GPT is corrupted or non-existent.
  * 		Its usefulness is in being a versatile, "universal" IPL that supports
  * both partitioning styles, allowing it to be used transparently and even
  * facilitating the conversion between partitioning styles, should the need
  * for more partitions or volumes over 2TiB arise (for instance when cloning
  * an older disk to a newer, more capacious one).
- * 		It also paves the way for Plasmatail to create and support booting from
+ * 		It also paves the way for Haiku to create and support booting from
  * multiple volumes larger than 2TiB, which we're in the very privileged
  * position of enjoying efficiently in the near future due to BFS. Another use
  * case is taking a disk from a Intel EFI machine, plugging it on a BIOS
@@ -75,8 +75,8 @@
  * this is unlikely given that the code is packed tight. An alternative would be
  * disabling support for booting from MBR using BIOS calls other than Int13h
  * function 42h, "Extended Read From Disk" (i.e., LBA mode). It's unlikely that
- * any machine that Plasmatail supports won't have this BIOS function, but having an
- * "universal" IPL should be quite useful to, say, people using Plasmatail to
+ * any machine that Haiku supports won't have this BIOS function, but having an
+ * "universal" IPL should be quite useful to, say, people using Haiku to
  * rewrite a corrupt MBR on another disk using the excellent DiskProbe.
  * 		The number of sectors loaded depends on the boot style. Booting from a
  * MBR partition assumes that the Partition Boot Record is one sector long,
@@ -84,7 +84,7 @@
  * system loader and will either copy its entirety into memory starting from
  * address 0x7c00, or will copy up to circa 545KiB, whichever is smaller. Thus,
  * it remains compatible with the FreeBSD gptloader and should work for loading
- * Bootman from an exclusive Plasmatail boot manager partition as well.
+ * Bootman from an exclusive Haiku boot manager partition as well.
  * 		It should be easy to adjust the UUID signature as needed. It lives at
  * offset 0x1a0 (416), leaving plenty of space before the 32-bit disk signature
  * at offset 0x1b8 (440), so compatibility with Microsoft Windows and other OSs
@@ -232,7 +232,7 @@ load_part:
 			call read
 scan:
 			movw %bx,%si					/* Compare partition UUID */
-			movw $boot_uuid,%di				/*  with Plasmatail boot UUID */
+			movw $boot_uuid,%di				/*  with Haiku boot UUID */
 			movb $0x10,%cl					/*  (16 bytes) */
 			repe cmpsb
 			jnz next_part					/* Didn't match, next partition */

@@ -119,7 +119,7 @@ long_mmu_init()
 	maxAddress = ROUNDUP(maxAddress, 0x40000000);
 
 	// Currently only use 1 PDPT (512GB). This will need to change if someone
-	// wants to use Plasmatail on a box with more than 512GB of RAM but that's
+	// wants to use Haiku on a box with more than 512GB of RAM but that's
 	// probably not going to happen any time soon.
 	if (maxAddress / 0x40000000 > 512)
 		panic("Can't currently support more than 512GB of RAM!");

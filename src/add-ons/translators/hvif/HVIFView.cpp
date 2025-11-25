@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Plasmatail, Inc.
+ * Copyright 2009, Haiku, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -30,7 +30,7 @@ HVIFView::HVIFView(const char* name, uint32 flags, TranslatorSettings *settings)
 	BAlignment labelAlignment(B_ALIGN_LEFT, B_ALIGN_NO_VERTICAL);
 
 	BStringView* title= new BStringView("title",
-		B_TRANSLATE("Plasmatail vector icon translator"));
+		B_TRANSLATE("Haiku vector icon translator"));
 	title->SetFont(be_bold_font);
 	title->SetExplicitAlignment(labelAlignment);
 
@@ -45,7 +45,7 @@ HVIFView::HVIFView(const char* name, uint32 flags, TranslatorSettings *settings)
 	version->SetExplicitAlignment(labelAlignment);
 
 	BStringView* copyright = new BStringView("copyright",
-		B_UTF8_COPYRIGHT"2009 Plasmatail Inc.");
+		B_UTF8_COPYRIGHT"2009 Haiku Inc.");
 	copyright->SetExplicitAlignment(labelAlignment);
 
 

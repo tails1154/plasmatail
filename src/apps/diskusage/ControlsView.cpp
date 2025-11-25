@@ -157,7 +157,7 @@ ControlsView::VolumeTabView::TabFrame(int32 index) const
 	float height = BTabView::TabFrame(index).Height();
 	float x = 0.0f;
 	float width = 0.0f;
-	float minStringWidth = StringWidth("Plasmatail");
+	float minStringWidth = StringWidth("Haiku");
 	int32 countTabs = CountTabs();
 
 	// calculate the total width if no truncation is made at all

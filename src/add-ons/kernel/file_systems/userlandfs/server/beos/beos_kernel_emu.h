@@ -9,7 +9,7 @@
 
 
 // Implemented in BeOSKernelFileSystem. We can't use BeOSKernelFileSystem
-// directly in beos_kernel_emu.cpp, since BeOS and Plasmatail headers would clash.
+// directly in beos_kernel_emu.cpp, since BeOS and Haiku headers would clash.
 void get_beos_file_system_node_capabilities(FSVNodeCapabilities& capabilities);
 
 

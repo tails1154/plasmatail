@@ -84,7 +84,7 @@ void continueAfterDESCRIBE(RTSPClient* rtspClient,
 	int resultCode, char* resultString)
 {
 	UsageEnvironment& env = rtspClient->envir();
-	PlasmatailRTSPClient* client = (PlasmatailRTSPClient*) rtspClient;
+	HaikuRTSPClient* client = (HaikuRTSPClient*) rtspClient;
 	do {
 		if (resultCode != 0) {
 			env << *rtspClient << "Failed to get a SDP description: "
@@ -133,7 +133,7 @@ void continueAfterDESCRIBE(RTSPClient* rtspClient,
 void setupNextSubsession(RTSPClient* rtspClient)
 {
 	UsageEnvironment& env = rtspClient->envir();
-	PlasmatailRTSPClient* client = (PlasmatailRTSPClient*) rtspClient;
+	HaikuRTSPClient* client = (HaikuRTSPClient*) rtspClient;
 
 	client->subsession = client->iter->next();
 	if (client->subsession != NULL) {
@@ -186,7 +186,7 @@ void continueAfterSETUP(RTSPClient* rtspClient,
 {
 	do {
 		UsageEnvironment& env = rtspClient->envir();
-		PlasmatailRTSPClient* client = (PlasmatailRTSPClient*) rtspClient;
+		HaikuRTSPClient* client = (HaikuRTSPClient*) rtspClient;
 
 		if (resultCode != 0) {
 			env << *rtspClient << "Failed to set up the \""
@@ -212,7 +212,7 @@ void continueAfterSETUP(RTSPClient* rtspClient,
 		// after we've sent a RTSP "PLAY" command.)
 
 		client->subsession->sink = AdapterSink::createNew(env, *client->subsession,
-			((PlasmatailRTSPClient*)rtspClient)->GetInputAdapter(), rtspClient->url());
+			((HaikuRTSPClient*)rtspClient)->GetInputAdapter(), rtspClient->url());
 		// perhaps use your own custom "MediaSink" subclass instead
 		if (client->subsession->sink == NULL) {
 			env << *rtspClient << "Failed to create a data sink for the \""
@@ -249,7 +249,7 @@ void continueAfterPLAY(RTSPClient* rtspClient,
 {
 	Boolean success = False;
 	UsageEnvironment& env = rtspClient->envir();
-	PlasmatailRTSPClient* client = (PlasmatailRTSPClient*) rtspClient;
+	HaikuRTSPClient* client = (HaikuRTSPClient*) rtspClient;
 
 	do {
 		if (resultCode != 0) {
@@ -334,7 +334,7 @@ void subsessionByeHandler(void* clientData)
 
 void streamTimerHandler(void* clientData)
 {
-	PlasmatailRTSPClient* client = (PlasmatailRTSPClient*)clientData;
+	HaikuRTSPClient* client = (HaikuRTSPClient*)clientData;
 
 	client->streamTimerTask = NULL;
 
@@ -346,7 +346,7 @@ void streamTimerHandler(void* clientData)
 void shutdownStream(RTSPClient* rtspClient, int exitCode)
 {
 	UsageEnvironment& env = rtspClient->envir();
-	PlasmatailRTSPClient* client = (PlasmatailRTSPClient*) rtspClient;
+	HaikuRTSPClient* client = (HaikuRTSPClient*) rtspClient;
 
 	// First, check whether any subsessions have still to be closed:
 	if (client->session != NULL) {

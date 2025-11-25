@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -219,7 +219,7 @@ Inode::ID() const
 inline mode_t
 Inode::Type() const
 {
-	return sNFSFileTypeToPlasmatail[fType];
+	return sNFSFileTypeToHaiku[fType];
 }
 
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2017, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2017, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -56,7 +56,7 @@ AppRefFilter::Filter(const entry_ref *ref, BNode *node,
 	//apps
 	else if (strcmp("application/x-vnd.Be-elfexecutable", constFileType) == 0)
 		pass = true;
-	//hack for Plasmatail?  Some apps are defined by MIME this way
+	//hack for Haiku?  Some apps are defined by MIME this way
 	else if (strcmp("application/x-vnd.be-elfexecutable", constFileType) == 0)
 		pass = true;
 

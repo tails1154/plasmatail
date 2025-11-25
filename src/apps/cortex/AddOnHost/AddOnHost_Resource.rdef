@@ -11,7 +11,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "2.1.0",
-	long_info = "release 2.1.0 for Plasmatail R1"
+	long_info = "release 2.1.0 for Haiku R1"
 };
 
 resource large_icon array {

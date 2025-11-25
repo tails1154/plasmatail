@@ -30,7 +30,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs TIFFTranslator :
-	x-vnd.Plasmatail-TIFFTranslator
+	x-vnd.Haiku-TIFFTranslator
 	:
 	TIFFMain.cpp
 	TIFFTranslator.cpp

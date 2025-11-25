@@ -14,7 +14,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs PPMTranslator :
-	x-vnd.Plasmatail-PPMTranslator
+	x-vnd.Haiku-PPMTranslator
 	:
 	PPMMain.cpp
 	PPMTranslator.cpp

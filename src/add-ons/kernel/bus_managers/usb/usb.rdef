@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 1,
 	short_info = "USB bus manager",
-	long_info = "Plasmatail USB bus manager - Copyright 2003-2008, Plasmatail Inc."
+	long_info = "Haiku USB bus manager - Copyright 2003-2008, Haiku Inc."
 };

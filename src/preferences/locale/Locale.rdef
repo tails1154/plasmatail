@@ -120,9 +120,9 @@ resource vector_icon {
 	$"0209024065C80000000000004065C8C69779BF1CDB"
 };
 
-resource app_signature "application/x-vnd.Plasmatail-Locale";
+resource app_signature "application/x-vnd.Haiku-Locale";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Locale:System name:Locale";
+resource app_name_catalog_entry "x-vnd.Haiku-Locale:System name:Locale";
 
 resource app_version {
 	major  = 1,
@@ -133,7 +133,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "1.0.0",
-	long_info = "Locale ©2009 Plasmatail"
+	long_info = "Locale ©2009 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

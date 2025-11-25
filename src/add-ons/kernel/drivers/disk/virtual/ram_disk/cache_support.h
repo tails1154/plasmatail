@@ -1,6 +1,6 @@
 /*
  * Copyright 2010-2013, Ingo Weinhold, ingo_weinhold@gmx.de.
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  */
 #ifndef CACHE_SUPPORT_H

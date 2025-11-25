@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2010, Plasmatail Inc. All rights reserved.
+ * Copyright 2002-2010, Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -28,7 +28,7 @@
 #define B_TRANSLATION_CONTEXT "DataTranslations"
 
 
-const char* kApplicationSignature = "application/x-vnd.Plasmatail-DataTranslations";
+const char* kApplicationSignature = "application/x-vnd.Haiku-DataTranslations";
 
 
 DataTranslationsApplication::DataTranslationsApplication()

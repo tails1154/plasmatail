@@ -1,6 +1,6 @@
 /*
  * Copyright 2009, Stephan Aßmus <superstippi@gmx.de>
- * Copyright 2012-2020 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012-2020 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -9,7 +9,7 @@
  */
 
 
-#include <PlasmatailControlLook.h>
+#include <HaikuControlLook.h>
 
 #include <algorithm>
 
@@ -36,41 +36,41 @@ static const rgb_color kBlack = { 0, 0, 0, 255 };
 static const rgb_color kWhite = { 255, 255, 255, 255 };
 
 
-PlasmatailControlLook::PlasmatailControlLook()
+HaikuControlLook::HaikuControlLook()
 	:
 	fCachedOutline(false)
 {
 }
 
 
-PlasmatailControlLook::~PlasmatailControlLook()
+HaikuControlLook::~HaikuControlLook()
 {
 }
 
 
 BAlignment
-PlasmatailControlLook::DefaultLabelAlignment() const
+HaikuControlLook::DefaultLabelAlignment() const
 {
 	return BAlignment(B_ALIGN_LEFT, B_ALIGN_VERTICAL_CENTER);
 }
 
 
 float
-PlasmatailControlLook::DefaultLabelSpacing() const
+HaikuControlLook::DefaultLabelSpacing() const
 {
 	return ceilf(be_plain_font->Size() / 2.0);
 }
 
 
 float
-PlasmatailControlLook::DefaultItemSpacing() const
+HaikuControlLook::DefaultItemSpacing() const
 {
 	return ceilf(be_plain_font->Size() * 0.85);
 }
 
 
 uint32
-PlasmatailControlLook::Flags(BControl* control) const
+HaikuControlLook::Flags(BControl* control) const
 {
 	uint32 flags = B_IS_CONTROL;
 
@@ -106,7 +106,7 @@ PlasmatailControlLook::Flags(BControl* control) const
 
 
 void
-PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, const rgb_color& background, uint32 flags,
 	uint32 borders)
 {
@@ -116,7 +116,7 @@ PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& up
 
 
 void
-PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& updateRect,
 	float radius, const rgb_color& base, const rgb_color& background, uint32 flags,
 	uint32 borders)
 {
@@ -126,7 +126,7 @@ PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect, const BRect& up
 
 
 void
-PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonFrame(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	const rgb_color& background, uint32 flags,
@@ -139,7 +139,7 @@ PlasmatailControlLook::DrawButtonFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders, orientation orientation)
 {
@@ -149,7 +149,7 @@ PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float radius, const rgb_color& base, uint32 flags,
 	uint32 borders, orientation orientation)
 {
@@ -159,7 +159,7 @@ PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	uint32 flags, uint32 borders, orientation orientation)
@@ -171,7 +171,7 @@ PlasmatailControlLook::DrawButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuBarBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuBarBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -217,7 +217,7 @@ PlasmatailControlLook::DrawMenuBarBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base,
 	const rgb_color& background, uint32 flags, uint32 borders)
 {
@@ -227,7 +227,7 @@ PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 	const BRect& updateRect, float radius, const rgb_color& base,
 	const rgb_color& background, uint32 flags, uint32 borders)
 {
@@ -237,7 +237,7 @@ PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius,
 	float rightTopRadius, float leftBottomRadius,
 	float rightBottomRadius, const rgb_color& base,
@@ -250,7 +250,7 @@ PlasmatailControlLook::DrawMenuFieldFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, bool popupIndicator,
 	uint32 flags)
 {
@@ -260,7 +260,7 @@ PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -270,7 +270,7 @@ PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float radius, const rgb_color& base,
 	bool popupIndicator, uint32 flags)
 {
@@ -280,7 +280,7 @@ PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	bool popupIndicator, uint32 flags)
@@ -292,7 +292,7 @@ PlasmatailControlLook::DrawMenuFieldBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -324,7 +324,7 @@ PlasmatailControlLook::DrawMenuBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawMenuItemBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawMenuItemBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -364,7 +364,7 @@ PlasmatailControlLook::DrawMenuItemBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawStatusBar(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawStatusBar(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, const rgb_color& barColor, float progressPosition)
 {
 	if (!ShouldDraw(view, rect, updateRect))
@@ -417,7 +417,7 @@ PlasmatailControlLook::DrawStatusBar(BView* view, BRect& rect, const BRect& upda
 
 
 void
-PlasmatailControlLook::DrawCheckBox(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawCheckBox(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, uint32 flags)
 {
 	if (!ShouldDraw(view, rect, updateRect))
@@ -489,7 +489,7 @@ PlasmatailControlLook::DrawCheckBox(BView* view, BRect& rect, const BRect& updat
 
 
 void
-PlasmatailControlLook::DrawRadioButton(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawRadioButton(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, uint32 flags)
 {
 	if (!ShouldDraw(view, rect, updateRect))
@@ -560,7 +560,7 @@ PlasmatailControlLook::DrawRadioButton(BView* view, BRect& rect, const BRect& up
 
 
 void
-PlasmatailControlLook::DrawScrollBarBorder(BView* view, BRect rect,
+HaikuControlLook::DrawScrollBarBorder(BView* view, BRect rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	orientation orientation)
 {
@@ -615,7 +615,7 @@ PlasmatailControlLook::DrawScrollBarBorder(BView* view, BRect rect,
 
 
 void
-PlasmatailControlLook::DrawScrollBarButton(BView* view, BRect rect,
+HaikuControlLook::DrawScrollBarButton(BView* view, BRect rect,
 	const BRect& updateRect, const rgb_color& base, const rgb_color& text,
 	uint32 flags, int32 direction, orientation orientation, bool down)
 {
@@ -642,7 +642,7 @@ PlasmatailControlLook::DrawScrollBarButton(BView* view, BRect rect,
 }
 
 void
-PlasmatailControlLook::DrawScrollBarBackground(BView* view, BRect& rect1,
+HaikuControlLook::DrawScrollBarBackground(BView* view, BRect& rect1,
 	BRect& rect2, const BRect& updateRect, const rgb_color& base, uint32 flags,
 	orientation orientation)
 {
@@ -652,7 +652,7 @@ PlasmatailControlLook::DrawScrollBarBackground(BView* view, BRect& rect1,
 
 
 void
-PlasmatailControlLook::DrawScrollBarBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawScrollBarBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	orientation orientation)
 {
@@ -748,7 +748,7 @@ PlasmatailControlLook::DrawScrollBarBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawScrollBarThumb(BView* view, BRect& rect,
+HaikuControlLook::DrawScrollBarThumb(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	orientation orientation, uint32 knobStyle)
 {
@@ -937,7 +937,7 @@ PlasmatailControlLook::DrawScrollBarThumb(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawScrollViewFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawScrollViewFrame(BView* view, BRect& rect,
 	const BRect& updateRect, BRect verticalScrollBarFrame,
 	BRect horizontalScrollBarFrame, const rgb_color& base,
 	border_style borderStyle, uint32 flags, uint32 _borders)
@@ -1021,7 +1021,7 @@ PlasmatailControlLook::DrawScrollViewFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawArrowShape(BView* view, BRect& rect,
+HaikuControlLook::DrawArrowShape(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 direction,
 	uint32 flags, float tint)
 {
@@ -1103,14 +1103,14 @@ PlasmatailControlLook::DrawArrowShape(BView* view, BRect& rect,
 
 
 rgb_color
-PlasmatailControlLook::SliderBarColor(const rgb_color& base)
+HaikuControlLook::SliderBarColor(const rgb_color& base)
 {
 	return tint_color(ui_color(B_PANEL_BACKGROUND_COLOR), B_DARKEN_1_TINT);
 }
 
 
 void
-PlasmatailControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updateRect,
+HaikuControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updateRect,
 	const rgb_color& base, rgb_color leftFillColor, rgb_color rightFillColor,
 	float sliderScale, uint32 flags, orientation orientation)
 {
@@ -1150,7 +1150,7 @@ PlasmatailControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updat
 
 
 void
-PlasmatailControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updateRect,
+HaikuControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updateRect,
 	const rgb_color& base, rgb_color fillColor, uint32 flags,
 	orientation orientation)
 {
@@ -1303,7 +1303,7 @@ PlasmatailControlLook::DrawSliderBar(BView* view, BRect rect, const BRect& updat
 
 
 void
-PlasmatailControlLook::DrawSliderThumb(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawSliderThumb(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, uint32 flags, orientation orientation)
 {
 	if (!ShouldDraw(view, rect, updateRect))
@@ -1389,7 +1389,7 @@ PlasmatailControlLook::DrawSliderThumb(BView* view, BRect& rect, const BRect& up
 
 
 void
-PlasmatailControlLook::DrawSliderTriangle(BView* view, BRect& rect,
+HaikuControlLook::DrawSliderTriangle(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	orientation orientation)
 {
@@ -1398,7 +1398,7 @@ PlasmatailControlLook::DrawSliderTriangle(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawSliderTriangle(BView* view, BRect& rect,
+HaikuControlLook::DrawSliderTriangle(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, const rgb_color& fill,
 	uint32 flags, orientation orientation)
 {
@@ -1516,7 +1516,7 @@ PlasmatailControlLook::DrawSliderTriangle(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawSliderHashMarks(BView* view, BRect& rect,
+HaikuControlLook::DrawSliderHashMarks(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, int32 count,
 	hash_mark_location location, uint32 flags, orientation orientation)
 {
@@ -1606,7 +1606,7 @@ PlasmatailControlLook::DrawSliderHashMarks(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawTabFrame(BView* view, BRect& rect,
+HaikuControlLook::DrawTabFrame(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders, border_style borderStyle, uint32 side)
 {
@@ -1640,7 +1640,7 @@ PlasmatailControlLook::DrawTabFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawActiveTab(BView* view, BRect& rect,
+HaikuControlLook::DrawActiveTab(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders, uint32 side, int32, int32, int32, int32)
 {
@@ -1822,7 +1822,7 @@ PlasmatailControlLook::DrawActiveTab(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawInactiveTab(BView* view, BRect& rect,
+HaikuControlLook::DrawInactiveTab(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders, uint32 side, int32, int32, int32, int32)
 {
@@ -1924,7 +1924,7 @@ PlasmatailControlLook::DrawInactiveTab(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawSplitter(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawSplitter(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, orientation orientation, uint32 flags,
 	uint32 borders)
 {
@@ -2039,7 +2039,7 @@ PlasmatailControlLook::DrawSplitter(BView* view, BRect& rect, const BRect& updat
 
 
 void
-PlasmatailControlLook::DrawBorder(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawBorder(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, border_style borderStyle, uint32 flags,
 	uint32 borders)
 {
@@ -2063,7 +2063,7 @@ PlasmatailControlLook::DrawBorder(BView* view, BRect& rect, const BRect& updateR
 
 
 void
-PlasmatailControlLook::DrawRaisedBorder(BView* view, BRect& rect,
+HaikuControlLook::DrawRaisedBorder(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -2084,7 +2084,7 @@ PlasmatailControlLook::DrawRaisedBorder(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawTextControlBorder(BView* view, BRect& rect,
+HaikuControlLook::DrawTextControlBorder(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders)
 {
@@ -2154,7 +2154,7 @@ PlasmatailControlLook::DrawTextControlBorder(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawGroupFrame(BView* view, BRect& rect, const BRect& updateRect,
+HaikuControlLook::DrawGroupFrame(BView* view, BRect& rect, const BRect& updateRect,
 	const rgb_color& base, uint32 borders)
 {
 	rgb_color frameColor = tint_color(base, 1.30);
@@ -2173,7 +2173,7 @@ PlasmatailControlLook::DrawGroupFrame(BView* view, BRect& rect, const BRect& upd
 
 
 void
-PlasmatailControlLook::DrawLabel(BView* view, const char* label, BRect rect,
+HaikuControlLook::DrawLabel(BView* view, const char* label, BRect rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	const rgb_color* textColor)
 {
@@ -2183,7 +2183,7 @@ PlasmatailControlLook::DrawLabel(BView* view, const char* label, BRect rect,
 
 
 void
-PlasmatailControlLook::DrawLabel(BView* view, const char* label, BRect rect,
+HaikuControlLook::DrawLabel(BView* view, const char* label, BRect rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	const BAlignment& alignment, const rgb_color* textColor)
 {
@@ -2193,7 +2193,7 @@ PlasmatailControlLook::DrawLabel(BView* view, const char* label, BRect rect,
 
 
 void
-PlasmatailControlLook::DrawLabel(BView* view, const char* label, const rgb_color& base,
+HaikuControlLook::DrawLabel(BView* view, const char* label, const rgb_color& base,
 	uint32 flags, const BPoint& where, const rgb_color* textColor)
 {
 	// setup the text color
@@ -2308,7 +2308,7 @@ PlasmatailControlLook::DrawLabel(BView* view, const char* label, const rgb_color
 
 
 void
-PlasmatailControlLook::DrawLabel(BView* view, const char* label, const BBitmap* icon,
+HaikuControlLook::DrawLabel(BView* view, const char* label, const BBitmap* icon,
 	BRect rect, const BRect& updateRect, const rgb_color& base, uint32 flags,
 	const BAlignment& alignment, const rgb_color* textColor)
 {
@@ -2381,7 +2381,7 @@ PlasmatailControlLook::DrawLabel(BView* view, const char* label, const BBitmap* 
 
 
 void
-PlasmatailControlLook::GetFrameInsets(frame_type frameType, uint32 flags, float& _left,
+HaikuControlLook::GetFrameInsets(frame_type frameType, uint32 flags, float& _left,
 	float& _top, float& _right, float& _bottom)
 {
 	// All frames have the same inset on each side.
@@ -2411,7 +2411,7 @@ PlasmatailControlLook::GetFrameInsets(frame_type frameType, uint32 flags, float&
 
 
 void
-PlasmatailControlLook::GetBackgroundInsets(background_type backgroundType,
+HaikuControlLook::GetBackgroundInsets(background_type backgroundType,
 	uint32 flags, float& _left, float& _top, float& _right, float& _bottom)
 {
 	// Most backgrounds have the same inset on each side.
@@ -2453,7 +2453,7 @@ PlasmatailControlLook::GetBackgroundInsets(background_type backgroundType,
 
 
 void
-PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, uint32 flags,
 	uint32 borders, orientation orientation)
 {
@@ -2463,7 +2463,7 @@ PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float radius, const rgb_color& base, uint32 flags,
 	uint32 borders, orientation orientation)
 {
@@ -2473,7 +2473,7 @@ PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
+HaikuControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	uint32 flags, uint32 borders, orientation orientation)
@@ -2488,7 +2488,7 @@ PlasmatailControlLook::DrawButtonWithPopUpBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawButtonFrame(BView* view, BRect& rect,
+HaikuControlLook::_DrawButtonFrame(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	const rgb_color& background, uint32 flags, uint32 borders)
@@ -2646,7 +2646,7 @@ PlasmatailControlLook::_DrawButtonFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawOuterResessedFrame(BView* view, BRect& rect,
+HaikuControlLook::_DrawOuterResessedFrame(BView* view, BRect& rect,
 	const rgb_color& base, uint32 flags, uint32 borders)
 {
 	rgb_color edgeLightColor = _EdgeColor(base, false, flags);
@@ -2669,7 +2669,7 @@ PlasmatailControlLook::_DrawOuterResessedFrame(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& left,
+HaikuControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& left,
 	const rgb_color& top, const rgb_color& right, const rgb_color& bottom,
 	uint32 borders)
 {
@@ -2705,7 +2705,7 @@ PlasmatailControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& lef
 
 
 void
-PlasmatailControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& left,
+HaikuControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& left,
 	const rgb_color& top, const rgb_color& right, const rgb_color& bottom,
 	const rgb_color& rightTop, const rgb_color& leftBottom, uint32 borders)
 {
@@ -2756,7 +2756,7 @@ PlasmatailControlLook::_DrawFrame(BView* view, BRect& rect, const rgb_color& lef
 
 
 void
-PlasmatailControlLook::_DrawButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::_DrawButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	bool popupIndicator, uint32 flags, uint32 borders, orientation orientation)
@@ -2794,7 +2794,7 @@ PlasmatailControlLook::_DrawButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawFlatButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::_DrawFlatButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, const rgb_color& base, bool popupIndicator,
 	uint32 flags, uint32 borders, orientation orientation)
 {
@@ -2819,7 +2819,7 @@ PlasmatailControlLook::_DrawFlatButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawNonFlatButtonBackground(BView* view, BRect& rect,
+HaikuControlLook::_DrawNonFlatButtonBackground(BView* view, BRect& rect,
 	const BRect& updateRect, BRegion& clipping, float leftTopRadius,
 	float rightTopRadius, float leftBottomRadius, float rightBottomRadius,
 	const rgb_color& base, bool popupIndicator, uint32 flags, uint32 borders,
@@ -2980,7 +2980,7 @@ PlasmatailControlLook::_DrawNonFlatButtonBackground(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawPopUpMarker(BView* view, const BRect& rect,
+HaikuControlLook::_DrawPopUpMarker(BView* view, const BRect& rect,
 	const rgb_color& base, uint32 flags)
 {
 	BPoint center(roundf((rect.left + rect.right) / 2.0),
@@ -3009,7 +3009,7 @@ PlasmatailControlLook::_DrawPopUpMarker(BView* view, const BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawMenuFieldBackgroundOutside(BView* view, BRect& rect,
+HaikuControlLook::_DrawMenuFieldBackgroundOutside(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	bool popupIndicator, uint32 flags)
@@ -3058,7 +3058,7 @@ PlasmatailControlLook::_DrawMenuFieldBackgroundOutside(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawMenuFieldBackgroundInside(BView* view, BRect& rect,
+HaikuControlLook::_DrawMenuFieldBackgroundInside(BView* view, BRect& rect,
 	const BRect& updateRect, float leftTopRadius, float rightTopRadius,
 	float leftBottomRadius, float rightBottomRadius, const rgb_color& base,
 	uint32 flags, uint32 borders)
@@ -3258,7 +3258,7 @@ PlasmatailControlLook::_DrawMenuFieldBackgroundInside(BView* view, BRect& rect,
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerLeftTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerLeftTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeColor, const rgb_color& frameColor,
 	const rgb_color& bevelColor, const BGradientLinear& fillGradient)
@@ -3271,7 +3271,7 @@ PlasmatailControlLook::_DrawRoundCornerLeftTop(BView* view, BRect& cornerRect,
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerFrameLeftTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerFrameLeftTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeColor, const rgb_color& frameColor)
 {
@@ -3308,7 +3308,7 @@ PlasmatailControlLook::_DrawRoundCornerFrameLeftTop(BView* view, BRect& cornerRe
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerBackgroundLeftTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerBackgroundLeftTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& bevelColor,
 	const BGradientLinear& fillGradient)
 {
@@ -3334,7 +3334,7 @@ PlasmatailControlLook::_DrawRoundCornerBackgroundLeftTop(BView* view, BRect& cor
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerRightTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerRightTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeTopColor, const rgb_color& edgeRightColor,
 	const rgb_color& frameTopColor, const rgb_color& frameRightColor,
@@ -3350,7 +3350,7 @@ PlasmatailControlLook::_DrawRoundCornerRightTop(BView* view, BRect& cornerRect,
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerFrameRightTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerFrameRightTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeTopColor, const rgb_color& edgeRightColor,
 	const rgb_color& frameTopColor, const rgb_color& frameRightColor)
@@ -3400,7 +3400,7 @@ PlasmatailControlLook::_DrawRoundCornerFrameRightTop(BView* view, BRect& cornerR
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerBackgroundRightTop(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerBackgroundRightTop(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& bevelTopColor,
 	const rgb_color& bevelRightColor, const BGradientLinear& fillGradient)
 {
@@ -3430,7 +3430,7 @@ PlasmatailControlLook::_DrawRoundCornerBackgroundRightTop(BView* view, BRect& co
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerLeftBottom(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerLeftBottom(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeLeftColor, const rgb_color& edgeBottomColor,
 	const rgb_color& frameLeftColor, const rgb_color& frameBottomColor,
@@ -3446,7 +3446,7 @@ PlasmatailControlLook::_DrawRoundCornerLeftBottom(BView* view, BRect& cornerRect
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerFrameLeftBottom(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerFrameLeftBottom(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeLeftColor, const rgb_color& edgeBottomColor,
 	const rgb_color& frameLeftColor, const rgb_color& frameBottomColor)
@@ -3496,7 +3496,7 @@ PlasmatailControlLook::_DrawRoundCornerFrameLeftBottom(BView* view, BRect& corne
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerBackgroundLeftBottom(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerBackgroundLeftBottom(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& bevelLeftColor,
 	const rgb_color& bevelBottomColor, const BGradientLinear& fillGradient)
 {
@@ -3526,7 +3526,7 @@ PlasmatailControlLook::_DrawRoundCornerBackgroundLeftBottom(BView* view, BRect& 
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerRightBottom(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerRightBottom(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeColor, const rgb_color& frameColor,
 	const rgb_color& bevelColor, const BGradientLinear& fillGradient)
@@ -3539,7 +3539,7 @@ PlasmatailControlLook::_DrawRoundCornerRightBottom(BView* view, BRect& cornerRec
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerFrameRightBottom(BView* view, BRect& cornerRect,
+HaikuControlLook::_DrawRoundCornerFrameRightBottom(BView* view, BRect& cornerRect,
 	const BRect& updateRect, const rgb_color& background,
 	const rgb_color& edgeColor, const rgb_color& frameColor)
 {
@@ -3576,7 +3576,7 @@ PlasmatailControlLook::_DrawRoundCornerFrameRightBottom(BView* view, BRect& corn
 
 
 void
-PlasmatailControlLook::_DrawRoundCornerBackgroundRightBottom(BView* view,
+HaikuControlLook::_DrawRoundCornerBackgroundRightBottom(BView* view,
 	BRect& cornerRect, const BRect& updateRect, const rgb_color& bevelColor,
 	const BGradientLinear& fillGradient)
 {
@@ -3602,7 +3602,7 @@ PlasmatailControlLook::_DrawRoundCornerBackgroundRightBottom(BView* view,
 
 
 void
-PlasmatailControlLook::_DrawRoundBarCorner(BView* view, BRect& rect,
+HaikuControlLook::_DrawRoundBarCorner(BView* view, BRect& rect,
 	const BRect& updateRect,
 	const rgb_color& edgeLightColor, const rgb_color& edgeShadowColor,
 	const rgb_color& frameLightColor, const rgb_color& frameShadowColor,
@@ -3659,7 +3659,7 @@ PlasmatailControlLook::_DrawRoundBarCorner(BView* view, BRect& rect,
 
 
 rgb_color
-PlasmatailControlLook::_EdgeColor(const rgb_color& base, bool shadow, uint32 flags)
+HaikuControlLook::_EdgeColor(const rgb_color& base, bool shadow, uint32 flags)
 {
 	rgb_color edgeColor;
 
@@ -3698,7 +3698,7 @@ PlasmatailControlLook::_EdgeColor(const rgb_color& base, bool shadow, uint32 fla
 
 
 rgb_color
-PlasmatailControlLook::_FrameLightColor(const rgb_color& base, uint32 flags)
+HaikuControlLook::_FrameLightColor(const rgb_color& base, uint32 flags)
 {
 	if ((flags & B_FOCUSED) != 0)
 		return ui_color(B_KEYBOARD_NAVIGATION_COLOR);
@@ -3729,7 +3729,7 @@ PlasmatailControlLook::_FrameLightColor(const rgb_color& base, uint32 flags)
 
 
 rgb_color
-PlasmatailControlLook::_FrameShadowColor(const rgb_color& base, uint32 flags)
+HaikuControlLook::_FrameShadowColor(const rgb_color& base, uint32 flags)
 {
 	if ((flags & B_FOCUSED) != 0)
 		return ui_color(B_KEYBOARD_NAVIGATION_COLOR);
@@ -3768,7 +3768,7 @@ PlasmatailControlLook::_FrameShadowColor(const rgb_color& base, uint32 flags)
 
 
 rgb_color
-PlasmatailControlLook::_BevelLightColor(const rgb_color& base, uint32 flags)
+HaikuControlLook::_BevelLightColor(const rgb_color& base, uint32 flags)
 {
 	rgb_color bevelLightColor;
 
@@ -3784,7 +3784,7 @@ PlasmatailControlLook::_BevelLightColor(const rgb_color& base, uint32 flags)
 
 
 rgb_color
-PlasmatailControlLook::_BevelShadowColor(const rgb_color& base, uint32 flags)
+HaikuControlLook::_BevelShadowColor(const rgb_color& base, uint32 flags)
 {
 	rgb_color bevelShadowColor;
 
@@ -3800,7 +3800,7 @@ PlasmatailControlLook::_BevelShadowColor(const rgb_color& base, uint32 flags)
 
 
 void
-PlasmatailControlLook::_FillGradient(BView* view, const BRect& rect,
+HaikuControlLook::_FillGradient(BView* view, const BRect& rect,
 	const rgb_color& base, float topTint, float bottomTint,
 	orientation orientation)
 {
@@ -3811,7 +3811,7 @@ PlasmatailControlLook::_FillGradient(BView* view, const BRect& rect,
 
 
 void
-PlasmatailControlLook::_FillGlossyGradient(BView* view, const BRect& rect,
+HaikuControlLook::_FillGlossyGradient(BView* view, const BRect& rect,
 	const rgb_color& base, float topTint, float middle1Tint,
 	float middle2Tint, float bottomTint, orientation orientation)
 {
@@ -3823,7 +3823,7 @@ PlasmatailControlLook::_FillGlossyGradient(BView* view, const BRect& rect,
 
 
 void
-PlasmatailControlLook::_MakeGradient(BGradientLinear& gradient, const BRect& rect,
+HaikuControlLook::_MakeGradient(BGradientLinear& gradient, const BRect& rect,
 	const rgb_color& base, float topTint, float bottomTint,
 	orientation orientation) const
 {
@@ -3838,7 +3838,7 @@ PlasmatailControlLook::_MakeGradient(BGradientLinear& gradient, const BRect& rec
 
 
 void
-PlasmatailControlLook::_MakeGlossyGradient(BGradientLinear& gradient, const BRect& rect,
+HaikuControlLook::_MakeGlossyGradient(BGradientLinear& gradient, const BRect& rect,
 	const rgb_color& base, float topTint, float middle1Tint,
 	float middle2Tint, float bottomTint,
 	orientation orientation) const
@@ -3856,7 +3856,7 @@ PlasmatailControlLook::_MakeGlossyGradient(BGradientLinear& gradient, const BRec
 
 
 void
-PlasmatailControlLook::_MakeButtonGradient(BGradientLinear& gradient, BRect& rect,
+HaikuControlLook::_MakeButtonGradient(BGradientLinear& gradient, BRect& rect,
 	const rgb_color& base, uint32 flags, orientation orientation) const
 {
 	float topTint = 0.6;
@@ -3891,7 +3891,7 @@ PlasmatailControlLook::_MakeButtonGradient(BGradientLinear& gradient, BRect& rec
 
 
 bool
-PlasmatailControlLook::_RadioButtonAndCheckBoxMarkColor(const rgb_color& base,
+HaikuControlLook::_RadioButtonAndCheckBoxMarkColor(const rgb_color& base,
 	rgb_color& color, uint32 flags) const
 {
 	if ((flags & (B_ACTIVATED | B_PARTIALLY_ACTIVATED | B_CLICKED)) == 0) {

@@ -29,7 +29,7 @@
 #define FAT_BUFOBJ_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #include <sys/queue.h>
 
@@ -44,7 +44,7 @@ struct bufobj {
 	struct rwlock bo_lock;
 	u_int bo_flag;
 
-	// Members added for Plasmatail port
+	// Members added for Haiku port
 	struct buf_list bo_clusterbufs;
 		// an SLIST of buffers with b_bufsize equal to cluster size
 	uint32 bo_clusters;

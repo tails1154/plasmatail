@@ -1,5 +1,5 @@
 /*
- * Copyright 2011, Plasmatail Inc. All Rights Reserved.
+ * Copyright 2011, Haiku Inc. All Rights Reserved.
  * Copyright 2009, Ithamar Adema, <ithamar.adema@team-embedded.nl>.
  * Distributed under the terms of the MIT License.
  */

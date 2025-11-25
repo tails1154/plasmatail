@@ -1,10 +1,10 @@
 /*
-	Plasmatail S3 Savage driver adapted from the X.org Savage driver.
+	Haiku S3 Savage driver adapted from the X.org Savage driver.
 
 	Copyright (C) 1994-2000 The XFree86 Project, Inc.	All Rights Reserved.
 	Copyright (c) 2003-2006, X.Org Foundation
 
-	Copyright 2007-2008 Plasmatail, Inc.  All rights reserved.
+	Copyright 2007-2008 Haiku, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:
@@ -526,7 +526,7 @@ Savage_WriteMode(const DisplayModeEx& mode, const SavageRegRec& regRec)
 
 	// Set register SR19 to zero so that the ProSavage chips will start up
 	// when booting under BeOS using the default boot screen, and set register
-	// CR5F to zero so that the ProSavage chips will start up when Plasmatail boot
+	// CR5F to zero so that the ProSavage chips will start up when Haiku boot
 	// screen had a depth of 32 bits/pixel
 
 	if (si.chipType == S3_PROSAVAGE || si.chipType == S3_TWISTER) {

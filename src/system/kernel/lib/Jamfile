@@ -172,8 +172,8 @@ KernelMergeObject kernel_misc.o :
 	: $(TARGET_KERNEL_PIC_CCFLAGS)
 ;
 
-PlasmatailSubInclude arch $(TARGET_ARCH) ;
-PlasmatailSubInclude zlib ;
+HaikuSubInclude arch $(TARGET_ARCH) ;
+HaikuSubInclude zlib ;
 if [ FIsBuildFeatureEnabled zstd ] {
-	PlasmatailSubInclude zstd ;
+	HaikuSubInclude zstd ;
 }

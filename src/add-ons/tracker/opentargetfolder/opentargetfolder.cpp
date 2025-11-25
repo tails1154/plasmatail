@@ -1,6 +1,6 @@
 /* 
  * Copyright 2003-2008, Axel Dörfler, axeld@pinc-software.de.
- * Copyright 2015 Plasmatail, Inc. All rights reserved.
+ * Copyright 2015 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

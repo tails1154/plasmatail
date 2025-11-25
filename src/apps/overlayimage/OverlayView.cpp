@@ -176,7 +176,7 @@ OverlayView::OverlayAboutRequested()
 	};
 
 	aboutwindow->AddCopyright(1999, "Seth Flaxman");
-	aboutwindow->AddCopyright(2010, "Plasmatail, Inc.");
+	aboutwindow->AddCopyright(2010, "Haiku, Inc.");
 	aboutwindow->AddAuthors(authors);
 	aboutwindow->Show();
 }

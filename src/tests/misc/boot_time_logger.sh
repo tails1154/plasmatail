@@ -5,15 +5,15 @@
 # everything's ready.
 SIGNATURES="
 	application/x-vnd.haiku-registrar
-	application/x-vnd.Plasmatail-mount_server
-	application/x-vnd.Plasmatail-powermanagement
-	application/x-vnd.Plasmatail-cddb_daemon
-	application/x-vnd.Plasmatail-midi_server
+	application/x-vnd.Haiku-mount_server
+	application/x-vnd.Haiku-powermanagement
+	application/x-vnd.Haiku-cddb_daemon
+	application/x-vnd.Haiku-midi_server
 	application/x-vnd.haiku-net_server
-	application/x-vnd.Plasmatail-debug_server
+	application/x-vnd.Haiku-debug_server
 	application/x-vnd.Be-PSRV
 	application/x-vnd.haiku-package_daemon
-	application/x-vnd.Plasmatail-notification_server
+	application/x-vnd.Haiku-notification_server
 	application/x-vnd.Be-input_server
 	application/x-vnd.Be.media-server
 	application/x-vnd.Be.addon-host

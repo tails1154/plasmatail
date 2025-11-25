@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2022 Plasmatail, Inc. All rights reserved.
+ * Copyright 2016-2022 Haiku, Inc. All rights reserved.
  * Copyright 2014, Jessica Hamilton, jessica.l.hamilton@gmail.com.
  * Copyright 2014, Henry Harrington, henry.harrington@gmail.com.
  * Distributed under the terms of the MIT License.

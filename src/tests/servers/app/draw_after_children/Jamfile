@@ -11,7 +11,7 @@ Application DrawAfterChildren :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawAfterChildren
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawAfterChildren
 		: tests!apps ;
 }
 

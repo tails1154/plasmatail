@@ -273,7 +273,7 @@ local generatedReferenceParserSourceFiles =
 	DumpExportReferenceJsonListener.cpp
 ;
 
-Application PlasmatailDepot
+Application HaikuDepot
 	:
 	$(applicationSources)
 	$(textDocumentSources)
@@ -287,17 +287,17 @@ Application PlasmatailDepot
 	be package bnetapi translation libnetservices.a libcolumnlistview.a shared
 	[ TargetLibstdc++ ] [ TargetLibsupc++ ] localestub
 	:
-	PlasmatailDepot.rdef
+	HaikuDepot.rdef
 ;
 
-DoCatalogs PlasmatailDepot :
-	x-vnd.Plasmatail-PlasmatailDepot
+DoCatalogs HaikuDepot :
+	x-vnd.Haiku-HaikuDepot
 	:
 	$(applicationSources)
 ;
 
 # The following use of rules configures the generation of .cpp and .h files from
-# JSON schemas that are defined in the PlasmatailDepotServer system.  See the
+# JSON schemas that are defined in the HaikuDepotServer system.  See the
 # included Jam rules and actions for the definitions.
 
 HdsSchemaGenModel $(dumpExportPkgModelTargetFile)

@@ -13,7 +13,7 @@
 
 
 /* This class models (some of) the meta-data that is bundled into data that is
- * relayed from the PlasmatailDepotServer application server down to the client.
+ * relayed from the HaikuDepotServer application server down to the client.
  * This includes the tar-ball of icons as well as "bulk data" such as streams of
  * information about repositories and packages.
  */

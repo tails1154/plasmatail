@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2014, Plasmatail, Inc.
+ * Copyright 2002-2014, Haiku, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -66,8 +66,8 @@ static const int32 kCatalogEntryResourceID		= 1;
 
 // R5 also exports these (Tracker is using them):
 // (maybe we better want to drop them silently and declare
-// the above in a public Plasmatail header - and use that one in
-// Tracker when compiled for Plasmatail)
+// the above in a public Haiku header - and use that one in
+// Tracker when compiled for Haiku)
 extern const uint32 MINI_ICON_TYPE, LARGE_ICON_TYPE;
 const uint32 MINI_ICON_TYPE = 'MICN';
 const uint32 LARGE_ICON_TYPE = 'ICON';

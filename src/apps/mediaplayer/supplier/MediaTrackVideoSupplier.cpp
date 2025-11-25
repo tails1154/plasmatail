@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2008, Plasmatail. Stephan Aßmus <superstippi@gmx.de>
+ * Copyright 2007-2008, Haiku. Stephan Aßmus <superstippi@gmx.de>
  * All rights reserved. Distributed under the terms of the MIT License.
  */
 #include "MediaTrackVideoSupplier.h"

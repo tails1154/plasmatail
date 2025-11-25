@@ -276,7 +276,7 @@ DecorInfo::_Init(bool isUpdate)
 		fName = gSystemCatalog.GetString(B_TRANSLATE_MARK("Default"),
 			B_TRANSLATION_CONTEXT);
 		fShortDescription = gSystemCatalog.GetString(B_TRANSLATE_MARK(
-				"Default Plasmatail window decorator."),
+				"Default Haiku window decorator."),
 			B_TRANSLATION_CONTEXT);
 
 		// The following is to get the modification time of the app_server

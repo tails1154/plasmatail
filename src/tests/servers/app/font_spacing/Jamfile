@@ -12,6 +12,6 @@ SimpleTest FontSpacing :
 	;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FontSpacing
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : FontSpacing
 		: tests!apps ;
 }

@@ -18,7 +18,7 @@ local sources =
 	c_mail_api.cpp
 	crypt.cpp
 	FileConfigView.cpp
-	PlasmatailMailFormatFilter.cpp
+	HaikuMailFormatFilter.cpp
 	mail_encoding.cpp
 	mail_util.cpp
 	MailAttachment.cpp
@@ -56,7 +56,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 
 
 DoCatalogs libmail.so :
-	x-vnd.Plasmatail-libmail
+	x-vnd.Haiku-libmail
 	:
 	FileConfigView.cpp
 	ProtocolConfigView.cpp

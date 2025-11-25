@@ -1,5 +1,5 @@
 /*
- * Copyright 2005-2009, Plasmatail Inc.
+ * Copyright 2005-2009, Haiku Inc.
  * This file may be used under the terms of the MIT License.
  *
  * Originally public domain written by Alexander G. M. Smith.
@@ -504,7 +504,7 @@ int main (int argc, char** argv)
   bool         HaveOldMessage = false;
   int          MessagesDoneCount = 0;
   BString      MessageText;
-  BApplication MyApp ("application/x-vnd.Plasmatail-mbox2mail");
+  BApplication MyApp ("application/x-vnd.Haiku-mbox2mail");
   int          NextArgIndex;
   char         OutputDirectoryPathName [B_PATH_NAME_LENGTH];
   status_t     ReturnCode = -1;

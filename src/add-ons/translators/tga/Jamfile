@@ -20,7 +20,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs TGATranslator :
-	x-vnd.Plasmatail-TGATranslator
+	x-vnd.Haiku-TGATranslator
 	:
 	TGAMain.cpp
 	TGATranslator.cpp

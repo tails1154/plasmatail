@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2014, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2013-2014, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -437,7 +437,7 @@ CommitTransactionHandler::_ApplyChanges()
 	if (fVolumeStateIsActive || fFirstBootProcessing) {
 		_RunPostInstallScripts();
 	} else {
-		// Do post-install scripts later after a reboot, for Plasmatail OS packages.
+		// Do post-install scripts later after a reboot, for Haiku OS packages.
 		_QueuePostInstallScripts();
 	}
 

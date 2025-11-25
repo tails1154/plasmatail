@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Plasmatail, Inc. All rights reserved.
+ * Copyright 2022 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -80,7 +80,7 @@ BMemoryRingIO::BMemoryRingIO(size_t size)
 {
 	// We avoid the use of pthread_mutexattr as it can possibly fail.
 	//
-	// The only Plasmatail-specific behavior that we depend on is that
+	// The only Haiku-specific behavior that we depend on is that
 	// PTHREAD_MUTEX_DEFAULT mutexes check for double-locks.
 	pthread_mutex_init(&fLock, NULL);
 	pthread_cond_init(&fEvent, NULL);

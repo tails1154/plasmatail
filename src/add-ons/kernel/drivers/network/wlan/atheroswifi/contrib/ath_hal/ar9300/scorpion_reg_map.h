@@ -1,4 +1,4 @@
-/*! NOTE(Plasmatail): This file was generated via gcc -C -E in order to avoid
+/*! NOTE(Haiku): This file was generated via gcc -C -E in order to avoid
  * having to include the accompanying _reg_map_macro.h file, which was
  * over 3MB in size (!). */
 /*

@@ -1,5 +1,5 @@
 SubDir HAIKU_TOP src add-ons kernel drivers network ;
 
-PlasmatailSubInclude ether ;
-PlasmatailSubInclude wlan ;
-PlasmatailSubInclude wwan ;
+HaikuSubInclude ether ;
+HaikuSubInclude wlan ;
+HaikuSubInclude wwan ;

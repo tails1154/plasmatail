@@ -34,7 +34,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs libbluetooth.so :
-	x-vnd.Plasmatail-Bluetooth
+	x-vnd.Haiku-Bluetooth
 	:
 	DeviceClass.cpp
 	RemoteDevice.cpp

@@ -68,7 +68,7 @@ ConfigView::ConfigView(TranslatorSettings *settings)
 
 	BStringView *versionView = new BStringView("version", version);
 	BStringView *copyrightView = new BStringView("copyright",
-		B_UTF8_COPYRIGHT "2005-2013 Plasmatail Inc.");
+		B_UTF8_COPYRIGHT "2005-2013 Haiku Inc.");
 	BStringView *copyright2View = new BStringView("my_copyright",
 		B_UTF8_COPYRIGHT "2012-2013 Gerasim Troeglazov <3dEyes@gmail.com>");
 

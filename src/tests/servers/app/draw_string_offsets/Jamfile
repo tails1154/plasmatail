@@ -11,6 +11,6 @@ SimpleTest DrawStringOffsets :
 	;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawStringOffsets
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawStringOffsets
 		: tests!apps ;
 }

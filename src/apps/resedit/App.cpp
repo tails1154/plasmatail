@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005-2010, Plasmatail, Inc.
+ * Copyright (c) 2005-2010, Haiku, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Author:
@@ -20,7 +20,7 @@ main(void)
 
 
 App::App(void)
-  :	BApplication("application/x-vnd.Plasmatail-ResEdit")
+  :	BApplication("application/x-vnd.Haiku-ResEdit")
 {
 	fOpenPanel = new BFilePanel();
 }

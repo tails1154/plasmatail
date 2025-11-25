@@ -80,7 +80,7 @@ main(int argc, char** argv)
 		decoratorName << argv[i] << " ";
 	decoratorName.RemoveLast(" ");
 
-	BApplication app("application/x-vnd.Plasmatail-setdecor");
+	BApplication app("application/x-vnd.Haiku-setdecor");
 
 	DecorInfoUtility* util = new DecorInfoUtility();
 	DecorInfo* decor = NULL;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2016 Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2016 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef SYMBOLPATCHER_ELF_H

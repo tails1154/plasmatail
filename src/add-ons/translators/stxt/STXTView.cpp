@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2011, Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2011, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -43,7 +43,7 @@ STXTView::STXTView(const BRect &frame, const char *name, uint32 resizeMode,
 		__DATE__);
 	BStringView *versionView  =  new BStringView("version", version);
 	BStringView *copyrightView  = new BStringView("Copyright",
-		B_UTF8_COPYRIGHT "2002-2006 Plasmatail Inc.");
+		B_UTF8_COPYRIGHT "2002-2006 Haiku Inc.");
 
 	BLayoutBuilder::Group<>(this, B_VERTICAL, 0)
 		.SetInsets(B_USE_DEFAULT_SPACING)

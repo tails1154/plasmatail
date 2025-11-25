@@ -1111,7 +1111,7 @@ AudioControlInterface::GetTerminalChannels(Vector<multi_channel_info>& Channels,
 
 	uint32 startCount = Channels.Count();
 
-	// Plasmatail multi-aduio designations have the same bits
+	// Haiku multi-aduio designations have the same bits
 	// as USB Audio 2.0 cluster spatial locations :-)
 	for (size_t i = 0; i < kChannels; i++) {
 		uint32 designation = 1 << i;

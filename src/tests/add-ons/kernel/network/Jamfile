@@ -13,7 +13,7 @@ SimpleTest net_stack_tester :
 ;
 
 # Installation -- in the test directory for the time being
-PlasmatailInstall install-userland-networking 
+HaikuInstall install-userland-networking 
 	: [ FDirName $(HAIKU_TEST_DIR) kits net userland ]
 	: net_stack_tester
 	: installed-userland-networking

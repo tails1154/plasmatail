@@ -43,7 +43,7 @@ ConfigView::ConfigView(uint32 flags)
 	BStringView *fVersion = new BStringView("version", version);
 
 	BStringView *fCopyright = new BStringView("copyright",
-		B_UTF8_COPYRIGHT "2007-2021 Plasmatail Inc.");
+		B_UTF8_COPYRIGHT "2007-2021 Haiku Inc.");
 
 #ifdef USES_LIBRAW
 	BString librawInfo = B_TRANSLATE(

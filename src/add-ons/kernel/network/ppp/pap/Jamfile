@@ -17,6 +17,6 @@ KernelAddon pap :
 LinkAgainst pap : libkernelppp.a ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
 	: /boot/home/config/non-packaged/add-ons/kernel/network/ppp
 	: pap ;

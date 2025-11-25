@@ -1,5 +1,5 @@
 /*
- * Copyright 2005, Plasmatail Inc. All rights reserved.
+ * Copyright 2005, Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef FS_SHELL_COMMAND_BEOS_H

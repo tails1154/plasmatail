@@ -16,7 +16,7 @@ Application ActivityMonitor :
 ;
 
 DoCatalogs ActivityMonitor :
-	x-vnd.Plasmatail-ActivityMonitor
+	x-vnd.Haiku-ActivityMonitor
 	:
 	ActivityMonitor.cpp
 	ActivityView.cpp

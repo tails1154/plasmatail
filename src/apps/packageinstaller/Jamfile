@@ -29,7 +29,7 @@ Application LegacyPackageInstaller :
 ;
 
 DoCatalogs LegacyPackageInstaller :
-	x-vnd.Plasmatail-PackageInstaller
+	x-vnd.Haiku-PackageInstaller
 	:
 	main.cpp
 	PackageImageViewer.cpp

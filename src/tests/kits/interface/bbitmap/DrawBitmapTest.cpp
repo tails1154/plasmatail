@@ -39,7 +39,7 @@ class BitmapView: public BView
 int
 main(void)
 {
-	BApplication app("application/Plasmatail-BitmapTest");
+	BApplication app("application/Haiku-BitmapTest");
 
 	BWindow* window = new BWindow(BRect(10, 10, 100, 100),
 		"Bitmap drawing test", B_DOCUMENT_WINDOW, B_QUIT_ON_WINDOW_CLOSE);

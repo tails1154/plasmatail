@@ -32,7 +32,7 @@
  */
 
 
-// Modified to support the Plasmatail FAT driver. These functions, as implemented here, assume
+// Modified to support the Haiku FAT driver. These functions, as implemented here, assume
 // that the volume's block cache was created with a blockSize equal to DEV_BSIZE. We also
 // support access to the file cache via these functions, even though the driver doesn't
 // need that capability in its current form.
@@ -67,7 +67,7 @@ static status_t put_buf(struct buf* buf);
 
 
 /*! The FAT driver uses this in combination with vm_page_count_severe to detect low system
-	resources. However, there is no analagous Plasmatail function to map this to.
+	resources. However, there is no analagous Haiku function to map this to.
 */
 int
 buf_dirty_count_severe(void)
@@ -102,7 +102,7 @@ bread(struct vnode* vp, daddr_t blkno, int size, struct ucred* cred, struct buf*
 }
 
 
-/*! Added for the Plasmatail port:  common initial steps for bdwrite, bawrite, and bwrite.
+/*! Added for the Haiku port:  common initial steps for bdwrite, bawrite, and bwrite.
 
 */
 static status_t
@@ -171,7 +171,7 @@ bdwrite(struct buf* bp)
 }
 
 
-/*! In FreeBSD, this flushes bp to disk asynchronously. However, Plasmatail's block cache
+/*! In FreeBSD, this flushes bp to disk asynchronously. However, Haiku's block cache
 	has no asynchronous flush option, so the operation is only asynchronous if we are
 	working with the file cache (i.e. when writing to a regular file). The driver
 	only uses bawrite if it detects low system resources.
@@ -461,7 +461,7 @@ getblkx(struct vnode* vp, daddr_t blkno, daddr_t dblkno, int size, int slpflag, 
 
 
 /*! Used by deextend to update metadata of pages in the last added cluster.
-	Not applicable in Plasmatail.
+	Not applicable in Haiku.
 */
 void
 vfs_bio_clrbuf(struct buf* bp)
@@ -470,7 +470,7 @@ vfs_bio_clrbuf(struct buf* bp)
 }
 
 
-/*! Used by deextend to zero out the remainder of a cluster beyond EOF. In the Plasmatail port we avoid
+/*! Used by deextend to zero out the remainder of a cluster beyond EOF. In the Haiku port we avoid
 	file cache writes when the node is locked (as it is when deextend is called) to prevent
 	deadlocks. This data must therefore be zero'd after return from deextend.
 */
@@ -524,7 +524,7 @@ bwrite(struct buf* bp)
 }
 
 
-/*! Added for the Plasmatail port. Ensure that buf->b_data points to 'size' bytes of zero'd memory.
+/*! Added for the Haiku port. Ensure that buf->b_data points to 'size' bytes of zero'd memory.
 	@post If no error is returned, buf->b_owned is set to true. If an error is returned,
 	no memory is allocated for buf->b_data.
 */
@@ -557,7 +557,7 @@ allocate_data(struct buf* buf, int size)
 }
 
 
-/*! Added for the Plasmatail port. Either add buf to a list of unused bufs, or free it (and b_data, if
+/*! Added for the Haiku port. Either add buf to a list of unused bufs, or free it (and b_data, if
 	necessary).
 */
 static status_t

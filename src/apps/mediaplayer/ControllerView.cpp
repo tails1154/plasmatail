@@ -1,5 +1,5 @@
 /*
- * Controller.cpp - Media Player for the Plasmatail Operating System
+ * Controller.cpp - Media Player for the Haiku Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright (C) 2007 Stephan Aßmus <superstippi@gmx.de>

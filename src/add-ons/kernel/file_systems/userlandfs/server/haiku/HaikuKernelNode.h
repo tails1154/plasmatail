@@ -15,33 +15,33 @@
 
 namespace UserlandFS {
 
-class PlasmatailKernelVolume;
+class HaikuKernelVolume;
 
 using UserlandFSUtil::FSVNodeCapabilities;
 
 
-struct PlasmatailKernelNode : fs_vnode {
+struct HaikuKernelNode : fs_vnode {
 	struct Capabilities;
 
 			ino_t				id;
-			PlasmatailKernelVolume*	volume;
+			HaikuKernelVolume*	volume;
 			Capabilities*		capabilities;
 			bool				published;
 
 public:
-	inline						PlasmatailKernelNode(PlasmatailKernelVolume* volume,
+	inline						HaikuKernelNode(HaikuKernelVolume* volume,
 									ino_t vnodeID, void* privateNode,
 									fs_vnode_ops* ops,
 									Capabilities* capabilities);
-								~PlasmatailKernelNode();
+								~HaikuKernelNode();
 
-	static	PlasmatailKernelNode*	GetNode(fs_vnode* node);
+	static	HaikuKernelNode*	GetNode(fs_vnode* node);
 
-			PlasmatailKernelVolume*	GetVolume() const	{ return volume; }
+			HaikuKernelVolume*	GetVolume() const	{ return volume; }
 };
 
 
-struct PlasmatailKernelNode::Capabilities {
+struct HaikuKernelNode::Capabilities {
 	int32				refCount;
 	fs_vnode_ops*		ops;
 	FSVNodeCapabilities	capabilities;
@@ -57,7 +57,7 @@ struct PlasmatailKernelNode::Capabilities {
 };
 
 
-PlasmatailKernelNode::PlasmatailKernelNode(PlasmatailKernelVolume* volume, ino_t vnodeID,
+HaikuKernelNode::HaikuKernelNode(HaikuKernelVolume* volume, ino_t vnodeID,
 	void* privateNode, fs_vnode_ops* ops, Capabilities* capabilities)
 	:
 	id(vnodeID),
@@ -70,15 +70,15 @@ PlasmatailKernelNode::PlasmatailKernelNode(PlasmatailKernelVolume* volume, ino_t
 }
 
 
-/*static*/ inline PlasmatailKernelNode*
-PlasmatailKernelNode::GetNode(fs_vnode* node)
+/*static*/ inline HaikuKernelNode*
+HaikuKernelNode::GetNode(fs_vnode* node)
 {
-	return static_cast<PlasmatailKernelNode*>(node);
+	return static_cast<HaikuKernelNode*>(node);
 }
 
 
 }	// namespace UserlandFS
 
-using UserlandFS::PlasmatailKernelNode;
+using UserlandFS::HaikuKernelNode;
 
 #endif	// USERLAND_FS_NODE_H

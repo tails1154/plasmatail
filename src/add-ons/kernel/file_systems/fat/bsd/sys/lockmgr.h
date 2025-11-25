@@ -31,7 +31,7 @@
 #define FAT_LOCKMGR_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #ifndef FS_SHELL
 #include <lock.h>
@@ -41,10 +41,10 @@
 #include "sys/_rwlock.h"
 
 
-// Flag for lockinit() that is used in the driver, but has no effect in the Plasmatail port.
+// Flag for lockinit() that is used in the driver, but has no effect in the Haiku port.
 #define LK_NOWITNESS 0x000010
 
-// lockmgr() attribute flag. Has no effect in the Plasmatail port.
+// lockmgr() attribute flag. Has no effect in the Haiku port.
 #define LK_NOWAIT 0x000200
 
 // lockmgr() operation flags
@@ -83,7 +83,7 @@ lockmgr_assert(const struct lock* lk, int what)
 }
 
 
-/*! Used to enable recursive locking. In the Plasmatail port, struct lock is implemented such that
+/*! Used to enable recursive locking. In the Haiku port, struct lock is implemented such that
 	recursive locking is always enabled.
 */
 static inline void

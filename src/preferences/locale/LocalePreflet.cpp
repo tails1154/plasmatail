@@ -22,7 +22,7 @@
 
 
 const char* kAppName = B_TRANSLATE("Locale");
-const char* kSignature = "application/x-vnd.Plasmatail-Locale";
+const char* kSignature = "application/x-vnd.Haiku-Locale";
 
 
 class LocalePreflet : public BApplication {
@@ -84,7 +84,7 @@ LocalePreflet::MessageReceived(BMessage* message)
 			};
 
 			window = new BAboutWindow(kAppName, kSignature);
-			window->AddCopyright(2005, "Plasmatail, Inc.");
+			window->AddCopyright(2005, "Haiku, Inc.");
 			window->AddAuthors(authors);
 
 			window->Show();

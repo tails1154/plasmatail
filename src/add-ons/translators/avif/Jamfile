@@ -29,7 +29,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs AVIFTranslator :
-	x-vnd.Plasmatail-AVIFTranslator
+	x-vnd.Haiku-AVIFTranslator
 	:
 	main.cpp
 	ConfigView.cpp

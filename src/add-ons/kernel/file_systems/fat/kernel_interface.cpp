@@ -1,7 +1,7 @@
 /*
  * Copyright 1999-2001, Be Incorporated.   All Rights Reserved.
  * Copyright 2001-2020, Axel Dörfler, axeld@pinc-software.de.
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * This file may be used under the terms of the Be Sample Code License.
  */
 
@@ -2736,8 +2736,8 @@ dosfs_readdir(fs_volume* volume, fs_vnode* vnode, void* cookie, struct dirent* b
 	uint32 entriesRequested = *_num;
 	*_num = 0;
 
-	// struct dirent is defined differently in Plasmatail and FreeBSD. In the ported driver,
-	// Plasmatail's definition is the relevant one.
+	// struct dirent is defined differently in Haiku and FreeBSD. In the ported driver,
+	// Haiku's definition is the relevant one.
 	dirent* dirBuf = reinterpret_cast<dirent*>(alloca(sizeof(struct dirent) + MAXNAMLEN + 1));
 	memset(dirBuf, 0, sizeof(struct dirent) + MAXNAMLEN + 1);
 

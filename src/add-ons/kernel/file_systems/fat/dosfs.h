@@ -1,6 +1,6 @@
 /*
  * Copyright 1999-2001, Be Incorporated.   All Rights Reserved.
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * This file may be used under the terms of the Be Sample Code License.
  */
 #ifndef DOSFS_H_
@@ -63,7 +63,7 @@
 #define IS_INVALID_VNID(vnid) \
 	((!IS_DIR_INDEX_VNID(vnid) && !IS_ARTIFICIAL_VNID(vnid)) || ((vnid) & INVALID_VNID_BITS_MASK))
 
-// FreeBSD macros, modified to be compatible with Plasmatail's struct dirent.
+// FreeBSD macros, modified to be compatible with Haiku's struct dirent.
 // GENERIC_DIRSIZ returns an appropriate value for dirent::d_reclen.
 #define _GENERIC_DIRLEN(namlen) ((offsetof(struct dirent, d_name) + (namlen) + 1 + 7) & ~7)
 #define GENERIC_DIRSIZ(dp) _GENERIC_DIRLEN(strlen((dp)->d_name))

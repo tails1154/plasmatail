@@ -9,7 +9,7 @@
 
 /* 
  * This is a simple data structure to hold network buffers.
- * It drops many functionality that the Plasmatail net_buffer provides.
+ * It drops many functionality that the Haiku net_buffer provides.
  *
  * - Inspired by linux sk_buff/bsd mbuf (put/pull)
  * - Contiguoussafe (no push operation)

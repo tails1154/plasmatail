@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2019 Plasmatail Inc., All rights reserved.
+ * Copyright 2004-2019 Haiku Inc., All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  *	Authors:
@@ -48,7 +48,7 @@
 #include "ServiceListItem.h"
 
 
-const char* kNetworkStatusSignature = "application/x-vnd.Plasmatail-NetworkStatus";
+const char* kNetworkStatusSignature = "application/x-vnd.Haiku-NetworkStatus";
 
 static const uint32 kMsgProfileSelected = 'prof';
 static const uint32 kMsgProfileManage = 'mngp';

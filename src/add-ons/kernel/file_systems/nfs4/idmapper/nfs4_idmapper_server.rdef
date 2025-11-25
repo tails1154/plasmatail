@@ -2,7 +2,7 @@
  * nfs4_idmapper_server.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-nfs4_idmapper-server";
+resource app_signature "application/x-vnd.Haiku-nfs4_idmapper-server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "nfs4_idmapper_server",
-	long_info = "nfs4_idmapper_server ©2012 Plasmatail, Inc"
+	long_info = "nfs4_idmapper_server ©2012 Haiku, Inc"
 };
 
 resource vector_icon {

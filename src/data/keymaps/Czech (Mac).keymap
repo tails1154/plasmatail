@@ -204,7 +204,7 @@ Acute 'u'       = 0xc3ba
 Acute 'y'       = 0xc3bd   
 AcuteTab = Normal Shift CapsLock CapsLock-Shift   
 
-# Until Plasmatail supports ring natively, use it in place of grave.
+# Until Haiku supports ring natively, use it in place of grave.
 Grave ' '       = 0xcb9a   
 Grave 'U'       = 0xc5ae   
 Grave 'u'       = 0xc5af   
@@ -238,7 +238,7 @@ Diaeresis 'u'       = 0xc3bc
 Diaeresis 'y'       = 0xc3bf   
 DiaeresisTab = Normal Shift CapsLock CapsLock-Shift   
 
-# Until Plasmatail supports caron natively, use it in place of tilde.
+# Until Haiku supports caron natively, use it in place of tilde.
 Tilde ' '       = 0xcb87   
 Tilde 'C'       = 0xc48c   
 Tilde 'D'       = 0xc48e   

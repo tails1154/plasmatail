@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-Shortcuts";
+resource app_signature "application/x-vnd.Haiku-Shortcuts";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Shortcuts:System name:Shortcuts";
+resource app_name_catalog_entry "x-vnd.Haiku-Shortcuts:System name:Shortcuts";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -16,7 +16,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Shortcuts",
-	long_info  = "Shortcuts ©1999-2009 Jeremy Friesner ©2009-2014 Plasmatail, Inc."
+	long_info  = "Shortcuts ©1999-2009 Jeremy Friesner ©2009-2014 Haiku, Inc."
 };
 
 resource vector_icon {

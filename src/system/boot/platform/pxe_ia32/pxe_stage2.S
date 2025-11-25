@@ -150,7 +150,7 @@ go_unreal:	pushw	%ds
 			ret
 
 
-kStartMessage:			.asciz	"\r\nPlasmatail PXE bootloader version 1.0\r\n\r\n"
+kStartMessage:			.asciz	"\r\nHaiku PXE bootloader version 1.0\r\n\r\n"
 kUnrealMessage:			.asciz	"Switch to unreal mode done\r\n"
 
 

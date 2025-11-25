@@ -14,7 +14,7 @@
 #include <Roster.h>
 #include <String.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 
 

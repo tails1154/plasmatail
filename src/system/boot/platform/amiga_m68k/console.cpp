@@ -1,5 +1,5 @@
 /*
- * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2007, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  *
  * Author:
@@ -655,7 +655,7 @@ console_init(void)
 		0x8000,
 		0x11,
 		NULL,
-		"Plasmatail Loader",
+		"Haiku Loader",
 		NULL,
 		NULL
 	};

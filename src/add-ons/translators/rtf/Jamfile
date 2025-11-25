@@ -30,7 +30,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs RTFTranslator :
-	x-vnd.Plasmatail-RTFTranslator
+	x-vnd.Haiku-RTFTranslator
 	:
 	main.cpp
 	RTFTranslator.cpp

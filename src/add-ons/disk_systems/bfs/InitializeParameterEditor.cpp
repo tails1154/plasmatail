@@ -120,7 +120,7 @@ InitializeBFSEditor::GetParameters(BString& parameters)
 void
 InitializeBFSEditor::_CreateViewControls()
 {
-	fNameControl = new BTextControl(B_TRANSLATE("Name:"), "Plasmatail", NULL);
+	fNameControl = new BTextControl(B_TRANSLATE("Name:"), "Haiku", NULL);
 	fNameControl->SetModificationMessage(new BMessage(MSG_NAME_CHANGED));
 	fNameControl->TextView()->SetMaxBytes(31);
 
@@ -154,7 +154,7 @@ InitializeBFSEditor::_CreateViewControls()
 	fUseIndicesCheckBox->SetToolTip(B_TRANSLATE("Disabling query support "
 		"may speed up certain file system operations, but should\nonly be "
 		"used if one is absolutely certain that one will not need queries."
-		"\nAny volume that is intended for booting Plasmatail must have query "
+		"\nAny volume that is intended for booting Haiku must have query "
 		"support enabled."));
 
 	float spacing = be_control_look->DefaultItemSpacing();

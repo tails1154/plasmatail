@@ -1,6 +1,6 @@
 /*
  * Copyright 2020, François Revol, revol@free.fr. All rights reserved.
- * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2007, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  */
 

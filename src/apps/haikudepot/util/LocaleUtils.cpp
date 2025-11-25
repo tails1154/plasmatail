@@ -14,7 +14,7 @@
 #include <LocaleRoster.h>
 #include <StringFormat.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "StringUtils.h"
 
@@ -113,7 +113,7 @@ LocaleUtils::DeriveDefaultLanguage(const std::vector<LanguageRef>& languages)
 	// application starts, the default language from the system is used anyway.
 	// The data queried in HDS will handle the case where the language is not
 	// 'known' at the HDS end so it doesn't matter if it is invalid when the
-	// PlasmatailDepot application requests data from the PlasmatailDepotServer system.
+	// HaikuDepot application requests data from the HaikuDepotServer system.
 
 	if (languages.empty()) {
 		HDTRACE("no supported languages --> will use default language");

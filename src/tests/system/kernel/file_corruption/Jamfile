@@ -1,5 +1,5 @@
 SubDir HAIKU_TOP src tests system kernel file_corruption ;
 
-PlasmatailSubInclude disk_system ;
-PlasmatailSubInclude driver ;
-PlasmatailSubInclude fs ;
+HaikuSubInclude disk_system ;
+HaikuSubInclude driver ;
+HaikuSubInclude fs ;

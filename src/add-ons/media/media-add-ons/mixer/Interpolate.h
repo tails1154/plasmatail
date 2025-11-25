@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2014, Plasmatail, Inc.
+ * Copyright 2010-2014, Haiku, Inc.
  * Distributed under the terms of the MIT Licence.
  */
 #ifndef _INTERPOLATE_H

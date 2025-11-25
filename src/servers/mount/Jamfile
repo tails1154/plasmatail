@@ -13,7 +13,7 @@ Application mount_server
 ;
 
 DoCatalogs mount_server :
-	x-vnd.Plasmatail-mount_server
+	x-vnd.Haiku-mount_server
 	:
 	AutoMounter.cpp
 ;

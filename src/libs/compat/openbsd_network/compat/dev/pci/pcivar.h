@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Plasmatail, Inc. All rights reserved.
+ * Copyright 2022, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _OBSD_COMPAT_DEV_PCI_PCIVAR_H_

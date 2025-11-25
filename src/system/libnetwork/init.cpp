@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2010, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2006-2010, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -47,9 +47,9 @@ initialize_before(image_id our_image)
 	if (get_next_image_info(B_CURRENT_TEAM, (int32*)&cookie, &info) != B_OK)
 		return;
 
-	if (get_image_symbol(info.id, "__gPlasmatailStartupCode", B_SYMBOL_TYPE_DATA,
+	if (get_image_symbol(info.id, "__gHaikuStartupCode", B_SYMBOL_TYPE_DATA,
 			NULL) == B_OK) {
-		// we were linked on/for Plasmatail
+		// we were linked on/for Haiku
 		return;
 	}
 

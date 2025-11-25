@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 1997 by Massimino Pascal <Pascal.Massimon@ens.fr>
- * Copyright 2006-2014, Plasmatail, Inc. All rights reserved.
+ * Copyright 2006-2014, Haiku, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  *

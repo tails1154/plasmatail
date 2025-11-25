@@ -467,10 +467,10 @@ WorkerThread::_PerformInstall(partition_id sourcePartitionID,
 
 	if (entries != 0) {
 		BAlert* alert = new BAlert("", B_TRANSLATE("The target volume is not "
-			"empty. If it already contains a Plasmatail installation, it will be "
+			"empty. If it already contains a Haiku installation, it will be "
 			"overwritten. This will remove all installed software.\n\n"
 			"If you want to upgrade your system without removing installed "
-			"software, see the Plasmatail User Guide's topic on the application "
+			"software, see the Haiku User Guide's topic on the application "
 			"\"SoftwareUpdater\" for update instructions.\n\n"
 			"Are you sure you want to continue the installation?"),
 			B_TRANSLATE("Install anyway"), B_TRANSLATE("Cancel"), 0,
@@ -862,7 +862,7 @@ SourceVisitor::Visit(BPartition *partition, int32 level)
 	}
 
 	// TODO: We could probably check if this volume contains
-	// the Plasmatail kernel or something. Does it make sense to "install"
+	// the Haiku kernel or something. Does it make sense to "install"
 	// from your BFS volume containing the music collection?
 	// TODO: Then the check for BFS could also be removed above.
 

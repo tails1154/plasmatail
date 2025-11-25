@@ -1,5 +1,5 @@
 /*
- * Copyright 2010, Plasmatail, Inc. All rights reserved.
+ * Copyright 2010, Haiku, Inc. All rights reserved.
  * Copyright 2008, Pier Luigi Fiorini.
  * Distributed under the terms of the MIT License.
  *
@@ -20,7 +20,7 @@
 #include <Path.h>
 #include <TranslationUtils.h>
 
-const char* kSignature			= "application/x-vnd.Plasmatail-notify";
+const char* kSignature			= "application/x-vnd.Haiku-notify";
 const char* kSmallIconAttribute = "BEOS:M:STD_ICON";
 const char* kLargeIconAttribute = "BEOS:L:STD_ICON";
 const char* kIconAttribute		= "BEOS:ICON";

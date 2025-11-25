@@ -50,7 +50,7 @@
  */
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #include <sys/param.h>
 #include <sys/systm.h>
@@ -65,7 +65,7 @@
 #include <fs/msdosfs/direntry.h>
 #include <fs/msdosfs/msdosfsmount.h>
 
-// Plasmatail port
+// Haiku port
 #include "encodings.h"
 
 extern struct iconv_functions *msdosfs_iconv;
@@ -315,7 +315,7 @@ unix2dosfn(const u_char *un, u_char dn[12], size_t unlen, u_int gen,
 	u_char gentext[6], *wcp;
 	uint16_t c;
 
-	// Plasmatail port: enable SJIS encoding if appropriate
+	// Haiku port: enable SJIS encoding if appropriate
 	int sjis = 0;
 	int status = 0;
 	int unicodeSize = MAXNAMLEN * 2 + 1;
@@ -461,7 +461,7 @@ unix2dosfn(const u_char *un, u_char dn[12], size_t unlen, u_int gen,
 		 */
 		for (i = dp - un, j = 0; un < dp && j < 8; j++) {
 			c = unix2doschr(&un, (size_t *)&i, pmp);
-				// Plasmatail port:  cast added to avoid compiler warning
+				// Haiku port:  cast added to avoid compiler warning
 			if (c & 0xff00) {
 				dn[j] = c >> 8;
 				if (++j < 8) {
@@ -625,11 +625,11 @@ int
 winChkName(struct mbnambuf *nbp, const u_char *un, size_t unlen, int chksum,
     struct msdosfsmount *pmp)
 {
-	// Plasmatail port: uses Plasmatail's struct dirent, which is a flexible struct and has no d_namlen.
+	// Haiku port: uses Haiku's struct dirent, which is a flexible struct and has no d_namlen.
 	size_t len;
 	uint16_t c1, c2;
 	char *np;
-		// Plasmatail port: type changed to avoid compiler warning
+		// Haiku port: type changed to avoid compiler warning
 	struct dirent* dirbuf = (struct dirent*)alloca(sizeof(struct dirent) + MAXNAMLEN + 1);
 
 	/*
@@ -676,7 +676,7 @@ win2unixfn(struct mbnambuf *nbp, struct winentry *wep, int chksum,
 	u_char *c, tmpbuf[5];
 	uint8_t *cp;
 	char *np, name[WIN_CHARS * 3 + 1];
-		// Plasmatail port:  type changed to avoid compiler warning
+		// Haiku port:  type changed to avoid compiler warning
 	uint16_t code;
 	int i;
 
@@ -1110,7 +1110,7 @@ char *
 mbnambuf_flush(struct mbnambuf *nbp, struct dirent *dp)
 {
 
-	// Plasmatail port: modified to work with Plasmatail's struct dirent.
+	// Haiku port: modified to work with Haiku's struct dirent.
 	if (nbp->nb_len > NAME_MAX - 1) {
 		mbnambuf_init(nbp);
 		return (NULL);

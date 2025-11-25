@@ -8,7 +8,7 @@ SimpleTest DirectWindowStars
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DirectWindowStars
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DirectWindowStars
 		: tests!apps ;
 }
 

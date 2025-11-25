@@ -220,7 +220,7 @@ private:
 
 
 DrawingModeApp::DrawingModeApp()
-	:	BApplication("application/x.vnd-Plasmatail.DrawingModeTest")
+	:	BApplication("application/x.vnd-Haiku.DrawingModeTest")
 {
 	fWindow = new DrawingModeWindow(BRect(200, 200, 760, 800));
 	fWindow->Show();

@@ -2455,7 +2455,7 @@ TMailWindow::Send(bool now)
 
 			char versionString[255];
 			sprintf(versionString,
-				"Mail/Plasmatail %" B_PRIu32 ".%" B_PRIu32 ".%" B_PRIu32,
+				"Mail/Haiku %" B_PRIu32 ".%" B_PRIu32 ".%" B_PRIu32,
 				info.major, info.middle, info.minor);
 			fMail->SetHeaderField("X-Mailer", versionString);
 		}

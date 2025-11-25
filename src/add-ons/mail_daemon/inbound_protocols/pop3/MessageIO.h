@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2012, Plasmatail, Inc. All rights reserved.
+ * Copyright 2007-2012, Haiku, Inc. All rights reserved.
  * Copyright 2001 Dr. Zoidberg Enterprises. All rights reserved.
  */
 #ifndef MAIL_MESSAGE_IO_H

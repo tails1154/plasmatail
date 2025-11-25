@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Plasmatail-MarkAs";
+resource app_signature "application/x-vnd.Haiku-MarkAs";
 
 resource file_types message {
 	"types" = "text/x-email",
@@ -16,7 +16,7 @@ resource app_version {
 
 	internal = 1,
 
-	short_info = "MarkAs, Copyright 2006-2009 Plasmatail, Inc.",
+	short_info = "MarkAs, Copyright 2006-2009 Haiku, Inc.",
 	long_info = "A Tracker Add-on that marks emails with the chosen status."
 };
 

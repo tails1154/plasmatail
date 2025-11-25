@@ -20,4 +20,4 @@ KernelAddon kernel_unit_tests :
 ;
 
 
-PlasmatailSubInclude lock ;
+HaikuSubInclude lock ;

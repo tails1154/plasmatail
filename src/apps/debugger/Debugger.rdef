@@ -1,7 +1,7 @@
 
-resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Plasmatail-Debugger";
+resource(1, "BEOS:APP_SIG") #'MIMS' "application/x-vnd.Haiku-Debugger";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Debugger:System name:Debugger";
+resource app_name_catalog_entry "x-vnd.Haiku-Debugger:System name:Debugger";
 
 resource file_types message {
   "types" = "application/x-vnd.Be-elfexecutable",
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Debugger",
-	long_info = "Debugger ©2009 Plasmatail, Inc."
+	long_info = "Debugger ©2009 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

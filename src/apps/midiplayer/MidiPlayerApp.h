@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2004 Matthijs Hollemans
- * Copyright (c) 2008-2014 Plasmatail, Inc. All rights reserved.
+ * Copyright (c) 2008-2014 Haiku, Inc. All rights reserved.
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a 
  * copy of this software and associated documentation files (the "Software"), 
@@ -27,7 +27,7 @@
 #include <Application.h>
 
 
-#define MIDI_PLAYER_SIGNATURE  "application/x-vnd.Plasmatail-MidiPlayer"
+#define MIDI_PLAYER_SIGNATURE  "application/x-vnd.Haiku-MidiPlayer"
 
 
 class MidiPlayerWindow;

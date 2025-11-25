@@ -1,7 +1,7 @@
 /*
  * Copyright 2001-2020, Axel Dörfler, axeld@pinc-software.de.
  * Copyright 2010, Clemens Zeidler <haiku@clemens-zeidler.de>
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

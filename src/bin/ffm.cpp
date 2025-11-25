@@ -1,6 +1,6 @@
 /*
  * ffm.cpp
- * (c) 2002, Carlos Hasan, for Plasmatail.
+ * (c) 2002, Carlos Hasan, for Haiku.
  */
 
 
@@ -13,7 +13,7 @@
 int
 main(int argc, char *argv[])
 {
-	BApplication app("application/x-vnd.Plasmatail-ffm");
+	BApplication app("application/x-vnd.Haiku-ffm");
 	bool follow;
 
 	if (argc == 2) {

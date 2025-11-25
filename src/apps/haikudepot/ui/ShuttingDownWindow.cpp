@@ -28,7 +28,7 @@ ShuttingDownWindow::ShuttingDownWindow(BWindow* parent)
 	textView->AdoptSystemColors();
 	textView->MakeEditable(false);
 	textView->MakeSelectable(false);
-	textView->SetText(B_TRANSLATE("PlasmatailDepot is stopping or completing "
+	textView->SetText(B_TRANSLATE("HaikuDepot is stopping or completing "
 		"running operations before quitting."));
 
 	BLayoutBuilder::Group<>(this, B_VERTICAL, 0)

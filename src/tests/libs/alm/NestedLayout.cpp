@@ -2,7 +2,7 @@
  * Copyright 2007-2008, Christof Lutteroth, lutteroth@cs.auckland.ac.nz
  * Copyright 2007-2008, James Kim, jkim202@ec.auckland.ac.nz
  * Copyright 2010, Clemens Zeidler <haiku@clemens-zeidler.de>
- * Copyright 2012, Plasmatail, Inc. 
+ * Copyright 2012, Haiku, Inc. 
  * Distributed under the terms of the MIT License.
  */
 

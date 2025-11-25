@@ -12,7 +12,7 @@
 int
 main(int argc, char** argv)
 {
-	TeapotApp* app = new TeapotApp("application/x-vnd.Plasmatail-GLTeapot");
+	TeapotApp* app = new TeapotApp("application/x-vnd.Haiku-GLTeapot");
 	app->Run();
 	delete app;	
 	return 0;

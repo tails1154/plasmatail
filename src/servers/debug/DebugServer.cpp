@@ -36,7 +36,7 @@
 #include <util/DoublyLinkedList.h>
 
 
-static const char* kDebuggerSignature = "application/x-vnd.Plasmatail-Debugger";
+static const char* kDebuggerSignature = "application/x-vnd.Haiku-Debugger";
 static const int32 MSG_DEBUG_THIS_TEAM = 'dbtt';
 
 
@@ -52,7 +52,7 @@ using std::map;
 using std::nothrow;
 
 
-static const char *kSignature = "application/x-vnd.Plasmatail-debug_server";
+static const char *kSignature = "application/x-vnd.Haiku-debug_server";
 
 
 static status_t

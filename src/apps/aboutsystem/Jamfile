@@ -12,7 +12,7 @@ Application AboutSystem :
 ;
 
 DoCatalogs AboutSystem :
-	x-vnd.Plasmatail-About
+	x-vnd.Haiku-About
 	:
 	AboutSystem.cpp
 	Utilities.cpp

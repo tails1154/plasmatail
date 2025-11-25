@@ -35,6 +35,6 @@ Addon DialUpInterface :
 ;
 
 
-DoCatalogs DialUpInterface : x-vnd.Plasmatail-DialUpInterface :
+DoCatalogs DialUpInterface : x-vnd.Haiku-DialUpInterface :
 	DialUpView.cpp
 ;

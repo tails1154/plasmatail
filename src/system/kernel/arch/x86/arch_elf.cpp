@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2018, Plasmatail Inc. All Rights Reserved.
+ * Copyright 2004-2018, Haiku Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  *
  * Copyright 2002, Travis Geiselbrecht. All rights reserved.

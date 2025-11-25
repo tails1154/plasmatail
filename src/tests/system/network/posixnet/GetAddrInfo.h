@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Plasmatail, inc.
+ * Copyright 2014 Haiku, inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef GET_ADDR_INFO_TEST_H

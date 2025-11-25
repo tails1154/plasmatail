@@ -1,1 +1,1 @@
-resource app_signature "application/x-vnd.Plasmatail-VirtualKeyboardInputServerDevice";
+resource app_signature "application/x-vnd.Haiku-VirtualKeyboardInputServerDevice";

@@ -308,7 +308,7 @@ DebugReportGenerator::_GenerateReportHeader(BFile& _output)
 		WRITE_AND_CHECK(_output, data);
 
 		const utsname& name = sysInfo.GetSystemName();
-		data.SetToFormat("Plasmatail revision: %s (%s)\n", name.version,
+		data.SetToFormat("Haiku revision: %s (%s)\n", name.version,
 			name.machine);
 		WRITE_AND_CHECK(_output, data);
 	}

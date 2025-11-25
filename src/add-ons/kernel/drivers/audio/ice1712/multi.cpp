@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2015 Plasmatail, Inc. All rights reserved.
+ * Copyright 2004-2015 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -225,7 +225,7 @@ ice1712Get_Description(ice1712 *card, multi_description *data)
 			break;
 	}
 
-	strncpy(data->vendor_info, "Plasmatail", 32);
+	strncpy(data->vendor_info, "Haiku", 32);
 
 	data->output_channel_count = card->total_output_channels;
 	data->input_channel_count = card->total_input_channels;
@@ -293,7 +293,7 @@ ice1712Get_Description(ice1712 *card, multi_description *data)
 			chan++;
 		}
 
-		//The digital mixer output (it's an Input for Plasmatail)
+		//The digital mixer output (it's an Input for Haiku)
 		data->channels[chan].channel_id = chan;
 		data->channels[chan].kind = B_MULTI_INPUT_CHANNEL;
 		data->channels[chan].designations = B_CHANNEL_STEREO_BUS
@@ -519,7 +519,7 @@ static const char *string_list[] = {
 	"Output 4",
 	"Digital Output", //15
 
-	"Plasmatail output", //16
+	"Haiku output", //16
 
 	"Input 1", //17
 	"Input 2",
@@ -671,13 +671,13 @@ ice1712UI_CreateOutput(ice1712 *card, multi_mix_control **p_mmc,
 
 	ITRACE_VV("Create Output (label): ID %#" B_PRIx32 "\n", parentControl);
 
-	//Plasmatail output
+	//Haiku output
 	mmc->id = id++;
 	mmc->flags = B_MULTI_MIX_MUX_VALUE;
 	mmc->parent = parentControl;
 	strcpy(mmc->name, string_list[16]);
 
-	ITRACE_VV("Create Output (Plasmatail): ID %#" B_PRIx32 "\n", mmc->id);
+	ITRACE_VV("Create Output (Haiku): ID %#" B_PRIx32 "\n", mmc->id);
 
 	nb_control_created++; mmc++;
 

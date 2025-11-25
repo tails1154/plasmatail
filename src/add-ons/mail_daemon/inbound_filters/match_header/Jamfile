@@ -18,7 +18,7 @@ Addon MatchHeader
 
 DoCatalogs MatchHeader
 	:
-	x-vnd.Plasmatail-MatchHeader
+	x-vnd.Haiku-MatchHeader
 	:
 	ConfigView.cpp
 	RuleFilter.cpp

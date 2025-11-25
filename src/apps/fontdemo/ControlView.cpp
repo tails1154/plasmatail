@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2009, Plasmatail, Inc. All rights reserved.
+ * Copyright 2006-2009, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -64,7 +64,7 @@ void
 ControlView::AttachedToWindow()
 {
 	fTextControl = new BTextControl("TextInput", B_TRANSLATE("Text:"),
-		B_TRANSLATE("Plasmatail, Inc."), NULL);
+		B_TRANSLATE("Haiku, Inc."), NULL);
 	fTextControl->SetModificationMessage(new BMessage(TEXT_CHANGED_MSG));
 	AddChild(fTextControl);
 

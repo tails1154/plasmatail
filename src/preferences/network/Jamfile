@@ -30,7 +30,7 @@ Application Network :
 ;
 
 DoCatalogs Network :
-	x-vnd.Plasmatail-Network
+	x-vnd.Haiku-Network
 	:
 	InterfaceListItem.cpp
 	InterfaceView.cpp

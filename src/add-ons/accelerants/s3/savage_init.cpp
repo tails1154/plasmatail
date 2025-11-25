@@ -1,10 +1,10 @@
 /*
-	Plasmatail S3 Savage driver adapted from the X.org Savage driver.
+	Haiku S3 Savage driver adapted from the X.org Savage driver.
 
 	Copyright (C) 1994-2000 The XFree86 Project, Inc.	All Rights Reserved.
 	Copyright (c) 2003-2006, X.Org Foundation
 
-	Copyright 2007-2008 Plasmatail, Inc.  All rights reserved.
+	Copyright 2007-2008 Haiku, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:

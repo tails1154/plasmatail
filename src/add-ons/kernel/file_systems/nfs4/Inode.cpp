@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2016 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012-2016 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -775,7 +775,7 @@ Inode::TestLock(OpenFileCookie* cookie, struct flock* lock)
 		return result;
 
 	if (conflict) {
-		lock->l_type = sLockTypeToPlasmatail(ltype);
+		lock->l_type = sLockTypeToHaiku(ltype);
 		lock->l_start = static_cast<off_t>(position);
 		if (length >= OFF_MAX)
 			lock->l_len = OFF_MAX;

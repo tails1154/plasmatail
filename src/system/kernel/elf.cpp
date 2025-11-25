@@ -131,7 +131,7 @@ register_elf_image(struct elf_image_info *image)
 	if (image->text_region.id >= 0) {
 		// evaluate the API/ABI version symbols
 
-		// Plasmatail API version
+		// Haiku API version
 		imageInfo.basic_info.api_version = 0;
 		elf_sym* symbol = elf_find_symbol(image,
 			B_SHARED_OBJECT_HAIKU_VERSION_VARIABLE_NAME, NULL, true);
@@ -147,7 +147,7 @@ register_elf_image(struct elf_image_info *image)
 			}
 		}
 
-		// Plasmatail ABI
+		// Haiku ABI
 		imageInfo.basic_info.abi = 0;
 		symbol = elf_find_symbol(image,
 			B_SHARED_OBJECT_HAIKU_ABI_VARIABLE_NAME, NULL, true);

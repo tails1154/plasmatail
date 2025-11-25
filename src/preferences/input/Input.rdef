@@ -1,6 +1,6 @@
-resource app_signature "application/x-vnd.Plasmatail-Input";
+resource app_signature "application/x-vnd.Haiku-Input";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Input:System name:Input";
+resource app_name_catalog_entry "x-vnd.Haiku-Input:System name:Input";
 
 resource app_version {
 	major  = 1,
@@ -14,7 +14,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Input Preferences",
-	long_info  = "Input Preferences ©2002-2020 Plasmatail"
+	long_info  = "Input Preferences ©2002-2020 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

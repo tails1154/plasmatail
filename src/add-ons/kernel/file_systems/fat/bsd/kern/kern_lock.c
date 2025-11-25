@@ -29,7 +29,7 @@
  */
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #include "sys/param.h"
 #include "sys/lockmgr.h"
@@ -40,7 +40,7 @@
 /*! @param flags LK_EXCLUSIVE or LK_SHARED by itself write- or read-locks the node, respectively.
 	LK_RELEASE in combination with LK_EXCLUSIVE or LK_SHARED write- or read-unlocks the node,
 	respectively.
-	@param ilk Ignored in the Plasmatail port.
+	@param ilk Ignored in the Haiku port.
 */
 void
 lockmgr(struct lock* lk, u_int flags, struct mtx* ilk)

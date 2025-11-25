@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Plasmatail, Inc. All rights reserved.
+ * Copyright 2021, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -472,7 +472,7 @@ AVIFTranslator::_TranslateFromAVIF(BPositionIO* stream, BMessage* ioExtension,
 		rowBytes = rgb.rowBytes;
 	} else {
 		// TODO: Add a downsampling (with dithering?) path here, or
-		// alternatively add support for higher bit depth to Plasmatail
+		// alternatively add support for higher bit depth to Haiku
 		// bitmaps, possibly with HDR too.
 		if (image->depth > 8)
 			return B_ILLEGAL_DATA;

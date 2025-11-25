@@ -1,6 +1,6 @@
 /*
- *  Copyright (c) 2002-2011, Plasmatail Project. All rights reserved.
- *  Distributed under the terms of the Plasmatail license.
+ *  Copyright (c) 2002-2011, Haiku Project. All rights reserved.
+ *  Distributed under the terms of the Haiku license.
  *
  *  Author(s):
  *  Daniel Reinhold (danielre@users.sf.net)

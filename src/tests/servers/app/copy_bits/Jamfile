@@ -10,6 +10,6 @@ SimpleTest CopyBits :
 	: be [ TargetLibstdc++ ] [ TargetLibsupc++ ] ;
 
 #if ( $(TARGET_PLATFORM) = libbe_test ) {
-#	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CopyBits
+#	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : CopyBits
 #		: tests!apps ;
 #}

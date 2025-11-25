@@ -1,5 +1,5 @@
 /*
- * MainWin.cpp - Media Player for the Plasmatail Operating System
+ * MainWin.cpp - Media Player for the Haiku Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright (C) 2007-2010 Stephan Aßmus <superstippi@gmx.de> (GPL->MIT ok)
@@ -1559,7 +1559,7 @@ MainWin::GetSupportedSuites(BMessage* data)
 	if (data == NULL)
 		return B_BAD_VALUE;
 
-	status_t status = data->AddString("suites", "suite/vnd.Plasmatail-MediaPlayer");
+	status_t status = data->AddString("suites", "suite/vnd.Haiku-MediaPlayer");
 	if (status != B_OK)
 		return status;
 

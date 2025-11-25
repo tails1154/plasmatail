@@ -1,8 +1,8 @@
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 //
-//  Copyright (c) 2001-2003, Plasmatail
+//  Copyright (c) 2001-2003, Haiku
 //
-//  This software is part of the Plasmatail distribution and is covered
+//  This software is part of the Haiku distribution and is covered
 //  by the MIT License.
 //
 //

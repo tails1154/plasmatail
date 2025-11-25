@@ -10,7 +10,7 @@ Application WindowInvalidation :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : WindowInvalidation
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : WindowInvalidation
 		: tests!apps ;
 }
 

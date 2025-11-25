@@ -15,7 +15,7 @@ Addon <disk_system>ntfs :
 ;
 
 DoCatalogs <disk_system>ntfs :
-	x-vnd.Plasmatail-NTFSDiskAddOn
+	x-vnd.Haiku-NTFSDiskAddOn
 	:
 	InitializeParameterEditor.cpp
 ;

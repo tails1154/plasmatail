@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2013, Plasmatail, Inc. All rights reserved.
+ * Copyright 2011-2013, Haiku, Inc. All rights reserved.
  * Copyright 2011, Clemens Zeidler <haiku@clemens-zeidler.de>
  * Distributed under the terms of the MIT License.
  */
@@ -11,9 +11,9 @@
 #include <String.h>
 
 
-class PlasmatailMailFormatFilter : public BMailFilter {
+class HaikuMailFormatFilter : public BMailFilter {
 public:
-								PlasmatailMailFormatFilter(BMailProtocol& protocol,
+								HaikuMailFormatFilter(BMailProtocol& protocol,
 									const BMailAccountSettings& settings);
 
 	virtual BString				DescriptiveName() const;

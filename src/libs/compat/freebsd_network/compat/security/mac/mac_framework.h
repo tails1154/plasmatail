@@ -1,5 +1,5 @@
 /*
- * Copyright 2009 Plasmatail Inc. All rights reserved.
+ * Copyright 2009 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef FBSD_COMPAT_SECURITY_MAC_MAC_FRAMEWORK_H_

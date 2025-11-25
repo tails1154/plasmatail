@@ -14,7 +14,7 @@ Application Login :
 ;
 
 DoCatalogs Login :
-	x-vnd.Plasmatail-Login
+	x-vnd.Haiku-Login
 	:
 	LoginApp.cpp
 	DesktopWindow.cpp

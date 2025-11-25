@@ -2,7 +2,7 @@
  * MultiAudio.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-hmulti_audio.media_addon";
+resource app_signature "application/x-vnd.Haiku-hmulti_audio.media_addon";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Plasmatail MultiAudio media add-on."
+	long_info = "Haiku MultiAudio media add-on."
 };

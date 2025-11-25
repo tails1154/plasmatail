@@ -16,7 +16,7 @@
 #include <Entry.h>
 #include <String.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 
 #define FILE_TO_STRING_BUFFER_LEN 64

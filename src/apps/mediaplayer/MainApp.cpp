@@ -1,5 +1,5 @@
 /*
- * MainApp.cpp - Media Player for the Plasmatail Operating System
+ * MainApp.cpp - Media Player for the Haiku Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright (C) 2008 Stephan Aßmus <superstippi@gmx.de> (MIT Ok)
@@ -38,7 +38,7 @@
 
 static const char* kCurrentPlaylistFilename = "MediaPlayer Current Playlist";
 
-const char* kAppSig = "application/x-vnd.Plasmatail-MediaPlayer";
+const char* kAppSig = "application/x-vnd.Haiku-MediaPlayer";
 
 MainApp* gMainApp;
 

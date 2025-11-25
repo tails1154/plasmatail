@@ -362,7 +362,7 @@ usage()
 	extern const char* __progname;
 
 	fprintf(stderr, "usage: %s <device>\n"
-		"Must be started from the top-level Plasmatail directory to find its "
+		"Must be started from the top-level Haiku directory to find its "
 		"add-ons.\n", __progname);
 	exit(1);
 }

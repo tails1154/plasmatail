@@ -115,7 +115,7 @@ BeOSKernelVolume::ReadFSInfo(fs_info* info)
 	if (!fFSOps->rfsstat)
 		return B_BAD_VALUE;
 
-	// Plasmatail's fs_info equals BeOS's version
+	// Haiku's fs_info equals BeOS's version
 	return fFSOps->rfsstat(fVolumeCookie, (beos_fs_info*)info);
 }
 
@@ -126,7 +126,7 @@ BeOSKernelVolume::WriteFSInfo(const struct fs_info* info, uint32 mask)
 	if (!fFSOps->wfsstat)
 		return B_BAD_VALUE;
 
-	// Plasmatail's fs_info equals BeOS's version
+	// Haiku's fs_info equals BeOS's version
 	return fFSOps->wfsstat(fVolumeCookie, (beos_fs_info*)info, (long)mask);
 }
 
@@ -342,7 +342,7 @@ BeOSKernelVolume::ReadStat(void* node, struct stat* st)
 	if (!fFSOps->rstat)
 		return B_BAD_VALUE;
 
-	// Plasmatail's struct stat has an additional st_type field (for an attribute
+	// Haiku's struct stat has an additional st_type field (for an attribute
 	// type), but that doesn't matter here
 	return fFSOps->rstat(fVolumeCookie, node, (struct beos_stat*)st);
 }
@@ -354,7 +354,7 @@ BeOSKernelVolume::WriteStat(void* node, const struct stat *st, uint32 mask)
 	if (!fFSOps->wstat)
 		return B_BAD_VALUE;
 
-	// Plasmatail's struct stat has an additional st_type field (for an attribute
+	// Haiku's struct stat has an additional st_type field (for an attribute
 	// type), but that doesn't matter here
 	return fFSOps->wstat(fVolumeCookie, node, (struct beos_stat*)st,
 		(long)mask);
@@ -485,7 +485,7 @@ BeOSKernelVolume::ReadDir(void* node, void* cookie, void* buffer,
 
 	*countRead = count;
 
-	// Plasmatail's struct dirent equals BeOS's version
+	// Haiku's struct dirent equals BeOS's version
 	return fFSOps->readdir(fVolumeCookie, node, cookie, (long*)countRead,
 		(beos_dirent*)buffer, bufferSize);
 }
@@ -540,7 +540,7 @@ BeOSKernelVolume::ReadAttrDir(void* node, void* cookie, void* buffer,
 
 	*countRead = count;
 
-	// Plasmatail's struct dirent equals BeOS's version
+	// Haiku's struct dirent equals BeOS's version
 	return fFSOps->read_attrdir(fVolumeCookie, node, cookie, (long*)countRead,
 		(struct beos_dirent*)buffer, bufferSize);
 }
@@ -723,7 +723,7 @@ BeOSKernelVolume::ReadIndexDir(void* cookie, void* buffer,
 
 	*countRead = count;
 
-	// Plasmatail's struct dirent equals BeOS's version
+	// Haiku's struct dirent equals BeOS's version
 	return fFSOps->read_indexdir(fVolumeCookie, cookie, (long*)countRead,
 		(struct beos_dirent*)buffer, bufferSize);
 }
@@ -821,7 +821,7 @@ BeOSKernelVolume::ReadQuery(void* cookie, void* buffer, size_t bufferSize,
 
 	*countRead = count;
 
-	// Plasmatail's struct dirent equals BeOS's version
+	// Haiku's struct dirent equals BeOS's version
 	return fFSOps->read_query(fVolumeCookie, cookie, (long*)countRead,
 		(struct beos_dirent*)buffer, bufferSize);
 }

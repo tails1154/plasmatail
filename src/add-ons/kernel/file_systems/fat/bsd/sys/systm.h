@@ -37,7 +37,7 @@
 #define FAT_SYSTM_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #ifdef FS_SHELL
 #include "fssh_api_wrapper.h"

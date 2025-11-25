@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -29,7 +29,7 @@ public:
 private:
 			void					_InitHeader();
 
-	static	uint32					_PlasmatailErrorToNFS4(status_t error);
+	static	uint32					_HaikuErrorToNFS4(status_t error);
 
 			status_t				fStatus;
 			XDR::Stream::Position	fStatusPosition;

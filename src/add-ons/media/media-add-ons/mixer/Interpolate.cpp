@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2014 Plasmatail, inc.
+ * Copyright 2010-2014 Haiku, inc.
  * Distributed under the terms of the MIT Licence.
  *
  * Author: Adrien Destugues <pulkomandy@pulkomandy.tk>

@@ -14,7 +14,7 @@
 
 
 const char* kAppName = B_TRANSLATE_SYSTEM_NAME("ActivityMonitor");
-const char* kSignature = "application/x-vnd.Plasmatail-ActivityMonitor";
+const char* kSignature = "application/x-vnd.Haiku-ActivityMonitor";
 
 
 ActivityMonitor::ActivityMonitor()

@@ -2,8 +2,8 @@
  * Originally released under the Be Sample Code License.
  * Copyright 2000, Be Incorporated. All rights reserved.
  *
- * Modified for Plasmatail by François Revol, Michael Lotz and Greg Crain.
- * Copyright 2007-2024, Plasmatail Inc. All rights reserved.
+ * Modified for Haiku by François Revol, Michael Lotz and Greg Crain.
+ * Copyright 2007-2024, Haiku Inc. All rights reserved.
  */
 
 #include <MediaDefs.h>

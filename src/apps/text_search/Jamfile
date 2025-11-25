@@ -19,7 +19,7 @@ Application TextSearch :
 ;
 
 DoCatalogs TextSearch :
-	x-vnd.Plasmatail.TextSearch
+	x-vnd.Haiku.TextSearch
 	:
 	GrepWindow.cpp
 	Grepper.cpp

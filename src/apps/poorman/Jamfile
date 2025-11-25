@@ -59,7 +59,7 @@ Application PoorMan : PoorMan.cpp
 
 
 DoCatalogs PoorMan :
-	x-vnd.Plasmatail-PoorMan
+	x-vnd.Haiku-PoorMan
 	:
 	constants.cpp
 	PoorManAdvancedView.cpp

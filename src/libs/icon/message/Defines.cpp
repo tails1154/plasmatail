@@ -1,5 +1,5 @@
 /*
- * Copyright 2007, Plasmatail. All rights reserved.
+ * Copyright 2007, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -14,7 +14,7 @@ _BEGIN_ICON_NAMESPACE
 
 
 const uint32 kNativeIconMagicNumber = 'IMSG';
-const char*	kNativeIconMimeType	= "application/x-vnd.Plasmatail-icon";
+const char*	kNativeIconMimeType	= "application/x-vnd.Haiku-icon";
 
 
 _END_ICON_NAMESPACE

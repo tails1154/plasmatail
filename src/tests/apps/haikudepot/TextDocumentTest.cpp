@@ -17,7 +17,7 @@
 
 TextDocumentTest::TextDocumentTest()
 	:
-	BApplication("application/x-vnd.Plasmatail-TextDocumentTest")
+	BApplication("application/x-vnd.Haiku-TextDocumentTest")
 {
 }
 

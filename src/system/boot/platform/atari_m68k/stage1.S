@@ -1,7 +1,7 @@
 /*
  * Copyright 2008-2010, François Revol, revol@free.fr. All rights reserved.
  * Copyright 2005, Ingo Weinhold, bonefish@users.sf.net.
- * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2007, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT license.
  */
 
@@ -114,5 +114,5 @@ putc:
 	movem.l	(%sp)+,%a0
 	rts
 str:
-	.ascii "Plasmatail!"
+	.ascii "Haiku!"
 	.byte 0

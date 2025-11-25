@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2018, Plasmatail, Inc. All rights reserved.
+ * Copyright 2017-2018, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _FBSD_COMPAT_SYS_COUNTER_H_
@@ -17,7 +17,7 @@
  * However, this seems to be for the most part overengineering, as its
  * only uses seem to be statistical counting in semi-performance-critical paths.
  * Axel noted in #12328 that there's a potential way to implement FreeBSD's
- * method on Plasmatail using cpu_ent, but that atomics were "perfectly fine",
+ * method on Haiku using cpu_ent, but that atomics were "perfectly fine",
  * so we will go with that for now.
  */
 

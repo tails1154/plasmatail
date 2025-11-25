@@ -14,6 +14,6 @@ KernelAddon ppp_frame :
 ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
 	: /boot/home/config/non-packaged/add-ons/kernel/network/ppp
 	: ppp_frame ;

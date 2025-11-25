@@ -1,5 +1,5 @@
 /*
-* Copyright 2003-2006, Plasmatail.
+* Copyright 2003-2006, Haiku.
 * Distributed under the terms of the MIT License.
 *
 * A module driver for the generic mpu401 midi interface.

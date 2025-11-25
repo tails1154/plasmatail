@@ -1011,7 +1011,7 @@ TestFetchPredicate(const char *mountPoint, const char *predicate,
 							   entryCount);
 		BEntry entry;
 		while (query.GetNextEntry(&entry) == B_OK) {
-// Plasmatail supports rewinding queries, R5 does not.
+// Haiku supports rewinding queries, R5 does not.
 #ifdef TEST_R5
 			CPPUNIT_ASSERT( query.Rewind() == B_ERROR );
 #endif
@@ -1032,7 +1032,7 @@ TestFetchPredicate(const char *mountPoint, const char *predicate,
 							   entryCount);
 		entry_ref ref;
 		while (query.GetNextRef(&ref) == B_OK) {
-// Plasmatail supports rewinding queries, R5 does not.
+// Haiku supports rewinding queries, R5 does not.
 #ifdef TEST_R5
 			CPPUNIT_ASSERT( query.Rewind() == B_ERROR );
 #endif
@@ -1054,7 +1054,7 @@ TestFetchPredicate(const char *mountPoint, const char *predicate,
 		char buffer[bufSize];
 		dirent *ents = (dirent *)buffer;
 		while (query.GetNextDirents(ents, bufSize, 1) == 1) {
-// Plasmatail supports rewinding queries, R5 does not.
+// Haiku supports rewinding queries, R5 does not.
 #ifdef TEST_R5
 			CPPUNIT_ASSERT( query.Rewind() == B_ERROR );
 #endif
@@ -1079,7 +1079,7 @@ TestFetchPredicate(const char *mountPoint, const char *predicate,
 		entry_ref ref;
 		BEntry entry;
 		while (query.GetNextDirents(ents, bufSize, 1) == 1) {
-// Plasmatail supports rewinding queries, R5 does not.
+// Haiku supports rewinding queries, R5 does not.
 #ifdef TEST_R5
 			CPPUNIT_ASSERT( query.Rewind() == B_ERROR );
 #endif

@@ -113,7 +113,7 @@ RegistrarThreadManagerTest::setUp()
 	// Setup our application
 	fApplication = new BTestApp("application/x-vnd.obos.RegistrarThreadManagerTest");
 	if (fApplication->Init() != B_OK) {
-		fprintf(stderr, "Failed to initialize application (perhaps the Plasmatail registrar isn't running?).\n");
+		fprintf(stderr, "Failed to initialize application (perhaps the Haiku registrar isn't running?).\n");
 		delete fApplication;
 		fApplication = NULL;
 	}
@@ -153,7 +153,7 @@ RegistrarThreadManagerTest::ShutdownTest()
 	BMessenger managerMessenger(NULL, fApplication, &err);
 // TODO: Do something about this...
 if (err != B_OK) {
-fprintf(stderr, "Fails because we try to init an Plasmatail BMessenger with a "
+fprintf(stderr, "Fails because we try to init an Haiku BMessenger with a "
 "BLooper from R5's libbe (more precisely a BTestApp living in libcppunit, "
 "which is only linked against R5's libbe).\n");
 }
@@ -238,7 +238,7 @@ RegistrarThreadManagerTest::ThreadLimitTest()
 	BMessenger managerMessenger(NULL, fApplication, &err);
 // TODO: Do something about this...
 if (err != B_OK) {
-fprintf(stderr, "Fails because we try to init an Plasmatail BMessenger with a "
+fprintf(stderr, "Fails because we try to init an Haiku BMessenger with a "
 "BLooper from R5's libbe (more precisely a BTestApp living in libcppunit, "
 "which is only linked against R5's libbe).\n");
 }

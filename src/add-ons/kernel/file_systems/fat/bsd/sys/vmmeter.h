@@ -32,7 +32,7 @@
 #define FAT_VMMETER_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #ifdef _KERNEL_MODE
 #include <low_resource_manager.h>

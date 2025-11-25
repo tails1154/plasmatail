@@ -1,6 +1,6 @@
 /*
  * Copyright 1999-2009 Jeremy Friesner
- * Copyright 2009-2010 Plasmatail, Inc. All rights reserved.
+ * Copyright 2009-2010 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -22,7 +22,7 @@
 
 ShortcutsApp::ShortcutsApp()
 	:
-	BApplication("application/x-vnd.Plasmatail-Shortcuts")
+	BApplication("application/x-vnd.Haiku-Shortcuts")
 {
 }
 

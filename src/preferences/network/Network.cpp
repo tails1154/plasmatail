@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2015 Plasmatail Inc. All rights reserved.
+ * Copyright 2004-2015 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -13,7 +13,7 @@
 #include "NetworkWindow.h"
 
 
-static const char* kSignature = "application/x-vnd.Plasmatail-Network";
+static const char* kSignature = "application/x-vnd.Haiku-Network";
 
 
 class Application : public BApplication {

@@ -1,6 +1,6 @@
 /*
  * Copyright 2009 S.Zharski <imker@gmx.li>
- * Copyright 2018, Plasmatail, Inc. All rights reserved.
+ * Copyright 2018, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

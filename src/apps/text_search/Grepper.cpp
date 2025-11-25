@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 1998-2007 Matthijs Hollemans
- * Copyright (c) 2008-2017, Plasmatail Inc.
+ * Copyright (c) 2008-2017, Haiku Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:

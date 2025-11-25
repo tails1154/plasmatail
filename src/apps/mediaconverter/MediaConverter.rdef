@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-MediaConverter";
+resource app_signature "application/x-vnd.Haiku-MediaConverter";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-MediaConverter:System name:MediaConverter";
+resource app_name_catalog_entry "x-vnd.Haiku-MediaConverter:System name:MediaConverter";
 
 resource app_version {
 	major      = 1,
@@ -10,7 +10,7 @@ resource app_version {
 	variety    = B_APPV_BETA,
 	internal   = 0,
 	short_info = "MediaConverter",
-	long_info  = "MediaConverter ©1999, Be, Inc., ©2000-2004 Jun Suzuki, ©2009 Plasmatail, Inc."
+	long_info  = "MediaConverter ©1999, Be, Inc., ©2000-2004 Jun Suzuki, ©2009 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

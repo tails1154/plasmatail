@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-VirtualMemory";
+resource app_signature "application/x-vnd.Haiku-VirtualMemory";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-VirtualMemory:System name:VirtualMemory";
+resource app_name_catalog_entry "x-vnd.Haiku-VirtualMemory:System name:VirtualMemory";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "VirtualMemory",
-	long_info  = "VirtualMemory ©2005-2009 Plasmatail"
+	long_info  = "VirtualMemory ©2005-2009 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

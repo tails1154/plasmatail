@@ -16,11 +16,11 @@ Requirements
 2) Generate a comprehensive text listing of the devices present to allow users to share detailed information with developers
 - Generate an email with this information attached
 
-3) Let the user generate a report on how well Plasmatail supports the devices in the system.
+3) Let the user generate a report on how well Haiku supports the devices in the system.
 - Present a list of devices and per device a star rating on the support, and provide a space for comments on the device support.
 - For each device allow comments
 - Include all available information for the device (including loaded driver)
-- Perhaps this can go into the Plasmatailware compatibility database? 
+- Perhaps this can go into the Haikuware compatibility database? 
 
 4) Arrange the devices in different orders (by category, by connection, by bus type, by resource assignment?)
 
@@ -104,7 +104,7 @@ When you click Report Hardware Support, this appears:
 |                                                      |
 |  Name: _______________  Email: __________________    |
 |                                                      |
-|  Plasmatail-os.org account: __________________________    |
+|  Haiku-os.org account: __________________________    |
 |                                                      |
 |  +--------------------+  +---------------+           |
 |  | Preview submission |  | Generate File |           |
@@ -119,7 +119,7 @@ Interface details:
 - Generate file will generate a file that can be uploaded manually, or emailed to a specific address.
 - As you mouse over the rating, a popup will appear detailing what each star stands for:
   - ..... : No support
-  - X.... : Crashes Plasmatail
+  - X.... : Crashes Haiku
   - **... : Detected but doesn't work with 3rd party driver
   - ***.. : Detected but doesn't work out of the box
   - ****. : Detected and works with 3rd party driver

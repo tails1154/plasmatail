@@ -1,7 +1,7 @@
 /*
  * Copyright 2008-2009, Oliver Ruiz Dorantes <oliver.ruiz.dorantes@gmail.com>
  * Copyright 2012-2013, Tri-Edge AI, <triedgeai@gmail.com>
- * Copyright 2021, Plasmatail, Inc.
+ * Copyright 2021, Haiku, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

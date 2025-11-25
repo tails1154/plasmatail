@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Plasmatail-Kernel";
+resource app_signature "application/x-vnd.Haiku-Kernel";
 
 resource app_version {
 	major  = 1,
@@ -9,7 +9,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Kernel",
-	long_info = "Kernel ©2002-2008 Plasmatail Inc."
+	long_info = "Kernel ©2002-2008 Haiku Inc."
 };
 
 resource vector_icon {

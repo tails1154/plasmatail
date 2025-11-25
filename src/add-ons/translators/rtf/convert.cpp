@@ -324,7 +324,7 @@ TextOutput::TextOutput(RTF::Header &start, BDataIO *stream, bool processRuns)
 	// could not support any text styles (colors and fonts)
 
 	if (processRuns && be_app == NULL)
-		fApplication = new BApplication("application/x-vnd.Plasmatail-RTFTranslator");
+		fApplication = new BApplication("application/x-vnd.Haiku-RTFTranslator");
 }
 
 

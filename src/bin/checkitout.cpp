@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2009 Plasmatail Inc. All rights reserved.
+ * Copyright 2007-2009 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -29,10 +29,10 @@
 #include "checkitout.h"
 
 
-const char* kAppSig = "application/x-vnd.Plasmatail-checkitout";
+const char* kAppSig = "application/x-vnd.Haiku-checkitout";
 const char* kTrackerSig = "application/x-vnd.Be-TRAK";
 #if __HAIKU__
-const char* kTerminalSig = "application/x-vnd.Plasmatail-Terminal";
+const char* kTerminalSig = "application/x-vnd.Haiku-Terminal";
 #else
 const char* kTerminalSig = "application/x-vnd.Be-SHEL";
 #endif

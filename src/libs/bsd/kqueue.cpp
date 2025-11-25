@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Plasmatail, Inc. All rights reserved.
+ * Copyright 2023, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #include <sys/event.h>
@@ -86,7 +86,7 @@ kevent(int kq,
 
 		if (changelist[i].filter == EVFILT_READ || changelist[i].filter == EVFILT_WRITE) {
 			// kqueue treats the same file descriptor with both READ and WRITE filters
-			// as two separate listeners. Plasmatail, however, treats it as one.
+			// as two separate listeners. Haiku, however, treats it as one.
 			// We rectify this here by carefully combining the two.
 
 			// We can't support ONESHOT for descriptors due to the separation.

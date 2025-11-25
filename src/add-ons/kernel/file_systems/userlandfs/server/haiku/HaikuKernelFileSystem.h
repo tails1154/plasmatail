@@ -7,7 +7,7 @@
 
 #include "Locker.h"
 
-#include "PlasmatailKernelNode.h"
+#include "HaikuKernelNode.h"
 
 #include "../FileSystem.h"
 
@@ -17,28 +17,28 @@ struct file_system_module_info;
 
 namespace UserlandFS {
 
-struct PlasmatailKernelIORequest;
+struct HaikuKernelIORequest;
 
-class PlasmatailKernelFileSystem : public FileSystem {
+class HaikuKernelFileSystem : public FileSystem {
 public:
-								PlasmatailKernelFileSystem(const char* fsName,
+								HaikuKernelFileSystem(const char* fsName,
 									file_system_module_info* fsModule);
-	virtual						~PlasmatailKernelFileSystem();
+	virtual						~HaikuKernelFileSystem();
 
 			status_t			Init();
 
 	virtual	status_t			CreateVolume(Volume** volume, dev_t id);
 	virtual	status_t			DeleteVolume(Volume* volume);
 
-			status_t			AddIORequest(PlasmatailKernelIORequest* request);
-			PlasmatailKernelIORequest* GetIORequest(int32 requestID);
-			void				PutIORequest(PlasmatailKernelIORequest* request,
+			status_t			AddIORequest(HaikuKernelIORequest* request);
+			HaikuKernelIORequest* GetIORequest(int32 requestID);
+			void				PutIORequest(HaikuKernelIORequest* request,
 									int32 refCount = 1);
 
-			PlasmatailKernelNode::Capabilities* GetNodeCapabilities(
+			HaikuKernelNode::Capabilities* GetNodeCapabilities(
 									fs_vnode_ops* ops);
 			void				PutNodeCapabilities(
-									PlasmatailKernelNode::Capabilities*
+									HaikuKernelNode::Capabilities*
 										capabilities);
 
 private:
@@ -61,6 +61,6 @@ private:
 
 }	// namespace UserlandFS
 
-using UserlandFS::PlasmatailKernelFileSystem;
+using UserlandFS::HaikuKernelFileSystem;
 
 #endif	// USERLAND_FS_HAIKU_KERNEL_FILE_SYSTEM_H

@@ -12,11 +12,11 @@ Application ping :
 	: $(TARGET_NETWORK_LIBS) $(TARGET_SELECT_UNAME_ETC_LIB) libbsd.so ;
 
 # Installation -- in the test directory for the time being
-PlasmatailInstall install-networking
+HaikuInstall install-networking
 	: [ FDirName $(HAIKU_TEST_DIR) kits net ]
 	: ping ;
 
-PlasmatailInstall install-userland-networking
+HaikuInstall install-userland-networking
 	: [ FDirName $(HAIKU_TEST_DIR) kits net userland ]
 	: ping
 	: installed-userland-networking

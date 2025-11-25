@@ -2,7 +2,7 @@
  * midi usb driver
  * usb_midi.c
  *
- * Copyright 2006-2013 Plasmatail Inc.  All rights reserved.
+ * Copyright 2006-2013 Haiku Inc.  All rights reserved.
  * Distributed under the terms of the MIT Licence.
  *
  * Authors:

@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2010, Plasmatail, Inc. All rights reserved.
+ * Copyright 2007-2010, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -136,7 +136,7 @@ get_description(hda_audio_group* audioGroup, multi_description* data)
 	data->interface_minimum = B_CURRENT_INTERFACE_VERSION;
 
 	strcpy(data->friendly_name, "HD Audio");
-	strcpy(data->vendor_info, "Plasmatail");
+	strcpy(data->vendor_info, "Haiku");
 
 	int32 inChannels = 0;
 	if (audioGroup->record_stream != NULL)
@@ -976,7 +976,7 @@ get_buffers(hda_audio_group* audioGroup, multi_buffer_list* data)
 	data->return_record_channels = data->request_record_channels;
 	data->return_record_buffer_size = data->request_record_buffer_size;
 
-	/* Workaround for Plasmatail multi_audio API, since it prefers to let the
+	/* Workaround for Haiku multi_audio API, since it prefers to let the
 	   driver pick values, while the BeOS multi_audio actually gives the
 	   user's defaults. */
 	if (data->return_playback_buffers > STREAM_MAX_BUFFERS

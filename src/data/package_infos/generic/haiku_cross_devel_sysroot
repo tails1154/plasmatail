@@ -1,16 +1,16 @@
 name			haiku_cross_devel_sysroot
 version			%HAIKU_VERSION%
 architecture	any
-summary			"The Plasmatail base system files for cross development"
+summary			"The Haiku base system files for cross development"
 
 description		"The package contains all files associated with the base \
 system needed for cross development, like static libraries, glue code, \
 library symlinks, header files, etc."
 
-packager		"The Plasmatail build system"
-vendor			"Plasmatail Project"
+packager		"The Haiku build system"
+vendor			"Haiku Project"
 
-copyrights		"2001-2020 Plasmatail, Inc. et al"
+copyrights		"2001-2020 Haiku, Inc. et al"
 licenses		"MIT"
 
 provides {

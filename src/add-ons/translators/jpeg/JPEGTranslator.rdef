@@ -2,7 +2,7 @@
  * JPEGTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-JPEGTranslator";
+resource app_signature "application/x-vnd.Haiku-JPEGTranslator";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.2.0",
-	long_info = "Plasmatail JPEGTranslator Add-Ons."
+	long_info = "Haiku JPEGTranslator Add-Ons."
 };

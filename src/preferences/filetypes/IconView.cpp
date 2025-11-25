@@ -779,7 +779,7 @@ IconView::Draw(BRect updateRect)
 		SetHighColor(0, 0, 0);
 		SetPenSize(2);
 		BRect rect = BitmapRect();
-// TODO: this is an incompatibility between R5 and Plasmatail and should be fixed!
+// TODO: this is an incompatibility between R5 and Haiku and should be fixed!
 // (Necessary adjustment differs.)
 		rect.left++;
 		rect.top++;

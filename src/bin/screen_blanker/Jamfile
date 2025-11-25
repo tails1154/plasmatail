@@ -24,7 +24,7 @@ SEARCH on [ FGristFiles
 	] = [ FDirName $(HAIKU_TOP) src kits screensaver ] ;
 
 DoCatalogs screen_blanker :
-	x-vnd.Plasmatail.screenblanker
+	x-vnd.Haiku.screenblanker
 	:
 	PasswordWindow.cpp
 ;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2009 Plasmatail Inc. All rights reserved.
+ * Copyright 2008-2009 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -34,7 +34,7 @@ private:
 
 DevicesApplication::DevicesApplication()
 	:
-	BApplication("application/x-vnd.Plasmatail-Devices")
+	BApplication("application/x-vnd.Haiku-Devices")
 {
 	DevicesWindow* window = new DevicesWindow();
 	window->CenterOnScreen();

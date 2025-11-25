@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Plasmatail-index_server";
+resource app_signature "application/x-vnd.Haiku-index_server";
 
 resource app_version {
 	major  = 1,
@@ -10,7 +10,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Index Server",
-	long_info  = "Index Server ©2010 Plasmatail, Inc."
+	long_info  = "Index Server ©2010 Haiku, Inc."
 };
 
 resource app_flags B_EXCLUSIVE_LAUNCH;

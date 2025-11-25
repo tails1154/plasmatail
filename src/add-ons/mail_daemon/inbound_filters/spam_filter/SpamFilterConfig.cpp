@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2012, Plasmatail, Inc. All rights reserved.
+ * Copyright 2004-2012, Haiku, Inc. All rights reserved.
  * Copyright 2002 Alexander G. M. Smith.
  * Distributed under the terms of the MIT License.
  */

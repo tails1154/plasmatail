@@ -1,13 +1,13 @@
 name			haiku_datatranslators
 version			%HAIKU_VERSION%
 architecture	%HAIKU_PACKAGING_ARCH%
-summary			"Plasmatail data translators"
+summary			"Haiku data translators"
 description 	"Standard data translators and media format plugins"
 
-packager		"The Plasmatail build system"
-vendor			"Plasmatail Project"
+packager		"The Haiku build system"
+vendor			"Haiku Project"
 
-copyrights		"2001-2021 Plasmatail, Inc."
+copyrights		"2001-2021 Haiku, Inc."
 licenses		MIT
 
 provides {

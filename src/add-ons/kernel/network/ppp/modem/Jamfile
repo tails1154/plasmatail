@@ -18,6 +18,6 @@ KernelAddon modem :
 LinkAgainst modem : libkernelppp.a ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
 	: /boot/home/config/non-packaged/add-ons/kernel/network/ppp
 	: modem ;

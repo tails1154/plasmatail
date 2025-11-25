@@ -29,7 +29,7 @@ Application ShowImage :
 ;
 
 DoCatalogs ShowImage :
-	x-vnd.Plasmatail-ShowImage
+	x-vnd.Haiku-ShowImage
 	:
 	PrintOptionsWindow.cpp
 	ProgressWindow.cpp

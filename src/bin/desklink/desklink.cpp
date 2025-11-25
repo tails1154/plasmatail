@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2009, Plasmatail. All rights reserved.
+ * Copyright 2003-2009, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -28,7 +28,7 @@
 #include "VolumeWindow.h"
 
 
-const char *kAppSignature = "application/x-vnd.Plasmatail-desklink";
+const char *kAppSignature = "application/x-vnd.Haiku-desklink";
 	// the application signature used by the replicant to find the
 	// supporting code
 

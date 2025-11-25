@@ -180,7 +180,7 @@ PropagateContainerUpdateTargetFlags kernel_$(TARGET_ARCH) : kernel ;
 if $(TARGET_PLATFORM) = haiku {
 	MakeLocate <revisioned>kernel_$(TARGET_ARCH)
 		: [ FDirName $(TARGET_DEBUG_$(DEBUG)_LOCATE_TARGET) revisioned ] ;
-	CopySetPlasmatailRevision <revisioned>kernel_$(TARGET_ARCH)
+	CopySetHaikuRevision <revisioned>kernel_$(TARGET_ARCH)
 		: kernel_$(TARGET_ARCH) ;
 }
 

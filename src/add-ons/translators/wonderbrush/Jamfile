@@ -39,7 +39,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs WonderBrushTranslator :
-	x-vnd.Plasmatail-WonderBrushTranslator
+	x-vnd.Haiku-WonderBrushTranslator
 	:
 	Layer.cpp
 	WonderBrushMain.cpp

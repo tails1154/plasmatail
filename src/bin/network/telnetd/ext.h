@@ -213,7 +213,7 @@ EXTERN struct {
 #     define DEFAULT_IM  "\r\n\r\nFreeBSD (%h) (%t)\r\n\r\r\n\r"
 #    else
 #     ifdef __HAIKU__
-#      define DEFAULT_IM	"\r\n\r\nPlasmatail (%h) (%t)\r\n\r\r\n\r"
+#      define DEFAULT_IM	"\r\n\r\nHaiku (%h) (%t)\r\n\r\r\n\r"
 #     else
 #      define DEFAULT_IM	"\r\n\r\n4.4 BSD UNIX (%h) (%t)\r\n\r\r\n\r"
 #     endif

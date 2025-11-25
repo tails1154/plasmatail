@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-CharacterMap";
+resource app_signature "application/x-vnd.Haiku-CharacterMap";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-CharacterMap:System name:CharacterMap";
+resource app_name_catalog_entry "x-vnd.Haiku-CharacterMap:System name:CharacterMap";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "CharacterMap",
-	long_info = "CharacterMap ©2009 Plasmatail, Inc."
+	long_info = "CharacterMap ©2009 Haiku, Inc."
 };
 
 resource app_flags B_MULTIPLE_LAUNCH;

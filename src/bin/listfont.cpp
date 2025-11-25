@@ -79,7 +79,7 @@ main(int argc, char **argv)
 		}
 	}
 
-	BApplication app("application/x-vnd.Plasmatail-listfont");
+	BApplication app("application/x-vnd.Haiku-listfont");
 
 #ifndef __HAIKU__
 	if (updateFamilies) {

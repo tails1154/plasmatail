@@ -23,6 +23,6 @@ Application ppp_up :
 ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
     : /boot/home/config/non-packaged/bin
     : ppp_up ;

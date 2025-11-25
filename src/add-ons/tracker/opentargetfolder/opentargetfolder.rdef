@@ -13,7 +13,7 @@ resource app_version {
 	short_info = "Opens the link target's folder",
 	long_info = "Open Target Folder, "
 		"Copyright 2003-2008 Axel Dörfler, "
-		"Copyright 2015 Plasmatail, Inc."
+		"Copyright 2015 Haiku, Inc."
 };
 
 resource file_types message {

@@ -31,7 +31,7 @@ Application StyledEdit :
 	;
 
 DoCatalogs StyledEdit :
-	x-vnd.Plasmatail-StyledEdit
+	x-vnd.Haiku-StyledEdit
 	:
 	FindWindow.cpp
 	ReplaceWindow.cpp

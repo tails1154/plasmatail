@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-Notifications";
+resource app_signature "application/x-vnd.Haiku-Notifications";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Notifications:System name:Notifications";
+resource app_name_catalog_entry "x-vnd.Haiku-Notifications:System name:Notifications";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Notifications",
-	long_info = "Notifications ©2009 Pier Luigi Fiorini ©2010-2013 Plasmatail"
+	long_info = "Notifications ©2009 Pier Luigi Fiorini ©2010-2013 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

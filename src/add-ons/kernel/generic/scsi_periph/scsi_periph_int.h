@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2013, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2004-2013, Haiku, Inc. All Rights Reserved.
  * Copyright 2002, Thomas Kurschel. All rights reserved.
  * Distributed under the terms of the MIT License.
  */

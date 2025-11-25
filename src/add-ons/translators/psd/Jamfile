@@ -23,7 +23,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs PSDTranslator :
-	x-vnd.Plasmatail-PSDTranslator
+	x-vnd.Haiku-PSDTranslator
 	:
 	PSDTranslatorApp.cpp
 	PSDTranslator.cpp

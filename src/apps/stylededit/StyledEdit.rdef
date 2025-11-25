@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-StyledEdit";
+resource app_signature "application/x-vnd.Haiku-StyledEdit";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-StyledEdit:System name:StyledEdit";
+resource app_name_catalog_entry "x-vnd.Haiku-StyledEdit:System name:StyledEdit";
 
 resource app_version {
 	major  = 1,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "StyledEdit",
-	long_info = "StyledEdit ©2002-2020 Plasmatail, Inc."
+	long_info = "StyledEdit ©2002-2020 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

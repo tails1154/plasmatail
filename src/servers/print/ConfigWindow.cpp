@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2011, Plasmatail. All rights reserved.
+ * Copyright 2002-2011, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -305,7 +305,7 @@ ConfigWindow::AboutRequested()
 {
 	BString text = B_TRANSLATE("Printer server");
 	text <<	"\n"
-		"© 2001-2010 Plasmatail, Inc.\n"
+		"© 2001-2010 Haiku, Inc.\n"
 		"\n"
 		"\tIthamar R. Adema\n"
 		"\tMichael Pfeiffer\n";

@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2020, Plasmatail.
+ * Copyright 2004-2020, Haiku.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -278,7 +278,7 @@ TeamMonitorWindow::MessageReceived(BMessage* msg)
 			break;
 
 		case kMsgLaunchTerminal:
-			be_roster->Launch("application/x-vnd.Plasmatail-Terminal");
+			be_roster->Launch("application/x-vnd.Haiku-Terminal");
 			PostMessage(B_QUIT_REQUESTED);
 			break;
 

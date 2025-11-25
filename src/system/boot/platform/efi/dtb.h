@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2020, Plasmatail, Inc. All rights reserved.
+ * Copyright 2019-2020, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef DTB_H

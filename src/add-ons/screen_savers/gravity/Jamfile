@@ -36,7 +36,7 @@ ScreenSaver Gravity :
 ;
 
 DoCatalogs Gravity :
-	x-vnd.Plasmatail-GravityScreensaver
+	x-vnd.Haiku-GravityScreensaver
 	:
 	$(sources)
 ;

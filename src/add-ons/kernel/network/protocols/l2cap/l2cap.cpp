@@ -1,6 +1,6 @@
 /*
  * Copyright 2007, Oliver Ruiz Dorantes. All rights reserved.
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 

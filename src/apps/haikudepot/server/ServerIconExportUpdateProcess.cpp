@@ -13,7 +13,7 @@
 #include <FileIO.h>
 
 #include "DataIOUtils.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "PackageIconTarRepository.h"
 #include "ServerHelper.h"

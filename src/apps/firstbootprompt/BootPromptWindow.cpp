@@ -310,7 +310,7 @@ BootPromptWindow::QuitRequested()
 	// Rebooting is managed by BootPrompt.cpp.
 
 	BAlert* alert = new(std::nothrow) BAlert(
-		B_TRANSLATE_SYSTEM_NAME("Quit Plasmatail"),
+		B_TRANSLATE_SYSTEM_NAME("Quit Haiku"),
 		B_TRANSLATE("Are you sure you want to close this window? This will "
 			"restart your system!"),
 		B_TRANSLATE("Cancel"), B_TRANSLATE("Restart system"), NULL,
@@ -361,21 +361,21 @@ BootPromptWindow::_InitCatalog(bool saveSettings)
 void
 BootPromptWindow::_UpdateStrings()
 {
-	BString titleTextPlasmatail = B_TRANSLATE("Welcome to Plasmatail!");
-	BString mainTextPlasmatail = B_TRANSLATE_COMMENT(
-		"Thank you for trying out Plasmatail! We hope you'll like it!\n\n"
+	BString titleTextHaiku = B_TRANSLATE("Welcome to Haiku!");
+	BString mainTextHaiku = B_TRANSLATE_COMMENT(
+		"Thank you for trying out Haiku! We hope you'll like it!\n\n"
 		"Please select your preferred language and keymap. Both settings can "
-		"also be changed later when running Plasmatail.\n\n"
+		"also be changed later when running Haiku.\n\n"
 
-		"Do you wish to install Plasmatail now, or try it out first?",
+		"Do you wish to install Haiku now, or try it out first?",
 
 		"For other languages, a note could be added: \""
-		"Note: Localization of Plasmatail applications and other components is "
+		"Note: Localization of Haiku applications and other components is "
 		"an on-going effort. You will frequently encounter untranslated "
 		"strings, but if you like, you can join in the work at "
 		"<www.haiku-os.org>.\"");
-	BString desktopTextPlasmatail = B_TRANSLATE("Try Plasmatail");
-	BString installTextPlasmatail = B_TRANSLATE("Install Plasmatail");
+	BString desktopTextHaiku = B_TRANSLATE("Try Haiku");
+	BString installTextHaiku = B_TRANSLATE("Install Haiku");
 
 	BString titleTextDebranded = B_TRANSLATE("Welcome!");
 	BString mainTextDebranded = B_TRANSLATE_COMMENT(
@@ -387,10 +387,10 @@ BootPromptWindow::_UpdateStrings()
 			"Do you wish to install the operating system now, or try it out "
 			"first?",
 
-			"This notice appears when the build of Plasmatail that's currently "
-			"being used is unofficial, as in, not distributed by Plasmatail itself."
+			"This notice appears when the build of Haiku that's currently "
+			"being used is unofficial, as in, not distributed by Haiku itself."
 			"For other languages, a note could be added: \""
-			"Note: Localization of Plasmatail applications and other components is "
+			"Note: Localization of Haiku applications and other components is "
 			"an on-going effort. You will frequently encounter untranslated "
 			"strings, but if you like, you can join in the work at "
 			"<www.haiku-os.org>.\"");
@@ -398,10 +398,10 @@ BootPromptWindow::_UpdateStrings()
 	BString installTextDebranded = B_TRANSLATE("Install");
 
 #ifdef HAIKU_DISTRO_COMPATIBILITY_OFFICIAL
-	SetTitle(titleTextPlasmatail);
-	fInfoTextView->SetText(mainTextPlasmatail);
-	fDesktopButton->SetLabel(desktopTextPlasmatail);
-	fInstallerButton->SetLabel(installTextPlasmatail);
+	SetTitle(titleTextHaiku);
+	fInfoTextView->SetText(mainTextHaiku);
+	fDesktopButton->SetLabel(desktopTextHaiku);
+	fInstallerButton->SetLabel(installTextHaiku);
 #else
 	SetTitle(titleTextDebranded);
 	fInfoTextView->SetText(mainTextDebranded);
@@ -433,7 +433,7 @@ BootPromptWindow::_PopulateLanguages()
 
 	BMessage installedCatalogs;
 	BLocaleRoster::Default()->GetAvailableCatalogs(&installedCatalogs,
-		"x-vnd.Plasmatail-FirstBootPrompt");
+		"x-vnd.Haiku-FirstBootPrompt");
 
 	BFont font;
 	fLanguagesListView->GetFont(&font);

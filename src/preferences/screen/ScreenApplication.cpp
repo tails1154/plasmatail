@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2009, Plasmatail, Inc. All rights reserved.
+ * Copyright 2001-2009, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -23,7 +23,7 @@
 #define B_TRANSLATION_CONTEXT "Screen"
 
 
-static const char* kAppSignature = "application/x-vnd.Plasmatail-Screen";
+static const char* kAppSignature = "application/x-vnd.Haiku-Screen";
 
 
 ScreenApplication::ScreenApplication()
@@ -38,7 +38,7 @@ void
 ScreenApplication::AboutRequested()
 {
 	BAlert *aboutAlert = new BAlert(B_TRANSLATE("About"),
-		B_TRANSLATE("Screen preferences by the Plasmatail team"), B_TRANSLATE("OK"),
+		B_TRANSLATE("Screen preferences by the Haiku team"), B_TRANSLATE("OK"),
 		NULL, NULL, B_WIDTH_AS_USUAL, B_OFFSET_SPACING, B_INFO_ALERT);
 	aboutAlert->SetFlags(aboutAlert->Flags() | B_CLOSE_ON_ESCAPE);
 	aboutAlert->Go();

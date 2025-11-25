@@ -92,5 +92,5 @@ if len(sys.argv) >= 2 and sys.argv[1] != "--help":
     run(files, cppRules, "styleviolations.html")
 else:
     print("Usage: python checkstyle.py file.cpp [file2.cpp] [directory]\n")
-    print("Checks c++ source files against the Plasmatail Coding Guidelines.")
+    print("Checks c++ source files against the Haiku Coding Guidelines.")
     print("Outputs an html report in the styleviolations.html file.\n")

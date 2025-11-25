@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2014 Plasmatail, Inc. All rights reserved.
+ * Copyright 2004-2014 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -17,7 +17,7 @@
 
 KeymapApplication::KeymapApplication()
 	:
-	BApplication("application/x-vnd.Plasmatail-Keymap"),
+	BApplication("application/x-vnd.Haiku-Keymap"),
 	fModifierKeysWindow(NULL)
 {
 	// create the window

@@ -24,7 +24,7 @@ extern char **argv_save;
 extern thread_id __main_thread_id;
 extern char **environ;
 
-bool __gPlasmatailStartupCode = true;
+bool __gHaikuStartupCode = true;
 
 
 int
@@ -32,13 +32,13 @@ _start(int argc, char **argv, char **environment)
 {
 	int returnCode;
 
-	// These are kept here to make our glue code usable under older Plasmatail versions.
+	// These are kept here to make our glue code usable under older Haiku versions.
 	argv_save = argv;
 	__main_thread_id = find_thread(NULL);
 
 #ifdef __HAIKU_BEOS_COMPATIBLE
 	// These two are called to make our glue code usable under BeOS R5
-	// - in Plasmatail, they are both empty.
+	// - in Haiku, they are both empty.
 	_init_c_library_(argc, argv, environment);
 	_call_init_routines_();
 #endif

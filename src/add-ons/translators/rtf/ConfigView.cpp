@@ -35,7 +35,7 @@ ConfigView::ConfigView(const BRect &frame, uint32 resize, uint32 flags)
 			RTF_TRANSLATOR_VERSION)), __DATE__);
 	BStringView *versionView = new BStringView("version", version);
 	BStringView *copyrightView = new BStringView(
-		"Copyright", B_UTF8_COPYRIGHT "2004-2006 Plasmatail Inc.");
+		"Copyright", B_UTF8_COPYRIGHT "2004-2006 Haiku Inc.");
 	BLayoutBuilder::Group<>(this, B_VERTICAL, 0)
 		.SetInsets(B_USE_DEFAULT_SPACING)
 		.Add(titleView)

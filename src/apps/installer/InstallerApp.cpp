@@ -37,7 +37,7 @@ int main(int, char **)
 
 InstallerApp::InstallerApp()
 	:
-	BApplication("application/x-vnd.Plasmatail-Installer")
+	BApplication("application/x-vnd.Haiku-Installer")
 {
 }
 
@@ -93,8 +93,8 @@ InstallerApp::Quit()
 			_kern_shutdown(true);
 		} else {
 			// Return to FirstBootPrompt if the user hasn't
-			// installed Plasmatail yet
-			be_roster->Launch("application/x-vnd.Plasmatail-FirstBootPrompt");
+			// installed Haiku yet
+			be_roster->Launch("application/x-vnd.Haiku-FirstBootPrompt");
 		}
 	}
 }

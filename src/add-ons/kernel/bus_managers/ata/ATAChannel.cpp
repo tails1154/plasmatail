@@ -259,7 +259,7 @@ ATAChannel::PathInquiry(scsi_path_inquiry *info)
 	info->hba_queue_size = 1;
 	memset(info->vuhba_flags, 0, sizeof(info->vuhba_flags));
 
-	strlcpy(info->sim_vid, "Plasmatail", SCSI_SIM_ID);
+	strlcpy(info->sim_vid, "Haiku", SCSI_SIM_ID);
 
 	const char *controllerName = NULL;
 	if (gDeviceManager->get_attr_string(fNode,

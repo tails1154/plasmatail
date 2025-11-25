@@ -111,7 +111,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 SEARCH_SOURCE += [ FDirName $(HAIKU_TOP) src kits tracker infowindow ] ;
 
 DoCatalogs libtracker.so :
-	x-vnd.Plasmatail-libtracker
+	x-vnd.Haiku-libtracker
 	:
 	Tracker.cpp
 	AttributesView.cpp
@@ -153,6 +153,6 @@ DoCatalogs libtracker.so :
 
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR) : libtracker.so
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_LIB_DIR) : libtracker.so
 		: tests!apps ;
 }

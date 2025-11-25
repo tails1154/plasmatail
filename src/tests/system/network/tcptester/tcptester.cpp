@@ -1,7 +1,7 @@
 /*
  * A very simple controlable traffic generator for TCP testing.
  *
- * Copyright 2007, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2007, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

@@ -22,7 +22,7 @@ using namespace CppUnit;
 
 // ToDo: swap_int16() and friends don't really belong here as they are in libroot.so
 //	The tests might be messed up because of that, and don't test the real thing, as
-//	long as they don't run on Plasmatail itself.
+//	long as they don't run on Haiku itself.
 
 
 class Swap16Test : public BTestCase {

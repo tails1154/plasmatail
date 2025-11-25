@@ -3,7 +3,7 @@
  * Distributed under the terms of the MIT License.
  */
 
-#include "PlasmatailKernelVolume.h"
+#include "HaikuKernelVolume.h"
 
 #include <new>
 
@@ -19,27 +19,27 @@
 #include "../IORequestInfo.h"
 #include "../kernel_emu.h"
 
-#include "PlasmatailKernelFileSystem.h"
-#include "PlasmatailKernelIORequest.h"
-#include "PlasmatailKernelNode.h"
+#include "HaikuKernelFileSystem.h"
+#include "HaikuKernelIORequest.h"
+#include "HaikuKernelNode.h"
 
 
 // NodeMap
-class PlasmatailKernelVolume::NodeMap
-	: public SynchronizedHashMap<HashKey64<ino_t>, PlasmatailKernelNode*, Locker> {
+class HaikuKernelVolume::NodeMap
+	: public SynchronizedHashMap<HashKey64<ino_t>, HaikuKernelNode*, Locker> {
 };
 
 
 // _FileSystem
-inline PlasmatailKernelFileSystem*
-PlasmatailKernelVolume::_FileSystem() const
+inline HaikuKernelFileSystem*
+HaikuKernelVolume::_FileSystem() const
 {
-	return static_cast<PlasmatailKernelFileSystem*>(fFileSystem);
+	return static_cast<HaikuKernelFileSystem*>(fFileSystem);
 }
 
 
 // constructor
-PlasmatailKernelVolume::PlasmatailKernelVolume(FileSystem* fileSystem, dev_t id,
+HaikuKernelVolume::HaikuKernelVolume(FileSystem* fileSystem, dev_t id,
 	file_system_module_info* fsModule)
 	:
 	Volume(fileSystem, id),
@@ -59,7 +59,7 @@ PlasmatailKernelVolume::PlasmatailKernelVolume(FileSystem* fileSystem, dev_t id,
 }
 
 // destructor
-PlasmatailKernelVolume::~PlasmatailKernelVolume()
+HaikuKernelVolume::~HaikuKernelVolume()
 {
 	delete fNodes;
 }
@@ -67,7 +67,7 @@ PlasmatailKernelVolume::~PlasmatailKernelVolume()
 
 // Init
 status_t
-PlasmatailKernelVolume::Init()
+HaikuKernelVolume::Init()
 {
 	fNodes = new(std::nothrow) NodeMap;
 	if (fNodes == NULL)
@@ -78,24 +78,24 @@ PlasmatailKernelVolume::Init()
 
 // NewVNode
 status_t
-PlasmatailKernelVolume::NewVNode(ino_t vnodeID, void* privateNode, fs_vnode_ops* ops,
-	PlasmatailKernelNode** _node)
+HaikuKernelVolume::NewVNode(ino_t vnodeID, void* privateNode, fs_vnode_ops* ops,
+	HaikuKernelNode** _node)
 {
 	AutoLocker<NodeMap> _(fNodes);
 
 	// check whether we do already know the node
-	PlasmatailKernelNode* node = fNodes->Get(vnodeID);
+	HaikuKernelNode* node = fNodes->Get(vnodeID);
 	if (node != NULL)
 		return B_BAD_VALUE;
 
 	// get node capabilities
-	PlasmatailKernelNode::Capabilities* capabilities
+	HaikuKernelNode::Capabilities* capabilities
 		= _FileSystem()->GetNodeCapabilities(ops);
 	if (capabilities == NULL)
 		return B_NO_MEMORY;
 
 	// create a new node
-	node = new(std::nothrow) PlasmatailKernelNode(this, vnodeID, privateNode, ops,
+	node = new(std::nothrow) HaikuKernelNode(this, vnodeID, privateNode, ops,
 		capabilities);
 	if (node == NULL) {
 		_FileSystem()->PutNodeCapabilities(capabilities);
@@ -117,25 +117,25 @@ PlasmatailKernelVolume::NewVNode(ino_t vnodeID, void* privateNode, fs_vnode_ops*
 
 // PublishVNode
 status_t
-PlasmatailKernelVolume::PublishVNode(ino_t vnodeID, void* privateNode,
-	fs_vnode_ops* ops, int type, uint32 flags, PlasmatailKernelNode** _node)
+HaikuKernelVolume::PublishVNode(ino_t vnodeID, void* privateNode,
+	fs_vnode_ops* ops, int type, uint32 flags, HaikuKernelNode** _node)
 {
 	AutoLocker<NodeMap> _(fNodes);
 
 	// check whether we do already know the node
-	PlasmatailKernelNode* node = fNodes->Get(vnodeID);
+	HaikuKernelNode* node = fNodes->Get(vnodeID);
 	if (node != NULL) {
 		if (node->published)
 			return B_BAD_VALUE;
 	} else {
 		// get node capabilities
-		PlasmatailKernelNode::Capabilities* capabilities
+		HaikuKernelNode::Capabilities* capabilities
 			= _FileSystem()->GetNodeCapabilities(ops);
 		if (capabilities == NULL)
 			return B_NO_MEMORY;
 
 		// create a new node
-		node = new(std::nothrow) PlasmatailKernelNode(this, vnodeID, privateNode,
+		node = new(std::nothrow) HaikuKernelNode(this, vnodeID, privateNode,
 			ops, capabilities);
 		if (node == NULL) {
 			_FileSystem()->PutNodeCapabilities(capabilities);
@@ -160,7 +160,7 @@ PlasmatailKernelVolume::PublishVNode(ino_t vnodeID, void* privateNode,
 
 // UndoNewVNode
 void
-PlasmatailKernelVolume::UndoNewVNode(PlasmatailKernelNode* node)
+HaikuKernelVolume::UndoNewVNode(HaikuKernelNode* node)
 {
 	fNodes->Remove(node->id);
 	delete node;
@@ -169,7 +169,7 @@ PlasmatailKernelVolume::UndoNewVNode(PlasmatailKernelNode* node)
 
 // UndoPublishVNode
 void
-PlasmatailKernelVolume::UndoPublishVNode(PlasmatailKernelNode* node)
+HaikuKernelVolume::UndoPublishVNode(HaikuKernelNode* node)
 {
 	fNodes->Remove(node->id);
 	delete node;
@@ -177,8 +177,8 @@ PlasmatailKernelVolume::UndoPublishVNode(PlasmatailKernelNode* node)
 
 
 // NodeWithID
-PlasmatailKernelNode*
-PlasmatailKernelVolume::NodeWithID(ino_t vnodeID) const
+HaikuKernelNode*
+HaikuKernelVolume::NodeWithID(ino_t vnodeID) const
 {
 	return fNodes->Get(vnodeID);
 }
@@ -189,7 +189,7 @@ PlasmatailKernelVolume::NodeWithID(ino_t vnodeID) const
 
 // Mount
 status_t
-PlasmatailKernelVolume::Mount(const char* device, uint32 flags,
+HaikuKernelVolume::Mount(const char* device, uint32 flags,
 	const char* parameters, ino_t* rootID)
 {
 	if (!fFSModule->mount)
@@ -208,7 +208,7 @@ PlasmatailKernelVolume::Mount(const char* device, uint32 flags,
 
 // Unmount
 status_t
-PlasmatailKernelVolume::Unmount()
+HaikuKernelVolume::Unmount()
 {
 	if (!fVolume.ops->unmount)
 		return B_BAD_VALUE;
@@ -218,7 +218,7 @@ PlasmatailKernelVolume::Unmount()
 
 // Sync
 status_t
-PlasmatailKernelVolume::Sync()
+HaikuKernelVolume::Sync()
 {
 	if (!fVolume.ops->sync)
 		return B_BAD_VALUE;
@@ -227,7 +227,7 @@ PlasmatailKernelVolume::Sync()
 
 // ReadFSInfo
 status_t
-PlasmatailKernelVolume::ReadFSInfo(fs_info* info)
+HaikuKernelVolume::ReadFSInfo(fs_info* info)
 {
 	if (!fVolume.ops->read_fs_info)
 		return B_BAD_VALUE;
@@ -236,7 +236,7 @@ PlasmatailKernelVolume::ReadFSInfo(fs_info* info)
 
 // WriteFSInfo
 status_t
-PlasmatailKernelVolume::WriteFSInfo(const struct fs_info* info, uint32 mask)
+HaikuKernelVolume::WriteFSInfo(const struct fs_info* info, uint32 mask)
 {
 	if (!fVolume.ops->write_fs_info)
 		return B_BAD_VALUE;
@@ -249,10 +249,10 @@ PlasmatailKernelVolume::WriteFSInfo(const struct fs_info* info, uint32 mask)
 
 // GetFileMap
 status_t
-PlasmatailKernelVolume::GetFileMap(void* _node, off_t offset, size_t size,
+HaikuKernelVolume::GetFileMap(void* _node, off_t offset, size_t size,
 	struct file_io_vec* vecs, size_t* count)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->get_file_map)
 		return B_BAD_VALUE;
@@ -266,9 +266,9 @@ PlasmatailKernelVolume::GetFileMap(void* _node, off_t offset, size_t size,
 
 // Lookup
 status_t
-PlasmatailKernelVolume::Lookup(void* _dir, const char* entryName, ino_t* vnid)
+HaikuKernelVolume::Lookup(void* _dir, const char* entryName, ino_t* vnid)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->lookup)
 		return B_BAD_VALUE;
@@ -278,9 +278,9 @@ PlasmatailKernelVolume::Lookup(void* _dir, const char* entryName, ino_t* vnid)
 
 // GetVNodeName
 status_t
-PlasmatailKernelVolume::GetVNodeName(void* _node, char* buffer, size_t bufferSize)
+HaikuKernelVolume::GetVNodeName(void* _node, char* buffer, size_t bufferSize)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	// If not implemented by the client file system, we invoke our super class
 	// version, which emulates the functionality.
@@ -291,18 +291,18 @@ PlasmatailKernelVolume::GetVNodeName(void* _node, char* buffer, size_t bufferSiz
 
 // ReadVNode
 status_t
-PlasmatailKernelVolume::ReadVNode(ino_t vnid, bool reenter, void** _node, int* type,
+HaikuKernelVolume::ReadVNode(ino_t vnid, bool reenter, void** _node, int* type,
 	uint32* flags, FSVNodeCapabilities* _capabilities)
 {
 	if (!fVolume.ops->get_vnode)
 		return B_BAD_VALUE;
 
 	// create a new wrapper node and add it to the map
-	PlasmatailKernelNode* node = new(std::nothrow) PlasmatailKernelNode(this, vnid, NULL,
+	HaikuKernelNode* node = new(std::nothrow) HaikuKernelNode(this, vnid, NULL,
 		NULL, NULL);
 	if (node == NULL)
 		return B_NO_MEMORY;
-	ObjectDeleter<PlasmatailKernelNode> nodeDeleter(node);
+	ObjectDeleter<HaikuKernelNode> nodeDeleter(node);
 
 	AutoLocker<NodeMap> locker(fNodes);
 	if (fNodes->Get(vnid) != NULL)
@@ -323,7 +323,7 @@ PlasmatailKernelVolume::ReadVNode(ino_t vnid, bool reenter, void** _node, int* t
 	}
 
 	// get node capabilities
-	PlasmatailKernelNode::Capabilities* capabilities
+	HaikuKernelNode::Capabilities* capabilities
 		= _FileSystem()->GetNodeCapabilities(node->ops);
 	if (capabilities == NULL) {
 		node->ops->put_vnode(&fVolume, node, reenter);
@@ -345,9 +345,9 @@ PlasmatailKernelVolume::ReadVNode(ino_t vnid, bool reenter, void** _node, int* t
 
 // WriteVNode
 status_t
-PlasmatailKernelVolume::WriteVNode(void* _node, bool reenter)
+HaikuKernelVolume::WriteVNode(void* _node, bool reenter)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	fNodes->Remove(node->id);
 
@@ -362,9 +362,9 @@ PlasmatailKernelVolume::WriteVNode(void* _node, bool reenter)
 
 // RemoveVNode
 status_t
-PlasmatailKernelVolume::RemoveVNode(void* _node, bool reenter)
+HaikuKernelVolume::RemoveVNode(void* _node, bool reenter)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	fNodes->Remove(node->id);
 
@@ -378,17 +378,17 @@ PlasmatailKernelVolume::RemoveVNode(void* _node, bool reenter)
 
 
 status_t
-PlasmatailKernelVolume::DoIO(void* _node, void* cookie,
+HaikuKernelVolume::DoIO(void* _node, void* cookie,
 	const IORequestInfo& requestInfo)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->io)
 		return B_BAD_VALUE;
 
 	// create a request object
-	PlasmatailKernelIORequest* request
-		= new(std::nothrow) PlasmatailKernelIORequest(this, requestInfo);
+	HaikuKernelIORequest* request
+		= new(std::nothrow) HaikuKernelIORequest(this, requestInfo);
 	if (request == NULL)
 		RETURN_ERROR(B_NO_MEMORY);
 
@@ -415,15 +415,15 @@ PlasmatailKernelVolume::DoIO(void* _node, void* cookie,
 
 
 status_t
-PlasmatailKernelVolume::CancelIO(void* _node, void* cookie, int32 ioRequestID)
+HaikuKernelVolume::CancelIO(void* _node, void* cookie, int32 ioRequestID)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->cancel_io)
 		return B_BAD_VALUE;
 
 	// get the request
-	PlasmatailKernelIORequest* request = _FileSystem()->GetIORequest(ioRequestID);
+	HaikuKernelIORequest* request = _FileSystem()->GetIORequest(ioRequestID);
 	if (request == NULL)
 		RETURN_ERROR(B_BAD_VALUE);
 
@@ -441,14 +441,14 @@ PlasmatailKernelVolume::CancelIO(void* _node, void* cookie, int32 ioRequestID)
 
 // IterativeIOGetVecs
 status_t
-PlasmatailKernelVolume::IterativeIOGetVecs(void* _cookie, int32 requestID,
+HaikuKernelVolume::IterativeIOGetVecs(void* _cookie, int32 requestID,
 	off_t offset, size_t size, struct file_io_vec* vecs, size_t* _count)
 {
-	PlasmatailKernelIterativeFDIOCookie* cookie
-		= (PlasmatailKernelIterativeFDIOCookie*)_cookie;
+	HaikuKernelIterativeFDIOCookie* cookie
+		= (HaikuKernelIterativeFDIOCookie*)_cookie;
 
 	// get the request
-	PlasmatailKernelIORequest* request = _FileSystem()->GetIORequest(requestID);
+	HaikuKernelIORequest* request = _FileSystem()->GetIORequest(requestID);
 	if (request == NULL)
 		RETURN_ERROR(B_BAD_VALUE);
 
@@ -465,17 +465,17 @@ PlasmatailKernelVolume::IterativeIOGetVecs(void* _cookie, int32 requestID,
 
 // IterativeIOFinished
 status_t
-PlasmatailKernelVolume::IterativeIOFinished(void* _cookie, int32 requestID,
+HaikuKernelVolume::IterativeIOFinished(void* _cookie, int32 requestID,
 	status_t status, bool partialTransfer, size_t bytesTransferred)
 {
-	PlasmatailKernelIterativeFDIOCookie* cookie
-		= (PlasmatailKernelIterativeFDIOCookie*)_cookie;
+	HaikuKernelIterativeFDIOCookie* cookie
+		= (HaikuKernelIterativeFDIOCookie*)_cookie;
 
 	// we're definitely done with the cookie, now
-	ObjectDeleter<PlasmatailKernelIterativeFDIOCookie> _(cookie);
+	ObjectDeleter<HaikuKernelIterativeFDIOCookie> _(cookie);
 
 	// get the request
-	PlasmatailKernelIORequest* request = _FileSystem()->GetIORequest(requestID);
+	HaikuKernelIORequest* request = _FileSystem()->GetIORequest(requestID);
 	if (request == NULL)
 		RETURN_ERROR(B_BAD_VALUE);
 
@@ -496,10 +496,10 @@ PlasmatailKernelVolume::IterativeIOFinished(void* _cookie, int32 requestID,
 
 // IOCtl
 status_t
-PlasmatailKernelVolume::IOCtl(void* _node, void* cookie, uint32 command,
+HaikuKernelVolume::IOCtl(void* _node, void* cookie, uint32 command,
 	void* buffer, size_t size)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->ioctl)
 		return B_BAD_VALUE;
@@ -509,9 +509,9 @@ PlasmatailKernelVolume::IOCtl(void* _node, void* cookie, uint32 command,
 
 // SetFlags
 status_t
-PlasmatailKernelVolume::SetFlags(void* _node, void* cookie, int flags)
+HaikuKernelVolume::SetFlags(void* _node, void* cookie, int flags)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->set_flags)
 		return B_BAD_VALUE;
@@ -520,10 +520,10 @@ PlasmatailKernelVolume::SetFlags(void* _node, void* cookie, int flags)
 
 // Select
 status_t
-PlasmatailKernelVolume::Select(void* _node, void* cookie, uint8 event,
+HaikuKernelVolume::Select(void* _node, void* cookie, uint8 event,
 	selectsync* sync)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->select) {
 		UserlandFS::KernelEmu::notify_select_event(sync, event, false);
@@ -534,10 +534,10 @@ PlasmatailKernelVolume::Select(void* _node, void* cookie, uint8 event,
 
 // Deselect
 status_t
-PlasmatailKernelVolume::Deselect(void* _node, void* cookie, uint8 event,
+HaikuKernelVolume::Deselect(void* _node, void* cookie, uint8 event,
 	selectsync* sync)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->select || !node->ops->deselect)
 		return B_OK;
@@ -546,9 +546,9 @@ PlasmatailKernelVolume::Deselect(void* _node, void* cookie, uint8 event,
 
 // FSync
 status_t
-PlasmatailKernelVolume::FSync(void* _node)
+HaikuKernelVolume::FSync(void* _node)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->fsync)
 		return B_BAD_VALUE;
@@ -557,10 +557,10 @@ PlasmatailKernelVolume::FSync(void* _node)
 
 // ReadSymlink
 status_t
-PlasmatailKernelVolume::ReadSymlink(void* _node, char* buffer, size_t bufferSize,
+HaikuKernelVolume::ReadSymlink(void* _node, char* buffer, size_t bufferSize,
 	size_t* bytesRead)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_symlink)
 		return B_BAD_VALUE;
@@ -572,10 +572,10 @@ PlasmatailKernelVolume::ReadSymlink(void* _node, char* buffer, size_t bufferSize
 
 // CreateSymlink
 status_t
-PlasmatailKernelVolume::CreateSymlink(void* _dir, const char* name,
+HaikuKernelVolume::CreateSymlink(void* _dir, const char* name,
 	const char* target, int mode)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->create_symlink)
 		return B_BAD_VALUE;
@@ -584,10 +584,10 @@ PlasmatailKernelVolume::CreateSymlink(void* _dir, const char* name,
 
 // Link
 status_t
-PlasmatailKernelVolume::Link(void* _dir, const char* name, void* _node)
+HaikuKernelVolume::Link(void* _dir, const char* name, void* _node)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!dir->ops->link)
 		return B_BAD_VALUE;
@@ -596,9 +596,9 @@ PlasmatailKernelVolume::Link(void* _dir, const char* name, void* _node)
 
 // Unlink
 status_t
-PlasmatailKernelVolume::Unlink(void* _dir, const char* name)
+HaikuKernelVolume::Unlink(void* _dir, const char* name)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->unlink)
 		return B_BAD_VALUE;
@@ -607,11 +607,11 @@ PlasmatailKernelVolume::Unlink(void* _dir, const char* name)
 
 // Rename
 status_t
-PlasmatailKernelVolume::Rename(void* _oldDir, const char* oldName, void* _newDir,
+HaikuKernelVolume::Rename(void* _oldDir, const char* oldName, void* _newDir,
 	const char* newName)
 {
-	PlasmatailKernelNode* oldDir = (PlasmatailKernelNode*)_oldDir;
-	PlasmatailKernelNode* newDir = (PlasmatailKernelNode*)_newDir;
+	HaikuKernelNode* oldDir = (HaikuKernelNode*)_oldDir;
+	HaikuKernelNode* newDir = (HaikuKernelNode*)_newDir;
 
 	if (!oldDir->ops->rename)
 		return B_BAD_VALUE;
@@ -620,9 +620,9 @@ PlasmatailKernelVolume::Rename(void* _oldDir, const char* oldName, void* _newDir
 
 // Access
 status_t
-PlasmatailKernelVolume::Access(void* _node, int mode)
+HaikuKernelVolume::Access(void* _node, int mode)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->access)
 		return B_OK;
@@ -631,9 +631,9 @@ PlasmatailKernelVolume::Access(void* _node, int mode)
 
 // ReadStat
 status_t
-PlasmatailKernelVolume::ReadStat(void* _node, struct stat* st)
+HaikuKernelVolume::ReadStat(void* _node, struct stat* st)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_stat)
 		return B_BAD_VALUE;
@@ -642,9 +642,9 @@ PlasmatailKernelVolume::ReadStat(void* _node, struct stat* st)
 
 // WriteStat
 status_t
-PlasmatailKernelVolume::WriteStat(void* _node, const struct stat *st, uint32 mask)
+HaikuKernelVolume::WriteStat(void* _node, const struct stat *st, uint32 mask)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->write_stat)
 		return B_BAD_VALUE;
@@ -657,10 +657,10 @@ PlasmatailKernelVolume::WriteStat(void* _node, const struct stat *st, uint32 mas
 
 // Create
 status_t
-PlasmatailKernelVolume::Create(void* _dir, const char* name, int openMode, int mode,
+HaikuKernelVolume::Create(void* _dir, const char* name, int openMode, int mode,
 	void** cookie, ino_t* vnid)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->create)
 		return B_BAD_VALUE;
@@ -670,9 +670,9 @@ PlasmatailKernelVolume::Create(void* _dir, const char* name, int openMode, int m
 
 // Open
 status_t
-PlasmatailKernelVolume::Open(void* _node, int openMode, void** cookie)
+HaikuKernelVolume::Open(void* _node, int openMode, void** cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->open)
 		return B_BAD_VALUE;
@@ -681,9 +681,9 @@ PlasmatailKernelVolume::Open(void* _node, int openMode, void** cookie)
 
 // Close
 status_t
-PlasmatailKernelVolume::Close(void* _node, void* cookie)
+HaikuKernelVolume::Close(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->close)
 		return B_OK;
@@ -692,9 +692,9 @@ PlasmatailKernelVolume::Close(void* _node, void* cookie)
 
 // FreeCookie
 status_t
-PlasmatailKernelVolume::FreeCookie(void* _node, void* cookie)
+HaikuKernelVolume::FreeCookie(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->free_cookie)
 		return B_OK;
@@ -703,10 +703,10 @@ PlasmatailKernelVolume::FreeCookie(void* _node, void* cookie)
 
 // Read
 status_t
-PlasmatailKernelVolume::Read(void* _node, void* cookie, off_t pos, void* buffer,
+HaikuKernelVolume::Read(void* _node, void* cookie, off_t pos, void* buffer,
 	size_t bufferSize, size_t* bytesRead)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read)
 		return B_BAD_VALUE;
@@ -718,10 +718,10 @@ PlasmatailKernelVolume::Read(void* _node, void* cookie, off_t pos, void* buffer,
 
 // Write
 status_t
-PlasmatailKernelVolume::Write(void* _node, void* cookie, off_t pos,
+HaikuKernelVolume::Write(void* _node, void* cookie, off_t pos,
 	const void* buffer, size_t bufferSize, size_t* bytesWritten)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->write)
 		return B_BAD_VALUE;
@@ -738,9 +738,9 @@ PlasmatailKernelVolume::Write(void* _node, void* cookie, off_t pos,
 
 // CreateDir
 status_t
-PlasmatailKernelVolume::CreateDir(void* _dir, const char* name, int mode)
+HaikuKernelVolume::CreateDir(void* _dir, const char* name, int mode)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->create_dir)
 		return B_BAD_VALUE;
@@ -749,9 +749,9 @@ PlasmatailKernelVolume::CreateDir(void* _dir, const char* name, int mode)
 
 // RemoveDir
 status_t
-PlasmatailKernelVolume::RemoveDir(void* _dir, const char* name)
+HaikuKernelVolume::RemoveDir(void* _dir, const char* name)
 {
-	PlasmatailKernelNode* dir = (PlasmatailKernelNode*)_dir;
+	HaikuKernelNode* dir = (HaikuKernelNode*)_dir;
 
 	if (!dir->ops->remove_dir)
 		return B_BAD_VALUE;
@@ -760,9 +760,9 @@ PlasmatailKernelVolume::RemoveDir(void* _dir, const char* name)
 
 // OpenDir
 status_t
-PlasmatailKernelVolume::OpenDir(void* _node, void** cookie)
+HaikuKernelVolume::OpenDir(void* _node, void** cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->open_dir)
 		return B_BAD_VALUE;
@@ -771,9 +771,9 @@ PlasmatailKernelVolume::OpenDir(void* _node, void** cookie)
 
 // CloseDir
 status_t
-PlasmatailKernelVolume::CloseDir(void* _node, void* cookie)
+HaikuKernelVolume::CloseDir(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->close_dir)
 		return B_OK;
@@ -782,9 +782,9 @@ PlasmatailKernelVolume::CloseDir(void* _node, void* cookie)
 
 // FreeDirCookie
 status_t
-PlasmatailKernelVolume::FreeDirCookie(void* _node, void* cookie)
+HaikuKernelVolume::FreeDirCookie(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->free_dir_cookie)
 		return B_OK;
@@ -793,10 +793,10 @@ PlasmatailKernelVolume::FreeDirCookie(void* _node, void* cookie)
 
 // ReadDir
 status_t
-PlasmatailKernelVolume::ReadDir(void* _node, void* cookie, void* buffer,
+HaikuKernelVolume::ReadDir(void* _node, void* cookie, void* buffer,
 	size_t bufferSize, uint32 count, uint32* countRead)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_dir)
 		return B_BAD_VALUE;
@@ -809,9 +809,9 @@ PlasmatailKernelVolume::ReadDir(void* _node, void* cookie, void* buffer,
 
 // RewindDir
 status_t
-PlasmatailKernelVolume::RewindDir(void* _node, void* cookie)
+HaikuKernelVolume::RewindDir(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->rewind_dir)
 		return B_BAD_VALUE;
@@ -824,9 +824,9 @@ PlasmatailKernelVolume::RewindDir(void* _node, void* cookie)
 
 // OpenAttrDir
 status_t
-PlasmatailKernelVolume::OpenAttrDir(void* _node, void** cookie)
+HaikuKernelVolume::OpenAttrDir(void* _node, void** cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->open_attr_dir)
 		return B_BAD_VALUE;
@@ -835,9 +835,9 @@ PlasmatailKernelVolume::OpenAttrDir(void* _node, void** cookie)
 
 // CloseAttrDir
 status_t
-PlasmatailKernelVolume::CloseAttrDir(void* _node, void* cookie)
+HaikuKernelVolume::CloseAttrDir(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->close_attr_dir)
 		return B_OK;
@@ -846,9 +846,9 @@ PlasmatailKernelVolume::CloseAttrDir(void* _node, void* cookie)
 
 // FreeAttrDirCookie
 status_t
-PlasmatailKernelVolume::FreeAttrDirCookie(void* _node, void* cookie)
+HaikuKernelVolume::FreeAttrDirCookie(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->free_attr_dir_cookie)
 		return B_OK;
@@ -857,10 +857,10 @@ PlasmatailKernelVolume::FreeAttrDirCookie(void* _node, void* cookie)
 
 // ReadAttrDir
 status_t
-PlasmatailKernelVolume::ReadAttrDir(void* _node, void* cookie, void* buffer,
+HaikuKernelVolume::ReadAttrDir(void* _node, void* cookie, void* buffer,
 	size_t bufferSize, uint32 count, uint32* countRead)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_attr_dir)
 		return B_BAD_VALUE;
@@ -873,9 +873,9 @@ PlasmatailKernelVolume::ReadAttrDir(void* _node, void* cookie, void* buffer,
 
 // RewindAttrDir
 status_t
-PlasmatailKernelVolume::RewindAttrDir(void* _node, void* cookie)
+HaikuKernelVolume::RewindAttrDir(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->rewind_attr_dir)
 		return B_BAD_VALUE;
@@ -888,10 +888,10 @@ PlasmatailKernelVolume::RewindAttrDir(void* _node, void* cookie)
 
 // CreateAttr
 status_t
-PlasmatailKernelVolume::CreateAttr(void* _node, const char* name, uint32 type,
+HaikuKernelVolume::CreateAttr(void* _node, const char* name, uint32 type,
 	int openMode, void** cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->create_attr)
 		return B_BAD_VALUE;
@@ -901,10 +901,10 @@ PlasmatailKernelVolume::CreateAttr(void* _node, const char* name, uint32 type,
 
 // OpenAttr
 status_t
-PlasmatailKernelVolume::OpenAttr(void* _node, const char* name, int openMode,
+HaikuKernelVolume::OpenAttr(void* _node, const char* name, int openMode,
 	void** cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->open_attr)
 		return B_BAD_VALUE;
@@ -913,9 +913,9 @@ PlasmatailKernelVolume::OpenAttr(void* _node, const char* name, int openMode,
 
 // CloseAttr
 status_t
-PlasmatailKernelVolume::CloseAttr(void* _node, void* cookie)
+HaikuKernelVolume::CloseAttr(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->close_attr)
 		return B_OK;
@@ -924,9 +924,9 @@ PlasmatailKernelVolume::CloseAttr(void* _node, void* cookie)
 
 // FreeAttrCookie
 status_t
-PlasmatailKernelVolume::FreeAttrCookie(void* _node, void* cookie)
+HaikuKernelVolume::FreeAttrCookie(void* _node, void* cookie)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->free_attr_cookie)
 		return B_OK;
@@ -935,10 +935,10 @@ PlasmatailKernelVolume::FreeAttrCookie(void* _node, void* cookie)
 
 // ReadAttr
 status_t
-PlasmatailKernelVolume::ReadAttr(void* _node, void* cookie, off_t pos,
+HaikuKernelVolume::ReadAttr(void* _node, void* cookie, off_t pos,
 	void* buffer, size_t bufferSize, size_t* bytesRead)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_attr)
 		return B_BAD_VALUE;
@@ -951,10 +951,10 @@ PlasmatailKernelVolume::ReadAttr(void* _node, void* cookie, off_t pos,
 
 // WriteAttr
 status_t
-PlasmatailKernelVolume::WriteAttr(void* _node, void* cookie, off_t pos,
+HaikuKernelVolume::WriteAttr(void* _node, void* cookie, off_t pos,
 	const void* buffer, size_t bufferSize, size_t* bytesWritten)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->write_attr)
 		return B_BAD_VALUE;
@@ -967,10 +967,10 @@ PlasmatailKernelVolume::WriteAttr(void* _node, void* cookie, off_t pos,
 
 // ReadAttrStat
 status_t
-PlasmatailKernelVolume::ReadAttrStat(void* _node, void* cookie,
+HaikuKernelVolume::ReadAttrStat(void* _node, void* cookie,
 	struct stat *st)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->read_attr_stat)
 		return B_BAD_VALUE;
@@ -979,10 +979,10 @@ PlasmatailKernelVolume::ReadAttrStat(void* _node, void* cookie,
 
 // WriteAttrStat
 status_t
-PlasmatailKernelVolume::WriteAttrStat(void* _node, void* cookie,
+HaikuKernelVolume::WriteAttrStat(void* _node, void* cookie,
 	const struct stat* st, int statMask)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->write_attr_stat)
 		return B_BAD_VALUE;
@@ -992,11 +992,11 @@ PlasmatailKernelVolume::WriteAttrStat(void* _node, void* cookie,
 
 // RenameAttr
 status_t
-PlasmatailKernelVolume::RenameAttr(void* _oldNode, const char* oldName,
+HaikuKernelVolume::RenameAttr(void* _oldNode, const char* oldName,
 	void* _newNode, const char* newName)
 {
-	PlasmatailKernelNode* oldNode = (PlasmatailKernelNode*)_oldNode;
-	PlasmatailKernelNode* newNode = (PlasmatailKernelNode*)_newNode;
+	HaikuKernelNode* oldNode = (HaikuKernelNode*)_oldNode;
+	HaikuKernelNode* newNode = (HaikuKernelNode*)_newNode;
 
 	if (!oldNode->ops->rename_attr)
 		return B_BAD_VALUE;
@@ -1006,9 +1006,9 @@ PlasmatailKernelVolume::RenameAttr(void* _oldNode, const char* oldName,
 
 // RemoveAttr
 status_t
-PlasmatailKernelVolume::RemoveAttr(void* _node, const char* name)
+HaikuKernelVolume::RemoveAttr(void* _node, const char* name)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)_node;
+	HaikuKernelNode* node = (HaikuKernelNode*)_node;
 
 	if (!node->ops->remove_attr)
 		return B_BAD_VALUE;
@@ -1021,7 +1021,7 @@ PlasmatailKernelVolume::RemoveAttr(void* _node, const char* name)
 
 // OpenIndexDir
 status_t
-PlasmatailKernelVolume::OpenIndexDir(void** cookie)
+HaikuKernelVolume::OpenIndexDir(void** cookie)
 {
 	if (!fVolume.ops->open_index_dir)
 		return B_BAD_VALUE;
@@ -1030,7 +1030,7 @@ PlasmatailKernelVolume::OpenIndexDir(void** cookie)
 
 // CloseIndexDir
 status_t
-PlasmatailKernelVolume::CloseIndexDir(void* cookie)
+HaikuKernelVolume::CloseIndexDir(void* cookie)
 {
 	if (!fVolume.ops->close_index_dir)
 		return B_OK;
@@ -1039,7 +1039,7 @@ PlasmatailKernelVolume::CloseIndexDir(void* cookie)
 
 // FreeIndexDirCookie
 status_t
-PlasmatailKernelVolume::FreeIndexDirCookie(void* cookie)
+HaikuKernelVolume::FreeIndexDirCookie(void* cookie)
 {
 	if (!fVolume.ops->free_index_dir_cookie)
 		return B_OK;
@@ -1048,7 +1048,7 @@ PlasmatailKernelVolume::FreeIndexDirCookie(void* cookie)
 
 // ReadIndexDir
 status_t
-PlasmatailKernelVolume::ReadIndexDir(void* cookie, void* buffer,
+HaikuKernelVolume::ReadIndexDir(void* cookie, void* buffer,
 	size_t bufferSize, uint32 count, uint32* countRead)
 {
 	if (!fVolume.ops->read_index_dir)
@@ -1062,7 +1062,7 @@ PlasmatailKernelVolume::ReadIndexDir(void* cookie, void* buffer,
 
 // RewindIndexDir
 status_t
-PlasmatailKernelVolume::RewindIndexDir(void* cookie)
+HaikuKernelVolume::RewindIndexDir(void* cookie)
 {
 	if (!fVolume.ops->rewind_index_dir)
 		return B_BAD_VALUE;
@@ -1071,7 +1071,7 @@ PlasmatailKernelVolume::RewindIndexDir(void* cookie)
 
 // CreateIndex
 status_t
-PlasmatailKernelVolume::CreateIndex(const char* name, uint32 type, uint32 flags)
+HaikuKernelVolume::CreateIndex(const char* name, uint32 type, uint32 flags)
 {
 	if (!fVolume.ops->create_index)
 		return B_BAD_VALUE;
@@ -1080,7 +1080,7 @@ PlasmatailKernelVolume::CreateIndex(const char* name, uint32 type, uint32 flags)
 
 // RemoveIndex
 status_t
-PlasmatailKernelVolume::RemoveIndex(const char* name)
+HaikuKernelVolume::RemoveIndex(const char* name)
 {
 	if (!fVolume.ops->remove_index)
 		return B_BAD_VALUE;
@@ -1089,7 +1089,7 @@ PlasmatailKernelVolume::RemoveIndex(const char* name)
 
 // StatIndex
 status_t
-PlasmatailKernelVolume::ReadIndexStat(const char *name, struct stat *st)
+HaikuKernelVolume::ReadIndexStat(const char *name, struct stat *st)
 {
 	if (!fVolume.ops->read_index_stat)
 		return B_BAD_VALUE;
@@ -1102,7 +1102,7 @@ PlasmatailKernelVolume::ReadIndexStat(const char *name, struct stat *st)
 
 // OpenQuery
 status_t
-PlasmatailKernelVolume::OpenQuery(const char* queryString, uint32 flags,
+HaikuKernelVolume::OpenQuery(const char* queryString, uint32 flags,
 	port_id port, uint32 token, void** cookie)
 {
 	if (!fVolume.ops->open_query)
@@ -1113,7 +1113,7 @@ PlasmatailKernelVolume::OpenQuery(const char* queryString, uint32 flags,
 
 // CloseQuery
 status_t
-PlasmatailKernelVolume::CloseQuery(void* cookie)
+HaikuKernelVolume::CloseQuery(void* cookie)
 {
 	if (!fVolume.ops->close_query)
 		return B_OK;
@@ -1122,7 +1122,7 @@ PlasmatailKernelVolume::CloseQuery(void* cookie)
 
 // FreeQueryCookie
 status_t
-PlasmatailKernelVolume::FreeQueryCookie(void* cookie)
+HaikuKernelVolume::FreeQueryCookie(void* cookie)
 {
 	if (!fVolume.ops->free_query_cookie)
 		return B_OK;
@@ -1131,7 +1131,7 @@ PlasmatailKernelVolume::FreeQueryCookie(void* cookie)
 
 // ReadQuery
 status_t
-PlasmatailKernelVolume::ReadQuery(void* cookie, void* buffer, size_t bufferSize,
+HaikuKernelVolume::ReadQuery(void* cookie, void* buffer, size_t bufferSize,
 	uint32 count, uint32* countRead)
 {
 	if (!fVolume.ops->read_query)
@@ -1145,7 +1145,7 @@ PlasmatailKernelVolume::ReadQuery(void* cookie, void* buffer, size_t bufferSize,
 
 // RewindQuery
 status_t
-PlasmatailKernelVolume::RewindQuery(void* cookie)
+HaikuKernelVolume::RewindQuery(void* cookie)
 {
 	if (!fVolume.ops->rewind_query)
 		return B_BAD_VALUE;
@@ -1154,7 +1154,7 @@ PlasmatailKernelVolume::RewindQuery(void* cookie)
 
 // _InitCapabilities
 void
-PlasmatailKernelVolume::_InitCapabilities()
+HaikuKernelVolume::_InitCapabilities()
 {
 	fCapabilities.ClearAll();
 

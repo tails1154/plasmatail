@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-About";
+resource app_signature "application/x-vnd.Haiku-About";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-About:System name:AboutSystem";
+resource app_name_catalog_entry "x-vnd.Haiku-About:System name:AboutSystem";
 
 resource app_version {
 	major  = 1,
@@ -12,8 +12,8 @@ resource app_version {
 
 	internal = 0,
 
-	short_info = "AboutPlasmatail",
-	long_info = "AboutPlasmatail ©2005-2009 Plasmatail, Inc."
+	short_info = "AboutHaiku",
+	long_info = "AboutHaiku ©2005-2009 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

@@ -1,5 +1,5 @@
 /*****************************************************************************/
-// Plasmatail InputServer
+// Haiku InputServer
 //
 // This is the InputServerMethod implementation
 //
@@ -7,7 +7,7 @@
 // where noted, are licensed under the MIT License, and have been written 
 // and are:
 //
-// Copyright (c) 2002-2004 Plasmatail Project
+// Copyright (c) 2002-2004 Haiku Project
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),

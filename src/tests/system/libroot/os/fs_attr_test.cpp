@@ -70,15 +70,15 @@ main(int argc, char** argv)
 	test_read(fd, "TEST", B_STRING_TYPE, "Hello BeOS", 11);
 
 	// TODO: this shows a bug in BFS; the index is not updated correctly
-	fs_write_attr(fd, "TEST", B_STRING_TYPE, 6, "Plasmatail", 6);
-	test_read(fd, "TEST", B_STRING_TYPE, "Hello Plasmatail", 12);
+	fs_write_attr(fd, "TEST", B_STRING_TYPE, 6, "Haiku", 6);
+	test_read(fd, "TEST", B_STRING_TYPE, "Hello Haiku", 12);
 
-	fs_write_attr(fd, "TESTraw", B_RAW_TYPE, 16, "Plasmatail", 6);
-	test_read(fd, "TESTraw", B_RAW_TYPE, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Plasmatail",
+	fs_write_attr(fd, "TESTraw", B_RAW_TYPE, 16, "Haiku", 6);
+	test_read(fd, "TESTraw", B_RAW_TYPE, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Haiku",
 		22);
 
-	fs_write_attr(fd, "TESTraw", B_RAW_TYPE, 0, "Plasmatail", 6);
-	test_read(fd, "TESTraw", B_RAW_TYPE, "Plasmatail", 6);
+	fs_write_attr(fd, "TESTraw", B_RAW_TYPE, 0, "Haiku", 6);
+	test_read(fd, "TESTraw", B_RAW_TYPE, "Haiku", 6);
 
 	char buffer[4096];
 	memset(buffer, 0, sizeof(buffer));
@@ -87,7 +87,7 @@ main(int argc, char** argv)
 		strlen(buffer) + 1);
 	test_read(fd, "TESTswitch", B_RAW_TYPE, buffer, strlen(buffer) + 1);
 
-	strcpy(buffer + 4000, "Plasmatail");
+	strcpy(buffer + 4000, "Haiku");
 	fs_write_attr(fd, "TESTswitch", B_RAW_TYPE, 0, buffer, 4006);
 	test_read(fd, "TESTswitch", B_RAW_TYPE, buffer, 4006);
 

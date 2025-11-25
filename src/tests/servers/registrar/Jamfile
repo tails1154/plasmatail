@@ -112,8 +112,8 @@ Application test_registrar
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : test_registrar
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : test_registrar
 		: tests!apps ;
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : run_test_registrar
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : run_test_registrar
 		: tests!apps ;
 }

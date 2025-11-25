@@ -52,8 +52,8 @@
 #define B_TRANSLATION_CONTEXT "InstallerWindow"
 
 
-static const char* kDriveSetupSignature = "application/x-vnd.Plasmatail-DriveSetup";
-static const char* kBootManagerSignature = "application/x-vnd.Plasmatail-BootManager";
+static const char* kDriveSetupSignature = "application/x-vnd.Haiku-DriveSetup";
+static const char* kBootManagerSignature = "application/x-vnd.Haiku-BootManager";
 
 const uint32 BEGIN_MESSAGE = 'iBGN';
 const uint32 SHOW_BOTTOM_MESSAGE = 'iSBT';
@@ -710,7 +710,7 @@ InstallerWindow::_LaunchBootManager()
 			BAlert* alert = new BAlert(
 				B_TRANSLATE("Failed to launch BootManager"),
 				B_TRANSLATE("BootManager, the application to configure the "
-					"Plasmatail boot menu, could not be launched."),
+					"Haiku boot menu, could not be launched."),
 				B_TRANSLATE("OK"), NULL, NULL, B_WIDTH_AS_USUAL, B_STOP_ALERT);
 			alert->SetFlags(alert->Flags() | B_CLOSE_ON_ESCAPE);
 			alert->Go();
@@ -803,8 +803,8 @@ InstallerWindow::_UpdateControls()
 		statusText.SetToFormat(B_TRANSLATE("Press the 'Begin' button to install "
 			"from '%1s' onto '%2s'."), srcItem->Name(), dstItem->Name());
 	} else if (srcItem != NULL) {
-		BString partitionRequiredPlasmatail = B_TRANSLATE(
-			"Plasmatail has to be installed on a partition that uses "
+		BString partitionRequiredHaiku = B_TRANSLATE(
+			"Haiku has to be installed on a partition that uses "
 			"the Be File System, but there are currently no such "
 			"partitions available on your system.");
 
@@ -815,7 +815,7 @@ InstallerWindow::_UpdateControls()
 
 		if (!foundOneSuitableTarget) {
 #ifdef HAIKU_DISTRO_COMPATIBILITY_OFFICIAL
-			statusText.Append(partitionRequiredPlasmatail);
+			statusText.Append(partitionRequiredHaiku);
 #else
 			statusText.Append(partitionRequiredDebranded);
 #endif

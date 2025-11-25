@@ -15,13 +15,13 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Icon-O-Matic",
-	long_info = "Icon-O-Matic ©2006-2009 Plasmatail, Inc."
+	long_info = "Icon-O-Matic ©2006-2009 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;
 
 resource file_types message {
-	"types" = "application/x-vnd.Plasmatail-icon",
+	"types" = "application/x-vnd.Haiku-icon",
 	"types" = "image/svg+xml",
 	"types" = "image/x-hvif"
 };

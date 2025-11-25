@@ -8,7 +8,7 @@
 
 #include "UserRatingSummary.h"
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 
 

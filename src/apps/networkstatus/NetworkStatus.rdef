@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-NetworkStatus";
+resource app_signature "application/x-vnd.Haiku-NetworkStatus";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-NetworkStatus:System name:NetworkStatus";
+resource app_name_catalog_entry "x-vnd.Haiku-NetworkStatus:System name:NetworkStatus";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -14,7 +14,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "NetworkStatus",
-	long_info = "NetworkStatus ©2007-2013 Plasmatail"
+	long_info = "NetworkStatus ©2007-2013 Haiku"
 };
 
 resource vector_icon {

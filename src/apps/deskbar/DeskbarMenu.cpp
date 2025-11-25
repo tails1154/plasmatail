@@ -243,12 +243,12 @@ TDeskbarMenu::AddStandardDeskbarMenuItems()
 // One of them is used if HAIKU_DISTRO_COMPATIBILITY_OFFICIAL, and the other if
 // not. However, we want both of them to end up in the catalog, so we have to
 // make them visible to collectcatkeys in either case.
-B_TRANSLATE_MARK_VOID("About Plasmatail")
+B_TRANSLATE_MARK_VOID("About Haiku")
 B_TRANSLATE_MARK_VOID("About this system")
 
 	item = new BMenuItem(
 #ifdef HAIKU_DISTRO_COMPATIBILITY_OFFICIAL
-	B_TRANSLATE_NOCOLLECT("About Plasmatail")
+	B_TRANSLATE_NOCOLLECT("About Haiku")
 #else
 	B_TRANSLATE_NOCOLLECT("About this system")
 #endif

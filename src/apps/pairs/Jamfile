@@ -11,7 +11,7 @@ Application Pairs :
 ;
 
 DoCatalogs Pairs :
-	x-vnd.Plasmatail-Pairs
+	x-vnd.Haiku-Pairs
 	:
 	Pairs.cpp
 	PairsView.cpp

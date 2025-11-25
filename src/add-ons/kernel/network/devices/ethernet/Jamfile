@@ -8,5 +8,5 @@ KernelAddon ethernet :
 ;
 
 # Installation
-PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/devices
+HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/devices
 	: ethernet ;

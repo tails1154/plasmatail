@@ -20,7 +20,7 @@ Application Appearance :
 	;
 
 DoCatalogs Appearance :
-	x-vnd.Plasmatail-Appearance
+	x-vnd.Haiku-Appearance
 	:
 	AntialiasingSettingsView.cpp
 	ColorsView.cpp
@@ -32,6 +32,6 @@ DoCatalogs Appearance :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Appearance
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Appearance
 		: tests!apps ;
 }

@@ -4,7 +4,7 @@
  * left sides representing available consumers and producers, and
  * a set of PatchRows which build the matrix of connections.
  *
- * Copyright 2013, Plasmatail, Inc. All rights reserved.
+ * Copyright 2013, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Revisions by Pete Goodeve

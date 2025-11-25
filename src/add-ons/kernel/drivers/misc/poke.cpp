@@ -1,6 +1,6 @@
 /*
  * Copyright 2005, Oscar Lesta. All rights reserved.
- * Copyright 2018-2023, Plasmatail, Inc. All rights reserved.
+ * Copyright 2018-2023, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #include "poke.h"

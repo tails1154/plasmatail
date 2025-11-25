@@ -25,7 +25,7 @@
 #include <StringList.h>
 
 #include "AppUtils.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "PackageInfo.h"
 #include "PackageKitUtils.h"
@@ -221,7 +221,7 @@ LocalPkgDataLoadProcess::RunInternal()
 		}
 	}
 
-	// Collect all of the solver packages into PlasmatailDepot `PackageInfo` objects for use in the
+	// Collect all of the solver packages into HaikuDepot `PackageInfo` objects for use in the
 	// application.
 
 	if (result == B_OK) {

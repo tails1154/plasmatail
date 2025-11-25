@@ -1,5 +1,5 @@
 /*
- * Copyright 2018, Plasmatail, Inc. All rights reserved.
+ * Copyright 2018, Haiku, Inc. All rights reserved.
  * Based on Demumble; Copyright 2016-2018, Nico Weber.
  * 		https://github.com/nico/demumble/
  *

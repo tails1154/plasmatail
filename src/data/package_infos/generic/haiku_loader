@@ -1,13 +1,13 @@
 name			haiku_loader
 version			%HAIKU_VERSION%
 architecture	%HAIKU_PACKAGING_ARCH%
-summary			"The Plasmatail boot loader"
-description		"The Plasmatail boot loader."
+summary			"The Haiku boot loader"
+description		"The Haiku boot loader."
 
-packager		"The Plasmatail build system"
-vendor			"Plasmatail Project"
+packager		"The Haiku build system"
+vendor			"Haiku Project"
 
-copyrights		"2001-2020 Plasmatail, Inc. et al"
+copyrights		"2001-2020 Haiku, Inc. et al"
 licenses		"MIT"
 flags			system_package
 

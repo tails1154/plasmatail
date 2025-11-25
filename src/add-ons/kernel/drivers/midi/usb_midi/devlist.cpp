@@ -2,7 +2,7 @@
  * midi usb driver
  * devlist.c
  *
- * Copyright 2006-2011 Plasmatail Inc.  All rights reserved.
+ * Copyright 2006-2011 Haiku Inc.  All rights reserved.
  * Distributed under the terms of the MIT Licence.
  *
  * Authors:

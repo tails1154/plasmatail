@@ -13,8 +13,8 @@ Application kernel_debugger : kernel_debugger.cpp
 ;
 
 
-PlasmatailSubInclude ltrace ;
-PlasmatailSubInclude profile ;
-PlasmatailSubInclude scheduling_recorder ;
-PlasmatailSubInclude strace ;
-PlasmatailSubInclude time_stats ;
+HaikuSubInclude ltrace ;
+HaikuSubInclude profile ;
+HaikuSubInclude scheduling_recorder ;
+HaikuSubInclude strace ;
+HaikuSubInclude time_stats ;

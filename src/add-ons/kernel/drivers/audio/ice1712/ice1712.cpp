@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2015 Plasmatail, Inc. All rights reserved.
+ * Copyright 2004-2015 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -47,7 +47,7 @@ static int32 num_names = 0;
 
 #define HMULTI_AUDIO_DEV_PATH "audio/hmulti/ice1712"
 
-//Plasmatail Driver API
+//Haiku Driver API
 //----------------
 
 int32 api_version = B_CUR_DRIVER_API_VERSION;

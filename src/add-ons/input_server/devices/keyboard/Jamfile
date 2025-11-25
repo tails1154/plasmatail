@@ -15,7 +15,7 @@ Addon <input>keyboard :
 	: input_server be shared localestub [ TargetLibsupc++ ] ;
 
 DoCatalogs <input>keyboard :
-	x-vnd.Plasmatail-KeyboardInputServerDevice
+	x-vnd.Haiku-KeyboardInputServerDevice
 	:
 	TeamMonitorWindow.cpp
 ;

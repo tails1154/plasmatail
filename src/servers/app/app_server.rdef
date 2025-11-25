@@ -2,7 +2,7 @@
  * app_server.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-app_server";
+resource app_signature "application/x-vnd.Haiku-app_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "app_server",
-	long_info = "app_server ©2004-2009 Plasmatail Inc."
+	long_info = "app_server ©2004-2009 Haiku Inc."
 };
 
 resource vector_icon array {

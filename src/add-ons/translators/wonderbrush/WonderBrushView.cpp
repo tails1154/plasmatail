@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2009, Plasmatail, Inc. All rights reserved.
+ * Copyright 2006-2009, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -29,7 +29,7 @@
 
 
 const char* kAuthor = "Stephan Aßmus, <superstippi@gmx.de>";
-const char* kWBICopyright = B_UTF8_COPYRIGHT " 2006 Plasmatail Inc.";
+const char* kWBICopyright = B_UTF8_COPYRIGHT " 2006 Haiku Inc.";
 
 
 void

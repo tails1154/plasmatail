@@ -18,7 +18,7 @@ Addon SMTP :
 ;
 
 DoCatalogs SMTP :
-	x-vnd.Plasmatail-SMTP
+	x-vnd.Haiku-SMTP
 	:
 	ConfigView.cpp
 	SMTP.cpp

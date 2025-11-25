@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * Copyright 2008-2009, Axel Dörfler, axeld@pinc-software.de.
  * Copyright 2006, Jérôme Duval. All rights reserved.
  * Distributed under the terms of the MIT License.
@@ -376,7 +376,7 @@ pthread_timedjoin_np(pthread_t thread, void** _value, const struct timespec* abs
 }
 
 
-// #pragma mark - Plasmatail thread API bridge
+// #pragma mark - Haiku thread API bridge
 
 
 thread_id

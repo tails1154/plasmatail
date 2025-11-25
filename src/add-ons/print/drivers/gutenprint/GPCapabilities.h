@@ -1,7 +1,7 @@
 /*
 * Copyright 1999-2000 Y.Takagi. All Rights Reserved.
 *
-* Copyright 2010, Plasmatail. All rights reserved.
+* Copyright 2010, Haiku. All rights reserved.
 * Distributed under the terms of the MIT License.
 *
 * Authors:

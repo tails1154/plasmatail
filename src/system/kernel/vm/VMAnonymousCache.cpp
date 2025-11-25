@@ -7,7 +7,7 @@
  * Copyright 2001-2002, Travis Geiselbrecht. All rights reserved.
  * Distributed under the terms of the NewOS License.
  *
- * Copyright 2011-2012 Plasmatail, Inc. All rights reserved.
+ * Copyright 2011-2012 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:

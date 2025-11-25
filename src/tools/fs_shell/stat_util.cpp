@@ -16,7 +16,7 @@
 
 namespace FSShell {
 
-// Plasmatail only mode_t flags
+// Haiku only mode_t flags
 #ifndef HAIKU_HOST_PLATFORM_HAIKU
 #	define S_LINK_SELF_HEALING	0
 #	define S_LINK_AUTO_DELETE	0
@@ -32,7 +32,7 @@ from_platform_mode(mode_t mode)
 
 	fssh_mode_t fsshMode = 0;
 
-	// BeOS/Plasmatail only
+	// BeOS/Haiku only
 	#if (defined(__BEOS__) || defined(__HAIKU__))
 		SET_ST_MODE_BIT(FSSH_S_ATTR_DIR, S_ATTR_DIR);
 		SET_ST_MODE_BIT(FSSH_S_ATTR, S_ATTR);
@@ -94,7 +94,7 @@ to_platform_mode(fssh_mode_t fsshMode)
 
 	mode_t mode = 0;
 
-	// BeOS/Plasmatail only
+	// BeOS/Haiku only
 	#if (defined(__BEOS__) || defined(__HAIKU__))
 		SET_ST_MODE_BIT(FSSH_S_ATTR_DIR, S_ATTR_DIR);
 		SET_ST_MODE_BIT(FSSH_S_ATTR, S_ATTR);

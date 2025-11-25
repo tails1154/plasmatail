@@ -609,27 +609,27 @@ MainWindow::_AddDefaultButtons()
 	// StyledEdit
 	button = new LaunchButton("launch button", NULL, new BMessage(MSG_LAUNCH));
 	fPadView->AddButton(button);
-	button->SetTo("application/x-vnd.Plasmatail-StyledEdit", true);
+	button->SetTo("application/x-vnd.Haiku-StyledEdit", true);
 
 	// ShowImage
 	button = new LaunchButton("launch button", NULL, new BMessage(MSG_LAUNCH));
 	fPadView->AddButton(button);
-	button->SetTo("application/x-vnd.Plasmatail-ShowImage", true);
+	button->SetTo("application/x-vnd.Haiku-ShowImage", true);
 
 	// MediaPlayer
 	button = new LaunchButton("launch button", NULL, new BMessage(MSG_LAUNCH));
 	fPadView->AddButton(button);
-	button->SetTo("application/x-vnd.Plasmatail-MediaPlayer", true);
+	button->SetTo("application/x-vnd.Haiku-MediaPlayer", true);
 
 	// DeskCalc
 	button = new LaunchButton("launch button", NULL, new BMessage(MSG_LAUNCH));
 	fPadView->AddButton(button);
-	button->SetTo("application/x-vnd.Plasmatail-DeskCalc", true);
+	button->SetTo("application/x-vnd.Haiku-DeskCalc", true);
 
 	// Terminal
 	button = new LaunchButton("launch button", NULL, new BMessage(MSG_LAUNCH));
 	fPadView->AddButton(button);
-	button->SetTo("application/x-vnd.Plasmatail-Terminal", true);
+	button->SetTo("application/x-vnd.Haiku-Terminal", true);
 }
 
 

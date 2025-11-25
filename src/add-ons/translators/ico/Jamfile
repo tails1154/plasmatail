@@ -23,7 +23,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs ICOTranslator :
-	x-vnd.Plasmatail-ICOTranslator
+	x-vnd.Haiku-ICOTranslator
 	:
 	main.cpp
 	ConfigView.cpp

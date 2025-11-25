@@ -1,6 +1,6 @@
 /*
  * Copyright 2010, Christophe Huriaux
- * Copyright 2014, Plasmatail, inc.
+ * Copyright 2014, Haiku, inc.
  * Distributed under the terms of the MIT licence
  */
 

@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Plasmatail-cddb_lookup";
+resource app_signature "application/x-vnd.Haiku-cddb_lookup";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -10,8 +10,8 @@ resource app_version {
 	variety = B_APPV_FINAL,
 	internal = 3,
 
-	short_info = "Plasmatail CDDB Lookup",
-	long_info = "Plasmatail CDDB Lookup ©2009-2015 Plasmatail"
+	short_info = "Haiku CDDB Lookup",
+	long_info = "Haiku CDDB Lookup ©2009-2015 Haiku"
 };
 
 #ifdef HAIKU_TARGET_PLATFORM_HAIKU

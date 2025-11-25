@@ -2,7 +2,7 @@
  * app_server.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-test-app_server";
+resource app_signature "application/x-vnd.Haiku-test-app_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH ;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "test_app_server",
-	long_info = "test_app_server ©2004-2014 Plasmatail Inc."
+	long_info = "test_app_server ©2004-2014 Haiku Inc."
 };
 
 resource(0, "info") #'VICN' array {

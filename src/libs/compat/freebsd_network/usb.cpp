@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Plasmatail, Inc. All rights reserved.
+ * Copyright 2022, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  */
 
@@ -18,7 +18,7 @@ extern "C" {
 #include "device.h"
 }
 
-// undo name remappings, so we can use both FreeBSD and Plasmatail ones in this file
+// undo name remappings, so we can use both FreeBSD and Haiku ones in this file
 #undef usb_device
 #undef usb_interface
 #undef usb_endpoint_descriptor

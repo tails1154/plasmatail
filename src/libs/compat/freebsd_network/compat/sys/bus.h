@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2022, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef _FBSD_COMPAT_SYS_BUS_H_

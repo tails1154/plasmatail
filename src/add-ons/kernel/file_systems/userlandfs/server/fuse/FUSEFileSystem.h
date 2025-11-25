@@ -41,7 +41,7 @@ public:
 
 			const fuse_config&	GetFUSEConfig() const	{ return fFUSEConfig; }
 
-			bool				HasPlasmatailFuseExtensions() const
+			bool				HasHaikuFuseExtensions() const
 									{
 										return (fConnectionInfo.want
 											& FUSE_CAP_HAIKU_FUSE_EXTENSIONS) != 0;

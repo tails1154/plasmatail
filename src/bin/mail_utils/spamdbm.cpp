@@ -156,9 +156,9 @@
  * Fixed the spam filter so it works correctly now.
  *
  * Revision 1.87  2004/09/20 15:57:26  nwhitehorn
- * Mostly updated the tree to Be/Plasmatail style identifier naming conventions.  I
+ * Mostly updated the tree to Be/Haiku style identifier naming conventions.  I
  * have a few more things to work out, mostly in mail_util.h, and then I'm
- * proceeding to jamify the build system.  Then we go into Plasmatail CVS.
+ * proceeding to jamify the build system.  Then we go into Haiku CVS.
  *
  * Revision 1.86  2003/07/26 16:47:46  agmsmith
  * Bug - wasn't allowing double classification if the user had turned on
@@ -7082,7 +7082,7 @@ ControlsView::Pulse ()
 
 DatabaseWindow::DatabaseWindow ()
 : BWindow (BRect (30, 30, 620, 400),
-    "Plasmatail spam filter server",
+    "Haiku spam filter server",
     B_DOCUMENT_WINDOW, B_ASYNCHRONOUS_CONTROLS)
 {
   BRect TempRect;

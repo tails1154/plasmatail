@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2015, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2002-2015, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -237,7 +237,7 @@ BTranslatorRoster::Private::MessageReceived(BMessage* message)
 						|| message->FindString("name", &name) != B_OK)
 						break;
 
-					// TODO: make this better (possible under Plasmatail)
+					// TODO: make this better (possible under Haiku)
 					snooze(100000);
 						// let the font be written completely before trying to
 						// open it

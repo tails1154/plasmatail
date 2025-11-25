@@ -21,7 +21,7 @@ Application Pulse :
 ;
 
 DoCatalogs Pulse :
-	x-vnd.Plasmatail-Pulse
+	x-vnd.Haiku-Pulse
 	:
 	PulseApp.cpp
 	PulseView.cpp

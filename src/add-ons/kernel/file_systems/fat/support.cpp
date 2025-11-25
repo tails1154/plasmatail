@@ -1,7 +1,7 @@
 /*
  * Copyright 1999-2001, Be Incorporated.   All Rights Reserved.
  * Copyright 2001-2020, Axel Dörfler, axeld@pinc-software.de.
- * Copyright 2024, Plasmatail, Inc. All rights reserved.
+ * Copyright 2024, Haiku, Inc. All rights reserved.
  * This file may be used under the terms of the Be Sample Code License.
  */
 
@@ -864,7 +864,7 @@ NodePutter::Put()
 /*! Given a tentative inode number based on direntry location, set it the final inode number.
 	The final number will be different if the directory entry slot of a deleted or renamed file
 	is re-used. Also add the node to the vcache if it isn't already added. Unlike the original
-	Plasmatail FAT driver, each node is added to the vcache (not just those with artificial ID #s).
+	Haiku FAT driver, each node is added to the vcache (not just those with artificial ID #s).
 */
 status_t
 assign_inode(mount* volume, ino_t* inode)

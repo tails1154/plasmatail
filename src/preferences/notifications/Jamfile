@@ -20,7 +20,7 @@ Depends Notifications : libcolumnlistview.a ;
 Depends Notifications : libnotification.a ;
 
 DoCatalogs Notifications :
-	x-vnd.Plasmatail-Notifications
+	x-vnd.Haiku-Notifications
 	:
 	GeneralView.cpp
 	PrefletWin.cpp

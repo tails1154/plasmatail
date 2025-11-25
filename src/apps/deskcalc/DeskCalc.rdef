@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-DeskCalc";
+resource app_signature "application/x-vnd.Haiku-DeskCalc";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-DeskCalc:System name:DeskCalc";
+resource app_name_catalog_entry "x-vnd.Haiku-DeskCalc:System name:DeskCalc";
 
 resource app_version {
 	major  = 2,
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "DeskCalc",
-	long_info = "DeskCalc ©1997, 1998 R3 Software Ltd. ©2006-2012 Plasmatail, Inc."
+	long_info = "DeskCalc ©1997, 1998 R3 Software Ltd. ©2006-2012 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

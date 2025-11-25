@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2007, Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2007, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -122,7 +122,7 @@ str_less_equal(const char *str1, const char *str2)
 int
 main(int argc, char *argv[])
 {
-	BApplication app("application/x.vnd.Plasmatail-version");
+	BApplication app("application/x.vnd.Haiku-version");
 	version_kind kind = B_APP_VERSION_KIND;
 	bool longFlag = false;
 	bool numericalFlag = false;

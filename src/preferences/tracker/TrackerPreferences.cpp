@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Plasmatail Inc.
+ * Copyright 2009, Haiku Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -15,7 +15,7 @@ int
 main(int argc, char **argv)
 {
 	B_TRANSLATE_MARK_SYSTEM_NAME_VOID("Tracker");
-	BApplication app("application/x-vnd.Plasmatail-TrackerPreferences");
+	BApplication app("application/x-vnd.Haiku-TrackerPreferences");
 
 	// launch Tracker if it's not running
 	be_roster->Launch("application/x-vnd.Be-TRAK");

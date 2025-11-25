@@ -73,7 +73,7 @@
  */
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #include <sys/time.h>
 

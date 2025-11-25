@@ -13,7 +13,7 @@
 #include <Locker.h>
 #include <StopWatch.h>
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "ProcessListener.h"
 

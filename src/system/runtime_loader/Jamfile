@@ -121,6 +121,6 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 
 local arch ;
 for arch in $(TARGET_ARCHS) {
-	PlasmatailSubInclude arch $(arch) ;
+	HaikuSubInclude arch $(arch) ;
 }
 

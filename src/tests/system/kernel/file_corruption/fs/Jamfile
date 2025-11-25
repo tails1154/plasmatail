@@ -46,4 +46,4 @@ SEARCH on [ FGristFiles DebugSupport.cpp ]
 SEARCH on [ FGristFiles SHA256.cpp ]
 	= [ FDirName $(HAIKU_TOP) src system libroot posix crypt ] ;
 
-PlasmatailSubInclude userland ;
+HaikuSubInclude userland ;

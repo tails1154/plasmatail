@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2021 Plasmatail Inc. All rights reserved.
+ * Copyright 2010-2021 Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -382,7 +382,7 @@ BHttpRequest::_ResetOptions()
 	fOptFollowLocation = true;
 	fOptMaxRedirs = 8;
 	fOptReferer = "";
-	fOptUserAgent = "Services Kit (Plasmatail)";
+	fOptUserAgent = "Services Kit (Haiku)";
 	fOptUsername = "";
 	fOptPassword = "";
 	fOptAuthMethods = B_HTTP_AUTHENTICATION_BASIC | B_HTTP_AUTHENTICATION_DIGEST

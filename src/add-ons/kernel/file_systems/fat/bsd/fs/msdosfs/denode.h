@@ -268,7 +268,7 @@ struct defid {
 extern struct vop_vector msdosfs_vnodeops;
 
 #ifdef _KERNEL
-// Plasmatail port:  most FreeBSD hook functions are not implemented
+// Haiku port:  most FreeBSD hook functions are not implemented
 //int msdosfs_lookup(struct vop_cachedlookup_args *);
 //int msdosfs_inactive(struct vop_inactive_args *);
 //int msdosfs_reclaim(struct vop_reclaim_args *);
@@ -287,7 +287,7 @@ int readep(struct msdosfsmount *pmp, u_long dirclu, u_long dirofs,  struct buf *
 int readde(struct denode *dep, struct buf **bpp, struct direntry **epp);
 int deextend(struct denode *dep, u_long length, struct ucred *cred);
 int fillinusemap(struct msdosfsmount *pmp);
-// Plasmatail port:  not implemented
+// Haiku port:  not implemented
 //void reinsert(struct denode *dep);
 int dosdirempty(struct denode *dep);
 int createde(struct denode *dep, struct denode *ddep, struct denode **depp, struct componentname *cnp);

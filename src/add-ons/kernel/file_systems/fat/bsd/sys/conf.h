@@ -39,14 +39,14 @@
 #define FAT_CONF_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 struct cdev {
 	int si_refcount;
 	struct mount* si_mountpt;
 	char si_name[SPECNAMELEN + 1];
 
-	// Members added for Plasmatail port
+	// Members added for Haiku port
 	char si_device[B_PATH_NAME_LENGTH + 1];
 	int si_fd;
 	off_t si_mediasize;

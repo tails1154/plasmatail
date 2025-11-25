@@ -32,7 +32,7 @@ SEARCH on [ FGristFiles Commands.cpp Protocol.cpp Response.cpp ]
 		imap_lib ] ;
 
 DoCatalogs IMAP :
-	x-vnd.Plasmatail-IMAP
+	x-vnd.Haiku-IMAP
 	:
 	ConfigView.cpp
 	FolderConfigWindow.cpp

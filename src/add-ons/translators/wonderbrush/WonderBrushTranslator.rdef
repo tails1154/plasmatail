@@ -2,7 +2,7 @@
  * WonderBrushTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-WonderBrushTranslator";
+resource app_signature "application/x-vnd.Haiku-WonderBrushTranslator";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Plasmatail WonderBrushTranslator Add-Ons."
+	long_info = "Haiku WonderBrushTranslator Add-Ons."
 };

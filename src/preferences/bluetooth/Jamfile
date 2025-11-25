@@ -19,7 +19,7 @@ Application Bluetooth :
 	;
 
 DoCatalogs Bluetooth :
-	x-vnd.Plasmatail-BluetoothPrefs
+	x-vnd.Haiku-BluetoothPrefs
 	:
 	BluetoothDeviceView.cpp
 	BluetoothMain.cpp

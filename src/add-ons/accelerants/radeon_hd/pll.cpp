@@ -1,5 +1,5 @@
 /*
- * Copyright 2006-2011, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2006-2011, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -36,11 +36,11 @@ extern "C" void _sPrintf(const char* format, ...);
 
 // Pixel Clock Storage
 // kHz			Value			Result
-//	Plasmatail:		104000 khz		104 Mhz
+//	Haiku:		104000 khz		104 Mhz
 //	Linux:		104000 khz		104 Mhz
 //	AtomBIOS:	10400 * 10 khz	104 Mhz
 // Ghz
-//	Plasmatail:		162000 * 10 khz	1.62 Ghz
+//	Haiku:		162000 * 10 khz	1.62 Ghz
 //	Linux:		162000 * 10 khz	1.62 Ghz
 //	AtomBIOS:	16200  * 10 Khz	0.162 * 10 Ghz
 
@@ -812,7 +812,7 @@ pll_set(display_mode* mode, uint8 crtcID)
 
 	uint32 bitsPerColor = 8;
 		// TODO: Digital Depth, EDID 1.4+ on digital displays
-		// isn't in Plasmatail edid common code?
+		// isn't in Haiku edid common code?
 
 	// Prepare arguments for AtomBIOS call
 	union setPixelClock {

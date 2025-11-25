@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2025, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2013-2025, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -32,7 +32,7 @@
 #include <package/solver/SolverPackage.h>
 
 #include "AppUtils.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "PackageManager.h"
 #include "PackageUtils.h"

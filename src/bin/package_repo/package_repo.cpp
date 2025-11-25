@@ -18,7 +18,7 @@ const char* kCommandName = __progname;
 
 static const char* kUsage =
 	"Usage: %s <command> <command args>\n"
-	"Creates or inspects a Plasmatail package repository file.\n"
+	"Creates or inspects a Haiku package repository file.\n"
 	"\n"
 	"Commands:\n"
 	"  create [ <options> ] <repo-info> <package-file ...> \n"

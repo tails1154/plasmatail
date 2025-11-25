@@ -1,5 +1,5 @@
 /*
-** Copyright 2004-2006, the Plasmatail project. All rights reserved.
+** Copyright 2004-2006, the Haiku project. All rights reserved.
 ** Distributed under the terms of the MIT License.
 **
 ** Authors in chronological order:

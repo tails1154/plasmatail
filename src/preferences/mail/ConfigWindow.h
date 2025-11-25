@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2015, Plasmatail Inc. All rights reserved.
+ * Copyright 2004-2015, Haiku Inc. All rights reserved.
  * Copyright 2001, Dr. Zoidberg Enterprises. All rights reserved.
  * Copyright 2011, Clemens Zeidler <haiku@clemens-zeidler.de>
  *

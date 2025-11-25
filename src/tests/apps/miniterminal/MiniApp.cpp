@@ -13,7 +13,7 @@
 #include "MiniWin.h"
 
 MiniApp::MiniApp(const Arguments &args)
-	:	BApplication("application/x-vnd.Plasmatail.MiniTerminal")
+	:	BApplication("application/x-vnd.Haiku.MiniTerminal")
 {
 	fWindow = new MiniWin(args);
 	fWindow->Show();

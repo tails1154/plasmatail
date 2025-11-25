@@ -14,6 +14,6 @@ Application pppconfig :
 ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
 	: /boot/home/config/non-packaged/bin
 	: pppconfig ;

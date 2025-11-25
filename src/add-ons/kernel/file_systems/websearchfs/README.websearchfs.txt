@@ -1,10 +1,10 @@
-Welcome to the Web Search FileSystem for BeOS™, Zeta™ and Plasmatail®.
+Welcome to the Web Search FileSystem for BeOS™, Zeta™ and Haiku®.
 Copyright© 2004, 2005, François Revol.
 
 DuckDuckGo is a trademark of DuckDuckGo.
 BeOS is a trademark of PalmSource.
 Zeta is a trademark of yellowTAB GmbH.
-Plasmatail is a trademark of Plasmatail, Inc.
+Haiku is a trademark of Haiku, Inc.
 
 REQUIRES USERLANDFS
 

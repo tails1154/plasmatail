@@ -14,7 +14,7 @@ main()
 {
 	// create a BApplication on BeOS
 	struct utsname unameInfo;
-	if (uname(&unameInfo) < 0 || strcmp(unameInfo.sysname, "Plasmatail") != 0)
+	if (uname(&unameInfo) < 0 || strcmp(unameInfo.sysname, "Haiku") != 0)
 		new BApplication("application/x-vnd.haiku.dump-mime-types");
 
 	// get the list of installed types

@@ -1,10 +1,10 @@
 #!/bin/awk
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 #
-#	Copyright (c) 2004, Plasmatail
+#	Copyright (c) 2004, Haiku
 #
-#  This software is part of the Plasmatail distribution and is covered 
-#  by the Plasmatail license.
+#  This software is part of the Haiku distribution and is covered 
+#  by the Haiku license.
 #
 #
 #  File:        devlist2h.awk
@@ -18,7 +18,7 @@ BEGIN {
 	FS="[ \t][ \t]+"
 }
 NR == 1 {
-	printf("/*\tPlasmatail" "$\t*/\n\n")
+	printf("/*\tHaiku" "$\t*/\n\n")
 	printf("/*\n")
 	printf(" This file is generated automatically. Don't edit. \n")
 	printf("\n*/")

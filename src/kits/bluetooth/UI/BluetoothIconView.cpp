@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Plasmatail, Inc.
+ * Copyright 2021, Haiku, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -25,7 +25,7 @@ BluetoothIconView::BluetoothIconView()
 		uint8* tempIcon;
 		size_t tempSize;
 
-		BMimeType mime("application/x-vnd.Plasmatail-bluetooth_server");
+		BMimeType mime("application/x-vnd.Haiku-bluetooth_server");
 		mime.GetIcon(&tempIcon, &tempSize);
 
 		BIconUtils::GetVectorIcon(tempIcon, tempSize, fBitmap);

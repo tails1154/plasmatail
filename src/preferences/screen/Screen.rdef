@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-Screen";
+resource app_signature "application/x-vnd.Haiku-Screen";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Screen:System name:Screen";
+resource app_name_catalog_entry "x-vnd.Haiku-Screen:System name:Screen";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -17,7 +17,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Screen",
-	long_info  = "Screen ©2001-2009 Plasmatail"
+	long_info  = "Screen ©2001-2009 Haiku"
 };
 
 resource vector_icon {

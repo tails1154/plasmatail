@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-Appearance";
+resource app_signature "application/x-vnd.Haiku-Appearance";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-Appearance:System name:Appearance";
+resource app_name_catalog_entry "x-vnd.Haiku-Appearance:System name:Appearance";
 
 resource app_version {
 	major  = 1,
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "Appearance",
-	long_info  = "Appearance ©2002-2009 Plasmatail"
+	long_info  = "Appearance ©2002-2009 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

@@ -29,7 +29,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs WebPTranslator :
-	x-vnd.Plasmatail-WebPTranslator
+	x-vnd.Haiku-WebPTranslator
 	:
 	main.cpp
 	ConfigView.cpp

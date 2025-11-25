@@ -11,7 +11,7 @@ ScreenSaver Icons :
 ;
 
 DoCatalogs Icons :
-	x-vnd.Plasmatail-IconsScreensaver
+	x-vnd.Haiku-IconsScreensaver
 	:
 	IconsSaver.cpp	
 ;

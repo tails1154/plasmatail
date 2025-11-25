@@ -17,7 +17,7 @@
 
 #include "BarberPole.h"
 #include "BitmapView.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "Model.h"
 #include "PackageUtils.h"

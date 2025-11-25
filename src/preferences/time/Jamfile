@@ -32,7 +32,7 @@ Application Time
 	;
 
 DoCatalogs Time :
-	x-vnd.Plasmatail-Time
+	x-vnd.Haiku-Time
 	:
 	ClockView.cpp
 	DateTimeView.cpp

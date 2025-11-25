@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2020, Plasmatail, Inc. All rights reserved.
+ * Copyright 2012-2020, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -41,7 +41,7 @@ boot_arch_cpu_init(void)
 {
 	status_t err = check_cpu_features();
 	if (err != B_OK) {
-		panic("It's RISCY business trying to boot Plasmatail on the wrong CPU!\n");
+		panic("It's RISCY business trying to boot Haiku on the wrong CPU!\n");
 		return err;
 	}
 

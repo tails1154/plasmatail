@@ -14,7 +14,7 @@ ScreenSaver Nebula :
 ;
 
 DoCatalogs Nebula :
-	x-vnd.Plasmatail-NebulaScreensaver
+	x-vnd.Haiku-NebulaScreensaver
 	:
 	Nebula.cpp
 ;

@@ -1,5 +1,5 @@
 /*
- * InfoWin.cpp - Media Player for the Plasmatail Operating System
+ * InfoWin.cpp - Media Player for the Haiku Operating System
  *
  * Copyright (C) 2006 Marcus Overhagen <marcus@overhagen.de>
  * Copyright 2015 Axel Dörfler <axeld@pinc-software.de>

@@ -2,7 +2,7 @@
  * IntelDiskAddOn.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-IntelDiskAddOn";
+resource app_signature "application/x-vnd.Haiku-IntelDiskAddOn";
 
 resource app_version {
 	major  = 1,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "1.0.0",
-	long_info = "Plasmatail Intel disk add-on."
+	long_info = "Haiku Intel disk add-on."
 };

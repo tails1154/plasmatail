@@ -1,5 +1,5 @@
 /*
-** Copyright 2004, the Plasmatail project. All rights reserved.
+** Copyright 2004, the Haiku project. All rights reserved.
 ** Distributed under the terms of the MIT License.
 **
 ** Author : Jérôme Duval

@@ -204,7 +204,7 @@ intname_boot:
 alert_data:
 	.word	10
 	.byte	12
-	.ascii	"Welcome to Plasmatail\0"
+	.ascii	"Welcome to Haiku\0"
 alert_extra:
 	.ascii	"\0\0"
 	.byte	0

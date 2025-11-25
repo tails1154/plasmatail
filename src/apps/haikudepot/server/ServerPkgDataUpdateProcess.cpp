@@ -22,7 +22,7 @@
 #include "DumpExportPkgJsonListener.h"
 #include "DumpExportPkgScreenshot.h"
 #include "DumpExportPkgVersion.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "PackageUtils.h"
 #include "ServerSettings.h"

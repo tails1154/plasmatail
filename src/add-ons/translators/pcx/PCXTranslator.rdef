@@ -2,7 +2,7 @@
  * PCXTranslator.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-PCXTranslator";
+resource app_signature "application/x-vnd.Haiku-PCXTranslator";
 
 resource app_version {
 	major  = 0,
@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "0.3.0",
-	long_info = "Plasmatail PCXTranslator Add-Ons."
+	long_info = "Haiku PCXTranslator Add-Ons."
 };

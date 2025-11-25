@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "EHCI host controller driver",
-	long_info = "Plasmatail EHCI HCD - Copyright 2006-2009, Plasmatail Inc."
+	long_info = "Haiku EHCI HCD - Copyright 2006-2009, Haiku Inc."
 };

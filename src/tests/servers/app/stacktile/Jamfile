@@ -12,7 +12,7 @@ Application StackTileTest :
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : StackTileTest
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : StackTileTest
 		: tests!apps ;
 }
 

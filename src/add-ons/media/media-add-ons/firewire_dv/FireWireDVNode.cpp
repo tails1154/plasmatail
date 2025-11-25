@@ -1,5 +1,5 @@
 /*
- * FireWire DV media addon for Plasmatail
+ * FireWire DV media addon for Haiku
  *
  * Copyright (c) 2008, JiSheng Zhang (jszhang3@mail.ustc.edu.cn)
  * Distributed under the terms of the MIT License.

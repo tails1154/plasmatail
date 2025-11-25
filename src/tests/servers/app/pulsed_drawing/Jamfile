@@ -10,7 +10,7 @@ SimpleTest PulsedDrawing :
 	: be [ TargetLibstdc++ ] [ TargetLibsupc++ ] ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : PulsedDrawing
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : PulsedDrawing
 		: tests!apps ;
 }
 

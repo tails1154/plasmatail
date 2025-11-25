@@ -7,12 +7,12 @@
  *
  */
 
-// Plasmatail EGL Test
+// Haiku EGL Test
 //
-// g++ -o PlasmatailTest PlasmatailTest.cpp /boot/home/mesa/build/haiku-x86-debug/egl/main/libEGL.so \
+// g++ -o HaikuTest HaikuTest.cpp /boot/home/mesa/build/haiku-x86-debug/egl/main/libEGL.so \
 //   -lGL -lbe -I/boot/home/mesa/include && EGL_LOG_LEVEL=debug MESA_DEBUG=1 \
 //   LIBGL_DRIVERS_PATH=/boot/home/mesa/build/haiku-x86-debug/mesa/drivers/haiku/swrast/ \
-//   ./PlasmatailTest
+//   ./HaikuTest
 
 #include <InterfaceKit.h>
 #include <OpenGLKit.h>

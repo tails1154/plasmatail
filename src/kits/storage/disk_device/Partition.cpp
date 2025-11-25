@@ -43,7 +43,7 @@
 
 using std::nothrow;
 
-static const char *skAutoCreatePrefix = "_PlasmatailAutoCreated";
+static const char *skAutoCreatePrefix = "_HaikuAutoCreated";
 
 
 /*!	\class BPartition

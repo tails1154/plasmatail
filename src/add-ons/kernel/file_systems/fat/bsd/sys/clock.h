@@ -47,7 +47,7 @@
 #define FAT_CLOCK_H_
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 int utc_offset(void);
 

@@ -24,7 +24,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs STXTTranslator :
-	x-vnd.Plasmatail-STXTTranslator
+	x-vnd.Haiku-STXTTranslator
 	:
 	STXTMain.cpp
 	STXTTranslator.cpp

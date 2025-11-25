@@ -102,7 +102,7 @@ x86_initialize_syscall(void)
 			IA32_FEATURE_AMD_EXT_SYSCALL)) {
 		// AMD syscall/sysret
 		dprintf("initialize_commpage_syscall(): syscall/sysret supported "
-			"-- not yet by Plasmatail, though");
+			"-- not yet by Haiku, though");
 	} else {
 		// no special syscall support
 		dprintf("initialize_commpage_syscall(): no special syscall support\n");

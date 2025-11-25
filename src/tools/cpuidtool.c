@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Plasmatail, Inc. All rights reserved.
+ * Copyright 2012 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -86,7 +86,7 @@ main(int argc, char *argv[])
     int model = ((cpuid >> 4) & 0xf) | ((cpuid >> 12) & 0xf0);
     int stepping = cpuid & 0xf;
 
-	printf("Plasmatail CPUID: Family: 0x%x, Model: 0x%x, Stepping: 0x%x\n", family,
+	printf("Haiku CPUID: Family: 0x%x, Model: 0x%x, Stepping: 0x%x\n", family,
 		model, stepping);
 
 	return 0;

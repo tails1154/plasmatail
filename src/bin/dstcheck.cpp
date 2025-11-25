@@ -139,7 +139,7 @@ main(int argc, char **argv)
 	}
 
 	if (dst != tm.tm_isdst || argc > 1) {
-		BApplication app("application/x-vnd.Plasmatail-cmd-dstconfig");
+		BApplication app("application/x-vnd.Haiku-cmd-dstconfig");
 
 		BString string;
 		TimedAlert::GetLabel(string);
@@ -151,7 +151,7 @@ main(int argc, char **argv)
 			exit(0);
 
 		if (index == 2)
-			be_roster->Launch("application/x-vnd.Plasmatail-Time");
+			be_roster->Launch("application/x-vnd.Haiku-Time");
 	}
 
 	lseek(fd, 0, SEEK_SET);

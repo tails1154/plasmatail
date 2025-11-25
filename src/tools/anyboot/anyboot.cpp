@@ -1,6 +1,6 @@
 /*
  * Copyright 2010 Michael Lotz, mmlr@mlotz.ch
- * Copyright 2011-2017 Plasmatail, Inc. All rights reserved.
+ * Copyright 2011-2017 Haiku, Inc. All rights reserved.
  * All rights reserved. Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -35,10 +35,10 @@ static size_t sCopyBufferSize = 2 * 1024 * 1024;
 static const size_t kBlockSize = 512;
 
 
-// Plasmatail Anyboot Image:
+// Haiku Anyboot Image:
 //   (MBR Table + Boot Sector)
-//   ISO (Small Plasmatail ISO9660)
-//   First Partition (Plasmatail OS Image, BFS)
+//   ISO (Small Haiku ISO9660)
+//   First Partition (Haiku OS Image, BFS)
 //   Second Partition (EFI Loader, FAT)
 //   Third Partition (EFI Mac, HFS) <not implemented>
 
@@ -278,7 +278,7 @@ main(int argc, char *argv[])
 		checkError(result != 0, "failed to copy BIOS bootloader to output");
 	}
 
-	// Plasmatail Image Partition
+	// Haiku Image Partition
 	alignment = kBlockSize - 1;
 	imageSize = (imageSize + alignment) & ~alignment;
 	createPartition(outputFileHandle, 0, true, 0xeb, imageOffset, imageSize);

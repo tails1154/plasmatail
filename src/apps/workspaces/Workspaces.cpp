@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2016, Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2016, Haiku, Inc. All rights reserved.
  * Copyright 2002, François Revol, revol@free.fr.
  * This file is distributed under the terms of the MIT License.
  *
@@ -45,7 +45,7 @@
 static const char* kDeskbarItemName = "workspaces";
 static const char* kSignature = "application/x-vnd.Be-WORK";
 static const char* kDeskbarSignature = "application/x-vnd.Be-TSKB";
-static const char* kScreenPrefletSignature = "application/x-vnd.Plasmatail-Screen";
+static const char* kScreenPrefletSignature = "application/x-vnd.Haiku-Screen";
 static const char* kOldSettingFile = "Workspace_data";
 static const char* kSettingsFile = "Workspaces_settings";
 
@@ -413,7 +413,7 @@ WorkspacesView::_AboutRequested()
 	const char* extraInfo = "Send windows behind using the Option key. "
 		"Move windows to front using the Control key.\n";
 
-	window->AddCopyright(2002, "Plasmatail, Inc.",
+	window->AddCopyright(2002, "Haiku, Inc.",
 			extraCopyrights);
 	window->AddAuthors(authors);
 	window->AddExtraInfo(extraInfo);

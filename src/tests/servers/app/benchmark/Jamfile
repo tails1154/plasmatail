@@ -18,7 +18,7 @@ Application Benchmark :
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Benchmark
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : Benchmark
 		: tests!apps ;
 }
 

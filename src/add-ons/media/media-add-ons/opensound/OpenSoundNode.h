@@ -1,5 +1,5 @@
 /*
- * OpenSound media addon for BeOS and Plasmatail
+ * OpenSound media addon for BeOS and Haiku
  *
  * Copyright (c) 2007, François Revol (revol@free.fr)
  * Copyright (c) 2002, 2003 Jerome Duval (jerome.duval@free.fr)

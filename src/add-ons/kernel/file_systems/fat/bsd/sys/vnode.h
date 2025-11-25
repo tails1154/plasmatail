@@ -32,7 +32,7 @@
 #define FAT_VNODE_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 #ifdef FS_SHELL
 #include "fssh_api_wrapper.h"
@@ -53,7 +53,7 @@
 #include "dosfs.h"
 
 
-// In the Plasmatail port, one struct vnode per volume is set up to represent its device file.
+// In the Haiku port, one struct vnode per volume is set up to represent its device file.
 // It will have type VBLK. All other struct vnodes (those that actually represent
 // files on the volume) will have type VREG or VDIR.
 enum vtype { VNON, VREG, VDIR, VBLK, VCHR, VLNK, VSOCK, VFIFO, VBAD, VMARKER };
@@ -106,7 +106,7 @@ struct vnode {
 	 */
 	u_short v_vflag; /* v vnode flags */
 
-	// Members added for Plasmatail port
+	// Members added for Haiku port
 	ino_t v_parent; /* v inode of parent directory */
 	const char* v_mime; /* v mime type for VREG nodes, otherwise NULL */
 	void* v_cache; /* v file cache for VREG nodes, otherwise NULL */
@@ -152,7 +152,7 @@ assert_vop_elocked(struct vnode* vp, const char* str)
 
 
 #define ASSERT_VOP_ELOCKED(vp, str) assert_vop_elocked((vp), (str))
-// In FreeBSD, this verifies that vp is either write-locked or read-locked. In Plasmatail, there is no
+// In FreeBSD, this verifies that vp is either write-locked or read-locked. In Haiku, there is no
 // equivalent assert.
 #define ASSERT_VOP_LOCKED(vp, str) ((void)0)
 
@@ -160,7 +160,7 @@ assert_vop_elocked(struct vnode* vp, const char* str)
 
 // FreeBSD would generate vnode_if.h, vnode_if_typedef.h, and vnode_if_newproto.h at build time
 // and #include them here (the latter two indirectly via the first).
-// For the Plasmatail port, vnode_if.h was generated manually by running a script:
+// For the Haiku port, vnode_if.h was generated manually by running a script:
 // sys/tools/vnode_if.awk sys/kern/vnode_if.src -h
 // and vnode_if_typedef.h by running:
 // sys/tools/vnode_if.awk sys/kern/vnode_if.src -q
@@ -168,7 +168,7 @@ assert_vop_elocked(struct vnode* vp, const char* str)
 // sys/tools/vnode_if.awk sys/kern/vnode_if.src -p
 // Modified excerpts from these headers are pasted below.
 
-// This struct is referenced by the ported code but has no effect in the Plasmatail port.
+// This struct is referenced by the ported code but has no effect in the Haiku port.
 struct vop_vector {
 };
 
@@ -221,7 +221,7 @@ int getnewvnode(const char* tag, struct mount* mp, struct vop_vector* vops, stru
 
 
 /*! In FreeBSD, this tells the VFS to add vp to its list of mp's nodes.
-	In Plasmatail, the equivalent actions are done automatically as part of get_vnode / publish_vnode.
+	In Haiku, the equivalent actions are done automatically as part of get_vnode / publish_vnode.
 */
 static inline int
 insmntque(struct vnode* vp, struct mount* mp)
@@ -231,7 +231,7 @@ insmntque(struct vnode* vp, struct mount* mp)
 
 
 /*! In FreeBSD, this generates a serial number based on system time. The driver uses it to
-	initialize denode::de_modrev. However, in the Plasmatail port, de_modrev is ignored.
+	initialize denode::de_modrev. However, in the Haiku port, de_modrev is ignored.
 */
 static inline u_quad_t
 init_va_filerev(void)
@@ -247,7 +247,7 @@ static inline void
 vput(struct vnode* vp)
 {
 	// The driver might call vput to balance a getnewvnode() call. The getnewvnode stand-in
-	// written for the Plasmatail port, which leaves the node in VSTATE_UNINITIALIZED, doesn't get a
+	// written for the Haiku port, which leaves the node in VSTATE_UNINITIALIZED, doesn't get a
 	// ref to the node though.
 	if (vp->v_state != VSTATE_UNINITIALIZED)
 		put_vnode(vp->v_mount->mnt_fsvolume, VTODE(vp)->de_inode);
@@ -276,7 +276,7 @@ vref(struct vnode* vp)
 }
 
 
-/*! Get the node ref count from the VFS. Not implemented in Plasmatail port (function is used in
+/*! Get the node ref count from the VFS. Not implemented in Haiku port (function is used in
 	driver but only for debug output).
 */
 static __inline int

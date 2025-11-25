@@ -23,9 +23,9 @@
 #include "../kernel_emu.h"
 #include "../RequestThread.h"
 
-#include "PlasmatailKernelIORequest.h"
-#include "PlasmatailKernelNode.h"
-#include "PlasmatailKernelVolume.h"
+#include "HaikuKernelIORequest.h"
+#include "HaikuKernelNode.h"
+#include "HaikuKernelVolume.h"
 #include "vfs.h"
 
 
@@ -159,10 +159,10 @@ status_t
 new_vnode(fs_volume *_volume, ino_t vnodeID, void *privateNode,
 	fs_vnode_ops *ops)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	// translate to a wrapper node
-	PlasmatailKernelNode* node;
+	HaikuKernelNode* node;
 	status_t error = volume->NewVNode(vnodeID, privateNode, ops, &node);
 	if (error != B_OK)
 		return error;
@@ -182,10 +182,10 @@ status_t
 publish_vnode(fs_volume *_volume, ino_t vnodeID, void *privateNode,
 	fs_vnode_ops *ops, int type, uint32 flags)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	// translate to a wrapper node
-	PlasmatailKernelNode* node;
+	HaikuKernelNode* node;
 	status_t error = volume->PublishVNode(vnodeID, privateNode, ops, type,
 		flags, &node);
 	if (error != B_OK)
@@ -205,7 +205,7 @@ publish_vnode(fs_volume *_volume, ino_t vnodeID, void *privateNode,
 status_t
 get_vnode(fs_volume *_volume, ino_t vnodeID, void **privateNode)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	// get the node
 	void* foundNode;
@@ -215,7 +215,7 @@ get_vnode(fs_volume *_volume, ino_t vnodeID, void **privateNode)
 		return error;
 
 	if (privateNode != NULL)
-		*privateNode = ((PlasmatailKernelNode*)foundNode)->private_node;
+		*privateNode = ((HaikuKernelNode*)foundNode)->private_node;
 
 	return B_OK;
 }
@@ -225,7 +225,7 @@ get_vnode(fs_volume *_volume, ino_t vnodeID, void **privateNode)
 status_t
 put_vnode(fs_volume *_volume, ino_t vnodeID)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	return UserlandFS::KernelEmu::put_vnode(volume->GetID(), vnodeID);
 }
@@ -235,7 +235,7 @@ put_vnode(fs_volume *_volume, ino_t vnodeID)
 status_t
 acquire_vnode(fs_volume *_volume, ino_t vnodeID)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	return UserlandFS::KernelEmu::acquire_vnode(volume->GetID(), vnodeID);
 }
@@ -245,7 +245,7 @@ acquire_vnode(fs_volume *_volume, ino_t vnodeID)
 status_t
 remove_vnode(fs_volume *_volume, ino_t vnodeID)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	return UserlandFS::KernelEmu::remove_vnode(volume->GetID(), vnodeID);
 }
@@ -255,7 +255,7 @@ remove_vnode(fs_volume *_volume, ino_t vnodeID)
 status_t
 unremove_vnode(fs_volume *_volume, ino_t vnodeID)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	return UserlandFS::KernelEmu::unremove_vnode(volume->GetID(), vnodeID);
 }
@@ -265,7 +265,7 @@ unremove_vnode(fs_volume *_volume, ino_t vnodeID)
 status_t
 get_vnode_removed(fs_volume *_volume, ino_t vnodeID, bool* removed)
 {
-	PlasmatailKernelVolume* volume = PlasmatailKernelVolume::GetVolume(_volume);
+	HaikuKernelVolume* volume = HaikuKernelVolume::GetVolume(_volume);
 
 	return UserlandFS::KernelEmu::get_vnode_removed(volume->GetID(), vnodeID,
 		removed);
@@ -276,7 +276,7 @@ get_vnode_removed(fs_volume *_volume, ino_t vnodeID, bool* removed)
 fs_volume*
 volume_for_vnode(fs_vnode *vnode)
 {
-	return PlasmatailKernelNode::GetNode(vnode)->GetVolume()->GetFSVolume();
+	return HaikuKernelNode::GetNode(vnode)->GetVolume()->GetFSVolume();
 }
 
 
@@ -316,7 +316,7 @@ status_t
 do_iterative_fd_io(int fd, io_request *_request, iterative_io_get_vecs getVecs,
 	iterative_io_finished finished, void *_cookie)
 {
-	PlasmatailKernelIORequest* request = (PlasmatailKernelIORequest*)_request;
+	HaikuKernelIORequest* request = (HaikuKernelIORequest*)_request;
 
 	// get the first vecs already -- this saves a guaranteed trip back from
 	// kernel to userland
@@ -328,8 +328,8 @@ do_iterative_fd_io(int fd, io_request *_request, iterative_io_get_vecs getVecs,
 		return error;
 
 	// create a cookie
-	PlasmatailKernelIterativeFDIOCookie* cookie
-		= new(std::nothrow) PlasmatailKernelIterativeFDIOCookie(fd, request, getVecs,
+	HaikuKernelIterativeFDIOCookie* cookie
+		= new(std::nothrow) HaikuKernelIterativeFDIOCookie(fd, request, getVecs,
 			finished, _cookie);
 	if (cookie == NULL) {
 		finished(_cookie, _request, B_NO_MEMORY, false, 0);
@@ -356,28 +356,28 @@ do_iterative_fd_io(int fd, io_request *_request, iterative_io_get_vecs getVecs,
 bool
 io_request_is_write(const io_request* request)
 {
-	return ((PlasmatailKernelIORequest*)request)->isWrite;
+	return ((HaikuKernelIORequest*)request)->isWrite;
 }
 
 
 bool
 io_request_is_vip(const io_request* request)
 {
-	return ((PlasmatailKernelIORequest*)request)->isVIP;
+	return ((HaikuKernelIORequest*)request)->isVIP;
 }
 
 
 off_t
 io_request_offset(const io_request* request)
 {
-	return ((PlasmatailKernelIORequest*)request)->offset;
+	return ((HaikuKernelIORequest*)request)->offset;
 }
 
 
 off_t
 io_request_length(const io_request* request)
 {
-	return ((PlasmatailKernelIORequest*)request)->length;
+	return ((HaikuKernelIORequest*)request)->length;
 }
 
 
@@ -387,7 +387,7 @@ read_from_io_request(io_request* _request, void* buffer, size_t size)
 	if (size == 0)
 		return B_OK;
 
-	PlasmatailKernelIORequest* request = (PlasmatailKernelIORequest*)_request;
+	HaikuKernelIORequest* request = (HaikuKernelIORequest*)_request;
 
 	// send the request
 	return UserlandFS::KernelEmu::read_from_io_request(request->volume->GetID(),
@@ -398,7 +398,7 @@ read_from_io_request(io_request* _request, void* buffer, size_t size)
 status_t
 write_to_io_request(io_request* _request, const void* buffer, size_t size)
 {
-	PlasmatailKernelIORequest* request = (PlasmatailKernelIORequest*)_request;
+	HaikuKernelIORequest* request = (HaikuKernelIORequest*)_request;
 
 	// send the request
 	return UserlandFS::KernelEmu::write_to_io_request(request->volume->GetID(),
@@ -409,7 +409,7 @@ write_to_io_request(io_request* _request, const void* buffer, size_t size)
 void
 notify_io_request(io_request* _request, status_t status)
 {
-	PlasmatailKernelIORequest* request = (PlasmatailKernelIORequest*)_request;
+	HaikuKernelIORequest* request = (HaikuKernelIORequest*)_request;
 
 	// send the request
 	UserlandFS::KernelEmu::notify_io_request(request->volume->GetID(),
@@ -475,7 +475,7 @@ status_t
 vfs_get_file_map(struct vnode *vnode, off_t offset, size_t size,
 	struct file_io_vec *vecs, size_t *_count)
 {
-	PlasmatailKernelNode* node = (PlasmatailKernelNode*)vnode;
+	HaikuKernelNode* node = (HaikuKernelNode*)vnode;
 
 	return node->volume->GetFileMap(node, offset, size, vecs, _count);
 }
@@ -485,13 +485,13 @@ status_t
 vfs_lookup_vnode(dev_t mountID, ino_t vnodeID, struct vnode **_vnode)
 {
 	// get the volume
-	PlasmatailKernelVolume* volume = dynamic_cast<PlasmatailKernelVolume*>(
+	HaikuKernelVolume* volume = dynamic_cast<HaikuKernelVolume*>(
 		FileSystem::GetInstance()->VolumeWithID(mountID));
 	if (volume == NULL)
 		return B_BAD_VALUE;
 
 	// get the node
-	PlasmatailKernelNode* node = volume->NodeWithID(vnodeID);
+	HaikuKernelNode* node = volume->NodeWithID(vnodeID);
 	if (node == NULL)
 		return B_BAD_VALUE;
 

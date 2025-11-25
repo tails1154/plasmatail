@@ -2,7 +2,7 @@
 
 Preview
 
-Copyright (c) 2002 Plasmatail.
+Copyright (c) 2002 Haiku.
 
 Author: 
 	Michael Pfeiffer

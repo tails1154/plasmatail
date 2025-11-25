@@ -7,7 +7,7 @@ IEEE 1394 support for haiku
 	  These directories contains IEEE1394(FireWire) driver which is my 
 	GSOC2007 project work under my mentor Jerome Duval's guidance.
 	Please note this driver is still under development. You can find latest 
-	version from Plasmatail's repository:
+	version from Haiku's repository:
 
 	The driver consists of 13 parts:
 	

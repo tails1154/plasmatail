@@ -11,5 +11,5 @@ KernelAddon tcp :
 ;
 
 # Installation
-PlasmatailInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/protocols
+HaikuInstall install-networking : /boot/home/config/add-ons/kernel/haiku_network/protocols
 	: tcp ;

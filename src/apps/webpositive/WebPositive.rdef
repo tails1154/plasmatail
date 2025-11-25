@@ -1,4 +1,4 @@
-resource app_signature "application/x-vnd.Plasmatail-WebPositive";
+resource app_signature "application/x-vnd.Haiku-WebPositive";
 
 resource app_version {
 	major      = 1,
@@ -7,7 +7,7 @@ resource app_version {
 	variety    = B_APPV_ALPHA,
 	internal   = 0,
 	short_info = "WebPositive",
-	long_info  = "WebPositive ©2007-2021 The WebKit Plasmatail Project"
+	long_info  = "WebPositive ©2007-2021 The WebKit Haiku Project"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

@@ -36,7 +36,7 @@ DebugWindow::DebugWindow(const char* appName)
 {
 	BString buffer(B_TRANSLATE(
 		"The application:\n\n      %app\n\n"
-		"has encountered an error which prevents it from continuing. Plasmatail "
+		"has encountered an error which prevents it from continuing. Haiku "
 		"will terminate the application and clean up."));
 	buffer.ReplaceFirst("%app", appName);
 

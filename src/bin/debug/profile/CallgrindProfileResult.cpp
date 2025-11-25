@@ -211,7 +211,7 @@ CallgrindProfileResult::PrintResults(ImageProfileResultContainer* container)
 
 	// write the header
 	fprintf(out, "version: 1\n");
-	fprintf(out, "creator: Plasmatail profile\n");
+	fprintf(out, "creator: Haiku profile\n");
 	fprintf(out, "pid: %" B_PRId32 "\n", fEntity->EntityID());
 	fprintf(out, "cmd: %s\n", fEntity->EntityName());
 	fprintf(out, "part: 1\n\n");

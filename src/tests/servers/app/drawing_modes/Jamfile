@@ -11,6 +11,6 @@ Application DrawingModes :
 ;
 
 if ( $(TARGET_PLATFORM) = libbe_test ) {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawingModes
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DrawingModes
 		: tests!apps ;
 }

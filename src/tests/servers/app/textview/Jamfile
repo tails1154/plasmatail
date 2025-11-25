@@ -10,6 +10,6 @@ SimpleTest TextView :
 	: be [ TargetLibstdc++ ] [ TargetLibsupc++ ] ;
 
 #if ( $(TARGET_PLATFORM) = libbe_test ) {
-#	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : TextView
+#	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : TextView
 #		: tests!apps ;
 #}

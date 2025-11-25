@@ -2,7 +2,7 @@
 
 Preview printer driver.
 
-Copyright (c) 2001 - 2008 Plasmatail.
+Copyright (c) 2001 - 2008 Haiku.
 
 Authors:
 	Philippe Houdoin

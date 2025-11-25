@@ -1,5 +1,5 @@
 /*
- * (c) 2004, Jérôme DUVAL for Plasmatail
+ * (c) 2004, Jérôme DUVAL for Haiku
  * released under the MIT licence.
  */
 

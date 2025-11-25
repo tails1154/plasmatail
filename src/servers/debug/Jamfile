@@ -21,7 +21,7 @@ Application debug_server
 ;
 
 DoCatalogs debug_server :
-	x-vnd.Plasmatail-debug_server
+	x-vnd.Haiku-debug_server
 	:
 	DebugServer.cpp
 	DebugWindow.cpp

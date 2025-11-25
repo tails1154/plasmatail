@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2021 Plasmatail, Inc. All rights reserved.
+ * Copyright 2008-2021 Haiku, Inc. All rights reserved.
  * Copyright 2007-2009, Marcus Overhagen. All rights reserved.
  * Distributed under the terms of the MIT License.
  *

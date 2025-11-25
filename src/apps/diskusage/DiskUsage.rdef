@@ -1,6 +1,6 @@
-resource app_signature "application/x-vnd.Plasmatail-DiskUsage";
+resource app_signature "application/x-vnd.Haiku-DiskUsage";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-DiskUsage:System name:DiskUsage";
+resource app_name_catalog_entry "x-vnd.Haiku-DiskUsage:System name:DiskUsage";
 
 resource app_version {
 		major  = 1,
@@ -11,7 +11,7 @@ resource app_version {
 		internal = 0,
 
 		short_info = "1.0.2",
-		long_info = "1.0.2 ©1999 Mike Steed, ©2008-2011 Plasmatail"
+		long_info = "1.0.2 ©1999 Mike Steed, ©2008-2011 Haiku"
 };
 
 resource app_flags B_SINGLE_LAUNCH;

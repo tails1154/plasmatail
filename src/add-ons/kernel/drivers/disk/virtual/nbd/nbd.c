@@ -4,7 +4,7 @@
  */
 
 /*
- * nbd driver for Plasmatail
+ * nbd driver for Haiku
  *
  * Maps a Network Block Device as virtual partitions.
  */

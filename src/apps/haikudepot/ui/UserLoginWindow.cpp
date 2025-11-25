@@ -27,7 +27,7 @@
 #include "BitmapHolder.h"
 #include "BitmapView.h"
 #include "Captcha.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "IdentityAndAccessUtils.h"
 #include "LanguageMenuUtils.h"
 #include "LinkView.h"
@@ -587,7 +587,7 @@ UserLoginWindow::_HandleAuthenticationFailed()
 
 
 /*!	This is called when the user has successfully authenticated with the remote
-	PlasmatailDepotServer system; this handles the take-up of the data and closing
+	HaikuDepotServer system; this handles the take-up of the data and closing
 	the window etc...
 */
 
@@ -1312,7 +1312,7 @@ UserLoginWindow::_HandleCreateAccountSuccess(const UserCredentials& credentials)
 {
 	BString message
 		= B_TRANSLATE("The user %Nickname% has been successfully "
-					  "created in the PlasmatailDepotServer system. You can administer your user "
+					  "created in the HaikuDepotServer system. You can administer your user "
 					  "details by using the web interface. You are now logged-in as this "
 					  "new user.");
 	message.ReplaceAll("%Nickname%", credentials.Nickname());

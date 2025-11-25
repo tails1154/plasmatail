@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2019, Plasmatail, Inc. All rights reserved.
+ * Copyright 2018-2019, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -27,7 +27,7 @@ struct usb_device_request {
 } __packed;
 typedef struct usb_device_request usb_device_request_t;
 
-/* abbreviated Plasmatail request types */
+/* abbreviated Haiku request types */
 #define HAIKU_USB_REQTYPE_DEVICE_IN				0x80
 #define HAIKU_USB_REQTYPE_DEVICE_OUT			0x00
 #define HAIKU_USB_REQTYPE_VENDOR				0x40
@@ -36,7 +36,7 @@ typedef struct usb_device_request usb_device_request_t;
 #define UT_READ_VENDOR_DEVICE	(HAIKU_USB_REQTYPE_DEVICE_IN | HAIKU_USB_REQTYPE_VENDOR)
 #define UT_WRITE_VENDOR_DEVICE	(HAIKU_USB_REQTYPE_DEVICE_OUT | HAIKU_USB_REQTYPE_VENDOR)
 
-/* make sure this matches Plasmatail's usb_speed! */
+/* make sure this matches Haiku's usb_speed! */
 enum usb_dev_speed {
 	USB_SPEED_LOW,
 	USB_SPEED_FULL,

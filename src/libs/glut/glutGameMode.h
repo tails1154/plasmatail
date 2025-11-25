@@ -1,5 +1,5 @@
 /*
- * Copyright 2010, Plasmatail Inc.
+ * Copyright 2010, Haiku Inc.
  * Authors:
  *		Philippe Houdoin <phoudoin %at% haiku-os %dot% org>
  *

@@ -1,4 +1,4 @@
-For the test_app_server to run properly on Plasmatail, you need to prepare a few things.
+For the test_app_server to run properly on Haiku, you need to prepare a few things.
 
 There is a pseudo target "install-test-apps" which needs to be built like this:
 

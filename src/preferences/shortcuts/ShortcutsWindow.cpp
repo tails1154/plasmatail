@@ -1,6 +1,6 @@
 /*
  * Copyright 1999-2009 Jeremy Friesner
- * Copyright 2009-2010 Plasmatail, Inc. All rights reserved.
+ * Copyright 2009-2010 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -57,7 +57,7 @@
 #define MAX_HEIGHT 10000
 	// SetSizeLimits does not provide a mechanism for specifying an
 	// unrestricted maximum. 10,000 seems to be the most common value used
-	// in other Plasmatail system applications.
+	// in other Haiku system applications.
 
 #define WINDOW_SETTINGS_FILE_NAME "Shortcuts_window_settings"
 	// Because the "shortcuts_settings" file (SHORTCUTS_SETTING_FILE_NAME) is

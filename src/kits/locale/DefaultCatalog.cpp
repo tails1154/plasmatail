@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2009, Plasmatail.
+ * Copyright 2003-2009, Haiku.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -441,7 +441,7 @@ DefaultCatalog::Unflatten(BDataIO *dataIO)
 		const char *translated;
 
 		// fCatMap.resize(count);
-			// There is no resize method in Plasmatail's HashMap to preallocate
+			// There is no resize method in Haiku's HashMap to preallocate
 			// memory.
 		for (int i=0; res == B_OK && i < count; ++i) {
 			res = archiveMsg.Unflatten(dataIO);

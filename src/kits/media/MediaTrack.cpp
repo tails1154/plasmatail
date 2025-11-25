@@ -1,7 +1,7 @@
 /*
  * Copyright 2002-2007, Marcus Overhagen <marcus@overhagen.de>
  * Copyright 2009-2010, Stephan Aßmus <superstippi@gmx.de>
- * Copyright 2013, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2013, Haiku, Inc. All Rights Reserved.
  * All rights reserved. Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -713,7 +713,7 @@ BMediaTrack::GetParameterWeb(BParameterWeb** outWeb)
 	if (fEncoder == NULL)
 		return B_NO_INIT;
 
-	// TODO: This method is new in Plasmatail. The header mentions it returns a
+	// TODO: This method is new in Haiku. The header mentions it returns a
 	// copy. But how could it even do that? How can one clone a web and make
 	// it point to the same BControllable?
 	*outWeb = fEncoder->ParameterWeb();

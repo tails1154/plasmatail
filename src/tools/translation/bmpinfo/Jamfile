@@ -5,7 +5,7 @@ Application bmpinfo : bmpinfo.cpp : be libbe.so localestub translation [ TargetL
 AddResources bmpinfo : bmpinfo.rdef ;
 
 #DoCatalogs bmpinfo :
-#	x-vnd.Plasmatail-bmpsinfo
+#	x-vnd.Haiku-bmpsinfo
 #	:
 #	bmpinfo.cpp
 #;

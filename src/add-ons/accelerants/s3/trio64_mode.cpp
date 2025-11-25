@@ -1,9 +1,9 @@
 /*
-	Plasmatail S3 Trio64 driver adapted from the X.org S3 driver.
+	Haiku S3 Trio64 driver adapted from the X.org S3 driver.
 
 	Copyright 2001	Ani Joshi <ajoshi@unixbox.com>
 
-	Copyright 2008 Plasmatail, Inc.  All rights reserved.
+	Copyright 2008 Haiku, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:

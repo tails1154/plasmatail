@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2006, Plasmatail Inc. All Rights Reserved.
+ * Copyright 2002-2006, Haiku Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -15,7 +15,7 @@
 #include <string.h>
 
 
-const char* kSignature = "application/x-vnd.Plasmatail.cmd-alert";
+const char* kSignature = "application/x-vnd.Haiku.cmd-alert";
 
 const char* kButtonDefault = "OK";
 

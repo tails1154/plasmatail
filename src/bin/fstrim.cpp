@@ -219,7 +219,7 @@ main(int argc, char** argv)
 			return EXIT_FAILURE;
 		}
 
-		if (!force && YesNoPrompt("Trim support in Plasmatail is experimental and"
+		if (!force && YesNoPrompt("Trim support in Haiku is experimental and"
 				" may result in data loss.\nContinue anyway?") != 1) {
 			fprintf(stderr, "%s: Operation canceled by the user\n",
 				kProgramName);

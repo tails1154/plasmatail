@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2021, Plasmatail. All rights reserved.
+ * Copyright 2002-2021, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -32,7 +32,7 @@
 #define B_TRANSLATION_CONTEXT "Time"
 
 
-const char* kAppSignature = "application/x-vnd.Plasmatail-Time";
+const char* kAppSignature = "application/x-vnd.Haiku-Time";
 
 
 TimeApplication::TimeApplication()
@@ -72,7 +72,7 @@ TimeApplication::AboutRequested()
 		NULL
 	};
 
-	window->AddCopyright(2021, "Plasmatail, Inc.");
+	window->AddCopyright(2021, "Haiku, Inc.");
 	window->AddAuthors(authors);
 
 	window->Show();

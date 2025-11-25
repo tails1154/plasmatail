@@ -60,7 +60,7 @@ main(int argc, char** argv)
 		return result;
 	}
 
-	BApplication app("application/x-vnd.Plasmatail-RTFTranslator");
+	BApplication app("application/x-vnd.Haiku-RTFTranslator");
 
 	status_t result;
 	result = LaunchTranslatorWindow(new RTFTranslator, 

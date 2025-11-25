@@ -6,7 +6,7 @@
 #include <View.h>
 
 
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "RatingUtils.h"
 #include "SharedIcons.h"

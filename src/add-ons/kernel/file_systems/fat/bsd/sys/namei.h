@@ -32,7 +32,7 @@
 #define FAT_NAMEI_H
 
 
-// Modified to support the Plasmatail FAT driver.
+// Modified to support the Haiku FAT driver.
 
 enum nameiop { LOOKUP, CREATE, DELETE, RENAME };
 

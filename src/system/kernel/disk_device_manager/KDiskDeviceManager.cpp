@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2018, Plasmatail, Inc.
+ * Copyright 2004-2018, Haiku, Inc.
  * Copyright 2003-2004, Ingo Weinhold, bonefish@cs.tu-berlin.de.
  * All rights reserved. Distributed under the terms of the MIT License.
  */

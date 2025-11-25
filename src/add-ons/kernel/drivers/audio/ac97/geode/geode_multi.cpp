@@ -1,5 +1,5 @@
 /*
- * Copyright 2009, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2009, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -67,7 +67,7 @@ get_description(geode_controller* controller, multi_description* data)
 	data->interface_minimum = B_CURRENT_INTERFACE_VERSION;
 
 	strcpy(data->friendly_name, "Geode");
-	strcpy(data->vendor_info, "Plasmatail");
+	strcpy(data->vendor_info, "Haiku");
 
 	int32 inChannels = 0;
 	if (controller->record_stream != NULL)
@@ -677,7 +677,7 @@ get_buffers(geode_controller* controller, multi_buffer_list* data)
 	data->return_record_channels = data->request_record_channels;
 	data->return_record_buffer_size = data->request_record_buffer_size;
 
-	/* Workaround for Plasmatail multi_audio API, since it prefers to let the
+	/* Workaround for Haiku multi_audio API, since it prefers to let the
 	   driver pick values, while the BeOS multi_audio actually gives the
 	   user's defaults. */
 	if (data->return_playback_buffers > STREAM_MAX_BUFFERS
@@ -854,7 +854,7 @@ buffer_force_stop(geode_controller* controller)
 status_t
 multi_audio_control(geode_controller* controller, uint32 op, void* arg, size_t len)
 {
-	// TODO: make userland-safe when built for Plasmatail!
+	// TODO: make userland-safe when built for Haiku!
 
 	switch (op) {
 		case B_MULTI_GET_DESCRIPTION:

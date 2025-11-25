@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2009, Plasmatail, Inc. All rights reserved.
+ * Copyright 2003-2009, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -46,7 +46,7 @@ PNGView::PNGView(const BRect &frame, const char *name, uint32 resizeMode,
 	BStringView *versionView =  new BStringView("version", version);
 
 	BStringView *copyrightView =  new BStringView(
-		"Copyright", B_UTF8_COPYRIGHT "2003-2018 Plasmatail Inc.");
+		"Copyright", B_UTF8_COPYRIGHT "2003-2018 Haiku Inc.");
 
 	// setup PNG interlace options
 

@@ -46,7 +46,7 @@ Application Terminal :
 ;
 
 DoCatalogs Terminal :
-	x-vnd.Plasmatail-Terminal
+	x-vnd.Haiku-Terminal
 	:
 	AppearPrefView.cpp
 	Arguments.cpp

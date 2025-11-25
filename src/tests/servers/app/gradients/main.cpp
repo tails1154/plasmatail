@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Plasmatail, Inc.
+ * Copyright 2014 Haiku, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -29,7 +29,7 @@
 #include "harness.h"
 
 
-static const char* kAppSignature = "application/x-vnd.Plasmatail-Gradients";
+static const char* kAppSignature = "application/x-vnd.Haiku-Gradients";
 
 
 // #pragma mark - Test1

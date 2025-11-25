@@ -6,7 +6,7 @@
  * Copyright 2005 Michael Lotz. All rights reserved.
  * Distributed under the MIT License.
  *
- * Copyright 2004-2005, Plasmatail. All rights reserved.
+ * Copyright 2004-2005, Haiku. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Copyright 2002, Travis Geiselbrecht. All rights reserved.

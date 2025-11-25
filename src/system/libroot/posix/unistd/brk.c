@@ -16,7 +16,7 @@
  * can be used to achieve a simple form of memory management.
  *
  * An ELF executable may contain multiple writable segments that make up a
- * program's data segment, each of which may be placed by Plasmatail's \c
+ * program's data segment, each of which may be placed by Haiku's \c
  * runtime_loader in either one or two areas in memory. Additionally, nothing
  * stops a program from adding onto its data segment directly using \c
  * create_area.  For these reasons this implementation avoids making

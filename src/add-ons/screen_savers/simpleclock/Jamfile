@@ -9,7 +9,7 @@ ScreenSaver SimpleClock :
 ;
 
 DoCatalogs SimpleClock :
-	x-vnd.Plasmatail-SimpleClock
+	x-vnd.Haiku-SimpleClock
 	:
 	SimpleClock.cpp
 ;

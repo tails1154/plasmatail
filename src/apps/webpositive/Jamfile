@@ -79,12 +79,12 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 			;
 
 		DoCatalogs WebPositive :
-			x-vnd.Plasmatail-WebPositive
+			x-vnd.Haiku-WebPositive
 			:
 			$(sources)
 			;
 
-		ExtractArchiveToPlasmatailImage home config settings WebPositive
+		ExtractArchiveToHaikuImage home config settings WebPositive
 			: $(SUBDIR)/bookmarks/WebPositiveBookmarks.zip ;
 
 		EnableBuildFeatures webpositive ;

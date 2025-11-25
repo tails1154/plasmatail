@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2009, Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2009, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Updated by Sikosis (beos@gravity24hr.com)
@@ -285,7 +285,7 @@ UpdateInfoMenu(BMenu *menu, TWindow *window)
 // pass in pixelCount to maintain backward compatibility of setting
 // the pixelcount from the command line
 TApp::TApp(int32 pixelCount)
-	: BApplication("application/x-vnd.Plasmatail-Magnify")
+	: BApplication("application/x-vnd.Haiku-Magnify")
 {
 	TWindow* magWindow = new TWindow(pixelCount);
 	magWindow->Show();
@@ -351,7 +351,7 @@ TWindow::~TWindow()
 status_t
 TWindow::GetSupportedSuites(BMessage* msg)
 {
-	msg->AddString("suites", "suite/x-vnd.Plasmatail-Magnify");
+	msg->AddString("suites", "suite/x-vnd.Haiku-Magnify");
 
 	BPropertyInfo propertyInfo(sProperties);
 	msg->AddFlat("messages", &propertyInfo);

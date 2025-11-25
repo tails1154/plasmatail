@@ -49,7 +49,7 @@ namespace {
 
 static const size_t kBufferSize = 1024 * 1024;
 static const char* const kCoreNote = ELF_NOTE_CORE;
-static const char* const kPlasmatailNote = ELF_NOTE_HAIKU;
+static const char* const kHaikuNote = ELF_NOTE_HAIKU;
 
 
 struct Allocator {
@@ -1273,7 +1273,7 @@ private:
 		size_t dataSize = dummyWriter.BytesWritten();
 
 		// write the note header
-		_WriteNoteHeader(kPlasmatailNote, NT_TEAM, dataSize);
+		_WriteNoteHeader(kHaikuNote, NT_TEAM, dataSize);
 
 		// write the note data
 		_WriteTeamNote(fFile);
@@ -1371,7 +1371,7 @@ private:
 		size_t dataSize = dummyWriter.BytesWritten();
 
 		// write the note header
-		_WriteNoteHeader(kPlasmatailNote, NT_AREAS, dataSize);
+		_WriteNoteHeader(kHaikuNote, NT_AREAS, dataSize);
 
 		// write the note data
 		_WriteAreasNote(fFile);
@@ -1427,7 +1427,7 @@ private:
 		size_t dataSize = dummyWriter.BytesWritten();
 
 		// write the note header
-		_WriteNoteHeader(kPlasmatailNote, NT_IMAGES, dataSize);
+		_WriteNoteHeader(kHaikuNote, NT_IMAGES, dataSize);
 
 		// write the note data
 		_WriteImagesNote(fFile);
@@ -1479,7 +1479,7 @@ private:
 		size_t dataSize = dummyWriter.BytesWritten();
 
 		// write the note header
-		_WriteNoteHeader(kPlasmatailNote, NT_SYMBOLS, dataSize);
+		_WriteNoteHeader(kHaikuNote, NT_SYMBOLS, dataSize);
 
 		// write the note data
 		_WriteImageSymbolsNote(imageInfo, fFile);
@@ -1528,7 +1528,7 @@ private:
 		size_t dataSize = dummyWriter.BytesWritten();
 
 		// write the note header
-		_WriteNoteHeader(kPlasmatailNote, NT_THREADS, dataSize);
+		_WriteNoteHeader(kHaikuNote, NT_THREADS, dataSize);
 
 		// write the note data
 		_WriteThreadsNote(fFile);

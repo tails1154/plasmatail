@@ -54,7 +54,7 @@ StdBinCommands
 	: : $(haiku-utils_rsrc) ;
 
 # Commands which don't need another library that depend on
-# Plasmatail-specific code
+# Haiku-specific code
 StdBinCommands
 	boot_process_done.cpp
 	fdinfo.cpp
@@ -105,7 +105,7 @@ StdBinCommands
 	: be : $(haiku-utils_rsrc) ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : setdecor
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : setdecor
 		: tests!apps ;
 }
 
@@ -149,7 +149,7 @@ StdBinCommands
 	dstcheck.cpp
 	: be [ TargetLibsupc++ ] localestub : $(haiku-utils_rsrc) ;
 
-# Plasmatail-specific apps which need libbe.so
+# Haiku-specific apps which need libbe.so
 StdBinCommands
 	isvolume.cpp
 	shutdown.cpp
@@ -162,7 +162,7 @@ StdBinCommands
 	xres.cpp
 	: be [ TargetLibstdc++ ] : $(haiku-utils_rsrc) ;
 
-# Plasmatail-specific apps which need libbe.so, libstdc++.so
+# Haiku-specific apps which need libbe.so, libstdc++.so
 StdBinCommands
 	mountvolume.cpp
 	: be [ TargetLibstdc++ ] : $(haiku-utils_rsrc) ;
@@ -236,7 +236,7 @@ StdBinCommands
 
 # Localization of some applications
 DoCatalogs dstcheck
-	: x-vnd.Plasmatail-cmd-dstconfig
+	: x-vnd.Haiku-cmd-dstconfig
 	: dstcheck.cpp
 ;
 

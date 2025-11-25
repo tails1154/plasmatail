@@ -2,7 +2,7 @@
  * bluetooth_server.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-bluetooth_server";
+resource app_signature "application/x-vnd.Haiku-bluetooth_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "bluetooth_server",
-	long_info = "bluetooth_server ©2007-2009 Plasmatail"
+	long_info = "bluetooth_server ©2007-2009 Haiku"
 };
 
 resource vector_icon array {

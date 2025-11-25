@@ -8,7 +8,7 @@
 #include <String.h>
 
 #include "BitmapHolder.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 
 
 class PackageIconRepository : public BReferenceable {

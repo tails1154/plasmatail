@@ -1,5 +1,5 @@
 /*
- * Copyright 2019, Plasmatail, Inc.
+ * Copyright 2019, Haiku, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Author:
@@ -21,7 +21,7 @@
 #undef B_TRANSLATION_CONTEXT
 #define B_TRANSLATION_CONTEXT "InputApplication"
 
-const char* kSignature = "application/x-vnd.Plasmatail-Input";
+const char* kSignature = "application/x-vnd.Haiku-Input";
 
 
 InputApplication::InputApplication()

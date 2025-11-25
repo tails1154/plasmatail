@@ -1,8 +1,8 @@
 SubDir HAIKU_TOP src data ;
 
-PlasmatailSubInclude bin ;
-PlasmatailSubInclude deskbar ;
-PlasmatailSubInclude keyboard_layouts ;
-PlasmatailSubInclude keymaps ;
-PlasmatailSubInclude mime_db ;
-PlasmatailSubInclude settings ;
+HaikuSubInclude bin ;
+HaikuSubInclude deskbar ;
+HaikuSubInclude keyboard_layouts ;
+HaikuSubInclude keymaps ;
+HaikuSubInclude mime_db ;
+HaikuSubInclude settings ;

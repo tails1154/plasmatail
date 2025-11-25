@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2019, Plasmatail.
+ * Copyright 2001-2019, Haiku.
  * Copyright (c) 2003-2004 Kian Duffy <myob@users.sourceforge.net>
  * Parts Copyright (C) 1998,99 Kazuho Okui and Takashi Murai.
  *
@@ -301,8 +301,8 @@ TermApp::_ChildCleanupThread()
 void
 TermApp::_Usage(char *name)
 {
-	fprintf(stderr, B_TRANSLATE("Plasmatail Terminal\n"
-		"Copyright 2001-2019 Plasmatail, Inc.\n"
+	fprintf(stderr, B_TRANSLATE("Haiku Terminal\n"
+		"Copyright 2001-2019 Haiku, Inc.\n"
 		"Copyright(C) 1999 Kazuho Okui and Takashi Murai.\n"
 		"\n"
 		"Usage: %s [OPTION] [SHELL]\n"), name);

@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Plasmatail, Inc.
+ * Copyright 2025, Haiku, Inc.
  * Authors:
  *     Pawan Yerramilli <me@pawanyerramilli.com>
  * All rights reserved. Distributed under the terms of the MIT license.

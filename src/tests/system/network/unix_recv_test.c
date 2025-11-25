@@ -32,7 +32,7 @@ int main() {
 	while(true) {
 		printf("recv %i\n", ok);
 		ret = recv(fds[0], &buf[0], bufLen, MSG_DONTWAIT);
-		// expected: EWOULDBLOCK/EAGAIN (on Linux, macOS, Plasmatail)
+		// expected: EWOULDBLOCK/EAGAIN (on Linux, macOS, Haiku)
 		printf("%i\n", ret);
 		if(ret < 0) {
 			perror("recv");

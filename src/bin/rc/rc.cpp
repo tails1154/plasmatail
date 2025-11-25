@@ -31,7 +31,7 @@
 
 extern const char *__progname;
 
-static const char *kTitle = "Plasmatail Resource Compiler 1.1";
+static const char *kTitle = "Haiku Resource Compiler 1.1";
 static const char *kProgramName = __progname;
 
 

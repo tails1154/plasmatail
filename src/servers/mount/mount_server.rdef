@@ -2,7 +2,7 @@
  * mount_server.rdef
  */
 
-resource app_signature "application/x-vnd.Plasmatail-mount_server";
+resource app_signature "application/x-vnd.Haiku-mount_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -15,7 +15,7 @@ resource app_version {
 	internal = 0,
 
 	short_info = "mount_server",
-	long_info = "mount_server ©2009 Plasmatail"
+	long_info = "mount_server ©2009 Haiku"
 };
 
 resource vector_icon array {

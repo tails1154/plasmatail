@@ -52,7 +52,7 @@ int main(int argc, char **argv)
 		H2B32(DL_V3),
 		H2B32(0),
 		H2B32(0),
-		"PlasmatailBoot",//"NextBoot",
+		"HaikuBoot",//"NextBoot",
 		H2B32(0),
 		// dl_tag, we use 'HAIK'
 		H2B32(0x4841494b), // H2B32(0xa991637a),

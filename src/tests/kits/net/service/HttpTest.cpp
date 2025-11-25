@@ -1,6 +1,6 @@
 /*
  * Copyright 2010, Christophe Huriaux
- * Copyright 2014-2020, Plasmatail, inc.
+ * Copyright 2014-2020, Haiku, inc.
  * Distributed under the terms of the MIT licence
  */
 
@@ -221,7 +221,7 @@ HttpTest::HeadTest()
 	expectedResponseHeaders["Content-Length"] = "144";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 
 	TestListener listener(expectedResponseBody, expectedResponseHeaders);
 
@@ -266,7 +266,7 @@ HttpTest::NoContentTest()
 	std::string expectedResponseBody("");
 	HttpHeaderMap expectedResponseHeaders;
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 
 	TestListener listener(expectedResponseBody, expectedResponseHeaders);
 
@@ -323,14 +323,14 @@ HttpTest::ProxyTest()
 		"Accept: */*\r\n"
 		"Accept-Encoding: gzip\r\n"
 		"Connection: close\r\n"
-		"User-Agent: Services Kit (Plasmatail)\r\n"
+		"User-Agent: Services Kit (Haiku)\r\n"
 		"X-Forwarded-For: 127.0.0.1:PORT\r\n");
 	HttpHeaderMap expectedResponseHeaders;
 	expectedResponseHeaders["Content-Encoding"] = "gzip";
 	expectedResponseHeaders["Content-Length"] = "169";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 
 	TestListener listener(expectedResponseBody, expectedResponseHeaders);
 
@@ -396,7 +396,7 @@ HttpTest::UploadTest()
 		"Accept: */*\r\n"
 		"Accept-Encoding: gzip\r\n"
 		"Connection: close\r\n"
-		"User-Agent: Services Kit (Plasmatail)\r\n"
+		"User-Agent: Services Kit (Haiku)\r\n"
 		"Content-Type: multipart/form-data; boundary=<<BOUNDARY-ID>>\r\n"
 		"Content-Length: 1404\r\n"
 		"\r\n"
@@ -420,7 +420,7 @@ HttpTest::UploadTest()
 	expectedResponseHeaders["Content-Length"] = "913";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 	TestListener listener(expectedResponseBody, expectedResponseHeaders);
 
 	BUrl testUrl(fTestServer.BaseUrl(), "/post");
@@ -474,7 +474,7 @@ HttpTest::AuthBasicTest()
 		"Accept: */*\r\n"
 		"Accept-Encoding: gzip\r\n"
 		"Connection: close\r\n"
-		"User-Agent: Services Kit (Plasmatail)\r\n"
+		"User-Agent: Services Kit (Haiku)\r\n"
 		"Referer: SCHEME://127.0.0.1:PORT/auth/basic/walter/secret\r\n"
 		"Authorization: Basic d2FsdGVyOnNlY3JldA==\r\n");
 
@@ -483,7 +483,7 @@ HttpTest::AuthBasicTest()
 	expectedResponseHeaders["Content-Length"] = "212";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 	expectedResponseHeaders["Www-Authenticate"] = "Basic realm=\"Fake Realm\"";
 
 	SendAuthenticatedRequest(context, testUrl, expectedResponseBody,
@@ -510,7 +510,7 @@ HttpTest::AuthDigestTest()
 		"Accept: */*\r\n"
 		"Accept-Encoding: gzip\r\n"
 		"Connection: close\r\n"
-		"User-Agent: Services Kit (Plasmatail)\r\n"
+		"User-Agent: Services Kit (Haiku)\r\n"
 		"Referer: SCHEME://127.0.0.1:PORT/auth/digest/walter/secret\r\n"
 		"Authorization: Digest username=\"walter\","
 		" realm=\"user@shredder\","
@@ -529,7 +529,7 @@ HttpTest::AuthDigestTest()
 	expectedResponseHeaders["Content-Length"] = "403";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 	expectedResponseHeaders["Set-Cookie"] = "fake=fake_value; Path=/";
 	expectedResponseHeaders["Www-Authenticate"]
 		= "Digest realm=\"user@shredder\", "
@@ -613,13 +613,13 @@ HttpTest::_GetTest(const BString& path)
 		"Accept: */*\r\n"
 		"Accept-Encoding: gzip\r\n"
 		"Connection: close\r\n"
-		"User-Agent: Services Kit (Plasmatail)\r\n");
+		"User-Agent: Services Kit (Haiku)\r\n");
 	HttpHeaderMap expectedResponseHeaders;
 	expectedResponseHeaders["Content-Encoding"] = "gzip";
 	expectedResponseHeaders["Content-Length"] = "144";
 	expectedResponseHeaders["Content-Type"] = "text/plain";
 	expectedResponseHeaders["Date"] = "Sun, 09 Feb 2020 19:32:42 GMT";
-	expectedResponseHeaders["Server"] = "Test HTTP Server for Plasmatail";
+	expectedResponseHeaders["Server"] = "Test HTTP Server for Haiku";
 
 	TestListener listener(expectedResponseBody, expectedResponseHeaders);
 

@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Plasmatail-Transformation";
+resource app_signature "application/x-vnd.Haiku-Transformation";
 
 resource app_flags B_SINGLE_LAUNCH;
 
@@ -12,7 +12,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "Transformation",
-	long_info = "Transformation ©2014 Plasmatail"
+	long_info = "Transformation ©2014 Haiku"
 };
 
 resource(555, "Lampions") archive BBitmap {

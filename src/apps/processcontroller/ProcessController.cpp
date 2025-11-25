@@ -1,6 +1,6 @@
 /*
  * Copyright 2000, Georges-Edouard Berenger. All rights reserved.
- * Copyright 2006-2018, Plasmatail, Inc. All rights reserved.
+ * Copyright 2006-2018, Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 
@@ -57,7 +57,7 @@ const char* kIdleColorPref = "deskbar_idle_color";
 const char* kActiveColorPref = "deskbar_active_color";
 
 static const char* const kDebuggerSignature
-	= "application/x-vnd.Plasmatail-Debugger";
+	= "application/x-vnd.Haiku-Debugger";
 
 const rgb_color kKernelBlue = {20, 20, 231,	255};
 const rgb_color kIdleGreen = {110, 190,110,	255};
@@ -504,7 +504,7 @@ ProcessController::AboutRequested()
 		NULL
 	};
 
-	window->AddCopyright(2007, "Plasmatail, Inc.", extraCopyrights);
+	window->AddCopyright(2007, "Haiku, Inc.", extraCopyrights);
 	window->AddAuthors(authors);
 
 	window->Show();

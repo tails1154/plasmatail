@@ -1,6 +1,6 @@
 /* 
  * Copyright 2005, Ingo Weinhold <bonefish@cs.tu-berlin.de>. All rights
- * reserved. Distributed under the terms of the Plasmatail License.
+ * reserved. Distributed under the terms of the Haiku License.
  */
 
 #include "setjmp_internal.h"

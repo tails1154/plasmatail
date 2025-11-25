@@ -4,7 +4,7 @@
 
 ### ustasche
 
-The file `ustasche.py` was copied from [here](https://gitlab.com/ergoithz/ustache/-/raw/b78a72c9a194e467a9d4301e35c0b7c073ada909/ustache.py?inline=false) 2023-11-20 (`b78a72c9`) from the  [ustache](https://gitlab.com/ergoithz/ustache) project. This is a single-file simple templating system for Python which is used to generate code for C++ models used in the parsing of data from PlasmatailDepotServer. 
+The file `ustasche.py` was copied from [here](https://gitlab.com/ergoithz/ustache/-/raw/b78a72c9a194e467a9d4301e35c0b7c073ada909/ustache.py?inline=false) 2023-11-20 (`b78a72c9`) from the  [ustache](https://gitlab.com/ergoithz/ustache) project. This is a single-file simple templating system for Python which is used to generate code for C++ models used in the parsing of data from HaikuDepotServer. 
 
 The code is under MIT license;
 

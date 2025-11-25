@@ -61,7 +61,7 @@ int main (int argc, char *argv[])
 		return -1;
     }
 
-	new BApplication("application/x-vnd-Plasmatail-print_transport_tester");
+	new BApplication("application/x-vnd-Haiku-print_transport_tester");
 
 	image_id addon = -1;
 	char *transport = argv[0];

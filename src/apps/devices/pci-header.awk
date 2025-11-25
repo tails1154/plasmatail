@@ -1,6 +1,6 @@
 # PCI Header script
 #
-# Copyright 2006, Plasmatail.
+# Copyright 2006, Haiku.
 # Distributed under the terms of the MIT License.
 #
 # Authors:

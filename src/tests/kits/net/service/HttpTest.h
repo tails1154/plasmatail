@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2020 Plasmatail, inc.
+ * Copyright 2014-2020 Haiku, inc.
  * Distributed under the terms of the MIT License.
  */
 #ifndef HTTP_TEST_H

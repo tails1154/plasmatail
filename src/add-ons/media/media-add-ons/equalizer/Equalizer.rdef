@@ -11,5 +11,5 @@ resource app_version {
 	variety = 0,
 	internal = 0,
 	short_info = "0.0.2",
-	long_info = "Plasmatail 10 Band Equalizer media add-on."
+	long_info = "Haiku 10 Band Equalizer media add-on."
 };

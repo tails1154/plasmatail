@@ -18,6 +18,6 @@ KernelAddon ppp_manager :
 LinkAgainst ppp_manager : libkernelppp.a ;
 
 # Installation
-PlasmatailInstall install-ppp
+HaikuInstall install-ppp
 	: /boot/home/config/non-packaged/add-ons/kernel/network/ppp
 	: ppp_manager ;

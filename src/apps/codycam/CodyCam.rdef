@@ -23,9 +23,9 @@ resource vector_icon array {
 	$"03023FF03D3D7A6FBD81013FE8DA495AD5C9C96A"
 };
 
-resource app_signature "application/x-vnd.Plasmatail-CodyCam";
+resource app_signature "application/x-vnd.Haiku-CodyCam";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-CodyCam:System name:CodyCam";
+resource app_name_catalog_entry "x-vnd.Haiku-CodyCam:System name:CodyCam";
 
 resource app_version {
 	major  = 1,
@@ -36,7 +36,7 @@ resource app_version {
 	internal = 1,
 
 	short_info = "1.0d1",
-	long_info = "©1991-1999 Be, Inc., ©2003-2019 Plasmatail, Inc."
+	long_info = "©1991-1999 Be, Inc., ©2003-2019 Haiku, Inc."
 };
 
 resource app_flags B_SINGLE_LAUNCH;

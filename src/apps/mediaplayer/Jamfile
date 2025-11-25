@@ -124,7 +124,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 		;
 
 		DoCatalogs MediaPlayer :
-			x-vnd.Plasmatail-MediaPlayer
+			x-vnd.Haiku-MediaPlayer
 			:
 			CopyPLItemsCommand.cpp
 			ImportPLItemsCommand.cpp

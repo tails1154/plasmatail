@@ -15,7 +15,7 @@ Addon <userland>ppp :
 ;
 
 # Installation -- in the test directory for the time being
-PlasmatailInstall install-userland-networking 
+HaikuInstall install-userland-networking 
 	: [ FDirName $(HAIKU_TEST_DIR) kits net userland add-ons obos_network interfaces ]
 	: <userland>ppp
 	: installed-userland-networking

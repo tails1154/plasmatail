@@ -35,7 +35,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs ICNSTranslator :
-	x-vnd.Plasmatail-ICNSTranslator
+	x-vnd.Haiku-ICNSTranslator
 	:
 	ConfigView.cpp
 	ICNSTranslator.h

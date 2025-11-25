@@ -37,7 +37,7 @@ struct AttributeName {
 			strlcpy(name, haikuName, sizeof(name));
 			this->type = type;
 		} else {
-			// a Plasmatail attribute -- map the name
+			// a Haiku attribute -- map the name
 
 			// create a type string -- if the four bytes of the type are
 			// printable, just use them as the type string, otherwise convert
@@ -64,7 +64,7 @@ struct AttributeName {
 	void Init(const char* xattrName)
 	{
 		if (strncmp(xattrName, kXattrNamespace, kXattrNamespaceLength) == 0) {
-			// a Plasmatail attribute -- extract the actual name and type
+			// a Haiku attribute -- extract the actual name and type
 			xattrName += kXattrNamespaceLength;
 
 			if (_DecodeNameAndType(xattrName))

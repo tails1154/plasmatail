@@ -1,9 +1,9 @@
 /*
-	Plasmatail S3 Virge driver adapted from the X.org Virge driver.
+	Haiku S3 Virge driver adapted from the X.org Virge driver.
 
 	Copyright (C) 1994-1999 The XFree86 Project, Inc.  All Rights Reserved.
 
-	Copyright 2007-2008 Plasmatail, Inc.  All rights reserved.
+	Copyright 2007-2008 Haiku, Inc.  All rights reserved.
 	Distributed under the terms of the MIT license.
 
 	Authors:

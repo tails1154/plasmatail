@@ -18,7 +18,7 @@ if ! $(TARGET_PLATFORM_HAIKU_COMPATIBLE) {
 }
 
 DoCatalogs VirtualMemory :
-    x-vnd.Plasmatail-VirtualMemory
+    x-vnd.Haiku-VirtualMemory
     :
     VirtualMemory.cpp
     SettingsWindow.cpp

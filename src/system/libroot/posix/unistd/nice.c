@@ -17,7 +17,7 @@
 
 /* setpriority() is used for the implementation as they share the same
  * restrictions as defined in POSIX.1-2008. However, some restrictions might not
- * be implemented by Plasmatail's setpriority(). */
+ * be implemented by Haiku's setpriority(). */
 int
 nice(int incr)
 {

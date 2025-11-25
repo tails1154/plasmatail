@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	BApplication app("application/x-vnd.Plasmatail-media_client");
+	BApplication app("application/x-vnd.Haiku-media_client");
 
 	int ret = 0;
 	if (strcmp(argv[1], "play") == 0) {

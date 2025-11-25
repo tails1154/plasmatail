@@ -2,7 +2,7 @@
  *
  * TODO: description
  *
- * This file is a part of USB SCSI CAM for Plasmatail.
+ * This file is a part of USB SCSI CAM for Haiku.
  * May be used under terms of the MIT License
  *
  * Author(s):
@@ -18,7 +18,7 @@
 
 #include "fake_device.h"
 
-/* duplication! Hope this fake file will be not required in Plasmatail version*/
+/* duplication! Hope this fake file will be not required in Haiku version*/
 #define INQ_VENDOR_LEN		0x08
 #define INQ_PRODUCT_LEN		0x10
 #define INQ_REVISION_LEN	0x04

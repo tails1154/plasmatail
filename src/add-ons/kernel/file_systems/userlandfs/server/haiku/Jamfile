@@ -20,7 +20,7 @@ DEFINES += USER=1 ;
 DEFINES += DEBUG_APP="\\\"libuserlandfs_haiku\\\"" ;
 DEFINES += BUILDING_USERLAND_FS_SERVER=1 ;
 
-# the library providing the Plasmatail kernel interface for add-ons
+# the library providing the Haiku kernel interface for add-ons
 SharedLibrary libuserlandfs_haiku_kernel.so
 	:
 	# kernelland_emu
@@ -48,9 +48,9 @@ SharedLibrary libuserlandfs_haiku_kernel.so
 	haiku_kernel_emu.cpp
 
 	# UserlandFS server interface
-	PlasmatailKernelFileSystem.cpp
-	PlasmatailKernelNode.cpp
-	PlasmatailKernelVolume.cpp
+	HaikuKernelFileSystem.cpp
+	HaikuKernelNode.cpp
+	HaikuKernelVolume.cpp
 	:
 	<nogrist>userlandfs_server
 	be	# for BLocker only

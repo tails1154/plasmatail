@@ -576,7 +576,7 @@ LocalDevice::LocalDevice(hci_id hid)
 	_ReadLinkKeys();
 
 	// Uncomment this if you want your device to have a nicer default name
-	// BString name("PlasmatailBluetooth");
+	// BString name("HaikuBluetooth");
 	// SetFriendlyName(name);
 
 

@@ -30,7 +30,7 @@
 #undef B_TRANSLATION_CONTEXT
 #define B_TRANSLATION_CONTEXT "Login App"
 
-const char *kLoginAppSig = "application/x-vnd.Plasmatail-Login";
+const char *kLoginAppSig = "application/x-vnd.Haiku-Login";
 
 
 LoginApp::LoginApp()
@@ -129,7 +129,7 @@ LoginApp::ArgvReceived(int32 argc, char **argv)
 		else if (arg == "--nonmodal")
 			fModalMode = false;
 		else /*if (arg == "--help")*/ {
-			puts(B_TRANSLATE("Login application for Plasmatail\nUsage:"));
+			puts(B_TRANSLATE("Login application for Haiku\nUsage:"));
 			printf("%s [--nonmodal] [--edit]\n", argv[0]);
 			puts(B_TRANSLATE("--nonmodal	Do not make the window modal"));
 			puts(B_TRANSLATE("--edit	Launch in shelf editing mode to "

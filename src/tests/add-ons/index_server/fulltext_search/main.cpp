@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2010 Plasmatail, Inc.
+ * Copyright 2009-2010 Haiku, Inc.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -13,7 +13,7 @@
 
 int main()
 {
-	BApplication app("application/x-vnd.Plasmatail-FullTextSearch");
+	BApplication app("application/x-vnd.Haiku-FullTextSearch");
 
 	SearchWindow* window = new SearchWindow(BRect(50, 50, 500, 250));
 	window->Show();

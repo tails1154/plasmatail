@@ -106,7 +106,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs libmedia.so
-	: x-vnd.Plasmatail-libmedia
+	: x-vnd.Haiku-libmedia
 	:
 	MediaDefs.cpp
 	;

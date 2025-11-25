@@ -1,6 +1,6 @@
 /*
  * Copyright 2009 Colin Günther, coling@gmx.de
- * Copyright 2018, Plasmatail, Inc.
+ * Copyright 2018, Haiku, Inc.
  * All rights reserved. Distributed under the terms of the MIT license.
  */
 

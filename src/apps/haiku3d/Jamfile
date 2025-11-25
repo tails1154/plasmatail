@@ -35,11 +35,11 @@ Includes [ FGristFiles $(sources) ] :
 	[ BuildFeatureAttribute mesa : headers ]
 	;
 
-Application Plasmatail3d :
+Application Haiku3d :
 	$(sources)
 	:
 	be game media translation [ TargetLibstdc++ ]
 	[ BuildFeatureAttribute glu : library ]
 	[ BuildFeatureAttribute mesa : library ]
-	: Plasmatail3d.rdef
+	: Haiku3d.rdef
 ;

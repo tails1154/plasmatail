@@ -21,7 +21,7 @@
 #include <UrlProtocolRoster.h>
 
 #include "DataIOUtils.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "JwtTokenHelper.h"
 #include "Logger.h"
 #include "PackageUtils.h"

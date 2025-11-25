@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2016, Plasmatail Inc. All Rights Reserved.
+ * Copyright 2010-2016, Haiku Inc. All Rights Reserved.
  * Copyright 2010 Clemens Zeidler. All rights reserved.
  *
  * Distributed under the terms of the MIT License.

@@ -12,7 +12,7 @@ Application DesktopWindow :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DesktopWindow
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : DesktopWindow
 		: tests!apps ;
 }
 

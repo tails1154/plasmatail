@@ -1,7 +1,7 @@
 
-resource app_signature "application/x-vnd.Plasmatail-DebugNowScreensaver";
+resource app_signature "application/x-vnd.Haiku-DebugNowScreensaver";
 
-resource app_name_catalog_entry "x-vnd.Plasmatail-DebugNowScreensaver:System name:DebugNow";
+resource app_name_catalog_entry "x-vnd.Haiku-DebugNowScreensaver:System name:DebugNow";
 
 resource app_version {
 	major  = 1,

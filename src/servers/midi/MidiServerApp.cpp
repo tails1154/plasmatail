@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2015, Plasmatail, Inc. All rights reserved.
+ * Copyright 2002-2015, Haiku, Inc. All rights reserved.
  * Copyright 2002-2004, Matthijs Hollemans
  * Copyright 2021, Panagiotis "Ivory" Vasilopoulos <git@n0toose.net>
  * Distributed under the terms of the MIT License.
@@ -39,7 +39,7 @@ MidiServerApp::MidiServerApp(status_t& error)
 	:
 	BServer(MIDI_SERVER_SIGNATURE, true, &error)
 {
-	TRACE(("Running Plasmatail MIDI server"))
+	TRACE(("Running Haiku MIDI server"))
 
 	fNextID = 1;
 	fDeviceWatcher = new(std::nothrow) DeviceWatcher();
@@ -67,7 +67,7 @@ void
 MidiServerApp::AboutRequested()
 {
 	BAboutWindow* window = new BAboutWindow(B_TRANSLATE_SYSTEM_NAME(
-		"Plasmatail MIDI Server"), MIDI_SERVER_SIGNATURE);
+		"Haiku MIDI Server"), MIDI_SERVER_SIGNATURE);
 	window->AddDescription(B_TRANSLATE(
 		"Notes disguised as bytes\n"
 		"propagating to endpoints-\n"
@@ -88,7 +88,7 @@ MidiServerApp::AboutRequested()
 		NULL
 	};
 
-	window->AddCopyright(2021, "Plasmatail, Inc.", extraCopyrights);
+	window->AddCopyright(2021, "Haiku, Inc.", extraCopyrights);
 	window->AddAuthors(authors);
 
 	window->Show();

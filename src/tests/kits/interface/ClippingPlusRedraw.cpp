@@ -38,7 +38,7 @@ private:
 
 
 ClippingApp::ClippingApp()
-	:	BApplication("application/x.vnd-Plasmatail.ClippingPlusRedraw")
+	:	BApplication("application/x.vnd-Haiku.ClippingPlusRedraw")
 {
 	fWindow = new ClippingWindow(BRect(200, 200, 500, 400));
 	fWindow->Show();

@@ -1,7 +1,7 @@
 /*
  * Copyright 2008 Ralf Schülke, ralf.schuelke@googlemail.com.
  * Copyright 2010 Adam Smith <adamd.smith@utoronto.ca>
- * Copyright 2014 Plasmatail, Inc. All rights reserved.
+ * Copyright 2014 Haiku, Inc. All rights reserved.
  *
  * Distributed under the terms of the MIT License.
  *
@@ -298,7 +298,7 @@ PairsWindow::MessageReceived(BMessage* message)
 			if (fFinishPairs == pairsButtonList->CountItems() / 2) {
 				BString strAbout = B_TRANSLATE("%app%\n"
 					"\twritten by Ralf Schülke\n"
-					"\tCopyright 2008-2010, Plasmatail Inc.\n"
+					"\tCopyright 2008-2010, Haiku Inc.\n"
 					"\n");
 
 				strAbout.ReplaceFirst("%app%",

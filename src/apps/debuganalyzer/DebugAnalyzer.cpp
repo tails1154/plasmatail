@@ -19,7 +19,7 @@
 #include "main_window/MainWindow.h"
 
 
-static const char* const kSignature = "application/x-vnd.Plasmatail-DebugAnalyzer";
+static const char* const kSignature = "application/x-vnd.Haiku-DebugAnalyzer";
 
 
 class DebugAnalyzer : public BApplication {

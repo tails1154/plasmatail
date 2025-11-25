@@ -1667,7 +1667,7 @@ _user_set_clock(clockid_t clockID, bigtime_t time)
 		}
 
 		case CLOCK_PROCESS_USER_CPUTIME_ID:
-			// not supported -- this clock is an Plasmatail-internal extension
+			// not supported -- this clock is an Haiku-internal extension
 			return B_BAD_VALUE;
 
 		case CLOCK_PROCESS_CPUTIME_ID:

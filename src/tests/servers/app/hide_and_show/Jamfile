@@ -11,7 +11,7 @@ Application HideAndShow :
 ;
 
 if $(TARGET_PLATFORM) = libbe_test {
-	PlasmatailInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ViewState
+	HaikuInstall install-test-apps : $(HAIKU_APP_TEST_DIR) : ViewState
 		: tests!apps ;
 }
 

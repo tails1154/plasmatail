@@ -1,6 +1,6 @@
 # USB Header script
 #
-# Copyright 2006-2012, Plasmatail.
+# Copyright 2006-2012, Haiku.
 # Distributed under the terms of the MIT License.
 #
 # Authors:

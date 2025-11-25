@@ -27,7 +27,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs GIFTranslator :
-	x-vnd.Plasmatail-GIFTranslator
+	x-vnd.Haiku-GIFTranslator
 	:
 	GIFTranslator.cpp
 	GIFView.cpp

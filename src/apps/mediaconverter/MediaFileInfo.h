@@ -1,5 +1,5 @@
 /*
-	Copyright 2010, Plasmatail, Inc. All Rights Reserved.
+	Copyright 2010, Haiku, Inc. All Rights Reserved.
 	This file may be used under the terms of the MIT License.
 */
 #ifndef MEDIA_FILE_INFO_H

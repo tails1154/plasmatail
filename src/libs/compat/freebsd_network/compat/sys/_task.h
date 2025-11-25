@@ -58,6 +58,6 @@ struct task {
 #define	TASK_NOENQUEUE		(1<<1)
 #define TASK_SKIP_WAKEUP	(1<<2)
 
-#define TASK_NEEDSGIANT		(1<<3) /* Plasmatail extension, OpenBSD compatibility */
+#define TASK_NEEDSGIANT		(1<<3) /* Haiku extension, OpenBSD compatibility */
 
 #endif /* !_SYS__TASK_H_ */

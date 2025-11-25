@@ -1,5 +1,5 @@
 
-resource app_signature "application/x-vnd.Plasmatail-midi_server";
+resource app_signature "application/x-vnd.Haiku-midi_server";
 
 resource app_flags B_EXCLUSIVE_LAUNCH | B_BACKGROUND_APP;
 
@@ -10,7 +10,7 @@ resource app_version {
 	variety    = B_APPV_ALPHA,
 	internal   = 0,
 	short_info = "midi_server",
-	long_info  = "midi_server ©2002-2009 Plasmatail"
+	long_info  = "midi_server ©2002-2009 Haiku"
 };
 
 resource vector_icon array {

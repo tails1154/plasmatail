@@ -11,7 +11,7 @@ Application <preference>Tracker
 
 DoCatalogs <preference>Tracker
 	:
-	x-vnd.Plasmatail-TrackerPreferences
+	x-vnd.Haiku-TrackerPreferences
 	:
 	TrackerPreferences.cpp
 ;

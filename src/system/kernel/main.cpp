@@ -135,7 +135,7 @@ _start(kernel_args *bootKernelArgs, int currentCPU)
 		debug_init(&sKernelArgs);
 		set_dprintf_enabled(true);
 		dprintf("Welcome to kernel debugger output!\n");
-		dprintf("Plasmatail revision: %s, debug level: %d\n", get_haiku_revision(),
+		dprintf("Haiku revision: %s, debug level: %d\n", get_haiku_revision(),
 			KDEBUG_LEVEL);
 
 		// init modules

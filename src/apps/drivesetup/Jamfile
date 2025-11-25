@@ -22,7 +22,7 @@ Application DriveSetup :
 ;
 
 DoCatalogs DriveSetup :
-	x-vnd.Plasmatail-DriveSetup
+	x-vnd.Haiku-DriveSetup
 	:
 	AbstractParametersPanel.cpp
 	ChangeParametersPanel.cpp

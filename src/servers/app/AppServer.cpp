@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2016, Plasmatail, Inc.
+ * Copyright 2001-2016, Haiku, Inc.
  * Distributed under the terms of the MIT license.
  *
  * Authors:
@@ -50,7 +50,7 @@ uint32 gAppServerSIMDFlags = 0;
 */
 AppServer::AppServer(status_t* status)
 	:
-	SERVER_BASE("application/x-vnd.Plasmatail-app_server", "picasso", -1, false,
+	SERVER_BASE("application/x-vnd.Haiku-app_server", "picasso", -1, false,
 		status),
 	fDesktopLock("AppServerDesktopLock")
 {

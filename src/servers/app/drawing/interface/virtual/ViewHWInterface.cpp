@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2009, Plasmatail.
+ * Copyright 2001-2009, Haiku.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -314,7 +314,7 @@ CardMessageFilter::Filter(BMessage* message, BHandler** target)
 
 CardWindow::CardWindow(BRect frame)
 	:
-	BWindow(frame, "Plasmatail App Server", B_TITLED_WINDOW,
+	BWindow(frame, "Haiku App Server", B_TITLED_WINDOW,
 		B_NOT_ZOOMABLE | B_NOT_RESIZABLE | B_NO_SERVER_SIDE_WINDOW_MODIFIERS),
 	fUpdateRegion(),
 	fUpdateLock("update lock")
@@ -487,7 +487,7 @@ ViewHWInterface::SetMode(const display_mode& mode)
 
 		if (be_app == NULL) {
 			BApplication* app = new BApplication(
-				"application/x-vnd.Plasmatail-test-app_server");
+				"application/x-vnd.Haiku-test-app_server");
 			app->Unlock();
 
 			thread_id appThread = spawn_thread(run_app_thread, "app thread",
@@ -596,8 +596,8 @@ ViewHWInterface::GetDeviceInfo(accelerant_device_info* info)
 	// a software-only driver, but we'll have some fun, anyway.
 	if (ReadLock()) {
 		info->version = 100;
-		sprintf(info->name, "Plasmatail, Inc. ViewHWInterface");
-		sprintf(info->chipset, "Plasmatail, Inc. Chipset");
+		sprintf(info->name, "Haiku, Inc. ViewHWInterface");
+		sprintf(info->chipset, "Haiku, Inc. Chipset");
 		sprintf(info->serial_no, "3.14159265358979323846");
 		info->memory = 134217728;	// 128 MB, not that we really have that much. :)
 		info->dac_speed = 0xFFFFFFFF;	// *heh*

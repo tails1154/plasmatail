@@ -16,7 +16,7 @@ Application NetworkStatus :
 ;
 
 DoCatalogs NetworkStatus :
-	x-vnd.Plasmatail-NetworkStatus
+	x-vnd.Haiku-NetworkStatus
 	:
 	NetworkStatus.cpp
 	NetworkStatusWindow.cpp

@@ -20,7 +20,7 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 }
 
 DoCatalogs BMPTranslator :
-	x-vnd.Plasmatail-BMPTranslator
+	x-vnd.Haiku-BMPTranslator
 	:
 	BMPMain.cpp
 	BMPTranslator.cpp

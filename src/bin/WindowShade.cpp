@@ -1,5 +1,5 @@
 /*
- * Copyright 2007-2011, Plasmatail Inc. All Rights Reserved.
+ * Copyright 2007-2011, Haiku Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -131,7 +131,7 @@ UpdateUIColor(color_which which, const char *str)
 int
 main(int argc, char **argv)
 {
-	BApplication app("application/x-vnd.Plasmatail-WindowShade");
+	BApplication app("application/x-vnd.Haiku-WindowShade");
 	int c;
 
 	// parse command line parameters

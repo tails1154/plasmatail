@@ -40,7 +40,7 @@
 
 App::App()
 	:
-	BApplication("application/x-vnd.Plasmatail-PlasmatailDepot"),
+	BApplication("application/x-vnd.Haiku-HaikuDepot"),
 	fMainWindow(NULL),
 	fWindowCount(0),
 	fSettingsRead(false)
@@ -172,7 +172,7 @@ enum arg_switch {
 static void
 app_print_help()
 {
-	fprintf(stdout, "PlasmatailDepot ");
+	fprintf(stdout, "HaikuDepot ");
 	fprintf(stdout, "[-u|--webappbaseurl <web-app-base-url>]\n");
 	fprintf(stdout, "[-v|--verbosity [off|info|debug|trace]\n");
 	fprintf(stdout, "[--nonetworking]\n");
@@ -376,7 +376,7 @@ App::_Open(const BEntry& entry)
 	// Set if the package is active
 	//
 	// TODO(leavengood): It is very awkward having to check these two locations
-	// here, and in many other places in PlasmatailDepot. Why do clients of the
+	// here, and in many other places in HaikuDepot. Why do clients of the
 	// package kit have to know about these locations?
 	bool active = false;
 	BPackageKit::BPackageRoster roster;
@@ -421,7 +421,7 @@ App::_LoadSettings(BMessage& settings)
 {
 	if (!fSettingsRead) {
 		fSettingsRead = true;
-		if (load_settings(&fSettings, KEY_MAIN_SETTINGS, "PlasmatailDepot") != B_OK)
+		if (load_settings(&fSettings, KEY_MAIN_SETTINGS, "HaikuDepot") != B_OK)
 			fSettings.MakeEmpty();
 	}
 	settings = fSettings;
@@ -452,7 +452,7 @@ App::_StoreSettings(const BMessage& settings)
 		}
 	}
 
-	save_settings(&fSettings, KEY_MAIN_SETTINGS, "PlasmatailDepot");
+	save_settings(&fSettings, KEY_MAIN_SETTINGS, "HaikuDepot");
 }
 
 
@@ -467,10 +467,10 @@ App::_CheckPackageDaemonRuns()
 {
 	while (!be_roster->IsRunning(kPackageDaemonSignature)) {
 		BAlert* alert = new BAlert(B_TRANSLATE("Start package daemon"),
-			B_TRANSLATE("PlasmatailDepot needs the package daemon to function, "
+			B_TRANSLATE("HaikuDepot needs the package daemon to function, "
 						"and it appears to be not running.\n"
 						"Would you like to start it now?"),
-			B_TRANSLATE("No, quit PlasmatailDepot"), B_TRANSLATE("Start package daemon"), NULL,
+			B_TRANSLATE("No, quit HaikuDepot"), B_TRANSLATE("Start package daemon"), NULL,
 			B_WIDTH_AS_USUAL, B_WARNING_ALERT);
 		alert->SetShortcut(0, B_ESCAPE);
 
@@ -492,7 +492,7 @@ App::_LaunchPackageDaemon()
 		errorMessage.ReplaceAll("%Error%", strerror(ret));
 
 		BAlert* alert = new BAlert(B_TRANSLATE("Package daemon problem"), errorMessage,
-			B_TRANSLATE("Quit PlasmatailDepot"), B_TRANSLATE("Try again"), NULL, B_WIDTH_AS_USUAL,
+			B_TRANSLATE("Quit HaikuDepot"), B_TRANSLATE("Try again"), NULL, B_WIDTH_AS_USUAL,
 			B_WARNING_ALERT);
 		alert->SetShortcut(0, B_ESCAPE);
 

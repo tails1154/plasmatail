@@ -11,7 +11,7 @@
 #ifndef AVCODEC_DECODER_H
 #define AVCODEC_DECODER_H
 
-//! libavcodec based decoder for Plasmatail
+//! libavcodec based decoder for Haiku
 
 
 #include <MediaFormats.h>

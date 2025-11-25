@@ -1,6 +1,6 @@
 /*
  * Copyright 1998-1999 Be, Inc. All Rights Reserved.
- * Copyright 2003-2019 Plasmatail, Inc. All rights reserved.
+ * Copyright 2003-2019 Haiku, Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  */
 #ifndef SETTINGS_H

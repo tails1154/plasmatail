@@ -1,5 +1,5 @@
 /*
- * Copyright 2006, Plasmatail, Inc. All Rights Reserved.
+ * Copyright 2006, Haiku, Inc. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -42,7 +42,7 @@ class PowerStatus : public BApplication {
 };
 
 
-const char* kSignature = "application/x-vnd.Plasmatail-PowerStatus";
+const char* kSignature = "application/x-vnd.Haiku-PowerStatus";
 const char* kDeskbarSignature = "application/x-vnd.Be-TSKB";
 const char* kDeskbarItemName = "PowerStatus";
 

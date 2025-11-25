@@ -7,9 +7,9 @@
 #include <system_revision.h>
 
 
-// Plasmatail revision (hrev). Will be set when copying libroot.so to the image.
+// Haiku revision (hrev). Will be set when copying libroot.so to the image.
 // Lives in a separate section so that it can easily be found.
-static char sPlasmatailRevision[SYSTEM_REVISION_LENGTH]
+static char sHaikuRevision[SYSTEM_REVISION_LENGTH]
 	__attribute__((section("_haiku_revision")));
 
 
@@ -20,5 +20,5 @@ get_haiku_revision(void)
 __get_haiku_revision(void)
 #endif
 {
-	return sPlasmatailRevision;
+	return sHaikuRevision;
 }

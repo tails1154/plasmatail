@@ -77,7 +77,7 @@ random_color()
 
 
 DrawingDebuggerApp::DrawingDebuggerApp()
-	:	BApplication("application/x.vnd-Plasmatail.DrawingDebugger")
+	:	BApplication("application/x.vnd-Haiku.DrawingDebugger")
 {
 	fWindow = new DrawingDebuggerWindow(BRect(200, 200, 999, 799));
 	fWindow->Show();

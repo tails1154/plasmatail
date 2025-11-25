@@ -65,7 +65,7 @@ static const int32 sTranslatorVersion = B_TRANSLATION_MAKE_VERSION(1, 2, 0);
 
 static const char* sTranslatorName = B_TRANSLATE("JPEG images");
 static const char* sTranslatorInfo = B_TRANSLATE("©2002-2003, Marcin Konicki\n"
-	"©2005-2007, Plasmatail\n"
+	"©2005-2007, Haiku\n"
 	"\n"
 	"Based on IJG library ©  1994-2009, Thomas G. Lane, Guido Vollbeding.\n"
 	"\thttp://www.ijg.org/files/\n"
@@ -1322,7 +1322,7 @@ make_nth_translator(int32 n, image_id you, uint32 flags, ...)
 int
 main(int, char**)
 {
-	BApplication app("application/x-vnd.Plasmatail-JPEGTranslator");
+	BApplication app("application/x-vnd.Haiku-JPEGTranslator");
 	JPEGTranslator* translator = new JPEGTranslator();
 	if (LaunchTranslatorWindow(translator, sTranslatorName) == B_OK)
 		app.Run();

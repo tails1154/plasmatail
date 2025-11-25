@@ -19,7 +19,7 @@
 #define B_TRANSLATION_CONTEXT "Switcher"
 
 
-const char* kSignature = "application/x-vnd.Plasmatail-Switcher";
+const char* kSignature = "application/x-vnd.Haiku-Switcher";
 
 
 Switcher::Switcher()

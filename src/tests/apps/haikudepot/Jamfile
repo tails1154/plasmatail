@@ -31,7 +31,7 @@ SEARCH_SOURCE += [ FDirName $(HAIKUDEPOT_GENERATED_SOURCES_DIRECTORY)
 	dumpexportrepositorymodel ] ;
 
 UnitTestLib haikudepottest.so :
-	PlasmatailDepotTestAddon.cpp
+	HaikuDepotTestAddon.cpp
 
 	DataIOUtils.cpp
 	DataIOUtilsTest.cpp

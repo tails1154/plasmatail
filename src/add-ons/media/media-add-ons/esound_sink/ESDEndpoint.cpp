@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2006 François Revol (revol@free.fr)
  * 
- * Based on Multi Audio addon for Plasmatail,
+ * Based on Multi Audio addon for Haiku,
  * Copyright (c) 2002, 2003 Jerome Duval (jerome.duval@free.fr)
  *
  * All rights reserved.
@@ -461,7 +461,7 @@ ESDEndpoint::SendDefaultCommand()
 		return EALREADY;
 	c.format = fDefaultFormat;
 	c.rate = fDefaultRate;
-	strcpy(c.name, "BeOS/Plasmatail/ZETA Media Kit output");
+	strcpy(c.name, "BeOS/Haiku/ZETA Media Kit output");
 	err = SendCommand(fDefaultCommand, (uint8 *)&c, sizeof(c), NULL, 0);
 	if (err < B_OK)
 		return err;

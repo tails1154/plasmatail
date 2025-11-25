@@ -45,7 +45,7 @@ HAIKU_CHECK_DISABLE_INTERRUPTS(device_t dev)
 	 // Those devices return status 0, when status access
 	 // occurs after disabling the interrupts with ath_hal_intrset.
 	 //
-	 // Note: Plasmatail's pcnet driver uses the same technique of
+	 // Note: Haiku's pcnet driver uses the same technique of
 	 //       appending a sc_lastisr field.
 	ath_hal_getisr(ah, &intr_status);
 	atomic_set((int32*)&sc->sc_intr_status, intr_status);

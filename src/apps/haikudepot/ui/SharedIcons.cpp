@@ -10,7 +10,7 @@
 #include <Resources.h>
 
 #include "BitmapHolder.h"
-#include "PlasmatailDepotConstants.h"
+#include "HaikuDepotConstants.h"
 #include "Logger.h"
 #include "support.h"
 

@@ -101,4 +101,4 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 	}
 }
 
-PlasmatailSubInclude mime ;
+HaikuSubInclude mime ;

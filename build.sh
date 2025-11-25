@@ -18,6 +18,8 @@ cd $WORKDIR
 echo "Copying busybox"
 cp busybox/busybox plasmatail_build/bin/
 cp busybox/busybox plasmatail_build/bin/sh
+cp busybox/busybox plasmatail_build/bin/bash
 echo "Installing busybox"
 plasmatail_build/bin/busybox --install -s plasmatail_build
-echo "idk what to do from here either LOL"
+echo "Copying tailsinit shell init thing"
+cp tailsinit/init plasmatail_build/bin/init

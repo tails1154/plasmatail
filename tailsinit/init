@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Tails1154 Linux"
+echo "Dropping to shell"
+/bin/sh
